@@ -1,0 +1,17 @@
+.contact-map {
+  justify-self: center;
+  width: 100%;
+  max-width: 20rem;
+
+  h4 {
+    color: var(--color-dark);
+    font-size: 1.5rem;
+  }
+  p {
+    color: var(--color-dark);
+  }
+
+  @media screen and (min-width: 750px) {
+    min-width: 100%;
+  }
+}

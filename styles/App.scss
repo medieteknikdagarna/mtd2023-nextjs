@@ -1,0 +1,31 @@
+html {
+  scrollbar-color: rgb(63, 63, 63) rgb(42, 42, 42);
+}
+::-moz-selection {
+  background: #ff984a7e;
+}
+::selection {
+  background: #ff984a7e;
+}
+:root {
+  --color-primary: #ff984a;
+  --color-dark: #3a4151;
+  --color-light: #fafafa;
+  --grid-layout: 1fr 3fr 0.5em 2fr 1fr;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: var(--color-light);
+}

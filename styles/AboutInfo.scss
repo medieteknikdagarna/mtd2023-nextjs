@@ -1,0 +1,119 @@
+.about-info-section {
+  display: grid;
+  padding: 0 1.2rem;
+  margin-top: 5rem;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  a {
+    color: var(--color-primary);
+  }
+
+  &--img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  &--mtd svg {
+    max-width: 6rem;
+    height: auto;
+  }
+
+  &--mt svg {
+    max-width: 7rem;
+    height: auto;
+  }
+  &--mtd,
+  &--mt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h3,
+  p {
+    color: var(--color-light);
+  }
+
+  p {
+    font-weight: 300;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .about-info-section {
+    grid-template-columns: var(--grid-layout);
+  }
+  .about-info {
+    grid-column: 2/5;
+    text-align: left;
+    &--img-container {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .about-info {
+    &--mt,
+    &--mtd {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+    &--mtd svg {
+      max-width: 15rem;
+      height: auto;
+      width: 100%;
+    }
+    &--mt svg {
+      max-width: 15rem;
+      height: auto;
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 1.7rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+
+    &--img-container {
+      height: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0;
+    }
+  }
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+  img {
+    object-fit: cover;
+  }
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,49 @@
+.mtd-button {
+  &--primary {
+    background-color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    color: var(--color-light);
+    border-radius: 200px;
+    transition: 0.15s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-radius: 200px;
+      background-color: #3a4151;
+      border-color: #3a4151;
+      color: #fafafa;
+      transition: 0.15s;
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border: 2px solid var(--color-dark);
+    color: var(--color-dark);
+    border-radius: 200px;
+    transition: 0.15s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: #3a4151;
+      border-color: #3a4151;
+      color: #fafafa;
+      transition: 0.15s;
+    }
+  }
+
+  &--large {
+    padding: 0.25rem 2.2rem;
+    font-size: 1.2rem;
+  }
+  &--medium {
+    padding: 0.25rem 1.8rem;
+    font-size: 1rem;
+  }
+  &--small {
+    padding: 0.25rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}

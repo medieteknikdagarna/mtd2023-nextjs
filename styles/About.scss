@@ -1,0 +1,82 @@
+:root {
+  --gradient: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.about-page {
+  background-image: var(--gradient);
+  padding-top: 12rem;
+  background-size: 500%;
+}
+
+.about-section {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  &--message {
+    padding: 0 1.2rem;
+
+    h1,
+    p {
+      color: var(--color-light);
+    }
+
+    h1 {
+      font-size: 3.3rem;
+      font-weight: bold;
+      line-height: 3.3rem;
+      margin-bottom: 2.2rem;
+    }
+    p {
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+  }
+
+  svg {
+    min-width: 10rem;
+    max-width: 130%;
+    justify-self: center;
+    align-self: center;
+    margin-top: -2rem;
+    display: none;
+  }
+}
+
+.lecturers-section {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  .about-section {
+    grid-template-columns: var(--grid-layout);
+    &--message {
+      grid-column: 2/3;
+    }
+    svg {
+      grid-column: 4/5;
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .about-section {
+    svg {
+      display: block;
+    }
+  }
+}

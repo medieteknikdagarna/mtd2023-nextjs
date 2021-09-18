@@ -1,0 +1,145 @@
+[
+    {
+        "id": "platsbokaren_svg__plats1","status": "available",
+        "seat":1,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats2",
+        "status": "available",
+        "seat":2,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats3",
+        "status": "available",
+        "seat":3,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats4",
+        "status": "reserved",
+        "seat":4,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats5",
+        "status": "available",
+        "seat":5,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats6",
+        "status": "available",
+        "seat":6,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats7",
+        "status": "available",
+        "seat":7,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats8",
+        "status": "available",
+        "seat":8,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats9",
+        "status": "reserved",
+        "seat":9,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats10",
+        "status": "available",
+        "seat":10,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats11",
+        "status": "available",
+        "seat":11,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats12",
+        "status": "available",
+        "seat":12,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats13",
+        "status": "available",
+        "seat":13,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats14",
+        "status": "available",
+        "seat":14,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats15",
+        "status": "available",
+        "seat":15,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats16",
+        "status": "available",
+        "seat":16,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats17",
+        "status": "available",
+        "seat":17,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats18",
+        "status": "available",
+        "seat":18,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats19",
+        "status": "available",
+        "seat":19,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats20",
+        "status": "available",
+        "seat":20,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats21",
+        "status": "available",
+        "seat":21,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats22",
+        "status": "available",
+        "seat":22,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats23",
+        "status": "available",
+        "seat":23,
+        "type": "gold"
+        },
+        {
+        "id": "platsbokaren_svg__plats24",
+        "status": "reserved",
+        "seat":24,
+        "type": "gold"
+        }
+    ]

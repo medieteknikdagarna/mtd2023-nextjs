@@ -1,0 +1,43 @@
+.infosection {
+  min-width: 10rem;
+  padding: 0.5em;
+  padding-left: 1rem;
+  flex-direction: column;
+
+  span {
+    font-size: 0.9rem;
+    color: var(--clr-primary);
+    font-weight: 600;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  &--buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-size: clamp(2.5rem, 3vw, 3.36rem);
+    font-weight: bold;
+    line-height: 1em;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 550px) and (max-width: 900px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
