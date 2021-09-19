@@ -42,6 +42,7 @@ export default function SeatBooker() {
             }
         })
     }
+    
     const handleOnChange = (e) =>{
         const n = e.target.value-1
         const seat = data[n]

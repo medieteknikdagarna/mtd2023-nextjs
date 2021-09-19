@@ -5,7 +5,7 @@ import useFetch from '../components/utilities/useFetch'
 import Fallback from '../components/utilities/Fallback'
 import { useContext } from 'react'
 import { languageContext } from './_app'
-export default function policy() {
+export default function Policy() {
 
     const { data, loading, error } = useFetch('http://localhost:3000/api/content/privacy-policy')
     const [lang] = useContext(languageContext)  
@@ -32,7 +32,7 @@ export default function policy() {
                     <p dangerouslySetInnerHTML={{ __html: data[lang].contactForm.editOrDeleteData.body}}></p>
 
                     <h3>{data[lang].thirdParty.title}</h3>
-                    <p dangerouslySetInnerHTML={{__html: data[lang].thirdParty.body}}>{}</p>
+                    <p dangerouslySetInnerHTML={{__html: data[lang].thirdParty.body}}></p>
 
                     
                     
