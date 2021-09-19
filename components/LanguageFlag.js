@@ -10,6 +10,6 @@ export default function LanguageFlag() {
 
     
     return (
-        <Image onClick={() => setLang(prevLang => prevLang === "sv" ? "en" : "sv")} className="flag-icon" alt="Flag of the current language" src={flag.src}></Image>
+        <Image onClick={() => setLang(prevLang => prevLang === "sv" ? "en" : "sv")} className="flag-icon flag-button" alt="Flag of the current language" src={flag.src}></Image>
     )
 }
