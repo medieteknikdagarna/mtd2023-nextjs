@@ -3,7 +3,9 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import ContactSubmenu from '../../components/ContactSubmenu'
 import ContactUs from '../../components/ContactUs.js'
+import PressAndMedia from '../../components/PressAndMedia'
 import { useRouter } from 'next/router'
+import TheGroup from '../../components/TheGroup'
 
 
 
@@ -14,10 +16,10 @@ export default function ContactPage() {
 
     const getPageOfSlug = (s) =>{
         if (s.toLowerCase() === "the-group"){
-            return <h2>group</h2>
+            return <TheGroup/>
         }
         else if (s.toLowerCase() === "press-and-media"){
-            return <h2>press and media</h2>
+            return <PressAndMedia/>
         }
         else{
             return <ContactUs/>

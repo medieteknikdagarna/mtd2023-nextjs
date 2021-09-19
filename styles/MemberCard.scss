@@ -1,0 +1,78 @@
+.member-card {
+  margin-bottom: 1rem;
+  max-width: 30rem;
+  display: grid;
+  grid-template-columns: 2fr 0.1rem 1fr 6fr;
+  background-color: #f9f9f9;
+  border: 1px solid #c7c7c7;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 18px -9px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 0px 18px -9px rgba(0, 0, 0, 0.63);
+
+  &--left {
+    background: rgb(255, 170, 106);
+    background: linear-gradient(
+      29deg,
+      rgba(255, 170, 106, 1) 0%,
+      rgba(255, 206, 169, 1) 100%
+    );
+
+    grid-column: 1/2;
+    border-radius: 30px 0 0 30px;
+  }
+  &--right {
+    border-radius: 0 30px 30px 0;
+    grid-column: -1/-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  img {
+    border-radius: 2000px;
+    margin: 1rem 0;
+    width: clamp(3rem, 5vw + 7rem, 7rem);
+    position: relative;
+    transform: translateX(-50%);
+    border: 1px solid #c7c7c7;
+  }
+
+  h2 {
+    font-family: "Lato";
+    font-weight: bolder;
+    margin-bottom: 0.2rem;
+  }
+  h4 {
+    font-family: "Lato";
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  a {
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .member-card {
+    img {
+      max-width: 6rem;
+    }
+    &--right {
+      padding-right: 1rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-family: "Lato";
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  a {
+    font-size: 0.7rem;
+  }
+}

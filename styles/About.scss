@@ -45,12 +45,11 @@
   }
 
   svg {
-    min-width: 10rem;
-    max-width: 130%;
     justify-self: center;
     align-self: center;
     margin-top: -2rem;
     display: none;
+    max-width: 30rem;
   }
 }
 
@@ -65,10 +64,11 @@
   .about-section {
     grid-template-columns: var(--grid-layout);
     &--message {
-      grid-column: 2/3;
+      grid-column: 2/4;
     }
     svg {
-      grid-column: 4/5;
+      grid-column: 4/6;
+      justify-self: flex-start;
     }
   }
 }

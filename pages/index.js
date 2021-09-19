@@ -27,7 +27,7 @@ export default function LandingPage() {
                         <h1>Knyt värdefulla kontakter</h1>
                         <div className="welcome">
                             <p>Expand your brand awereness, meet with students and companys. Secure your spot at the annual convention of Media Technology days</p>
-                            <Button type="primary" size="large">Boka plats</Button> 
+                            <Button href="/book" type="primary" size="large">Boka plats</Button> 
                         </div>
                     </div>
                         <ExpoSvg/>
@@ -65,7 +65,7 @@ export default function LandingPage() {
                 <InfoSection className="after-movie" tag="TIDIGARE ÅR" title="After movie 2020" body="I fjol hölls mässan digitalt via Graduateland. I år kommer vi att hålla den på plats. Kolla på filmen nedan för att få en inblick i hur det kan se ut under Medieteknikdagarna! "/>
             </div>
             <div className="after-movie-movie">
-            <iframe src={fbVideoUrl} width={width-32} height={width/1.8} style={{maxHeight: "500px", maxWidth: "850px", border:"none",overflow:"hidden"}} scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={!isMobile}></iframe></div>
+            <iframe src={fbVideoUrl} width={String(width-32)} height={String(width/1.8)} style={{maxHeight: "500px", maxWidth: "850px", border:"none",overflow:"hidden"}} scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={!isMobile}></iframe></div>
             </section>
             <Footer/>
         </>

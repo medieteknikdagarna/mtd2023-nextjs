@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Fallback({children, loading}) {
 
 
-    return (
-        <div>
-            {!loading && children}
-            {loading && <h2>LOADING</h2>}
-        </div>
-    )
+    if(loading){
+        return (<div>Loading</div>)
+    }
+    else{
+        return(<>{children}</>)
+    }
 
 
     

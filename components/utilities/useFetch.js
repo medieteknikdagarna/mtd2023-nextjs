@@ -13,8 +13,7 @@ function useFetch(endpoint) {
         var matches = window.location.href.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
         host =  matches ? matches[0] : ""
     }
-    console.log(host)
-      setLoading('loading...')
+      setLoading(true)
       setData(null);
       setError(null);
       const source = axios.CancelToken.source();

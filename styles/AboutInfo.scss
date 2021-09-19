@@ -2,6 +2,10 @@
   display: grid;
   padding: 0 1.2rem;
   margin-top: 5rem;
+
+  svg {
+    grid-column: 3/6;
+  }
 }
 
 .about-info {
@@ -20,7 +24,7 @@
     margin-bottom: 2rem;
   }
   &--mtd svg {
-    max-width: 6rem;
+    max-width: 7rem;
     height: auto;
   }
 
@@ -38,6 +42,10 @@
   h3,
   p {
     color: var(--color-light);
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   p {
@@ -70,21 +78,21 @@
       gap: 3rem;
     }
     &--mtd svg {
-      max-width: 15rem;
+      max-width: 11rem;
       height: auto;
       width: 100%;
     }
     &--mt svg {
-      max-width: 15rem;
+      max-width: 12rem;
       height: auto;
       width: 100%;
     }
 
-    h3 {
-      font-size: 1.7rem;
-    }
     p {
       font-size: 1rem;
+    }
+    h3 {
+      font-size: 2rem;
     }
 
     &--img-container {

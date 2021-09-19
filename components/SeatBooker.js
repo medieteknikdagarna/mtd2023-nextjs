@@ -3,8 +3,10 @@ import BookerSVG from '../public/images/platsbokaren.svg'
 import { useEffect } from 'react';
 import useFetch from './utilities/useFetch';
 import Button from './Button';
+import {useTransition, animated, config} from 'react-spring'
 
 function setStatusOfSeats(arr, selected){
+
 
     const STATUS_COLORS = {
         "available": "#97FF86",
@@ -34,6 +36,9 @@ export default function SeatBooker() {
     const {data, loading, error} = useFetch("/api/seats")
     const [activeSeat, setSeat] = useState(null);
     const [activeLevel, setLevel] = useState(5);
+    const [showPlane5, setShow5] = useState(true);
+    const [showPlane4, setShow4] = useState(false);
+
 
     const onSeatSelect = (e) =>{
         const id = e.path[0].id;
@@ -46,7 +51,14 @@ export default function SeatBooker() {
     }
 
     const handleOnChange = (e) =>{
-        const n = e.target.value-1
+        let n = e.target.value-1
+        if(n < 0){
+            n = 0
+        }
+        else if (n >= data.length){
+            n = data.length-1
+        }
+
         const seat = data[n]
 
         
@@ -65,9 +77,9 @@ export default function SeatBooker() {
         }
     }, [data])
     return (
-        <section className="booking-section">
+        <section className="seat-booking-section">
         <div className="seat-booker">
-            <BookerSVG className="booker"/>
+        <BookerSVG className="booker"/>
             {activeSeat && data &&
             <div className="form-info">
                 <h2>{"Plats #" + activeSeat.seat}</h2>
@@ -84,11 +96,13 @@ export default function SeatBooker() {
                         <div className="flex-input">
                             <div >
                                 <label>Plats</label><br/>
-                                <input onChange={handleOnChange} type="number" min={1} max={data.length} defaultValue={activeSeat.seat}/>
+                                <input onChange={handleOnChange} type="number" min={1} max={data.length} value={activeSeat.seat} />
                             </div>
-                            <div>
-                                <label>Plan</label><br/>
-                                <input onChange={(e) => setLevel(e.target.value)} type="number" max={5} min={4} value={activeLevel} />
+                            <div className="div-radio">
+                                <label>Plan 4</label>
+                                <input className="input-radio" type="radio" checked={activeLevel===4} onClick={() => setLevel(4)}/>
+                                <label>Plan 5</label>
+                                <input className="input-radio" type="radio" checked={activeLevel===5} onClick={() => setLevel(5)}/>
                             </div>
                         </div>
                         <label>Kontaktperson</label>

@@ -3,6 +3,11 @@ import MTDSvg from '../public/images/mtd.svg'
 import MTSvg from '../public/images/mt_logo.svg'
 
 export default function AboutInfo() {
+
+
+    
+
+
     return (
         <div className="about-info">
             <div className="about-info--mtd">

@@ -1,0 +1,25 @@
+{
+    "sv": {
+      "title": "Vad är MTD2022?",
+      "ingress": "Medieteknikdagen är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoandra året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva",
+      "about-info":{
+          "title1": "Medieteknikdagen 2022",
+          "body1": "Medieteknikdagen är ett ideellt arrangemang drivet av och för studenter. Syftet är att knyta kontakter mellan studenter, medietekniker ute i arbetslivet och företagen inom branschen. \nMTD är ett tillfälle för företag och studenter att inspirera, informera och integrera med varandra. Såväl företag som studenter får här en chans att visa det allra senaste inom medieteknik.",
+          "title2": "Civilingenjörsprogrammet i medietenik på Linköpings Universitet",
+          "body2": "Civilingenjörsprogrammet i Medieteknik är utbildningen där tekniken gifter sig med kreativiteten.\nResultatet blir en unik spetskompetens inom områden som blir allt viktigare. Klassiska ingenjörsämnen blandas med programmering, visualisering, datorgrafik, interaktionsdesign, ljud och mycket mer.\nUtbildningen är belägen på universitets campus Norrköping, med närhet till Visualiseringscenter C, och på så vis till världsledande forskning.\nLäs mer om medieteknikprogrammet på sektionens hemsida, www.medieteknik.nu samt på www.liu.se/medieteknik"
+      
+        }
+    },
+  
+    "en": {
+      "title": "What is MTD2022?",
+      "ingress": "The Media Technology Day is a day full with inspiration, a fair and hundreds of students and companies from the industry. Here, you'll find everything you need to know about the day",
+      "about-info":{
+        "title1": "The Media Technology day 2022",
+        "body1": "The The Media Technology Day is a non-profit event arranged by students, connecting students, working media technicians and companies in the industry. The purpose is to establish contacts between students, media technicians in working life and companies in the industry.",
+        "title2": "M.Sc in Media Technology and Engineering at Linköping University",
+        "body2": "The Media Technology master’s programme is where technology and creativity meets as one.\nThe result is a unique cutting-edge expertise within fields constantly growing in importance. Media Technology combines traditional engineering courses with programming, visualization, computer graphics, interaction design, sound and a whole lot more.\nThe programme resides on Norrköping campus, within close proximity of Visualiseringscenter C, and in that sense to world-leading research"
+    }
+    }
+  }
+  

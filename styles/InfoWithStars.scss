@@ -13,6 +13,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h4 {
+    color: var(--color-light);
+  }
 }
 .shape-divider-bottom {
   width: 100%;

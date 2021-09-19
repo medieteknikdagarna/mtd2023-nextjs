@@ -45,9 +45,7 @@ export default function Header({changeOnScroll = false, lightContrast}) {
 
     return (
         <header className={lastscrollPos >= 50 && changeOnScroll ? className.concat(" header-scroll") : className}>
-         <menuActiveContext.Provider value={[menuActive, setMenuActive]}>
-         {transitions((styles, item) => item && <Menu key={item.key} style={styles}></Menu>) }
-        </menuActiveContext.Provider>
+         {transitions((styles, item) => item && <Menu onExit={() => setMenuActive(false)} key={1} style={styles}></Menu>) }
         <div className="logo-container">
             <Link href="/"><MTDSvg className="header-logo"/></Link>
             <div className="nav-items">
