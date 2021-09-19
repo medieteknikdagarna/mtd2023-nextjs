@@ -51,7 +51,7 @@ export default function Menu({onExit,style}) {
                     </ul>
                 </li>
                 <li><Link onClick={() => setMenuActive(false)} href="/fair">Mässan</Link></li>
-                <li><Link onClick={() => setMenuActive(false)} href="/booking">Platsbokaren</Link></li>
+                <li><Link onClick={() => setMenuActive(false)} href="/book">Platsbokaren</Link></li>
             </ul>
             <div className="icons-menu">
                 <LanguageFlag/>
