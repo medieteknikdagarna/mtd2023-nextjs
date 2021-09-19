@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import BookerSVG from '../public/images/platsbokaren.svg'
 import { useEffect } from 'react';
 import useFetch from './utilities/useFetch';
+import Button from './Button';
 
 function setStatusOfSeats(arr, selected){
 
@@ -29,7 +30,8 @@ function setStatusOfSeats(arr, selected){
 
 
 export default function SeatBooker() {
-    const {data, loading, error} = useFetch("http://localhost:3000/api/seats")
+    
+    const {data, loading, error} = useFetch("/api/seats")
     const [activeSeat, setSeat] = useState(null);
     const [activeLevel, setLevel] = useState(5);
 
@@ -42,7 +44,7 @@ export default function SeatBooker() {
             }
         })
     }
-    
+
     const handleOnChange = (e) =>{
         const n = e.target.value-1
         const seat = data[n]
@@ -63,11 +65,11 @@ export default function SeatBooker() {
         }
     }, [data])
     return (
-        
+        <section className="booking-section">
         <div className="seat-booker">
             <BookerSVG className="booker"/>
             {activeSeat && data &&
-            <div>
+            <div className="form-info">
                 <h2>{"Plats #" + activeSeat.seat}</h2>
                 <div className="indicator">
                     <div style={{backgroundColor: activeSeat.status === "reserved" ? "#FF7C7C" : "#97FF86"}} className="indicator--icon"></div>
@@ -79,17 +81,31 @@ export default function SeatBooker() {
                         <span>fr. 14 999 SEK</span>
                     </div>
                     <div className="booking-form">
-                        <div>
-                            <label>Plats</label><br/>
-                            <input onChange={handleOnChange} type="number" min={1} max={data.length} defaultValue={activeSeat.seat}/>
+                        <div className="flex-input">
+                            <div >
+                                <label>Plats</label><br/>
+                                <input onChange={handleOnChange} type="number" min={1} max={data.length} defaultValue={activeSeat.seat}/>
+                            </div>
+                            <div>
+                                <label>Plan</label><br/>
+                                <input onChange={(e) => setLevel(e.target.value)} type="number" max={5} min={4} value={activeLevel} />
+                            </div>
                         </div>
-                        <div>
-                            <label>Plan</label><br/>
-                            <input onChange={(e) => setLevel(e.target.value)} type="number" max={5} min={4} value={activeLevel} />
-                        </div>
+                        <label>Kontaktperson</label>
+                        <input type="text"/>
+                        <label>Företag</label>
+                        <input type="text"/>
+                        <label>Email</label>
+                        <input type="email"/>
+                        <label>Telefonnummer</label>
+                        <input type="tel"/>
+                        <span>Denna reservation är inte bindande. Vi kommer att kontakta er för att bekräfta bokningen så fort vi kan</span>
+                        <Button style={{width: "100%", fontSize: "1.5rem"}} type="primary" size="medium">RESERVERA</Button>
                     
                 </div>
             </div>}
+
         </div>
+        </section>
     )
 }
