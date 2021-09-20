@@ -16,11 +16,6 @@ export default function Menu({onExit,style,className}) {
     const [lang, setLang] = useContext(languageContext)
     const [subMenuActive, setSubMenuActive] = useState(false);
 
-    useEffect(() => { //Prevent from scrolling while in menu
-        document.body.style.overflow = 'hidden';
-        return ()=> document.body.style.overflow = 'unset';
-     }, []);
-
      
 
     return (
