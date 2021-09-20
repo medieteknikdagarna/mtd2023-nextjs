@@ -35,8 +35,8 @@ export default async function handler(req, res) {
         if(json["level_"+level][seat-1].status === _AVAILABLE){ 
             json["level_" + level][seat-1].status = _RESERVED
             json_reserved["level_"+level].push(newBooking)
-            fs.writeFileSync('.next/static/seat-info/seat-info.json', JSON.stringify(json))
-            fs.writeFileSync('.next/static/seat-info/reserved-seats.json', JSON.stringify(json_reserved))
+            fs.writeFileSync('_next/static/seat-info/seat-info.json', JSON.stringify(json))
+            fs.writeFileSync('_next/static/seat-info/reserved-seats.json', JSON.stringify(json_reserved))
             res.status(201).json({message: "Seat " + seat + " on level " + level + " is now reserved"})
 
         }
