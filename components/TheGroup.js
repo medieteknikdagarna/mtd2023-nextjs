@@ -2,7 +2,9 @@ import React from 'react'
 import MemberCard from './MemberCard'
 import avatar_jakob from '../public/images/avatar_jakob.jpg'
 
+
 export default function TheGroup() {
+    
     return (
         <div className="contact-us-container">
         <div className="the-group-section">

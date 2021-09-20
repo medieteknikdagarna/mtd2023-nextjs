@@ -9,23 +9,22 @@ import CloseIcon from '../public/images/close_icon.svg'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { languageContext } from '../pages/_app'
 import LanguageFlag from './LanguageFlag'
-import { animated } from '@react-spring/web'
 import Link from 'next/link'
 
-export default function Menu({onExit,style}) {
+export default function Menu({onExit,style,className}) {
 
     const [lang, setLang] = useContext(languageContext)
     const [subMenuActive, setSubMenuActive] = useState(false);
 
     useEffect(() => { //Prevent from scrolling while in menu
-    //    document.body.style.overflow = 'hidden';
-    //     return ()=> document.body.style.overflow = 'unset';
+        document.body.style.overflow = 'hidden';
+        return ()=> document.body.style.overflow = 'unset';
      }, []);
 
      
 
     return (
-        <animated.div style={style} className="menu-container">
+        <div style={style} className={"menu-container " + className}>
         <div className={"star-container"}>
             <div id="stars"></div>
             <div id="stars2"></div>
@@ -41,7 +40,7 @@ export default function Menu({onExit,style}) {
             <ul className="menu--ul">
                 <li><Link onClick={onExit} href="/">Hem</Link></li>
                 <li>
-                    <a style={{cursor: "pointer"}} className={subMenuActive ? "menu-chevron--active" : "menu-chevron--inactive"} onClick={() => setSubMenuActive(prev => !prev)}>Kontakt<FontAwesomeIcon style={{marginLeft: "0.5rem", fontSize: "1.5rem"}} icon={faChevronDown}/></a>
+                    <a style={{cursor: "pointer"}} className={subMenuActive ? "menu-chevron--active" : "menu-chevron--inactive"} onClick={() => setSubMenuActive(prev => !prev)}>Kontakt<FontAwesomeIcon style={{marginLeft: "0.5rem", marginRight: "-1.5rem", fontSize: "1.5rem"}} icon={faChevronDown}/></a>
                     <ul className={subMenuActive ? "sub-menu--active" : "sub-menu--inactive"}>
                         <li className="sub-menu-link"><Link onClick={onExit} href="/contact/us">Kontakt</Link></li>
                         <li className="sub-menu-link"><Link onClick={onExit} href="/contact/the-group">Gruppen</Link></li>
@@ -62,6 +61,6 @@ export default function Menu({onExit,style}) {
             </div>
         </div>
         </div>
-        </animated.div>
+        </div>
     )
 }

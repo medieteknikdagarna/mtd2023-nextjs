@@ -23,8 +23,8 @@ export default function Header({changeOnScroll = false, lightContrast}) {
 
     const transitions = useTransition(menuActive, {
         from: { x: 1000 },
-        enter: { x: 0, opacity: 1 },
-        leave: { opacity: 0 },
+        enter: { x: 0 },
+        leave: { x: 100 },
       })
 
     useEffect(() => {
@@ -45,7 +45,7 @@ export default function Header({changeOnScroll = false, lightContrast}) {
 
     return (
         <header className={lastscrollPos >= 50 && changeOnScroll ? className.concat(" header-scroll") : className}>
-         {transitions((styles, item) => item && <Menu onExit={() => setMenuActive(false)} key={1} style={styles}></Menu>) }
+         <Menu className={menuActive ? "menu--active" : "menu--inactive"} onExit={() => setMenuActive(false)} key={1}></Menu>
         <div className="logo-container">
             <Link href="/"><MTDSvg className="header-logo"/></Link>
             <div className="nav-items">
