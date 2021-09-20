@@ -5,10 +5,10 @@ export default async function handler(req, res) {
     const _AVAILABLE = 'available'
     const _RESERVED = 'reserved'
 
-    const file_data1 = await fs.readFile('.next/static/seat-info/seat-info.json')
+    const file_data1 = await fs.readFile('_next/static/seat-info/seat-info.json')
     const json= JSON.parse(file_data1)
 
-    const file_data2 = await fs.readFile('.next/static/seat-info/reserved-seats.json')
+    const file_data2 = await fs.readFile('_next/static/seat-info/reserved-seats.json')
     const json_reserved= JSON.parse(file_data2)
 
     
