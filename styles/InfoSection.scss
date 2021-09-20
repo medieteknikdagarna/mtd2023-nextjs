@@ -1,7 +1,7 @@
 .infosection {
   min-width: 10rem;
-  padding: 0.5em;
-  padding-left: 1rem;
+  padding: 0.5 0em;
+
   flex-direction: column;
 
   span {
@@ -39,5 +39,9 @@
     h2 {
       margin-bottom: 0.5rem;
     }
+  }
+
+  @media screen and (max-width: 550px) {
+    padding-left: 1rem;
   }
 }
