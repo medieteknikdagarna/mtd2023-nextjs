@@ -3,7 +3,7 @@
     -webkit-filter: drop-shadow(0px 5px 4px rgba(95, 95, 95, 0.7))
       brightness(110%);
     filter: drop-shadow(0px 5px 4px rgba(95, 95, 95, 0.7)) brightness(110%);
-    transform: translateY(-2px);
+    transform: translateY(-8px);
     transition: 0.2s;
   }
   path {
@@ -12,24 +12,27 @@
   cursor: pointer;
 }
 
-#platsbokaren_svg__plats4:hover {
-  -webkit-filter: drop-shadow(0px 5px 4px rgba(95, 95, 95, 0.7))
-    brightness(110%);
-  filter: drop-shadow(0px 5px 4px rgba(95, 95, 95, 0.7)) brightness(110%);
-  transform: translateY(-2px);
-  transition: 0.3s;
-}
-
 #platsbokaren_svg__plats4 {
   transition: 0.3s;
   cursor: pointer;
 }
-
-.active-seat {
+@keyframes upanddown {
+  0% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.seat-active {
   -webkit-filter: drop-shadow(0px 5px 4px rgba(95, 95, 95, 0.7))
     brightness(110%);
   filter: drop-shadow(0px 5px 4px rgba(95, 95, 95, 0.7)) brightness(110%);
-  transform: translateY(-2px);
+  animation-duration: 0.3s;
+  animation-name: upanddown;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
 }
 .seat-booking-section {
   display: grid;
@@ -74,6 +77,21 @@
   }
 }
 
+.active-seat {
+}
+
+@keyframes changedash {
+  from {
+    stroke-dashoffset: 502.7825622558594px;
+    stroke-dasharray: 502.7825622558594 502.7825622558594;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+    stroke-dasharray: 502.7825622558594 502.7825622558594;
+  }
+}
+
 .booking-form {
   margin-top: 2rem;
   display: flex;
@@ -110,7 +128,7 @@
     height: 2.5rem;
     padding-left: 1rem;
     font-size: 1.1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     margin-top: 0.2rem;
   }
   input:focus {
@@ -154,7 +172,34 @@
   text-align: left !important;
   gap: 0.7rem;
 }
+.input-message {
+  padding: 1rem 1rem;
+  height: 6rem;
+  border-radius: 20px !important;
+  &:focus {
+    outline: none;
+    border: 1px solid var(--color-primary);
+  }
+}
 
+.error-message {
+  margin-bottom: 1rem;
+  background-color: #ffe4e4;
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  & > div {
+    width: 5px;
+    height: 100%;
+    background-color: #e07979;
+  }
+  span {
+    margin-left: 1rem;
+    color: #e07979;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 900px) {
   .seat-booker {
     padding: 0 7rem;

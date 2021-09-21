@@ -16,8 +16,7 @@ export default function Menu({onExit,style,className}) {
     const [lang, setLang] = useContext(languageContext)
     const [subMenuActive, setSubMenuActive] = useState(false);
 
-     
-
+    
     return (
         <div style={style} className={"menu-container " + className}>
         <div className={"star-container"}>
