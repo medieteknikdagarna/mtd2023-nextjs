@@ -11,6 +11,6 @@ module.exports = {
   },
   env: {
     SHEET_ID: '1gDkU3nOi9Sbkj72C5SJoC7Kyx3jOAZxW0Bh7JGfb1cY',
-    GOOGLE_SECRETS: '/secrets.json'
+    GOOGLE_SECRETS: 'secrets.json'
   }
 }
