@@ -11,7 +11,7 @@ export default function book() {
 
     return (
         <div>
-            <Header/>
+            <Header changeOnScroll/>
             <SeatBooker/>
             
         </div>

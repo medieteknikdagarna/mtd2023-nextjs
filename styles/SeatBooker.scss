@@ -73,7 +73,6 @@
   }
 }
 
-
 @keyframes changedash {
   from {
     stroke-dashoffset: 502.7825622558594px;
@@ -88,15 +87,19 @@
 
 .booking-form {
   margin-top: 2rem;
-  display: flex;
+  display: grid;
   flex-grow: 1;
   flex-direction: column;
+  align-items: center;
 
   .div-radio {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    label {
+      align-self: center;
+    }
   }
   .input-radio {
     width: 1.5rem;
@@ -108,12 +111,16 @@
     font-size: 1.2rem;
     font-weight: 400;
     margin-left: 0.5rem;
+    align-self: flex-start;
   }
   span {
     font-size: 0.8rem;
     text-align: center;
     margin: 1rem 0;
     color: rgb(119, 119, 119);
+  }
+  textarea {
+    width: 100%;
   }
   input {
     border-radius: 100px;
@@ -127,6 +134,19 @@
   }
   input:focus {
     border: 1px solid var(--color-primary);
+  }
+
+  &--grouped {
+    display: flex;
+    flex-direction: row;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 95%;
+      }
+    }
   }
 }
 
@@ -152,9 +172,12 @@
   align-self: center;
 }
 .flex-input {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
   flex-direction: row;
   gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
   input {
     width: 4rem;
     text-align: center;
@@ -202,35 +225,31 @@
   }
 }
 
-.booker--floor4{
+.booker--floor4 {
   animation: floor4 0.5s ease-in-out;
 }
 
-.booker--floor5{
+.booker--floor5 {
   animation: floor5 0.5s ease-in-out;
 }
 
-
-
 @keyframes floor4 {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(200px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }
-  
 }
 @keyframes floor5 {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(-200px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }
-  
 }

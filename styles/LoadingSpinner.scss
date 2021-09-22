@@ -1,0 +1,57 @@
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  svg {
+    max-width: 4rem;
+    overflow: unset;
+  }
+}
+
+$duration: 0.8s;
+$t_func: ease-in-out;
+$delayStep: 70ms;
+
+#mtd_spinner_svg__o_1 {
+  //Orange vänster
+  animation: spinner $duration $t_func infinite;
+}
+
+#mtd_spinner_svg__o_2 {
+  //Orange mitten
+  animation: spinner $duration $t_func $delayStep infinite;
+}
+#mtd_spinner_svg__o_3 {
+  //Orange höger
+  animation: spinner $duration $t_func 2 * $delayStep infinite;
+}
+#mtd_spinner_svg__g_1 {
+  //Grå vänster
+  animation: spinner $duration $t_func 3 * $delayStep infinite;
+}
+#mtd_spinner_svg__g_2 {
+  //Grå mitten
+  animation: spinner $duration $t_func 4 * $delayStep infinite;
+}
+#mtd_spinner_svg__g_3 {
+  //Grå höger
+  animation: spinner $duration $t_func 5 * $delayStep infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translateY(0%);
+  }
+  15% {
+    transform: translateY(-20%);
+  }
+  30% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

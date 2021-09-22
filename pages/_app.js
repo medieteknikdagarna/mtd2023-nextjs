@@ -28,6 +28,8 @@ import '../styles/DownloadButton.scss'
 import '../styles/MemberCard.scss'
 import '../styles/TheGroup.scss'
 import '../styles/ReservationSuccess.scss'
+import '../styles/LoadingSpinner.scss'
+
 
 
 import { useRouter } from "next/router";

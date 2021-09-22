@@ -8,6 +8,7 @@ import SeatMap from './utilities/SeatMap';
 import LoadingSpinner from './LoadingSpinner';
 import { isReserved } from './utilities/SeatMap';
 import ReservationSuccess from './ReservationSuccess';
+import Footer from '../components/Footer'
 
 export const selectedContext = React.createContext()
 
@@ -85,7 +86,7 @@ export default function SeatBooker() {
             fetch('/api/reserved', requestOptions)
                 .then(response => response.json())
                 .then(res_data => {
-       
+                    console.log(res_data)
                     if(res_data.success){
                         setReservationSuccess(true)
                     }
@@ -101,11 +102,15 @@ export default function SeatBooker() {
         }
     } 
 
-
+    console.log(reservationSuccess)
     return (
+        <>
+        {data.loading && <LoadingSpinner/>}
+
+        {(!data.loading && !reservationSuccess) &&
         <section className="seat-booking-section">
         <div className="seat-booker">
-        {(!data.loading && !reservationSuccess) &&
+        
         <>
         <selectedContext.Provider value={[selectedSeat, setSelected]}>
             <SeatMap key={activeLevel} activeFloor={activeLevel} seats={data.seatData.filter(seat=> seat.level === activeLevel)} reservations={data.reservedData} selected={selectedSeat}/>
@@ -137,14 +142,26 @@ export default function SeatBooker() {
                         <input className="input-radio" type="radio" checked={activeLevel===5} onClick={() => setLevel(5)}/>
                     </div>
                 </div>
-                <label>Kontaktperson</label>
-                <input ref={f_name} type="text"/>
-                <label>Företag</label>
-                <input ref={f_company} type="text"/>
-                <label>Email</label>
-                <input ref={f_email} type="email"/>
-                <label>Telefonnummer</label>
-                <input ref={f_phone} type="tel"/>
+                <div className="booking-form--grouped">
+                    <div>
+                        <label>Kontaktperson</label>
+                        <input ref={f_name} type="text"/>
+                    </div>
+                    <div>
+                        <label>Företag</label>
+                        <input ref={f_company} type="text"/>
+                    </div>
+                </div>
+                <div className="booking-form--grouped">
+                    <div>
+                        <label>Email</label>
+                        <input ref={f_email} type="email"/>
+                    </div>
+                    <div>
+                        <label>Telefonnummer</label>
+                        <input ref={f_phone} type="tel"/>
+                    </div>
+                </div>
                 <label>Eventuellt meddelande</label>
                 <textarea className="input-message" ref={f_message} type="text"/>
                 <span className="warning-booking"><FontAwesomeIcon className="info-circle" icon={faInfoCircle}/>Denna reservation är inte bindande. Vi kommer att kontakta er för att bekräfta bokningen så fort vi kan</span>
@@ -154,12 +171,14 @@ export default function SeatBooker() {
             </div>
         </div>}
         </>
-        }
-        {reservationSuccess && <ReservationSuccess company={f_company.current.value} name={f_name.current.value} seat={selectedSeat.seat} floor={activeLevel}/>}
-        {data.loading && <LoadingSpinner/>}
+        
+        
         
 
         </div>
-        </section>
+        </section>}
+        {reservationSuccess && <ReservationSuccess company={f_company.current.value} name={f_name.current.value} seat={selectedSeat.seat} floor={activeLevel}/>}
+        <Footer/>
+        </>
     )
 }
