@@ -57,10 +57,10 @@ const creds = {
             message: data.message
         })
       // this returns the videos
-      return {status: 201, message: "test"};
+      return {status: 201, message: "test", success: true};
     } catch (error) {
       //   log any errors to the console
-      return {status: 500, message: "fail"}
+      return {status: 500, message: "fail", success: false}
     }
   }
 
@@ -71,7 +71,7 @@ const creds = {
     if(req.method === "POST"){
 
         let foundDuplicate = false
-        data.forEach(booking =>{
+        data.data.forEach(booking =>{
             if(booking.seat == req.body.seat && booking.level == req.body.level){
                 foundDuplicate = true
             }
@@ -85,10 +85,10 @@ const creds = {
             try {
                 const insert_data = req.body;
                 const response = await addReservation(insert_data);
-                res.status(409).json({message: "im here", success: true})
+                res.status(response.status).json({message: response.message, success: response.success})
                 return
             } catch (error) {
-                res.status(409).json({fail: "yes"})
+                res.status(409).json({error: JSON.parse(error)})
                 return
             }
         }
