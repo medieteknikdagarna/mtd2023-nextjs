@@ -84,8 +84,9 @@ export default function SeatBooker() {
             setError(null)
             fetch('/api/reserved', requestOptions)
                 .then(response => response.json())
-                .then(data => {
-                    if(data.sucess){
+                .then(res_data => {
+       
+                    if(res_data.success){
                         setReservationSuccess(true)
                     }
                     else{
@@ -104,10 +105,10 @@ export default function SeatBooker() {
     return (
         <section className="seat-booking-section">
         <div className="seat-booker">
-        {!data.loading &&
+        {(!data.loading && !reservationSuccess) &&
         <>
         <selectedContext.Provider value={[selectedSeat, setSelected]}>
-            <SeatMap key={activeLevel} seats={data.seatData.filter(seat=> seat.level === activeLevel)} reservations={data.reservedData} selected={selectedSeat}/>
+            <SeatMap key={activeLevel} activeFloor={activeLevel} seats={data.seatData.filter(seat=> seat.level === activeLevel)} reservations={data.reservedData} selected={selectedSeat}/>
         </selectedContext.Provider>
         {!reservationSuccess &&
         <div className="form-info">

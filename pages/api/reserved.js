@@ -1,7 +1,18 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 
 const doc = new GoogleSpreadsheet(process.env.SHEET_ID);
-const creds = require(process.env.GOOGLE_SECRETS);
+const creds = {
+  "type": "service_account",
+"project_id": process.env.GOOGLE_project_id,
+"private_key_id": process.env.GOOGLE_private_key_id,
+"private_key": process.env.GOOGLE_private_key.replace(/\\n/g, '\n'),
+"client_email": process.env.GOOGLE_client_email.replace(/\\n/g, '\n'),
+"client_id": process.env.GOOGLE_client_id,
+"auth_uri": "https://accounts.google.com/o/oauth2/auth",
+"token_uri": "https://oauth2.googleapis.com/token",
+"auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+"client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/grow-up-4d764%40appspot.gserviceaccount.com"
+}
 
   
   export async function getReservations() {
@@ -16,15 +27,15 @@ const creds = require(process.env.GOOGLE_SECRETS);
       const allSeats = rows.map((row) => {
         // return the data for each video (or whatever each row is in your sheet)
         return {
+          status: 200,
           seat: row.seat,
           level: row.level
         };
       });
       // this returns the videos
-      return allSeats;
+      return {status: 200, data: allSeats};
     } catch (error) {
-      //   log any errors to the console
-      console.log(error);
+      return {status: 500,error: error}
     }
   }
 
@@ -46,10 +57,10 @@ const creds = require(process.env.GOOGLE_SECRETS);
             message: data.message
         })
       // this returns the videos
-      return "Got it";
+      return {status: 201, message: "test"};
     } catch (error) {
       //   log any errors to the console
-      return error
+      return {status: 500, message: "fail"}
     }
   }
 
@@ -73,17 +84,18 @@ const creds = require(process.env.GOOGLE_SECRETS);
         else{
             try {
                 const insert_data = req.body;
-                await addReservation(insert_data);
-                res.status(201).json({message: "Reservation successful!", success: true})
+                const response = await addReservation(insert_data);
+                res.status(409).json({message: "im here", success: true})
                 return
             } catch (error) {
-                res.status(500).json(JSON.parse(error))
+                res.status(409).json({fail: "yes"})
                 return
             }
         }
     }
     else if(req.method === "GET"){
-        res.status(200).json(data)
+        res.status(data.status).json(data.data)
+        
         return
     }
     else{

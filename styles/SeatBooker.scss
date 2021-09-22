@@ -12,10 +12,6 @@
   cursor: pointer;
 }
 
-#platsbokaren_svg__plats4 {
-  transition: 0.3s;
-  cursor: pointer;
-}
 @keyframes upanddown {
   0% {
     transform: translateY(-8px);
@@ -77,8 +73,6 @@
   }
 }
 
-.active-seat {
-}
 
 @keyframes changedash {
   from {
@@ -204,6 +198,39 @@
   .seat-booker {
     padding: 0 7rem;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 6fr 5fr;
   }
+}
+
+.booker--floor4{
+  animation: floor4 0.5s ease-in-out;
+}
+
+.booker--floor5{
+  animation: floor5 0.5s ease-in-out;
+}
+
+
+
+@keyframes floor4 {
+  0%{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+}
+@keyframes floor5 {
+  0%{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
 }
