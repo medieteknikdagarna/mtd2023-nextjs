@@ -35,7 +35,7 @@ const creds = {
       // this returns the videos
       return {status: 200, data: allSeats};
     } catch (error) {
-      return {status: 500,error: error}
+      return {status: 500, error: error}
     }
   }
 
@@ -67,6 +67,9 @@ const creds = {
   export default async function handler(req, res) {
 
     const data = await getReservations();
+    if(data.status === 500){
+      res.status(500).json(JSON.parse(error))
+    }
 
     if(req.method === "POST"){
 
