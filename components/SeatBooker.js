@@ -155,7 +155,7 @@ export default function SeatBooker() {
         </div>}
         </>
         }
-        {reservationSuccess && <ReservationSuccess seat={selectedSeat.seat} floor={activeLevel}/>}
+        {reservationSuccess && <ReservationSuccess company={f_company.current.value} name={f_name.current.value} seat={selectedSeat.seat} floor={activeLevel}/>}
         {data.loading && <LoadingSpinner/>}
         
 

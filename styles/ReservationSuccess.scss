@@ -4,12 +4,13 @@
   grid-column: 1/3;
   align-items: center;
   justify-content: center;
-  padding: 0 8rem;
   gap: 1rem;
   text-align: center;
+  padding-top: 8rem;
 
   p {
     font-size: 1.2rem;
+    margin: 0 35rem;
   }
   h1 {
     font-size: 3rem;
@@ -31,5 +32,12 @@
   }
   path {
     fill: var(--color-primary);
+  }
+  &--welcome {
+  }
+  &--email {
+    border-top: 1px solid rgb(136, 136, 136);
+    padding-top: 1rem;
+    font-size: 1rem !important;
   }
 }

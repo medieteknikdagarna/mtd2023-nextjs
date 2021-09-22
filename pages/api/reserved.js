@@ -1,5 +1,4 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
-
 const doc = new GoogleSpreadsheet(process.env.SHEET_ID);
 const creds = {
   "type": "service_account",
