@@ -1,5 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Barlows&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlows:100,200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900&display=swap");
+
+@mixin responsive-layout{
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  @media screen and (min-width: 500px){
+    grid-template-columns: minmax(1rem, 1fr) minmax(10rem, 6fr) minmax(1rem, 1fr);
+  }
+  @media screen and (min-width: 950px){
+    grid-template-columns: var(--grid-layout);  
+  }
+}
+
 
 html {
   scrollbar-color: rgb(63, 63, 63) rgb(42, 42, 42);
@@ -15,7 +27,9 @@ html {
   --color-dark: #3a4151;
   --color-light: #fafafa;
   --grid-layout: 1fr 3fr 0.5em 2fr 1fr;
+
 }
+
 
 *,
 *::after,

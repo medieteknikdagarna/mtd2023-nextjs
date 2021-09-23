@@ -9,23 +9,16 @@ import {faYoutube} from '@fortawesome/free-brands-svg-icons'
 import Menu from './Menu'
 import Link from 'next/link'
 import LanguageFlag from './LanguageFlag'
-import { useTransition } from '@react-spring/core';
 
 export const menuActiveContext = React.createContext()
 
-export default function Header({changeOnScroll = false, lightContrast}) {
+export default function Header({changeOnScroll = false, lightContrast = false}) {
 
     const className = lightContrast ? "header-light" : "header"
 
     const [menuActive, setMenuActive] = useState(false);
     
     const [lastscrollPos, setlastScrollPos] = useState(0);
-
-    const transitions = useTransition(menuActive, {
-        from: { x: 1000 },
-        enter: { x: 0 },
-        leave: { x: 100 },
-      })
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true })
@@ -44,7 +37,7 @@ export default function Header({changeOnScroll = false, lightContrast}) {
     
 
     return (
-        <header className={lastscrollPos >= 50 && changeOnScroll ? className.concat(" header-scroll") : className}>
+        <header className={lastscrollPos >= 50 && changeOnScroll ? className +" header-scroll" : className}>
          <Menu className={menuActive ? "menu--active" : "menu--inactive"} onExit={() => setMenuActive(false)} key={1}></Menu>
         <div className="logo-container">
             <Link href="/"><MTDSvg className="header-logo"/></Link>

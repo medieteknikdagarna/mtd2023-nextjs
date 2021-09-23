@@ -8,7 +8,7 @@ import calendar from '../public/images/calendar.png'
 import stand from '../public/images/stand.png'
 import Footer from '../components/Footer'
 import InfoWithStars from '../components/InfoWithStars'
-
+import AfterMovie from '../components/AfterMovie'
 import { languageContext } from './_app'
 import useWindowDimensions from '../components/utilities/useWindowDimensions'
 
@@ -16,8 +16,7 @@ import useWindowDimensions from '../components/utilities/useWindowDimensions'
 
 export default function LandingPage() {
     const [lang, setLang] = useContext(languageContext);
-    const {width, isMobile} = useWindowDimensions()
-    const fbVideoUrl = "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmedieteknikdagen%2Fvideos%2F1399763803536580%2F&show_text=false&width=560&t=0";
+
     return (
         <>
         <Header changeOnScroll/>
@@ -27,7 +26,7 @@ export default function LandingPage() {
                         <h1>Knyt värdefulla kontakter</h1>
                         <div className="welcome">
                             <p>Expand your brand awereness, meet with students and companys. Secure your spot at the annual convention of Media Technology days</p>
-                            <Button href="/book" type="primary" size="large">Boka plats</Button> 
+                            <Button href="/book" type="primary" size="large">Platsbokaren</Button> 
                         </div>
                     </div>
                         <ExpoSvg/>
@@ -64,8 +63,7 @@ export default function LandingPage() {
             <div className="after-movie-title">
                 <InfoSection className="after-movie" tag="TIDIGARE ÅR" title="After movie 2020" body="I fjol hölls mässan digitalt via Graduateland. I år kommer vi att hålla den på plats. Kolla på filmen nedan för att få en inblick i hur det kan se ut under Medieteknikdagarna! "/>
             </div>
-            <div className="after-movie-movie">
-            <iframe src={fbVideoUrl} width={String(width-32)} height={String(width/1.8)} style={{maxHeight: "500px", maxWidth: "850px", border:"none",overflow:"hidden"}} scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={!isMobile}></iframe></div>
+            <AfterMovie/>
             </section>
             <Footer/>
         </>

@@ -1,6 +1,5 @@
 .infosection {
   min-width: 10rem;
-  padding: 0.5 0em;
 
   flex-direction: column;
 
@@ -33,15 +32,10 @@
   @media screen and (min-width: 550px) and (max-width: 900px) {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
 
     h2 {
       margin-bottom: 0.5rem;
     }
   }
 
-  @media screen and (max-width: 550px) {
-    padding-left: 1rem;
-  }
 }

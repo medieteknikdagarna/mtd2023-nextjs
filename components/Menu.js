@@ -42,7 +42,7 @@ export default function Menu({onExit,style,className}) {
                     </ul>
                 </li>
                 <li><Link onClick={onExit} href="/fair">Mässan</Link></li>
-                <li><Link onClick={onExit} href="/book">Platsbokaren</Link></li>
+                <li className="special-li"><Link onClick={onExit} href="/book">Platsbokaren</Link></li>
             </ul>
             <div className="icons-menu">
                 <LanguageFlag/>

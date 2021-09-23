@@ -17,7 +17,7 @@ $shadows-big: multiple-box-shadow(50);
   height: 1px;
   background: transparent;
   box-shadow: $shadows-small;
-  animation: animStar 50s linear infinite;
+  animation: animStar 100s linear infinite;
 
   &:after {
     content: " ";
@@ -34,7 +34,7 @@ $shadows-big: multiple-box-shadow(50);
   height: 2px;
   background: transparent;
   box-shadow: $shadows-medium;
-  animation: animStar 100s linear infinite;
+  animation: animStar 200s linear infinite;
 
   &:after {
     content: " ";
@@ -51,7 +51,7 @@ $shadows-big: multiple-box-shadow(50);
   height: 3px;
   background: transparent;
   box-shadow: $shadows-big;
-  animation: animStar 150s linear infinite;
+  animation: animStar 300s linear infinite;
 
   &:after {
     content: " ";

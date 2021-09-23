@@ -71,6 +71,9 @@
   flex-direction: column;
 }
 .icons-menu--links {
+  path {
+    fill: var(--color-light) !important;
+  }
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +81,7 @@
 }
 .menu a {
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-light);
 }
 .menu a {
@@ -87,7 +90,6 @@
 }
 .menu a:hover {
   text-decoration: none;
-  font-weight: 300;
   color: var(--color-primary);
   fill: var(--color-primary);
   transition: 0.2s;
@@ -121,14 +123,14 @@
 }
 
 .menu--active {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.45s ease-in-out;
   clip-path: circle(200% at 100% 0);
   opacity: 1;
 }
 
 .menu--inactive {
   clip-path: circle(0.2% at 100% 0);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.45s ease-in-out;
   visibility: hidden;
 }
 

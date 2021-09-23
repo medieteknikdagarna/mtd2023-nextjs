@@ -29,6 +29,8 @@ import '../styles/MemberCard.scss'
 import '../styles/TheGroup.scss'
 import '../styles/ReservationSuccess.scss'
 import '../styles/LoadingSpinner.scss'
+import '../styles/Lecturers.scss'
+import '../styles/TheFair.scss'
 
 
 

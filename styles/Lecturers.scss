@@ -1,0 +1,42 @@
+.lecturer {
+  background-color: #81818125;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  h2 {
+    color: var(--color-light);
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  span {
+    font-weight: 300;
+  }
+  p {
+    color: var(--color-light);
+    font-weight: 300;
+  }
+  .infosection {
+    margin: 0;
+  }
+}
+.lecturers--infosection {
+  h2 {
+    color: var(--color-light);
+  }
+  p {
+    color: var(--color-light);
+  }
+}
+
+.lecturers {
+  display: grid;
+  justify-content: space-between;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  &--infosection{
+    display: grid;
+    grid-template-columns: 1fr;
+    @media screen and (min-width: 900px){
+      grid-template-columns: 5fr 4fr;
+    }
+  }
+}
