@@ -40,7 +40,7 @@ export default function Footer(props) {
                 <div>
                     <h4>Open Source</h4>
                     <p>Detta är ett projket med öppen källkod. Ni kan klona eller ladda ned koden via vårt Github-repo.</p>
-                    <a href="https://github.com/medieteknikdagarna/mtd2022-frontend-nextjs" target="_blank"><div className="github-button"><FontAwesomeIcon icon={faGithub}/> <span>GitHub</span></div></a>
+                    <a href="https://github.com/medieteknikdagarna/mtd2022-frontend-nextjs" target="_blank" rel="noreferrer"><div className="github-button"><FontAwesomeIcon icon={faGithub}/> <span>GitHub</span></div></a>
                 </div>
             </div>
             <div className="footer-right">
