@@ -16,7 +16,7 @@ export default function Carousel({items}) {
     const generatePaginationCircles = (num, active) =>{
 
         const circles = Array(num).fill(0).map((_,i) =>{
-            return <div className={i === active ? "carousel-circle carousel-circle--active" : "carousel-circle"}></div>
+            return <div key={"circle"+i} className={i === active ? "carousel-circle carousel-circle--active" : "carousel-circle"}></div>
         })
         return <div className="carousel-circle-container">{circles}</div>
     }
