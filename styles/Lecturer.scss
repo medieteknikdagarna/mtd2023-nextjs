@@ -1,4 +1,48 @@
 .lecturer {
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: grid;
+  box-shadow: 0px 0px 16px -8px black;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  background-color: #00000012;
+  padding: 1rem;
+  border-radius: 20px;
+  img{
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    border-radius: 50px;
+  }
+  
+  h2 {
+    color: var(--color-light);
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  span {
+    font-weight: 300;
+  }
+  p {
+    color: var(--color-light);
+    font-weight: 300;
+  }
+  .infosection {
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 900px){
+  .lecturer{
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 3rem;
+    img{
+      justify-self: flex-end;
+    }
+  }
+
+}
+
+
+.fair-container--lecturers{
+  
 }

@@ -36,7 +36,7 @@ import '../styles/AcceptPolicy.scss'
 import '../styles/ContactForm.scss'
 import '../styles/StickyContact.scss'
 import '../styles/Gallery.scss'
-
+import '../styles/Carousel.scss'
 
 
 import { useRouter } from "next/router";

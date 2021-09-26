@@ -16,6 +16,9 @@ import ResponsiveContainer from '../components/ResponsiveContainer'
 import ImageGallery from 'react-image-gallery';
 import LoadingSpinner from '../components/LoadingSpinner'
 import MTDHand from '../public/images/MTD_hand.png'
+import Carousel from '../components/Carousel'
+import Dan from '../public/images/dan.png'
+import Lecturer from '../components/Lecturer'
 
 function importAll(r) {
     let images = {};
@@ -68,7 +71,9 @@ export default function About() {
                                 <div className="lecturers--infosection">
                                     <InfoSection tag="TIDIGARE ÅR" title="Föreläsningar" body="Varje år håller flera företag spännande föreläsningar ny spännande teknik inom en rad olika ämnen. Håll utkik på hemsidan och våra sociala medier för att inte missa dessa! Nedan hittar du några exempel på föreläsningar som kan hållas under MTD." />
                                 </div>
-                                <Lecturers/>
+                                <Carousel items={[<Lecturer tag="VFX" name="Jakob Karlstrand" imgSrc={Dan.src} body="Dan kommer att prata om hur hans karriär tog fart ut i världen direkt efter studietiden och hur det är att jobba på stora VFX och animation studios så som MPC i London, Pixar i San Francisco och Goodbye Kansas i Stockholm. Dan kommer också ge en inblick i hur det var att jobba på Coco på Pixar som vann en Oscar för bästa animerade film och hur det är att jobba med VFX i Sverige idag."/>,<Lecturer tag="VFX" name="Dan Englesson" imgSrc={Dan.src} body="Dan kommer att prata om hur hans karriär tog fart ut i världen direkt efter studietiden och hur det är att jobba på stora VFX och animation studios så som MPC i London, Pixar i San Francisco och Goodbye Kansas i Stockholm. Dan kommer också ge en inblick i hur det var att jobba på Coco på Pixar som vann en Oscar för bästa animerade film och hur det är att jobba med VFX i Sverige idag."/>]}/>
+
+                                <h2>PALCEHOLDER</h2>
                             </ResponsiveContainer>
                         </div>
                         
