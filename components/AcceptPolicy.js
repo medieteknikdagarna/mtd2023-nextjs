@@ -30,9 +30,8 @@ export default function AcceptPolicy() {
 
     return (<>{transitions((styles, item) => item && 
     <animated.div className="accept-policy" style={styles}>
-        <div>
-            <span>Denna sida använder cookies för att göra din upplevelse bättre.</span>
-            <Link href="/policy"><a>Läs mer om hur vi använder cookies</a></Link>
+        <div className="accept-wrapper">
+            <span>Denna sida använder cookies för att göra din upplevelse bättre.  <Link href="/policy"><a>Läs mer om hur vi använder cookies</a></Link></span>
         </div>
         <Button onClick={setPreferences} type="primary" size="medium">Acceptera</Button>
     </animated.div>)
