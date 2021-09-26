@@ -1,10 +1,14 @@
 .press-and-media-section {
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
   align-items: center;
   gap: 2rem;
+
+  -webkit-animation: fade 0.5s; /* Safari 4+ */
+  -moz-animation: fade 0.5s; /* Fx 5+ */
+  -o-animation: fade 0.5s; /* Opera 12+ */
+  animation: fade 0.5s; /* IE 10+, Fx 29+ */
 
   h1 {
     font-size: 2.5rem;
@@ -45,13 +49,6 @@
   }
 }
 
-.press-and-media-container {
-  display: grid;
-  -webkit-animation: fade 0.5s; /* Safari 4+ */
-  -moz-animation: fade 0.5s; /* Fx 5+ */
-  -o-animation: fade 0.5s; /* Opera 12+ */
-  animation: fade 0.5s; /* IE 10+, Fx 29+ */
-}
 
 @media screen and (min-width: 750px) {
   .press-and-media-section {
@@ -59,9 +56,5 @@
     grid-template-columns: 8fr 4fr;
     gap: 2rem;
     grid-column: 2 / -2;
-  }
-
-  .press-and-media-container {
-    grid-template-columns: 1fr 20fr 1fr;
   }
 }

@@ -6,6 +6,7 @@ import {faFacebook} from '@fortawesome/free-brands-svg-icons'
 import {faInstagram} from '@fortawesome/free-brands-svg-icons'
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faYoutube} from '@fortawesome/free-brands-svg-icons'
+import MenuIcon from '../public/images/menu_icon.svg'
 import Menu from './Menu'
 import Link from 'next/link'
 import LanguageFlag from './LanguageFlag'
@@ -54,7 +55,7 @@ export default function Header({changeOnScroll = false, lightContrast = false}) 
             </div>
         </div> 
         <div className="menu-icon">
-                <i onClick={() => setMenuActive(true)}><FontAwesomeIcon className="menu-icon" icon={faBars}/></i>
+                <i className="menu-icon--icon" onClick={() => setMenuActive(true)}><MenuIcon/></i>
         </div> 
     </header>
         

@@ -9,6 +9,7 @@ import LoadingSpinner from './LoadingSpinner';
 import { isReserved } from './utilities/SeatMap';
 import ReservationSuccess from './ReservationSuccess';
 import Footer from '../components/Footer'
+import ResponsiveContainer from './ResponsiveContainer';
 
 export const selectedContext = React.createContext()
 
@@ -102,13 +103,12 @@ export default function SeatBooker() {
         }
     } 
 
-    console.log(reservationSuccess)
     return (
         <>
-        {data.loading && <LoadingSpinner/>}
+        {}
 
-        {(!data.loading && !reservationSuccess) &&
-        <section className="seat-booking-section">
+        {(data.loading && <LoadingSpinner/>) || !reservationSuccess &&
+        <ResponsiveContainer>
         <div className="seat-booker">
         
         <>
@@ -117,18 +117,20 @@ export default function SeatBooker() {
         </selectedContext.Provider>
         {!reservationSuccess &&
         <div className="form-info">
-            <h2>{"Plats #" + selectedSeat.seat}</h2>
-            <div className="indicator">
-                <div style={{backgroundColor: isReserved(selectedSeat,data.reservedData) ? "#FF7C7C" : "#97FF86"}} className="indicator--icon"></div>
-                <h4>{isReserved(selectedSeat,data.reservedData) ? "Reserverad" : "Ledig"}</h4>
-            </div>
-            <div className="seat-info">
-                <span>{ selectedSeat.type.charAt(0).toUpperCase() + selectedSeat.type.slice(1)}</span>
-                <div className="small-spacer"></div>
-                <span>{"Plan " + activeLevel}</span>
-                <div className="small-spacer"></div>
-                <span>fr. 14 999 SEK</span>
-            </div>
+            <div className="form-top">
+                <h2>{"Plats #" + selectedSeat.seat}</h2>
+                <div className="indicator">
+                    <div style={{backgroundColor: isReserved(selectedSeat,data.reservedData) ? "#FF7C7C" : "#97FF86"}} className="indicator--icon"></div>
+                    <h4>{isReserved(selectedSeat,data.reservedData) ? "Reserverad" : "Ledig"}</h4>
+                </div>
+                <div className="seat-info">
+                    <span>{ selectedSeat.type.charAt(0).toUpperCase() + selectedSeat.type.slice(1)}</span>
+                    <div className="small-spacer"></div>
+                    <span>{"Plan " + activeLevel}</span>
+                    <div className="small-spacer"></div>
+                    <span>fr. 14 999 SEK</span>
+                </div>
+                </div>
             <div className="booking-form">
                 <div className="flex-input">
                     <div >
@@ -176,7 +178,7 @@ export default function SeatBooker() {
         
 
         </div>
-        </section>}
+        </ResponsiveContainer>}
         {reservationSuccess && <ReservationSuccess company={f_company.current.value} name={f_name.current.value} seat={selectedSeat.seat} floor={activeLevel}/>}
         <Footer/>
         </>

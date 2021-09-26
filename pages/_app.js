@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-
+import AcceptPolicy from '../components/AcceptPolicy'
 
 // ALL SCSS IMPORTS
 
@@ -31,10 +31,16 @@ import '../styles/ReservationSuccess.scss'
 import '../styles/LoadingSpinner.scss'
 import '../styles/Lecturers.scss'
 import '../styles/TheFair.scss'
+import '../styles/ResponsiveContainer.scss'
+import '../styles/AcceptPolicy.scss'
+import '../styles/ContactForm.scss'
+import '../styles/StickyContact.scss'
+import '../styles/Gallery.scss'
 
 
 
 import { useRouter } from "next/router";
+import StickyContact from "../components/StickyContact";
 
 export const languageContext = React.createContext();
 
@@ -47,6 +53,8 @@ function MyApp({ Component, pageProps }) {
 
   return (
   <languageContext.Provider value={[language,setLanguage]}>
+    <AcceptPolicy/>
+    <StickyContact/>
     <Component {...pageProps} />
   </languageContext.Provider>
   

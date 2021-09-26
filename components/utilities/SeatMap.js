@@ -35,7 +35,10 @@ export default function SeatMap({seats, reservations, activeFloor}) {
     
         seats.forEach(seat => {
             const element = document.getElementById(seat.id)
-
+            if(!element){
+                console.error("Cant get element from id: " + seat.id)
+                return
+            }
             if(seat.id === selectedSeat.id){
                 element.classList.add("seat-active");
                 var color = "#FFF068"

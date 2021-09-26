@@ -1,0 +1,40 @@
+.accept-policy{
+    justify-self: center;
+    background-color: #17202B;
+    padding: 2.2rem 6rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    box-shadow: 0px 0px 12px -7px black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 2rem;
+    z-index: 999;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    span{
+        color: var(--color-light);
+        font-size: 1.2rem;
+    }
+    a{
+        color: var(--color-primary);
+        font-size: 1.2rem;
+    }
+    div{
+        display: flex;
+        flex-direction:column;
+    }
+    
+    
+}
+
+.accept-policy-container{
+    position: fixed;
+    bottom: 0;
+    margin: 0 !important;
+    
+    justify-self: center;
+}

@@ -36,6 +36,8 @@
   max-height: 150px;
   opacity: 1;
   transition: 0.5s;
+  margin: 1rem 0;
+
 }
 .sub-menu--inactive {
   max-height: 0;
@@ -44,9 +46,10 @@
   transition: 0.5s;
 }
 .sub-menu-link a {
-  font-size: 1.2rem;
+  font-size: 1.4rem !important;
   color: rgba(255, 255, 255, 0.39);
   margin: 0;
+  font-weight: 300 !important;
 }
 .sub-menu-link {
   padding-bottom: 0;
@@ -61,7 +64,11 @@
   text-align: center;
   padding: 0;
   font-size: 2rem;
+  a{
+    font-size: 1.8rem;
+  }
 }
+
 .icons-menu {
   margin-top: 2rem;
   display: flex;
@@ -123,14 +130,14 @@
 }
 
 .menu--active {
-  transition: all 0.45s ease-in-out;
+  transition: all 1.2s ease-in-out;
   clip-path: circle(200% at 100% 0);
   opacity: 1;
 }
 
 .menu--inactive {
   clip-path: circle(0.2% at 100% 0);
-  transition: all 0.45s ease-in-out;
+  transition: all 1.2s ease-in-out;
   visibility: hidden;
 }
 

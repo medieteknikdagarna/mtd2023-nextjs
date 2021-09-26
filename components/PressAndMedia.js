@@ -2,10 +2,9 @@ import React from 'react'
 import DownloadButton from './DownloadButton'
 export default function PressAndMedia() {
     return (
-        <div className="press-and-media-container">
+
         <div className="press-and-media-section">
-            <div className="press-info">
-                <h1>Press and media</h1>
+            <div className="press-info">    
                 <p>Representerar du press eller övrig media och är lite nyfiken på MTD? Här hittar du en kort sammanfattning om vad Mediekteknikdagen är.</p>
                 <h3>Pressinformation</h3>
                 <p>Medietekniksektionen har sedan 2001 arrangerat Medieteknikdagen – MTD. MTD har under ett decennium utvecklats från en dag i en föreläsningssal till en mässa med föreläsningar och bankettsittning.
@@ -25,18 +24,13 @@ export default function PressAndMedia() {
                     <a href="tel:0723525617">+46 723 52 56 17</a>
                     <div className="press--downloads">
                         <h3>Nedladdningar</h3>
-                            <span className="download-tag">För webb(.svg & .png )</span>
-                            <DownloadButton link={""}/>
-                            <span className="download-tag">För tryck(.ai )</span>
-                            <DownloadButton link={""}/>
-                            
-
-
+                        <span className="download-tag">För webb(.svg & .png )</span>
+                        <DownloadButton link={""}/>
+                        <span className="download-tag">För tryck(.ai )</span>
+                        <DownloadButton link={""}/>
                     </div>
-
                 </div>
             </div>
-        </div>
         </div>
     )
 }

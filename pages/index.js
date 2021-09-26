@@ -11,26 +11,32 @@ import InfoWithStars from '../components/InfoWithStars'
 import AfterMovie from '../components/AfterMovie'
 import { languageContext } from './_app'
 import useWindowDimensions from '../components/utilities/useWindowDimensions'
+import ResponsiveContainer from '../components/ResponsiveContainer'
 
 
 
 export default function LandingPage() {
     const [lang, setLang] = useContext(languageContext);
 
+    const fbVideoUrl = "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmedieteknikdagen%2Fvideos%2F1399763803536580%2F&show_text=false&width=560&t=0";
+
+
     return (
         <>
         <Header changeOnScroll/>
             <div className="landing-container">
-                <section className="landing-section">
-                    <div className="intro">
-                        <h1>Knyt värdefulla kontakter</h1>
-                        <div className="welcome">
-                            <p>Expand your brand awereness, meet with students and companys. Secure your spot at the annual convention of Media Technology days</p>
-                            <Button href="/book" type="primary" size="large">Platsbokaren</Button> 
+                <ResponsiveContainer>
+                    <section className="landing-section">
+                        <div className="intro">
+                            <h1>Knyt värdefulla kontakter</h1>
+                            <div className="welcome">
+                                <p>Expand your brand awereness, meet with students and companys. Secure your spot at the annual convention of Media Technology days</p>
+                                <Button href="/book" type="primary" size="large">Platsbokaren</Button> 
+                            </div>
                         </div>
-                    </div>
-                        <ExpoSvg/>
-                </section>
+                            <ExpoSvg/>
+                    </section>
+                </ResponsiveContainer>
                 <div className="custom-shape-divider-bottom-1630064993">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className="shape-fill"></path>
@@ -39,32 +45,39 @@ export default function LandingPage() {
                     </svg>
                 </div>
             </div>
+            <ResponsiveContainer>
+                <section className="welcome-section">
+                    <InfoSection className="welcome-info" tag="MTD2022" title="Välkomna!" body="Medieteknikdagen är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoandra året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva." buttonText="Läs mer">
+                        <Button type="primary" size="medium">Läs mer</Button>
+                    </InfoSection>
+                    <div className="calendar">
+                        <img alt="Illustration of an calendar" src={calendar.src}></img>
+                    </div>
+                </section>
+            </ResponsiveContainer>
 
-            <section className="welcome-section">
-                <InfoSection className="welcome-info" tag="MTD2022" title="Välkomna!" body="Medieteknikdagen är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoandra året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva." buttonText="Läs mer">
-                    <Button type="primary" size="medium">Läs mer</Button>
-                </InfoSection>
-                <div className="calendar">
-                    <img alt="Illustration of an calendar" src={calendar.src}></img>
-                </div>
-            </section>
+            <ResponsiveContainer>
+                <section className="booking-section">
+                    <div className="stand">
+                        <img alt="illustration of a stand" src={stand.src}></img>
+                    </div>
+                    <InfoSection className="partner-info" tag="SÄKRA EN PLATS" title="Bli partner" body="Exponera ert företag med medieteknikdagarna och nå ut till en uppsjö av blivande civilingenjörer.Säkra en plats för ditt företag redan idag! Med Platsbokaren kan du se en karta över alla möjliga platser på mässan.">
+                        <Button type="primary" size="medium">Boka plats</Button>
+                        <Button type="secondary" size="medium">Om mässan</Button>
+                    </InfoSection> 
+                </section>
+            </ResponsiveContainer>
 
-            <section className="booking-section">
-                <div className="stand">
-                    <img alt="illustration of a stand" src={stand.src}></img>
-                </div>
-                <InfoSection className="partner-info" tag="SÄKRA EN PLATS" title="Bli partner" body="Exponera ert företag med medieteknikdagarna och nå ut till en uppsjö av blivande civilingenjörer.Säkra en plats för ditt företag redan idag! Med Platsbokaren kan du se en karta över alla möjliga platser på mässan.">
-                    <Button type="primary" size="medium">Boka plats</Button>
-                    <Button type="secondary" size="medium">Om mässan</Button>
-                </InfoSection> 
-            </section>
             <InfoWithStars/>
-            <section className="after-movie-section">
-            <div className="after-movie-title">
-                <InfoSection className="after-movie" tag="TIDIGARE ÅR" title="After movie 2020" body="I fjol hölls mässan digitalt via Graduateland. I år kommer vi att hålla den på plats. Kolla på filmen nedan för att få en inblick i hur det kan se ut under Medieteknikdagarna! "/>
-            </div>
-            <AfterMovie/>
-            </section>
+
+            <ResponsiveContainer>
+                <section className="after-movie-section">
+                    <div className="after-movie-title">
+                        <InfoSection className="after-movie" tag="TIDIGARE ÅR" title="After movie 2020" body="I fjol hölls mässan digitalt via Graduateland. I år kommer vi att hålla den på plats. Kolla på filmen nedan för att få en inblick i hur det kan se ut under Medieteknikdagarna! "/>
+                    </div>
+                    <AfterMovie src={fbVideoUrl}/>
+                </section>
+            </ResponsiveContainer>
             <Footer/>
         </>
     )

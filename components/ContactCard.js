@@ -1,41 +1,35 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faCopy, faLink } from '@fortawesome/free-solid-svg-icons'
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState, useContext } from 'react'
 import ReactTooltip from 'react-tooltip'
 import {animated,useTransition} from 'react-spring'
+import { languageContext } from '../pages/_app'
 
-
-function ClipboardButton({textToCopy}){
+export function ClipboardButton({textToCopy, style, fontColor = "var(--color-dark)"}, backgroundColors= ["#ffecdf", "transparent"]){
 
     const [copied, setCopied] = useState(false)
+    const [lang, setLang] = useContext(languageContext)
 
-    const transitions = useTransition(copied, {
-        from: { opacity: 0 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0 },
-      })
+    const handleCopy = (event) =>{
 
-    const handleFocus = (event) =>{
-
-        event.target.select();
         navigator.clipboard.writeText(textToCopy)
             setCopied(true)
             setInterval(() => {
                 setCopied(false)
-            }, 1500);
+            }, 3000);
         
         
     }
+    let text = lang === "sv" ? "Kopierad! ✌️" : "Copied! ✌️"
     
     const chLength = textToCopy.length + "ch"
-    return(
-        <div className="clipboard-button">
-            {transitions((styles, item) => item && <animated.div key={item.key} className="tool-tip" style={styles}>Kopierad! ✌️</animated.div>) }
-            <div className="clipboard-container">
+    return( 
+        <div style={style} className="clipboard-button">
+            <div className="clipboard-container" style={{backgroundColor: copied? backgroundColors[0] : backgroundColors[1]}}>
                 <div className="clipboard-button--icon">
-                    <i><FontAwesomeIcon icon={faCopy}/></i>
+                    <i><FontAwesomeIcon onClick={handleCopy} style={{cursor: "pointer"}} icon={faCopy}/></i>
                 </div>
-                <input style={{width: chLength}} onFocus={handleFocus} type="text" defaultValue={textToCopy}></input>
+                <input readOnly style={{width: chLength, textAlign: copied ? "center" : "left", color: fontColor}} onClick={handleCopy} type="text" value={ copied ? text : textToCopy}></input>
             </div>
             
         </div>
@@ -43,6 +37,7 @@ function ClipboardButton({textToCopy}){
 }
 
 export default function ContactCard({title, body, textToCopy}) {
+
     return (
         <div className="contact-card">
             <div>

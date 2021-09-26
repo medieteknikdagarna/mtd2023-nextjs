@@ -5,15 +5,18 @@ import useFetch from '../components/utilities/useFetch'
 import Fallback from '../components/utilities/Fallback'
 import { useContext } from 'react'
 import { languageContext } from './_app'
+import ResponsiveContainer from '../components/ResponsiveContainer'
 export default function Policy() {
 
-    const { data, loading, error } = useFetch('http://localhost:3000/api/content/privacy-policy')
+    const { data, loading, error } = useFetch('/api/content/privacy-policy')
     const [lang] = useContext(languageContext)  
+    console.log(data)
 
     return (
         
-        <Fallback loading={loading}>
+        <>
             <Header changeOnScroll/>
+            <ResponsiveContainer>
             {data &&  <div className="section-policy">
                 <div>
                     <h1>{data[lang].title}</h1>
@@ -38,7 +41,8 @@ export default function Policy() {
                     
                 </div>
             </div> }
+            </ResponsiveContainer>
             <Footer/>
-        </Fallback>
+        </>
     )
 }

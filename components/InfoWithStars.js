@@ -3,6 +3,7 @@ import { faHandshake, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from '../components/Button'
 import useWindowDimensions from '../components/utilities/useWindowDimensions'
+import ResponsiveContainer from './ResponsiveContainer'
 export default function InfoWithStars() {
 
     const {width} = useWindowDimensions()
@@ -16,27 +17,29 @@ export default function InfoWithStars() {
             <div id="stars"></div>
             <div id="stars2"></div>
             <div id="stars3"></div>
-            <div className="stars-content">
-                <div className="stars-info">
-                    <div className="stars-info--column">
-                        <div className="stars-info--icon"><FontAwesomeIcon className="glow" icon={faLightbulb}/></div>
-                        <div>
-                            <h4>Bli inspirerad</h4> 
-                            <p>Inspirerande och spännande föreläsningar har varit ett stående inslag på MTD de senaste åren.</p>
+            <ResponsiveContainer>
+                <div className="stars-content">
+                    <div className="stars-info">
+                        <div className="stars-info--column">
+                            <div className="stars-info--icon"><FontAwesomeIcon className="glow" icon={faLightbulb}/></div>
+                            <div>
+                                <h4>Bli inspirerad</h4> 
+                                <p>Inspirerande och spännande föreläsningar har varit ett stående inslag på MTD de senaste åren.</p>
+                            </div>
+                        </div>
+                        <div className="stars-info--column">
+                            <div className="stars-info--icon"><FontAwesomeIcon icon={faHandshake}/></div>
+                            <div>
+                                <h4>Knyt kontakter</h4> 
+                                <p>Vi förenar studenter med företag och företag med studenter. En utmärkt chans för alla att knyta kontakter inför framtiden.</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="stars-info--column">
-                        <div className="stars-info--icon"><FontAwesomeIcon icon={faHandshake}/></div>
-                        <div>
-                            <h4>Knyt kontakter</h4> 
-                            <p>Vi förenar studenter med företag och företag med studenter. En utmärkt chans för alla att knyta kontakter inför framtiden.</p>
-                        </div>
+                    <div className="stars-button">
+                        <Button style={{borderColor: "var(--color-primary)", color: "var(--color-light)"}} type="secondary">Mer om mässan</Button>
                     </div>
                 </div>
-                <div className="stars-button">
-                    <Button style={{borderColor: "var(--color-primary)", color: "var(--color-light)", display: width < 900 ? "none" : "block"}} type="secondary">Mer om mässan</Button>
-                </div>
-            </div>
+            </ResponsiveContainer>
             <div className="shape-divider-bottom">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>

@@ -1,3 +1,4 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 :root {
   --gradient: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
@@ -11,22 +12,38 @@
   }
 }
 
+.fair-container{
+  &--lecturers{
+    margin-top: 10rem;
+  }
+}
+
 .star-bg {
+  position: absolute;
   height: 100%;
   left: 0;
   width: 100%;
+  z-index: 1;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 
   flex-direction: column;
-  z-index: 0;
 }
 .rest-of-the-page {
   z-index: 99;
 }
 .about-page {
-  //background-image: var(--gradient);
-  padding-top: 12rem;
-  background-size: 500%;
+  background: var(--gradient);
+  
+  &--first-section{
+    z-index: 120;
+    height: 100vh;
+    background-image: url(../public/images/hand_transparent_blurred.png) ;
+    padding-top: 0rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% 100%;
+    
+}
 }
 
 .about-section {
@@ -37,8 +54,7 @@
   overflow-x: hidden;
 
   &--message {
-    padding: 0 1.2rem;
-
+    margin-top: 10rem;
     h1,
     p {
       color: var(--color-light);
@@ -46,7 +62,6 @@
 
     h1 {
       font-size: 3.3rem;
-      font-weight: bold;
       line-height: 3.3rem;
       margin-bottom: 2.2rem;
     }
@@ -76,6 +91,12 @@
   }
 }
 
+.gallery--infosection{
+  h2{
+    color: var(--color-light)
+  }
+
+}
 
 
 @media screen and (min-width: 900px) {
@@ -98,13 +119,24 @@
     grid-column: 1/-1;
   }
   .about-section {
-    grid-template-columns: var(--grid-layout);
+    grid-template-columns: 1fr 1fr;
+
     &--message {
-      grid-column: 2/4;
+      grid-column: 1/2 ;
+      
     }
     svg {
-      grid-column: 4/6;
+      grid-column: 2/3;
       justify-self: flex-start;
+    }
+  }
+  .about-page{
+    &--first-section{
+      padding-top: 8rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../public/images/mtd_hand_large.png) ;
+
     }
   }
 }
@@ -114,6 +146,7 @@
     svg {
       display: block;
     }
+    
   }
 
     .fair-section {
@@ -128,5 +161,21 @@
   .lecturers{
     grid-column: 2/3;
   }
- 
+ .about-page{
+  &--first-section{
+
+    
+  }
+ }
+}
+
+
+@keyframes saturation_anim {
+  0%{
+    filter:saturate(160%)
+  }
+  100%{
+    filter: saturate(70%);
+  }
+  
 }

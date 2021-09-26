@@ -1,0 +1,27 @@
+.responsive-container{
+
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+    margin-bottom: 3rem !important;
+
+
+    @media screen and (min-width: 500px){
+        grid-template-columns: minmax(1rem, 1fr) minmax(10rem, 10fr) minmax(1rem, 1fr);
+    }
+
+
+    @media screen and (min-width: 950px){
+        grid-template-columns: var(--grid-layout);  
+        margin-bottom: clamp(-15rem, -2vw - 1rem, 5rem);
+    }
+    &--content{
+        grid-column: 2/3;
+
+        @media screen and (min-width: 500px){
+            grid-column: 2/3;
+        }
+        @media screen and (min-width: 950px){
+            grid-column: 2/5;
+        }
+    }
+}

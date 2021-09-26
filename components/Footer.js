@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import MTDSvg from '../public/images/mtd_white.svg'
-import MTSvg from '../public/images/logo_white.svg'
+import MTSvg from '../public/images/mt_logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faCheck } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
-
+import { faFacebook, faLinkedin, faInstagram, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { ClipboardButton } from './ContactCard'
+import Link from 'next/dist/client/link'
 
 export default function Footer(props) {
 
@@ -19,35 +20,40 @@ export default function Footer(props) {
         <>
         
         <div className="footer">
-        <div className="footer--bar"></div>
-        <div className="footer--content">
-            <div className="footer--images">
-                <MTDSvg/>
-                <MTSvg/>
-            </div>
-            <div className="footer--info">
-                <span>Medieteknikdagarna arrangeras av Medietekniksektionen vid Linköpings Universitet.</span>
-                <span><a href="#">Detta är ett projekt med öppen källkod</a><br/><a href="#">Intigritetspolicy</a></span>
-            </div>
-            <div className="footer-contact">
-                <h3>Email</h3>
-                <div className="footer--bar2"></div>
-                <div className="email-button-container">
-                    <div onClick={handleCopy} className={copied ? "footer--copied" : "footer--not-copied" }>
-                        {!copied && <div><FontAwesomeIcon icon={faLink}/></div>}
-                        {copied && <div><FontAwesomeIcon icon={faCheck}/></div>}
-                        <div><span>{copied ? "Kopierad!" : "projektledare@medieteknikdagen.se"}</span></div>
+
+            <div className="footer-left">
+                <div>
+                    <div className="footer--images">
+                        <MTDSvg/>
+                        <MTSvg/>
+                    </div>
+                    <div className="footer--icons">
+                            <a className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faFacebook}/></a>
+                            <a className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faInstagram}/></a>
+                            <a className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faLinkedin}/></a>
+                            <a className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faYoutube}/></a>
+                    </div>
                     </div>
                 </div>
-                <div className="footer--icons">
-                    <a className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faFacebook}/></a>
-                    <a className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faInstagram}/></a>
-                    <a className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faLinkedin}/></a>
-                    <a className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faYoutube}/></a>
-                </div>
 
+            <div className="footer-middle">
+                <div>
+                    <h4>Open Source</h4>
+                    <p>Detta är ett projket med öppen källkod. Ni kan klona eller ladda ned koden via vårt Github-repo.</p>
+                    <a href="https://github.com/medieteknikdagarna/mtd2022-frontend-nextjs" target="_blank"><div className="github-button"><FontAwesomeIcon icon={faGithub}/> <span>GitHub</span></div></a>
+                </div>
+            </div>
+            <div className="footer-right">
+            <div>
+                <h4>Kontakt</h4>
+                <ClipboardButton fontColor="var(--color-light)" textToCopy={"info@medietknikdagen.se"}/>
+                <h4>GDPR</h4>
+                <p>Läs mer om GDPR och vår intigritetspolicy <Link href="/policy"><a>här</a></Link></p>
+            </div>
             </div>
         </div>
+        <div className="footer--bar">
+            <code>Copyright ©2021 Medieteknikdagen 2022</code>
         </div>
         </>
     )

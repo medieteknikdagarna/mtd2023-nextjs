@@ -12,6 +12,10 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  background: #00000012;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 16px -8px black;
 
   a {
     color: var(--color-primary);
@@ -25,12 +29,14 @@
   }
   &--mtd svg {
     max-width: 7rem;
-    height: auto;
+    height: 100%;
+    width: 100%;
   }
 
   &--mt svg {
     max-width: 7rem;
-    height: auto;
+    height: 100%;
+    width: 100%;
   }
   &--mtd,
   &--mt {
@@ -46,12 +52,12 @@
   h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    font-weight: 600;
   }
 
   p {
     font-weight: 300;
     margin-top: 0.5rem;
-    font-size: 0.9rem;
   }
 }
 
@@ -78,21 +84,14 @@
       gap: 3rem;
     }
     &--mtd svg {
-      max-width: 11rem;
-      height: auto;
-      width: 100%;
+      width: 15rem;
     }
     &--mt svg {
-      max-width: 12rem;
-      height: auto;
-      width: 100%;
+      width: 15rem;
     }
 
-    p {
-      font-size: 1rem;
-    }
     h3 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     &--img-container {

@@ -6,6 +6,7 @@ import ContactUs from '../../components/ContactUs.js'
 import PressAndMedia from '../../components/PressAndMedia'
 import { useRouter } from 'next/router'
 import TheGroup from '../../components/TheGroup'
+import ResponsiveContainer from '../../components/ResponsiveContainer'
 
 
 
@@ -25,14 +26,30 @@ export default function ContactPage() {
             return <ContactUs/>
         }
     }
+
+    const getTitleOfSlug = (s) =>{
+        if (s.toLowerCase() === "the-group"){
+            return "Gruppen"
+        }
+        else if (s.toLowerCase() === "press-and-media"){
+            return "Press & media"
+        }
+        else{
+            return "Kontakta oss"
+        }
+    }
     
     return (
         <>
             <Header changeOnScroll/>
-            <div className="contact-page">
+            <ResponsiveContainer className="contact-container">
                 <ContactSubmenu selected={slug} />
+                <div className="contact-wrapper">
+                <h1>{getTitleOfSlug(slug !== undefined ? slug : "us")}</h1>
                 {getPageOfSlug(slug !== undefined ? slug : "us")}
-            </div>
+                </div>
+                
+            </ResponsiveContainer>
             <Footer/>
         </>
     )

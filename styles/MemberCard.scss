@@ -1,78 +1,65 @@
-.member-card {
-  margin-bottom: 1rem;
-  max-width: 30rem;
-  display: grid;
-  grid-template-columns: 2fr 0.1rem 1fr 6fr;
-  background-color: #f9f9f9;
-  // border: 1px solid #c7c7c7;
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.63);
-  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.63);
-
-  &--left {
-    background: rgb(255, 170, 106);
-    background: linear-gradient(
-      29deg,
-      rgba(255, 170, 106, 1) 0%,
-      rgba(255, 206, 169, 1) 100%
-    );
-    border-right: 1px solid rgb(180, 180, 180);
-
-    grid-column: 1/2;
-    border-radius: 30px 0 0 30px;
-  }
-  &--right {
-    border-radius: 0 30px 30px 0;
-    grid-column: -1/-2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 1rem;
-  }
-  img {
-    border-radius: 2000px;
-    margin: 1rem 0;
-    width: clamp(3rem, 5vw + 7rem, 7rem);
-    position: relative;
-    transform: translateX(-50%);
-    border: 1px solid var(--color-dark);
-  }
-
-  h2 {
-    font-family: "Lato";
-    font-weight: bolder;
+.member-card{
+  max-width: 22rem;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 0px 16px -10px black;
+  h3{
+    font-size: 2rem;
     margin-bottom: 0.2rem;
   }
-  h4 {
-    font-family: "Lato";
+  span{
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
     color: var(--color-primary);
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
   }
-  a {
-    margin-bottom: 0.3rem;
+  
+  a{
+    font-size: 1rem;
   }
-}
+  img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  &--top{
 
-@media screen and (max-width: 500px) {
-  .member-card {
-    img {
-      max-width: 6rem;
+  }
+  &--bottom{
+    padding: 1rem;
+    background-color: #F6F6F6;
+
+  }
+  &--content{
+
+  }
+  &--spacer{
+    width: 80%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.164);
+    margin: 1.2rem auto;
+  }
+  &--contactinfo{
+    padding-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    svg{
+      margin-right: 0.5rem;
+      
     }
-    &--right {
-      padding-right: 1rem;
+    path{
+      color: var(--color-primary)
     }
-    h2 {
-      font-size: 1.2rem;
-    }
-    h4 {
-      font-family: "Lato";
-      color: var(--color-primary);
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-    a {
-      font-size: 0.7rem;
+
+  }
+  &--linked-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      font-size: 1.5rem;
+      path{
+        fill: rgba(0, 0, 0, 0.5);
+      }
+      
     }
   }
 }

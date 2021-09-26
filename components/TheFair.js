@@ -12,9 +12,6 @@ export default function TheFair() {
                 <Button type="secondary" style={{ marginTop: "1rem",borderColor: "var(--color-primary)", color: "var(--color-light)"}}>Platsbokaren</Button>
                 <Button type="secondary" style={{marginTop: "1rem",borderColor: "var(--color-light)", color: "var(--color-light)"}}>Galleri</Button>
             </InfoSection>    
-            <div className="the-fair--buttons">
-                
-            </div>
         </div>
         <Tappan/>
         </div>

@@ -1,24 +1,19 @@
-.contact-us-container {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-}
+
 .contact-page {
   padding-top: 10rem;
   @media screen and (min-width: 900px) {
     padding: 10rem 5rem 0 5rem;
   }
 }
+.contact-container{
+  padding-top: 10rem;
+}
 
-.contact-section {
-  align-self: center;
-  grid-column: 2/3;
-  padding: 1rem 0.5rem;
-  width: 100%;
-  h1 {
-    font-size: 2.5em;
-  }
-  h3 {
-    font-family: "Lato";
+.contact-wrapper{
+
+  h1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -36,12 +31,6 @@
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 2rem;
   justify-content: space-between;
-}
-
-@media screen and (min-width: 750px) {
-  .contact-us-container {
-    grid-template-columns: 1fr 20fr 1fr;
-  }
 }
 
 @-webkit-keyframes fade {
@@ -79,7 +68,7 @@
   }
 }
 
-.contact-section {
+.contact-us-section {
   -webkit-animation: fade 0.5s; /* Safari 4+ */
   -moz-animation: fade 0.5s; /* Fx 5+ */
   -o-animation: fade 0.5s; /* Opera 12+ */
