@@ -1,21 +1,15 @@
 
 import Header from '../components/Header'
-import MTDSvg from '../public/images/mtd.svg'
-import ExpoSmall from '../public/images//expo_small.svg'
 import InfoSection from '../components/InfoSection'
 import Button from '../components/Button'
 import useFetch from '../components/utilities/useFetch'
 import AboutInfo from '../components/AboutInfo'
 import { languageContext } from './_app'
-import Fallback from '../components/utilities/Fallback'
 import Footer from '../components/Footer'
 import { useContext } from 'react'
-import Lecturers from '../components/Lecturers'
 import TheFair from '../components/TheFair'
 import ResponsiveContainer from '../components/ResponsiveContainer'
-import ImageGallery from 'react-image-gallery';
 import LoadingSpinner from '../components/LoadingSpinner'
-import MTDHand from '../public/images/MTD_hand.png'
 import Carousel from '../components/Carousel'
 import Dan from '../public/images/dan.png'
 import Lecturer from '../components/Lecturer'
@@ -30,7 +24,7 @@ export default function About() {
 
     const {data, loading, error} = useFetch("/api/content/fair")
     const [lang, setLang] = useContext(languageContext)
-    const images = importAll(require.context('../public/images/masonry-imgs', false, /\.(png|jpe?g|svg)$/));
+    //const images = importAll(require.context('../public/images/masonry-imgs', false, /\.(png|jpe?g|svg)$/));
     console.log(images.length)
     let imgs = []
 
