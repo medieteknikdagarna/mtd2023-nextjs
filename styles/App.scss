@@ -59,8 +59,10 @@ input {
     font-weight: 400;
 }
 
-html,
-body {
-  width: 100%;
+html{
   background-color: var(--color-light);
+  width: 100%;
+}
+body{
+  width: 100%;
 }
