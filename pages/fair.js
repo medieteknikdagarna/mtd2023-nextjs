@@ -25,15 +25,9 @@ export default function About() {
     const {data, loading, error} = useFetch("/api/content/fair")
     const [lang, setLang] = useContext(languageContext)
     //const images = importAll(require.context('../public/images/masonry-imgs', false, /\.(png|jpe?g|svg)$/));
-    console.log(images.length)
     let imgs = []
 
-    for(var key in images){
-        imgs.push({
-            original: images[key].default.src,
-            thumbnail: images[key].default.src
-    })
-    }
+   
     
     return (
         <>
