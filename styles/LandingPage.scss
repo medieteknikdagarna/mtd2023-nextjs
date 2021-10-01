@@ -14,27 +14,29 @@
 .landing-container {
   //background: linear-gradient(153deg,rgba(255, 225, 204, 1) 0%,rgba(255, 152, 74, 1) 100%);
   padding-top: 7rem;
+  margin-top: 2rem;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex;
+  align-items: flex-start;
   z-index: 3;
   
 }
 
 .landing-section {
   &--buttons{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
     gap: 1rem;
+    margin-top: 3rem;
   }
-  margin-top: -15rem;
   display: grid;
   overflow: hidden;
 
   h1 {
-    font-size: 3.3rem;
-    line-height: 3.3rem;
-    margin-top: 3rem;
+    font-size: 4rem;
+    line-height: 4rem;
+
     margin-bottom: 1rem;
     color: var(--color-light)
   }
@@ -64,10 +66,6 @@
     margin-top: 1em;
   }
 }
-.welcome {
-  display: none;
-}
-
 /*----- SECTIOn 2 ------- */
 .welcome-section {
   background-color: #fafafa;
@@ -88,8 +86,8 @@
   display: none;
   justify-content: center;
 
-  img {
-    max-width: 50%;
+  svg {
+    max-width: 40%;
     object-fit: contain;
   }
 }
@@ -115,7 +113,7 @@
   display: none;
   grid-column: 1/2;
   img {
-    max-width: 60%;
+    max-width: 40%;
     object-fit: contain;
   }
 }
@@ -213,13 +211,16 @@
     padding-right: 10rem;
   }
   .landing-section h1 {
-    font-size: clamp(3.3rem, 4vw + 1rem, 4.5rem);
-    line-height: clamp(3.3rem, 4vw + 1rem, 4.5rem);
+    font-size: 6rem;
+    line-height: 6rem;
 
   }
 }
 
 @media screen and (min-width: 950px) {
+  .landing-container{
+    margin-top: 5rem;
+  }
   .infosection {
     margin-bottom: 4rem;
   }
@@ -237,6 +238,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
     margin-bottom: 2rem;
+    
     h1 {
       //font-size: clamp(3rem, 3vw + 1rem, 6rem);
       //line-height: clamp(3rem, 3vw + 1rem, 6rem);

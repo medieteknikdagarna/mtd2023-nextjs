@@ -39,7 +39,7 @@ export default function Header({changeOnScroll = false, lightContrast = false}) 
 
     return (
         <header className={lastscrollPos >= 50 && changeOnScroll ? className +" header-scroll" : className}>
-         <Menu className={menuActive ? "menu--active" : "menu--inactive"} onExit={() => setMenuActive(false)} key={1}></Menu>
+         <Menu show={menuActive} onExit={() => setMenuActive(false)} key={1}></Menu>
         <div className="logo-container">
             <Link href="/"><MTDSvg className="header-logo"/></Link>
             <div className="nav-items">

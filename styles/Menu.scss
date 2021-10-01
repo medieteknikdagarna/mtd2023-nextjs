@@ -4,25 +4,36 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  .star-container {
-    height: 100%;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    display: flex;
-    flex-direction: column;
-    z-index: 999;
-    overflow-y: scroll;
+  //background-color: rgba(0, 0, 0, 0.582);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-end;
+  // .star-container {
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   //background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  //   background-color: rgba(0, 0, 0, 0.582);
+  //   display: flex;
+  //   flex-direction: column;
+  //   z-index: 999;
+  //   overflow-y: scroll;
+  // }
+
+  &--inactive{
+    visibility: hidden;
+    background-color: transparent;
+    transition: all 0.5s;
+  }
+  &--active{
+    visibility: unset;
+    background-color: rgba(0, 0, 0, 0.582);
+    transition: all 0.5s;
+
   }
 }
 
-.close-icon {
-  display: grid;
-  padding-top: 1rem;
-  grid-template-columns: var(--grid-layout);
-  padding-right: 1rem;
-}
 
 .close-icon i {
   grid-column: -1/-2;
@@ -46,10 +57,14 @@
   transition: 0.5s;
 }
 .sub-menu-link a {
-  font-size: 1.4rem !important;
+  font-size: 1.6rem !important;
   color: rgba(255, 255, 255, 0.39);
   margin: 0;
   font-weight: 300 !important;
+
+  &::after{
+    height: 0.2rem !important;
+  }
 }
 .sub-menu-link {
   padding-bottom: 0;
@@ -59,14 +74,76 @@
   padding-bottom: 1.5rem;
 }
 
+.menu--ul{
+  display: inline-block;
+}
+.selected-page a::after{
+      
+  position: absolute;
+    content: '';
+    height: 0.5rem;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: -4px; 
+    background: linear-gradient(317deg, rgba(255,147,65,1) 0%, rgba(255,198,155,1) 45%, rgba(255,255,255,1) 50%, rgba(255,195,149,1) 55%, rgba(255,147,65,1) 100%);
+    background-size: 400%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    left: 0;
+    width: 100%;
+    animation: gradientAnim 1.2s linear infinite,widthAnim 0.5s ease;
+    transition: 0.5s;
+    
+
+}
 .menu ul {
+  
   list-style: none;
-  text-align: center;
   padding: 0;
   font-size: 2rem;
   a{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 0.25rem;
+    &:hover::after, .selected-page::after{
+      
+      position: absolute;
+        content: '';
+        height: 0.5rem;
+		  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+        bottom: -4px; 
+        background: linear-gradient(317deg, rgba(255,147,65,1) 0%, rgba(255,198,155,1) 45%, rgba(255,255,255,1) 50%, rgba(255,195,149,1) 55%, rgba(255,147,65,1) 100%);
+        background-size: 400%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        left: 0;
+        width: 100%;
+        animation: gradientAnim 1.2s linear infinite,widthAnim 0.5s ease;
+        transition: 0.5s;
+        
+
+    }
+    
   }
+}
+
+@keyframes widthAnim {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+  
+}
+
+@keyframes gradientAnim {
+  0%{
+    background-position: right;
+  }
+  100%{
+    background-position: left;
+  }
+  
 }
 
 .icons-menu {
@@ -88,16 +165,25 @@
 }
 .menu a {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--color-light);
-}
-.menu a {
   fill: var(--color-light);
   transition: 0.2s;
 }
+.escape-div{
+  grid-column: 1/3;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  grid-column: -1/-2;
+  padding-top: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .menu a:hover {
   text-decoration: none;
-  color: var(--color-primary);
   fill: var(--color-primary);
   transition: 0.2s;
 }
@@ -105,6 +191,9 @@
 .close-icon {
   width: 100%;
   fill: var(--color-light);
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
   i:hover {
     fill: var(--color-primary);
   }
@@ -130,14 +219,12 @@
 }
 
 .menu--active {
-  transition: all 1.2s ease-in-out;
-  clip-path: circle(200% at 100% 0);
-  opacity: 1;
+
+  transition: all 0.7s ease-in-out;
 }
 
 .menu--inactive {
-  clip-path: circle(0.2% at 100% 0);
-  transition: all 1.2s ease-in-out;
+  transition: all 0.7s ease-in-out;
   visibility: hidden;
 }
 

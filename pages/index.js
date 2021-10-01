@@ -4,7 +4,7 @@ import Button from '../components/Button'
 
 import ExpoSvg from '../public/images/expo_mtd.svg'
 import InfoSection from '../components/InfoSection'
-import calendar from '../public/images/calendar.png'
+import Calendar from '../public/images/calendar.svg'
 import stand from '../public/images/stand.png'
 import Footer from '../components/Footer'
 import InfoWithStars from '../components/InfoWithStars'
@@ -22,7 +22,7 @@ export default function LandingPage() {
 
     return (
         <>
-        <Header changeOnScroll/>
+        <Header lightContrast changeOnScroll/>
              <div className="video-container">
                 <video id="background-video" autoPlay loop muted>
                  <source src={require("../public/images/cube_storm.mp4")} type="video/mp4"/>
@@ -57,7 +57,7 @@ export default function LandingPage() {
                         <Button type="primary" size="medium">Läs mer</Button>
                     </InfoSection>
                     <div className="calendar">
-                        <img alt="Illustration of an calendar" src={calendar.src}></img>
+                        <Calendar/>
                     </div>
                 </section>
             </ResponsiveContainer>
