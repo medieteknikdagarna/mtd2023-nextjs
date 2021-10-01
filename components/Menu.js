@@ -46,9 +46,9 @@ export default function Menu({onExit,style,className, show}) {
                 <li>
                     <a style={{cursor: "pointer"}} className={subMenuActive ? "menu-chevron--active" : "menu-chevron--inactive"} onClick={() => setSubMenuActive(prev => !prev)}>Kontakt<FontAwesomeIcon style={{marginLeft: "0.5rem", marginRight: "-1.5rem", fontSize: "1.5rem"}} icon={faChevronDown}/></a>
                     <ul className={subMenuActive ? "sub-menu--active" : "sub-menu--inactive"}>
-                        <li className={router.asPath === "/contact/us" ? "selected-page sub-menu-link" : "sub-menu-link"}  className="sub-menu-link"><Link onClick={onExit} href="/contact/us">Kontakt</Link></li>
-                        <li className={router.asPath === "/contact/the-group" ? "sub-menu-link selected-page" : "sub-menu-link"} className="sub-menu-link"><Link onClick={onExit} href="/contact/the-group">Gruppen</Link></li>
-                        <li className={router.asPath === "/contact/press-and-media" ? "selected-page sub-menu-link" : "sub-menu-link"} className="sub-menu-link"><Link onClick={onExit} href="/contact/press-and-media">Press & media</Link></li>
+                        <li className={router.asPath === "/contact/us" ? "selected-page sub-menu-link" : "sub-menu-link"}><Link onClick={onExit} href="/contact/us">Kontakt</Link></li>
+                        <li className={router.asPath === "/contact/the-group" ? "sub-menu-link selected-page" : "sub-menu-link"}><Link onClick={onExit} href="/contact/the-group">Gruppen</Link></li>
+                        <li className={router.asPath === "/contact/press-and-media" ? "selected-page sub-menu-link" : "sub-menu-link"}><Link onClick={onExit} href="/contact/press-and-media">Press & media</Link></li>
                     </ul>
                 </li>
                 <li className={router.asPath === "/fair" ? "selected-page" : ""}><Link onClick={onExit} href="/fair">Mässan</Link></li>
