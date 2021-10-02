@@ -8,7 +8,7 @@ import ReservationSuccess from './ReservationSuccess'
 
 export default function Registration() {
 
-    const [error, setError] = useState("")
+    const [error, setError] = useState(null)
     const [submitted, setSubmitted] = useState(false)
     const [success, setSuccess] = useState(false)
     const r_name = useRef();
@@ -44,11 +44,10 @@ export default function Registration() {
                 })
             };
             setSubmitted(true)
-            setError("")
+            setError(null)
             fetch('/api/register', requestOptions)
                 .then(response => response.json())
                 .then(res_data => {
-                    console.log(res_data)
                     if(res_data.success){
                         setSuccess(true)
 
@@ -87,7 +86,7 @@ export default function Registration() {
                         <input ref={r_phone} type="tel" placeholder="Telefon"></input>
 
                         <textarea ref={r_msg} type="text" placeholder="Meddelande"></textarea>
-                        <span>Genom att klicka på "Skicka" så accepterar du vår <Link href="/policy">integritetspolicy</Link></span>
+                        <span>Genom att klicka på <b>Skicka</b> så accepterar du vår <Link href="/policy">integritetspolicy</Link></span>
                         {error && <div className="registration-error-message">
                             <div></div>
                             <span>{error}</span>
