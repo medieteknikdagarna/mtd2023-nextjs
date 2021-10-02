@@ -53,7 +53,7 @@ export default function Footer(props) {
             </div>
         </div>
         <div className="footer--bar">
-            <code>Copyright ©2021 Medieteknikdagen 2022</code>
+            <code>OpenSource -  Medieteknikdagen 2022</code>
         </div>
         </>
     )

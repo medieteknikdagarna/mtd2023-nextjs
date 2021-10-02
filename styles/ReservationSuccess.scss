@@ -1,53 +1,27 @@
 .reservation-success {
+  h2{
+    font-size: 4rem;
+  }
+  p{
+    margin-top: 1rem;
+  }
   display: flex;
-  flex-direction: column;
-  grid-column: 2/3;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  text-align: center;
-
-  p {
-    font-size: 1.2rem;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  & > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.7rem;
-    span {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 1.5rem;
-    }
-  }
-  svg {
-    width: 2rem;
-    path,
-    ellipse {
-      fill: var(--color-primary);
-    }
-  }
-
-  &--welcome {
-  }
-  &--email {
-    border-top: 1px solid rgb(136, 136, 136);
-    padding-top: 1rem;
-    font-size: 1rem !important;
-  }
-}
-.reservation--seat-info {
 }
 
-.reservation-section {
-  padding-top: 13rem;
-  padding-bottom: 5rem;
+.thank-you{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width:900px) {
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  svg{
+    max-width: 60%;
+    justify-self: center;
+  }
 }

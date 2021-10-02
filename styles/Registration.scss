@@ -1,0 +1,94 @@
+.registration-section{
+    padding-top: 13rem;
+    h1{
+        margin-bottom: 1rem ;
+    }
+}
+
+.registration-error-message{
+    &>div{
+        width: 5px;
+        height: 100%;
+        background-color: firebrick;
+    }
+    span{
+        margin-left: 0.5rem;
+        color: black;
+    }
+    align-items: center;
+    
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 184, 184);
+}
+
+.registration-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    @media screen and (min-width: 900px) {
+        grid-template-columns: 6fr 1fr 3fr;
+    }
+    @media screen and (min-width: 500px) {
+        grid-template-columns: 2fr 1fr 3fr;
+    }
+    
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        span,a{
+            font-size: 1rem;
+            color: rgb(80, 80, 80);
+            path{
+                fill: rgb(80, 80, 80);
+            }
+        }
+
+        input{
+            -webkit-appearance: none;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid black;
+            font-size: 1.3rem;
+            transition: border 0.1s;
+            font-family: "Barlow";
+
+            &:focus{
+                border: none;
+                transition: border 0.1s;
+                outline: none;
+                border-bottom: 3px solid var(--color-primary);
+            }
+
+        }
+        textarea{
+            font-family: "Barlow";
+            font-size: 1.3rem;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid black;
+            resize: none;
+            &:focus{
+                outline: none;
+                border-bottom: 3px solid var(--color-primary);
+            }
+        }
+
+        svg{
+            margin-right: 0.6rem;
+        }
+        path{
+            fill: var(--color-light)
+        }
+
+
+    }
+}
+
+.registration-form{
+    grid-column: -1/-2;
+}
+

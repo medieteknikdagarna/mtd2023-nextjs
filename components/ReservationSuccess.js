@@ -4,6 +4,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Confetti from 'react-dom-confetti';
 import Table from '../public/images/table.svg'
 import Stairs from '../public/images/stairs.svg'
+import Expo from '../public/images/expo_small.svg'
 
 export default function ReservationSuccess({seat, floor, name,company}) {
 
@@ -33,17 +34,16 @@ export default function ReservationSuccess({seat, floor, name,company}) {
     return (
         <section className="reservation-section">
             <div className="reservation-success">
-                
-                <h1>{`Tack ${name}, för din reservation`}!</h1>
                 <Confetti config={config} active={shouldExlpode}/>
-                <p>Du har nu reserverat följande plats:</p>
-                <div className="reservation--seat-info">
-                    <span><Table />Plats <b>{seat}</b></span>
-                    <span><Stairs/>Plan <b>{floor}</b></span>
+                <div className="thank-you">
+                    <div>
+                        <h2>Wohoo!</h2>
+                        <p>{`Tack ${name}, för din intresseanmälan!`}</p>
+                        <p>Vi kommer att höra av oss så fort vi kan, där vi berättar mer detaljerat om de olika partnerpaket, priser, förmåner vi erbjuder!</p>
+                        <p className="reservation-success--welcome">Vi önskar dig och resten av <b>{company}</b> varmt välkomna till Medieteknikdagen 2022!</p>
+                    </div>
+                    <Expo/>
                 </div>
-                <br/>
-                    <p className="reservation-success--welcome">Vi önskar dig och resten av <b>{company}</b> varmt välkomna till Medieteknikdagen 2022!</p>
-                    <p className="reservation-success--email">Kolla i din inkorg för ett bekräftelsemail. Vi kommer även att kontakta dig per telefon alternativt email inom 24h</p>
             </div>
         </section>
     )

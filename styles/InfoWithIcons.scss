@@ -1,0 +1,83 @@
+.info-with-icons{
+background-color: black;
+padding: 5rem 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icons-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+.icons-content {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  h4 {
+    color: var(--color-light);
+    font-family: "Lato";
+  }
+}
+.icons-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center ;
+  gap: 3em;
+}
+
+.icons-info--column {
+  gap: 1em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-self: center;
+  max-width: 25rem;
+  flex-grow: 1;
+}
+.icons-info p {
+  color: var(--color-light);
+}
+
+.icons-info h4 {
+  font-size: 1.7rem;
+}
+.icons-info p {
+  font-weight: 300;
+}
+
+.icons-info path {
+  fill: var(--color-light);
+}
+.icons-info svg {
+  font-size: 3rem;
+}
+@media screen and (min-width: 900px) {
+
+  .icons-info--column {
+    text-align: left;
+  }
+  .icons-info {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 0.5rem 0;
+  }
+  .icons-content {
+    margin-top: 3em;
+  }
+  .icons-info--column {
+    max-width: 40rem;
+  }
+  .icons-info--column svg {
+    font-size: 4rem;
+  }
+}

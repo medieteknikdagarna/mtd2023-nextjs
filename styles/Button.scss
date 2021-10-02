@@ -1,26 +1,34 @@
+
 .mtd-button {
   &--primary {
     background-color: var(--clr-primary);
-    border: 2px solid var(--clr-primary);
     color: var(--color-light);
     transition: 0.15s;
     cursor: pointer;
+    background: linear-gradient(317deg, rgba(255,147,65,1) 0%, rgba(255,198,155,1) 45%, rgba(255,255,255,1) 50%, rgba(255,195,149,1) 55%, rgba(255,147,65,1) 100%);
+    background-size: 500%;
+    background-position: right;
+    border: 2px solid transparent;
 
+    $trans_sec: 1s;
+
+    transition:background-position $trans_sec;
+     
 
     &:hover,
     &:focus {
       // background-color: #3a4151;
       // border-color: #3a4151;
-      background-color: #141414;
-      border-color: var(--color-light);
+      background-position: left;
+
       color: #fafafa;
-      transition: 0.15s;
+      transition:background-position $trans_sec;
+  
     }
   }
 
   &--secondary {
-    background-color: transparent;
-    border: 2px solid var(--color-dark);
+    border: 2px solid black;
     color: var(--color-light);
     transition: 0.15s;
     cursor: pointer;
@@ -30,8 +38,8 @@
     &:focus {
       //background-color: #3a4151;
       //border-color: #3a4151;
-      background-color: #040305;
-      border-color: #040305;
+      background-color: #272727;
+      border-color: #272727;
 
       
       color: #fafafa;

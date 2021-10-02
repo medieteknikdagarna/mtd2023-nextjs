@@ -12,6 +12,7 @@ import LanguageFlag from './LanguageFlag'
 import Link from 'next/link'
 import { useTransition,animated } from 'react-spring'
 import {useRouter} from 'next/router'
+import Button from './Button'
 
 export default function Menu({onExit,style,className, show}) {
 
@@ -52,7 +53,7 @@ export default function Menu({onExit,style,className, show}) {
                     </ul>
                 </li>
                 <li className={router.asPath === "/fair" ? "selected-page" : ""}><Link onClick={onExit} href="/fair">Mässan</Link></li>
-                <li className={router.asPath === "/book" ? "selected-page" : ""} ><Link onClick={onExit} href="/book">Intresseanmälan</Link></li>
+                <li className={router.asPath === "/register" ? "selected-page" : ""} ><Link onClick={onExit} href="/register">Intresseanmälan</Link></li>
             </ul>
             <div className="icons-menu">
                 <LanguageFlag/>

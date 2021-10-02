@@ -120,12 +120,13 @@
   h2{
     color: var(--color-light);
   }
+  
   .icon-link {
-    fill: var(--color-light);
+    fill: var(--color-light) !important;
     transition: 0.2s;
   }
   .menu-icon rect {
-    fill: var(--color-light);
+    fill: var(--color-light) !important;
   }
 }
 .header {

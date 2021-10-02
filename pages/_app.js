@@ -14,7 +14,7 @@ import '../styles/ContactSubmenu.scss'
 import '../styles/Footer.scss'
 import '../styles/Header.scss'
 import '../styles/InfoSection.scss'
-import '../styles/InfoWithStars.scss'
+import '../styles/InfoWithIcons.scss'
 import '../styles/LandingPage.scss'
 import '../styles/Lecturer.scss'
 import '../styles/Menu.scss'
@@ -37,6 +37,7 @@ import '../styles/ContactForm.scss'
 import '../styles/StickyContact.scss'
 import '../styles/Gallery.scss'
 import '../styles/Carousel.scss'
+import '../styles/Registration.scss'
 
 
 import { useRouter } from "next/router";

@@ -13,7 +13,7 @@ import LanguageFlag from './LanguageFlag'
 
 export const menuActiveContext = React.createContext()
 
-export default function Header({changeOnScroll = false, lightContrast = false}) {
+export default function Header({changeOnScroll = false, lightContrast = false, style}) {
 
     const className = lightContrast ? "header-light" : "header"
 
@@ -38,7 +38,7 @@ export default function Header({changeOnScroll = false, lightContrast = false}) 
     
 
     return (
-        <header className={lastscrollPos >= 50 && changeOnScroll ? className +" header-scroll" : className}>
+        <header style={style} className={lastscrollPos >= 50 && changeOnScroll ? className +" header-scroll" : className}>
          <Menu show={menuActive} onExit={() => setMenuActive(false)} key={1}></Menu>
         <div className="logo-container">
             <Link href="/"><MTDSvg className="header-logo"/></Link>

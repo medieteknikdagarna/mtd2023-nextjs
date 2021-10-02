@@ -195,7 +195,7 @@
   justify-content: flex-end;
   margin-bottom: 2rem;
   i:hover {
-    fill: var(--color-primary);
+    filter: brightness(70%);
   }
 }
 .exit-popup-icon {
@@ -243,4 +243,21 @@
   .close-icon i {
     grid-column: -2/-3;
   }
+}
+
+
+@media screen and (max-width: 900px) {
+  .menu{
+    grid-column: 1/-1;
+  }
+  .escape-div{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu{
+    padding-left: 2rem;
+  }
+
 }

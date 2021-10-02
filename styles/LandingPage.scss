@@ -46,7 +46,6 @@
   }
   svg {
     min-width: 15rem;
-    max-width: 130%;
     justify-self: center;
     align-self: flex-start;
   }
@@ -85,10 +84,11 @@
 .calendar {
   display: none;
   justify-content: center;
+  align-items: flex-end;
 
   svg {
-    max-width: 40%;
     object-fit: contain;
+    max-width: 70%;
   }
 }
 
@@ -112,10 +112,13 @@
 .stand {
   display: none;
   grid-column: 1/2;
-  img {
+  svg {
     max-width: 40%;
     object-fit: contain;
   }
+}
+video{
+  overflow-x: hidden;
 }
 
 .booking-section {

@@ -13,6 +13,7 @@ import LoadingSpinner from '../components/LoadingSpinner'
 import Carousel from '../components/Carousel'
 import Dan from '../public/images/dan.png'
 import Lecturer from '../components/Lecturer'
+import AfterMovie from '../components/AfterMovie'
 
 function importAll(r) {
     let images = {};
@@ -27,7 +28,8 @@ export default function About() {
     //const images = importAll(require.context('../public/images/masonry-imgs', false, /\.(png|jpe?g|svg)$/));
     let imgs = []
 
-   
+    const fbVideoUrl = "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmedieteknikdagen%2Fvideos%2F1399763803536580%2F&show_text=false&width=560&t=0";
+
     
     return (
         <>
@@ -40,7 +42,7 @@ export default function About() {
                                     <div className="about-section--message">
                                         <h1>{data && data[lang].title}</h1>
                                         <p>{data && data[lang].ingress}</p>
-                                        <Button style={{borderColor: "var(--color-primary)", color: "var(--color-light)"}} type="secondary">Kontakta oss</Button>
+                                        <Button type="primary">Kontakta oss</Button>
                                     </div>
                                     {/* <ExpoSmall/> */}
                                 </div>
@@ -53,12 +55,20 @@ export default function About() {
                             <ResponsiveContainer>
                                 <AboutInfo/>
                             </ResponsiveContainer>
+                            <ResponsiveContainer>
+                                <section className="after-movie-section">
+                                    <div className="after-movie-title">
+                                        <InfoSection className="after-movie" tag="TIDIGARE ÅR" title="After movie 2020" body="I fjol hölls mässan digitalt via Graduateland. I år kommer vi att hålla den på plats. Kolla på filmen nedan för att få en inblick i hur det kan se ut under Medieteknikdagarna! "/>
+                                    </div>
+                                    <AfterMovie src={fbVideoUrl}/>
+                                </section>
+                            </ResponsiveContainer>
                             
                                 
                             <ResponsiveContainer className="fair-container--lecturers">
-                                <div className="lecturers--infosection">
-                                    <InfoSection tag="TIDIGARE ÅR" title="Föreläsningar" body="Varje år håller flera företag spännande föreläsningar ny spännande teknik inom en rad olika ämnen. Håll utkik på hemsidan och våra sociala medier för att inte missa dessa! Nedan hittar du några exempel på föreläsningar som kan hållas under MTD." />
-                                </div>
+
+                                <InfoSection tag="TIDIGARE ÅR" title="Föreläsningar" body="Varje år håller flera företag spännande föreläsningar ny spännande teknik inom en rad olika ämnen. Håll utkik på hemsidan och våra sociala medier för att inte missa dessa! Nedan hittar du några exempel på föreläsningar som kan hållas under MTD." />
+                            
                                 <Carousel items={[<Lecturer key={1} tag="VFX" name="Jakob Karlstrand" imgSrc={Dan.src} body="Dan kommer att prata om hur hans karriär tog fart ut i världen direkt efter studietiden och hur det är att jobba på stora VFX och animation studios så som MPC i London, Pixar i San Francisco och Goodbye Kansas i Stockholm. Dan kommer också ge en inblick i hur det var att jobba på Coco på Pixar som vann en Oscar för bästa animerade film och hur det är att jobba med VFX i Sverige idag."/>,<Lecturer key={2} tag="VFX" name="Dan Englesson" imgSrc={Dan.src} body="Dan kommer att prata om hur hans karriär tog fart ut i världen direkt efter studietiden och hur det är att jobba på stora VFX och animation studios så som MPC i London, Pixar i San Francisco och Goodbye Kansas i Stockholm. Dan kommer också ge en inblick i hur det var att jobba på Coco på Pixar som vann en Oscar för bästa animerade film och hur det är att jobba med VFX i Sverige idag."/>]}/>
 
                                 <h2>PALCEHOLDER</h2>

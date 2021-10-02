@@ -9,8 +9,8 @@ export default function TheFair() {
         <div className="the-fair">
         <div>
             <InfoSection tag="MTD2022" title="Mässan" body={"Mässan håller till på våning 4 och 5 i Täppan, Campus Norrköping. Lokalen passar perfekt för MTD då den är utformad som en cirkel och äger rum i studenternas vardagliga studiemiljö. Med en trappa samt två hissar i varje ände, är det garanterat alltid mycket trafik! Medieteknikdagen är till för att föra studenter och företag samman. Det är en mycket uppskattad mässa från både studenter och företag. Nedan kan du se hur det har sett ut tidigare år under MTD"}>
-                <Button type="secondary" style={{ marginTop: "1rem",borderColor: "var(--color-primary)", color: "var(--color-light)"}}>Platsbokaren</Button>
-                <Button type="secondary" style={{marginTop: "1rem",borderColor: "var(--color-light)", color: "var(--color-light)"}}>Galleri</Button>
+                <Button type="primary" style={{ marginTop: "1rem"}}>Intresseanmälan</Button>
+                <Button type="secondary" style={{marginTop: "1rem"}}>Galleri</Button>
             </InfoSection>    
         </div>
         <Tappan/>
