@@ -5,7 +5,7 @@ import Button from '../components/Button'
 import ExpoSvg from '../public/images/expo_cube.svg'
 import StandSvg from '../public/images/stand.svg'
 import InfoSection from '../components/InfoSection'
-
+import AfterMovie from '../components/AfterMovie'
 import Footer from '../components/Footer'
 import InfoWithStars from '../components/InfoWithIcons'
 
@@ -67,6 +67,14 @@ export default function LandingPage() {
             </ResponsiveContainer>
 
             <InfoWithStars/>
+            <ResponsiveContainer>
+                <section className="after-movie-section">
+                    <div className="after-movie-title">
+                        <InfoSection className="after-movie" tag="TIDIGARE ÅR" title="After movie 2020" body="I fjol hölls mässan digitalt via Graduateland. I år kommer vi att hålla den på plats. Kolla på filmen nedan för att få en inblick i hur det kan se ut under Medieteknikdagarna! "/>
+                    </div>
+                    <AfterMovie src={fbVideoUrl}/>
+                </section>
+            </ResponsiveContainer>  
             <Footer/>
         </>
     )

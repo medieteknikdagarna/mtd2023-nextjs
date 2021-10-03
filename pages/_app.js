@@ -38,7 +38,7 @@ import '../styles/StickyContact.scss'
 import '../styles/Gallery.scss'
 import '../styles/Carousel.scss'
 import '../styles/Registration.scss'
-
+import '../styles/companies.scss'
 
 import { useRouter } from "next/router";
 import StickyContact from "../components/StickyContact";

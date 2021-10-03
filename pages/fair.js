@@ -15,8 +15,8 @@ import Dan from '../public/images/dan.png'
 import Lecturer from '../components/Lecturer'
 import AfterMovie from '../components/AfterMovie'
 
-function importAll(r) {
-    let images = {};
+export function importAll(r) {
+    let images = [];
      r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
     return images
    }

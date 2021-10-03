@@ -1,0 +1,17 @@
+.companies-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    padding-top: 3rem;
+    gap: 2.5rem;
+    justify-content: center;
+
+    svg{
+        max-width: 15rem;
+        max-height: 5rem;
+        justify-self: center;
+    }
+}
+
+.rc-companies{
+    padding-top: 10rem;
+}

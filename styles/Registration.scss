@@ -23,22 +23,24 @@
     background-color: rgb(255, 184, 184);
 }
 
+.register-form{
+   
+}
+
 .registration-wrapper{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     @media screen and (min-width: 900px) {
-        grid-template-columns: 6fr 1fr 3fr;
-    }
-    @media screen and (min-width: 500px) {
-        grid-template-columns: 2fr 1fr 3fr;
+        grid-template-columns: 6fr 1fr 6fr;
     }
     
 
-    form{
+    .register-form{
+        position: relative;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
         span,a{
             font-size: 1rem;
             color: rgb(80, 80, 80);
@@ -50,11 +52,17 @@
         input{
             -webkit-appearance: none;
             border: none;
+            position: absolute;
             background-color: transparent;
             border-bottom: 1px solid black;
             font-size: 1.3rem;
             transition: border 0.1s;
             font-family: "Barlow";
+            width: 100%;
+            padding-bottom: 0.5rem;
+            &:hover{
+                border-bottom: 1px solid #ffc293;
+            }
 
             &:focus{
                 border: none;
@@ -64,13 +72,26 @@
             }
 
         }
+        label{
+            font-family: "Barlow";
+            font-size: 1.3rem;
+            position: absolute;
+            transition: 0.25s;
+            pointer-events: none;
+            margin-bottom: 0.5rem;
+        }
         textarea{
+            width: 100%;
+            position: absolute;
             font-family: "Barlow";
             font-size: 1.3rem;
             border: none;
             background-color: transparent;
             border-bottom: 1px solid black;
             resize: none;
+            &:hover{
+                border-bottom: 1px solid #ffc293;
+            }
             &:focus{
                 outline: none;
                 border-bottom: 3px solid var(--color-primary);
@@ -91,4 +112,23 @@
 .registration-form{
     grid-column: -1/-2;
 }
+
+
+
+
+//ANIMATION
+.register-form--input:focus ~ .register-form--label, .register-form--input:not(:placeholder-shown).register-form--input:not(:focus)~.register-form--label{
+    transition: 0.25s;
+    transform: translateY(-1.0rem);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+}
+
+.register-form--textarea:focus ~ .register-form--label, .register-form--textarea:not(:placeholder-shown).register-form--textarea:not(:focus)~.register-form--label{
+    transition: 0.25s;
+    transform: translateY(-1rem);
+    font-size: 0.8rem;
+}
+    
 

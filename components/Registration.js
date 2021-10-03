@@ -75,17 +75,27 @@ export default function Registration() {
                     <p>Skicka in en anmälan tillsammans med era kontaktuppgifter så mailar eller ringer vi upp er och berättar mer om olika partnerpaket, priser, förmåner, tillgängliga platser och svarar på alla era frågor!</p>
                 </div>
                 <div className="registration-form">
-                    <form>
-                        
-                        <input ref={r_name} type="text" placeholder="Kontaktperson"></input>
-
-                        <input ref={r_company} type="text" placeholder="Företag"></input>
-
-                        <input ref={r_email} type="email" placeholder="Email"></input>
-
-                        <input ref={r_phone} type="tel" placeholder="Telefon"></input>
-
-                        <textarea ref={r_msg} type="text" placeholder="Meddelande"></textarea>
+                    <form className="register-form">
+                        <div>
+                            <input className="register-form--input" ref={r_name} type="text" placeholder=" "></input>
+                            <label className="register-form--label">Kontaktperson</label>
+                        </div>
+                        <div>
+                            <input className="register-form--input" ref={r_company} type="text" placeholder=" "></input>
+                            <label className="register-form--label">Företag</label>
+                        </div>
+                        <div>
+                            <input className="register-form--input" ref={r_email} type="email" placeholder=" "></input>
+                            <label className="register-form--label">Email</label>
+                        </div>
+                        <div>
+                            <input className="register-form--input" ref={r_phone} type="tel" placeholder=" "></input>
+                            <label className="register-form--label">Tel</label>
+                        </div>
+                        <div>
+                            <textarea className="register-form--input" ref={r_msg} type="text" placeholder=" "></textarea>
+                            <label  className="register-form--label">Meddelande</label>
+                        </div>
                         <span>Genom att klicka på <b>Skicka</b> så accepterar du vår <Link href="/policy">integritetspolicy</Link></span>
                         {error && <div className="registration-error-message">
                             <div></div>
