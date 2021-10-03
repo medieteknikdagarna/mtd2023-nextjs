@@ -12,13 +12,13 @@
 
   &--left {
     background-color: #ffa866;
-    border-radius: 100px 0 0 100px;
+
   }
 
   &--right {
     background-color: #ffb67e;
 
-    border-radius: 0 100px 100px 0;
+
     :hover {
       filter: brightness(120%);
     }

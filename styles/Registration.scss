@@ -1,7 +1,7 @@
 .registration-section{
     padding-top: 13rem;
     h1{
-        margin-bottom: 1rem ;
+        margin-bottom: 1rem;
     }
 }
 
@@ -15,6 +15,7 @@
         margin-left: 0.5rem;
         color: black;
     }
+    
     align-items: center;
     
     height: 3rem;
@@ -23,9 +24,6 @@
     background-color: rgb(255, 184, 184);
 }
 
-.register-form{
-   
-}
 
 .registration-wrapper{
     display: grid;
@@ -41,12 +39,19 @@
         display: flex;
         flex-direction: column;
         gap: 4rem;
+    
         span,a{
             font-size: 1rem;
             color: rgb(80, 80, 80);
             path{
                 fill: rgb(80, 80, 80);
             }
+        }
+        a{
+            color: var(--color-primary)
+        }
+        b{
+            font-size: 1rem;
         }
 
         input{

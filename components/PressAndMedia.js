@@ -20,7 +20,8 @@ export default function PressAndMedia() {
                 <div className="press-contact--outline">
                     <h2>Presskontakt</h2>
                     <h4>Daniel Wärulf</h4>
-                    <a href="email:daniel.warulf@medieteknikdagen.se">daniel.warulf@medieteknikdagen.se</a>
+                    
+                    <a href="email:daniel.warulf@medieteknikdagen.se">daniel.warulf@medieteknikdagen.se</a><br/>
                     <a href="tel:0723525617">+46 723 52 56 17</a>
                     <div className="press--downloads">
                         <h3>Nedladdningar</h3>

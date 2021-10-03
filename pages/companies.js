@@ -24,7 +24,9 @@ export function shuffleArray(array) {
   }
 
 export default function companies() {
-    const [images, setImages] = useState([])
+
+const [images, setImages] = useState([])
+
    useEffect(() => {
     const images = importAll(require.context('../public/images/previous_companies', false, /\.(svg)$/));
     let imgs = []
@@ -35,6 +37,7 @@ export default function companies() {
     setImages(shuffleArray(imgs))
 
    }, [])
+
     return (
         <div>
         <Header changeOnScroll/>

@@ -1,14 +1,18 @@
 .companies-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 15rem);
+    grid-template-columns: repeat(auto-fit, 12rem);
     padding-top: 3rem;
-    gap: 2.5rem;
+    gap: 2rem;
     justify-content: center;
 
     svg{
-        max-width: 15rem;
+        max-width: 12rem;
         max-height: 5rem;
         justify-self: center;
+    }
+
+    @media screen and (min-width: 500px){
+        justify-content: space-between;
     }
 }
 
