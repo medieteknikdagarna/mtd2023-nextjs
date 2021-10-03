@@ -23,29 +23,36 @@ export function shuffleArray(array) {
     return array;
   }
 
+  function CompanyImages (){
+    const [images, setImages] = useState([])
+
+    useEffect(() => {
+     const images = importAll(require.context('../public/images/previous_companies', false, /\.(svg)$/));
+     let imgs = []
+     for(let key in images){
+         imgs.push(images[key].default)
+     }
+     setImages(shuffleArray(imgs))
+ 
+    }, [])
+
+    return (
+        <div className="companies-container">
+            {!images && <LoadingSpinner/> || images}
+        </div>
+    )
+  }
+
 export default function companies() {
 
-const [images, setImages] = useState([])
 
-   useEffect(() => {
-    const images = importAll(require.context('../public/images/previous_companies', false, /\.(svg)$/));
-    let imgs = []
-    for(let key in images){
-        imgs.push(images[key].default)
-    }
-    console.log(imgs)
-    setImages(shuffleArray(imgs))
-
-   }, [])
 
     return (
         <div>
         <Header changeOnScroll/>
         <ResponsiveContainer className="rc-companies">
             <InfoSection tag="Tidigare år" title="Företag från tidigare år" body="Nedan listas ett axplox av företag som har varit med tidigare år. Vi hoppas att kunna ha med erat företag 2023!"/>
-            <div className="companies-container">
-               {!images && <LoadingSpinner/> || images.map(i => i())}
-            </div>
+            <CompanyImages/>
         </ResponsiveContainer>
         <Footer/>    
         </div>
