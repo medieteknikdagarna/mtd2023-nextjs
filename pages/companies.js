@@ -38,7 +38,7 @@ export function shuffleArray(array) {
 
     return (
         <div className="companies-container">
-            {!images && <LoadingSpinner/> || images}
+            {!images && <LoadingSpinner/> || images.map(i => i())}
         </div>
     )
   }
