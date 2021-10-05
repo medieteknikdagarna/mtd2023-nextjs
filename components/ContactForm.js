@@ -1,20 +1,99 @@
 import React from 'react'
+import { useState,useRef } from 'react'
+import Link from 'next/link'
+import Button from './Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleNotch, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import ThankYou from '../components/ThankYou'
 
 export default function ContactForm() {
-    return (
-         <form className="contact-form">
-            <label>Namn</label>
-            <input/>
+    const [error, setError] = useState(null)
+    const [submitted, setSubmitted] = useState(false)
+    const [success, setSuccess] = useState(false)
+    const r_name = useRef();
+    const r_company = useRef();
+    const r_email = useRef();
+    const r_phone = useRef();
+    const r_msg = useRef();
 
-            <label>Företag</label>
-            <input/>
-            <label>Email</label>
-            <input/>
-           
-            <label>Meddelande</label>
-            <textarea></textarea>
-            <button>Send</button>
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        if(submitted){
+            return
+        }
+        if(!r_name.current.value){
+            setError("Fyll i ditt namn, tack!")
+        }
+        else if(!r_email.current.value){
+            setError("Fyll i en email, tack!")
+        }
+        else if(!r_msg.current.value){
+            setError("Fyll i meddelande, tack!")
+        }
+        else{
+            const requestOptions = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: r_name.current.value,
+                    company: r_company.current.value,
+                    email: r_email.current.value,
+                    phone: r_phone.current.value,
+                    message: r_msg.current.value
+                })
+            };
+            setSubmitted(true)
+            setError(null)
+            fetch('/api/ask', requestOptions)
+                .then(response => response.json())
+                .then(res_data => {
+                    if(res_data.success){
+                        setSuccess(true)
+
+                    }
+                    else{
+                        setError("Något gick fel tyvärr. Testa igen eller skicka direkt till vår email: info@medieteknikdagen.se")
+                        setSubmitted(false)
+                    }
+                    
+                });       
+        }
+
+
+    }
+    return (
+        <>
+        {success && <ThankYou/> ||
+        <div className="registration-form">
+            <h4>Hej! <br/><span>Vad kan vi hjälpa dig med?</span></h4>
+        <form className="register-form">
+            <div>
+                <input className="register-form--input" ref={r_name} type="text" placeholder=" "></input>
+                <label className="register-form--label">Kontaktperson</label>
+            </div>
+            <div>
+                <input className="register-form--input" ref={r_company} type="text" placeholder=" "></input>
+                <label className="register-form--label">Företag</label>
+            </div>
+            <div>
+                <input className="register-form--input" ref={r_email} type="email" placeholder=" "></input>
+                <label className="register-form--label">Email</label>
+            </div>
+            <div>
+                <input className="register-form--input" ref={r_phone} type="tel" placeholder=" "></input>
+                <label className="register-form--label">Tel</label>
+            </div>
+            <div>
+                <textarea className="register-form--input" ref={r_msg} type="text" placeholder=" "></textarea>
+                <label  className="register-form--label">Meddelande</label>
+            </div>
+            {error && <div className="registration-error-message">
+                <div></div>
+                <span>{error}</span>
+            </div>}
+            <Button onClick={handleSubmit}><FontAwesomeIcon spin={submitted} icon={submitted ? faCircleNotch : faPaperPlane}/>Skicka</Button>
         </form>
+    </div>}</>
             
     )
 }

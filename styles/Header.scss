@@ -76,7 +76,7 @@
   display: grid;
   width: 100%;
   grid-template-columns: var(--grid-layout);
-  gap: 1em;
+
   align-items: center;
   top: 0;
   z-index: 999;
@@ -154,7 +154,6 @@
   align-items: center;
   width: 100%;
   &--icon{
-    margin-right: 1rem;
     rect{
       fill: var(--color-light)
     }
@@ -189,7 +188,9 @@
   .menu-icon {
     font-size: 2rem;
     grid-column: -1 / -2;
-    margin-right: 1rem;
+    &--icon{
+      margin-right: 0.75rem;
+    }
   }
   .icons {
     display: none;

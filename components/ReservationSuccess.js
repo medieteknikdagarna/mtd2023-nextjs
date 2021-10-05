@@ -5,10 +5,21 @@ import Confetti from 'react-dom-confetti';
 import Table from '../public/images/table.svg'
 import Stairs from '../public/images/stairs.svg'
 import Expo from '../public/images/expo_small.svg'
+import Lottie from 'react-lottie';
+import * as animationData from '../public/animation_success.json'
 
 export default function ReservationSuccess({seat, floor, name,company}) {
 
     const [shouldExlpode, setExplode] = useState(false)
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
 
     const config = {
         angle: "90",
@@ -29,6 +40,7 @@ export default function ReservationSuccess({seat, floor, name,company}) {
         setTimeout(() => {
             setExplode(true)
         }, 100);
+        window.scrollTo(0, 0);
     }, [])
 
     return (
@@ -42,7 +54,7 @@ export default function ReservationSuccess({seat, floor, name,company}) {
                         <p>Vi kommer att höra av oss så fort vi kan, där vi berättar mer detaljerat om de olika partnerpaket, priser, förmåner vi erbjuder!</p>
                         <p className="reservation-success--welcome">Vi önskar dig och resten av <b>{company}</b> varmt välkomna till Medieteknikdagen 2022!</p>
                     </div>
-                    <Expo/>
+                    <FontAwesomeIcon icon={faCheckCircle}/>
                 </div>
             </div>
         </section>

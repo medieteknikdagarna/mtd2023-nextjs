@@ -21,16 +21,22 @@ align-items: center;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  h4 {
-    color: var(--color-light);
-    font-family: "Lato";
-  }
+  
 }
 .icons-info {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center ;
   gap: 3em;
+  h4 {
+    color: var(--color-light);
+    font-family: "Lato";
+    margin-bottom: 0.75rem;
+  }
+  svg{
+    width: 100%;
+    max-height: 8rem;
+  }
 }
 
 .icons-info--column {
@@ -44,20 +50,16 @@ align-items: center;
   max-width: 25rem;
   flex-grow: 1;
 }
-.icons-info p {
-  color: var(--color-light);
-}
+
 
 .icons-info h4 {
   font-size: 1.7rem;
 }
 .icons-info p {
-  font-weight: 300;
+  font-weight: 400;
+  color: var(--color-light);
 }
 
-.icons-info path {
-  fill: var(--color-light);
-}
 .icons-info svg {
   font-size: 3rem;
 }

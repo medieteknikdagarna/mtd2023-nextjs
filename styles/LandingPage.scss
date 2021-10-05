@@ -71,24 +71,24 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 3rem;
 
   @media screen and (min-width: 950px){
     .welcome-info{
       grid-column: 1/2;
     }
    
-    margin-bottom: clamp(-15rem, -2vw - 1rem, 5rem);
   }
 }
 
 .calendar {
   display: none;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
 
   svg {
     object-fit: contain;
-    max-width: 70%;
+    max-width: 75%;
   }
 }
 
@@ -125,6 +125,7 @@ video{
   background-color: var(--color-light);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 4rem;
   .partner-info {
     grid-column: 1/3;
   }

@@ -87,7 +87,6 @@ export default function SeatBooker() {
             fetch('/api/reserved', requestOptions)
                 .then(response => response.json())
                 .then(res_data => {
-                    console.log(res_data)
                     if(res_data.success){
                         setReservationSuccess(true)
                     }

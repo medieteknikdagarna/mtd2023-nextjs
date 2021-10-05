@@ -1,0 +1,45 @@
+{
+    "sv": {
+     
+         "lecturers": [
+             {
+                 "tag": "VFX",
+                 "name": "Dan Englesson",
+                 "body": "Dan kommer att prata om hur hans karriär tog fart ut i världen direkt efter studietiden och hur det är att jobba på stora VFX och animation studios så som MPC i London, Pixar i San Francisco och Goodbye Kansas i Stockholm. Dan kommer också ge en inblick i hur det var att jobba på Coco på Pixar som vann en Oscar för bästa animerade film och hur det är att jobba med VFX i Sverige idag."
+             },
+             {
+                "tag": "Att lösa brott med VR",
+                "name": "Philip Engström och Catrin Dath",
+                "body": "Kan Virtual Reality bidra till att lösa brott? Nationellt Forensiskt Centrum, NFC, är en nationell avdelning inom Polisen och här finns en grupp som jobbar med ny teknik för att dokumentera och visualisera brottsplatser och brottshändelser. Vad finns det för problem med dagens verktyg och vad kan VR bidra med? Kan man lösa brott med VR? Talarna är två medietekniker, Philip Engström forskning och utvecklingskoordinator på NFC och Catrin Dath konsult inom interaktionsdesign på Knowit Uppsala."
+            },
+            {
+                "tag": "Building a flexible core engine",
+                "name": "Alexander Loodin Ek och Mehrnaz Amanat Bari",
+                "body": "Alexander Loodin Ek and Mehrnaz Amanat Bari, Software Engineers at the Frostbite Engine, will talk about working at Frostbite and how to build a more flexible core engine using Entity Component System. The talk will include the basics of ECS as well as discuss a few different approaches to it."
+            }
+         ]
+     
+    },
+  
+    "en": {
+        "lecturers": [
+            {
+                "tag": "VFX",
+                "name": "Dan Englesson",
+                "body": "Dan kommer att prata om hur hans karriär tog fart ut i världen direkt efter studietiden och hur det är att jobba på stora VFX och animation studios så som MPC i London, Pixar i San Francisco och Goodbye Kansas i Stockholm. Dan kommer också ge en inblick i hur det var att jobba på Coco på Pixar som vann en Oscar för bästa animerade film och hur det är att jobba med VFX i Sverige idag."
+            },
+            {
+               "tag": "Att lösa brott med VR",
+               "name": "Philip Engström och Catrin Dath",
+               "body": "Kan Virtual Reality bidra till att lösa brott? Nationellt Forensiskt Centrum, NFC, är en nationell avdelning inom Polisen och här finns en grupp som jobbar med ny teknik för att dokumentera och visualisera brottsplatser och brottshändelser. Vad finns det för problem med dagens verktyg och vad kan VR bidra med? Kan man lösa brott med VR? Talarna är två medietekniker, Philip Engström forskning och utvecklingskoordinator på NFC och Catrin Dath konsult inom interaktionsdesign på Knowit Uppsala."
+           },
+           {
+               "tag": "Building a flexible core engine",
+               "name": "Alexander Loodin Ek och Mehrnaz Amanat Bari",
+               "body": "Alexander Loodin Ek and Mehrnaz Amanat Bari, Software Engineers at the Frostbite Engine, will talk about working at Frostbite and how to build a more flexible core engine using Entity Component System. The talk will include the basics of ECS as well as discuss a few different approaches to it."
+           }
+        ]
+     
+    }
+  }
+  

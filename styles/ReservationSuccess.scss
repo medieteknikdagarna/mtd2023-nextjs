@@ -21,7 +21,12 @@
   }
 
   svg{
-    max-width: 60%;
     justify-self: center;
+    font-size: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    path{
+      fill: var(--color-primary)
+    }
   }
 }

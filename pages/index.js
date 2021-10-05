@@ -34,8 +34,8 @@ export default function LandingPage() {
                             <div className="welcome">
                                 <p>Expand your brand awereness, meet with students and companys. Secure your spot at the annual convention of Media Technology days</p>
                                 <div className="landing-section--buttons">
-                                    <Button href="/book" type="primary" size="large">Intresseanmälan</Button> 
-                                    <Button style={{borderColor: "var(--color-light)", color: "var(--color-light)"}} href="/book" type="secondary" size="large">Om mässan</Button> 
+                                    <Button href="/register" type="primary" size="large">Intresseanmälan</Button> 
+                                    <Button href="/fair" style={{borderColor: "var(--color-light)", color: "var(--color-light)"}} type="secondary" size="large">Om mässan</Button> 
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ export default function LandingPage() {
             <ResponsiveContainer>
                 <section className="welcome-section">
                     <InfoSection className="welcome-info" tag="MTD2022" title="Välkomna!" body="Medieteknikdagen är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoandra året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva." buttonText="Läs mer">
-                        <Button type="primary" size="medium">Läs mer</Button>
+                        <Button href="/fair" type="primary" size="medium">Läs mer</Button>
                     </InfoSection>
                     <div className="calendar">
                     <ExpoSvg/>
@@ -60,8 +60,8 @@ export default function LandingPage() {
                         <StandSvg/>
                     </div>
                     <InfoSection className="partner-info" tag="SÄKRA EN PLATS" title="Bli partner" body="Exponera ert företag med medieteknikdagarna och nå ut till en uppsjö av blivande civilingenjörer.Säkra en plats för ditt företag redan idag! Med Platsbokaren kan du se en karta över alla möjliga platser på mässan.">
-                        <Button type="primary" size="medium">Intresseanmälan</Button>
-                        <Button type="secondary" size="medium">Om mässan</Button>
+                        <Button href="/register" type="primary" size="medium">Intresseanmälan</Button>
+                        <Button href="/fair" type="secondary" size="medium">Om mässan</Button>
                     </InfoSection> 
                 </section>
             </ResponsiveContainer>

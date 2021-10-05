@@ -1,0 +1,28 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.image-gallery-svg{
+    polyline, polygon,path{
+        stroke: var(--color-light);
+    }
+
+}
+.infosection-gallery{
+    grid-column: 1/2;
+}
+
+.gallery-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width:500px) {
+        grid-template-columns: 1fr;
+    }
+    h2{
+        color: var(--color-light);
+    }
+    p{
+        color: var(--color-light);
+    }
+}
+.image-gallery{
+    grid-column: 1/-1;
+}

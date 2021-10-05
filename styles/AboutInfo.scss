@@ -13,7 +13,7 @@
   flex-direction: column;
   gap: 5rem;
   background: #00000012;
-  padding: 2rem;
+  
   border-radius: 20px;
   box-shadow: 0px 0px 16px -8px black;
 
@@ -66,6 +66,7 @@
     grid-template-columns: var(--grid-layout);
   }
   .about-info {
+    padding: 2rem;
     grid-column: 2/5;
     text-align: left;
     &--img-container {

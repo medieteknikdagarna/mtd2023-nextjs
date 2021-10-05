@@ -47,10 +47,10 @@ export default function Header({changeOnScroll = false, lightContrast = false, s
                 <div className="icons">
                     <LanguageFlag/>
                     <div className="spacer"></div>
-                    <a className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faFacebook}/></a>
-                    <a className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faInstagram}/></a>
-                    <a className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faLinkedin}/></a>
-                    <a className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faYoutube}/></a>
+                    <a target="_blank" rel="noopener" href="https://www.facebook.com/medieteknikdagen" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faFacebook}/></a>
+                    <a target="_blank" rel="noopener" href="https://www.instagram.com/medieteknikdagen/" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faInstagram}/></a>
+                    <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/medieteknikdagarna-2014/" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faLinkedin}/></a>
+                    <a target="_blank" rel="noopener" href="https://www.youtube.com/c/Medieteknikdagen" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faYoutube}/></a>
                 </div>
             </div>
         </div> 

@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { useTransition, animated } from '@react-spring/core'
 
-export default function Carousel({items}) {
-    const [activeSlide, setActive] = useState(0)
-    const lastSlide = items.length - 1
+import { languageContext } from '../pages/_app'
+import Lecturer from './Lecturer'
 
+export default function Carousel() {
+    const [activeSlide, setActive] = useState(0)
+    const [lang, setLang] = useContext(languageContext)
+    const [lecturers, setLecturers] = useState([])
+    let lastSlide = lecturers.length -1
     const transitions = useTransition(activeSlide, {
         from: { opacity: 0 },
         enter: { opacity: 1 },
@@ -35,19 +39,27 @@ export default function Carousel({items}) {
         });
     }
 
+    useEffect(() => {
+        const data = require('../public/content/lecturers.json')
+        const lecs = data[lang].lecturers.map(lec =>{
+            return <Lecturer tag={lec.tag} name={lec.name} body={lec.body}/>
+        })
+        setLecturers(lecs)
+
+    }, [])
+
 
     return (
         <div className="carousel-container">
         <div className="carousel-slide-left"><FontAwesomeIcon onClick={() => makeSlide(-1)} size="2x" icon={faChevronCircleLeft}/></div>
 
         <div className="carousel-content">
-        
-          {items[activeSlide]}
+        {lecturers[activeSlide]}
         </div>
         <div className="carousel-slide-right"><FontAwesomeIcon onClick={() => makeSlide(1)} size="2x" icon={faChevronCircleRight}/></div>
 
         <div className="carousel-pagination">
-            {generatePaginationCircles(items.length, activeSlide)}
+            {generatePaginationCircles(lecturers.length, activeSlide)}
         </div>
             
         </div>

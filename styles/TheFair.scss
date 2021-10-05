@@ -1,7 +1,10 @@
 .the-fair {
-  padding-top: 10rem;
   grid-column: 2/-2;
-
+  .infosection--buttons{
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
   h2 {
     color: var(--color-light);
   }
@@ -22,7 +25,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-
+    padding-top: 10rem;
+    
     svg {
       grid-row: 1/2;
       grid-column: 2/3;

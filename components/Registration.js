@@ -1,10 +1,11 @@
-import { faPaperPlane, faInfoCircle, faCircleNotch } from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane, faCircleNotch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState,useRef } from 'react'
 import Button from './Button'
 import ResponsiveContainer from './ResponsiveContainer'
 import Link from 'next/link'
 import ReservationSuccess from './ReservationSuccess'
+import SignSVG from '../public/images/sign.svg'
 
 export default function Registration() {
 
@@ -63,8 +64,6 @@ export default function Registration() {
 
     }
 
-
-
     return (
         <ResponsiveContainer className="registration-section">
         {success &&  <ReservationSuccess company={r_company.current.value} name={r_name.current.value}/>}
@@ -73,6 +72,7 @@ export default function Registration() {
                 <div>
                     <h1>Intresseanmälan</h1>
                     <p>Skicka in en anmälan tillsammans med era kontaktuppgifter så mailar eller ringer vi upp er och berättar mer om olika partnerpaket, priser, förmåner, tillgängliga platser och svarar på alla era frågor!</p>
+                    <SignSVG/>
                 </div>
                 <div className="registration-form">
                     <form className="register-form">

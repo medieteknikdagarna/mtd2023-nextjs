@@ -22,6 +22,9 @@
 .carousel-container{
     display: grid;
     grid-template-columns: 2rem 1fr 2rem;
+    @media screen and (max-width: 500px) {
+        grid-template-columns: 0rem 1fr 0rem;
+    }
 }
 
 

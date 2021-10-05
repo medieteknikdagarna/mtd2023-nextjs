@@ -32,6 +32,7 @@
 html {
   scrollbar-color: rgb(63, 63, 63) rgb(42, 42, 42);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 ::-moz-selection {
   background: #ff984a7e;

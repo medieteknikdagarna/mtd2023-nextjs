@@ -1,0 +1,19 @@
+.thank-you-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1s both;
+    h3{
+        font-size: 3rem;
+    }
+    text-align: center;
+    svg{
+        margin-top: 2rem;
+        font-size: 4rem;
+        path{
+            fill: var(--color-primary);
+        }
+    }
+
+}

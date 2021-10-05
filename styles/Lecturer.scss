@@ -6,6 +6,7 @@
   background-color: #00000012;
   padding: 1rem;
   border-radius: 20px;
+  min-height: 10rem;
   img{
     justify-self: center;
     align-self: center;
@@ -33,7 +34,7 @@
 
 @media screen and (min-width: 900px){
   .lecturer{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 2rem 3rem;
     img{
       justify-self: flex-end;

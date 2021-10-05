@@ -18,21 +18,29 @@
   }
 }
 
-.star-bg {
-  position: absolute;
-  height: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+.fair-container--lecturers{
 
-  flex-direction: column;
+  h2,p{
+    color: var(--color-light)
+  }
+  &--div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+}
+
+.fair-background{
+  background: var(--gradient);
 }
 .rest-of-the-page {
   z-index: 99;
 }
 .about-page {
-  background: var(--gradient);
+  
   
   &--first-section{
     z-index: 120;

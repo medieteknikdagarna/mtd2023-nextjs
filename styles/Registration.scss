@@ -24,99 +24,106 @@
     background-color: rgb(255, 184, 184);
 }
 
-
-.registration-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    @media screen and (min-width: 900px) {
-        grid-template-columns: 6fr 1fr 6fr;
-    }
-    
-
-    .register-form{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-    
-        span,a{
-            font-size: 1rem;
-            color: rgb(80, 80, 80);
-            path{
-                fill: rgb(80, 80, 80);
-            }
-        }
-        a{
-            color: var(--color-primary)
-        }
-        b{
-            font-size: 1rem;
-        }
-
-        input{
-            -webkit-appearance: none;
-            border: none;
-            position: absolute;
-            background-color: transparent;
-            border-bottom: 1px solid black;
-            font-size: 1.3rem;
-            transition: border 0.1s;
-            font-family: "Barlow";
-            width: 100%;
-            padding-bottom: 0.5rem;
-            &:hover{
-                border-bottom: 1px solid #ffc293;
-            }
-
-            &:focus{
-                border: none;
-                transition: border 0.1s;
-                outline: none;
-                border-bottom: 3px solid var(--color-primary);
-            }
-
-        }
-        label{
-            font-family: "Barlow";
-            font-size: 1.3rem;
-            position: absolute;
-            transition: 0.25s;
-            pointer-events: none;
-            margin-bottom: 0.5rem;
-        }
-        textarea{
-            width: 100%;
-            position: absolute;
-            font-family: "Barlow";
-            font-size: 1.3rem;
-            border: none;
-            background-color: transparent;
-            border-bottom: 1px solid black;
-            resize: none;
-            &:hover{
-                border-bottom: 1px solid #ffc293;
-            }
-            &:focus{
-                outline: none;
-                border-bottom: 3px solid var(--color-primary);
-            }
-        }
-
-        svg{
-            margin-right: 0.6rem;
-        }
-        path{
-            fill: var(--color-light)
-        }
-
-
-    }
-}
-
 .registration-form{
     grid-column: -1/-2;
 }
+
+.registration-wrapper{
+
+    svg{
+        max-width: 30rem;
+    }
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    p{
+        margin-bottom: 2rem;
+    }
+    @media screen and (min-width: 900px) {
+        grid-template-columns: 6fr 1fr 6fr;
+    }
+    }
+
+.register-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+
+    span,a{
+        font-size: 1rem;
+        color: rgb(80, 80, 80);
+        path{
+            fill: rgb(80, 80, 80);
+        }
+    }
+    a{
+        color: var(--color-primary)
+    }
+    b{
+        font-size: 1rem;
+    }
+
+    input{
+        -webkit-appearance: none;
+        border: none;
+        position: absolute;
+        background-color: transparent;
+        border-bottom: 1px solid black;
+        font-size: 1.3rem;
+        transition: border 0.1s;
+        font-family: "Barlow";
+        width: 100%;
+        padding-bottom: 0.5rem;
+        &:hover{
+            border-bottom: 1px solid #ffc293;
+        }
+
+        &:focus{
+            border: none;
+            transition: border 0.1s;
+            outline: none;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+    }
+    label{
+        font-family: "Barlow";
+        font-size: 1.3rem;
+        position: absolute;
+        transition: 0.25s;
+        pointer-events: none;
+        margin-bottom: 0.5rem;
+    }
+    textarea{
+        width: 100%;
+        position: absolute;
+        font-family: "Barlow";
+        font-size: 1.3rem;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid black;
+        resize: none;
+        &:hover{
+            border-bottom: 1px solid #ffc293;
+        }
+        &:focus{
+            outline: none;
+            border-bottom: 3px solid var(--color-primary);
+        }
+    }
+
+    svg{
+        margin-right: 0.6rem;
+    }
+    path{
+        fill: var(--color-light)
+    }
+
+
+}
+
 
 
 

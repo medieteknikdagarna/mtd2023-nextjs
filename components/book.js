@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import Header from '../components/Header';
+import Header from './Header';
 
-import SeatBooker from '../components/SeatBooker';
+import SeatBooker from './SeatBooker';
 
 
 
