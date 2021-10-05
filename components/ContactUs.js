@@ -9,7 +9,7 @@ export default function ContactUs({className}) {
         <div className="contact-us-section">
                 <div className="contact-cards-container">
                     <ContactCard title="Generella frågor" body="Vid generella frågor, om vad som helst, kontakta Afra:" textToCopy="afra.farkory@medieteknikdagen.se"/>
-                    <ContactCard title="Företagskontakt" body="Vill du snacka om samarbeten mellan MTD och ditt företag? Vill ditt företag sponsra MTD? Kontakta Victoria:" textToCopy="gabriel.cederqvist@medieteknikdagen.se"/>
+                    <ContactCard title="Företagskontakt" body="Vill du snacka om samarbeten mellan MTD och ditt företag? Vill ditt företag sponsra MTD? Kontakta Gabriel:" textToCopy="gabriel.cederqvist@medieteknikdagen.se"/>
                     <ContactCard title="Webb" body="Har du frågor över innehållet på sidan? Hittat något som ser knasigt ut? Kontakta Jakob:" textToCopy="jakob.karlstrand@medieteknikdagen.se"/>
                     <ContactCard title="Mässinformation" body="Har du någon fråga kring mässan eller Graduateland? Kontakta Victor:" textToCopy="victor.imark@medieteknikdagen.se"/>
                 </div>
