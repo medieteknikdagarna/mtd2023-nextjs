@@ -48,8 +48,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    
+    & > div{
+        margin-bottom: 4rem;
+        @media screen and (max-width: 500px) {
+                margin-bottom: 3rem;
+        }
+    }
 
     span,a{
         font-size: 1rem;
@@ -57,6 +61,7 @@
         path{
             fill: rgb(80, 80, 80);
         }
+        margin-bottom: 1rem;
     }
     a{
         color: var(--color-primary)
@@ -123,10 +128,6 @@
 
 
 }
-
-
-
-
 
 //ANIMATION
 .register-form--input:focus ~ .register-form--label, .register-form--input:not(:placeholder-shown).register-form--input:not(:focus)~.register-form--label{

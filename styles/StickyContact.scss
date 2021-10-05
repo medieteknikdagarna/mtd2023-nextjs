@@ -47,7 +47,7 @@
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        overflow: hidden;
+        overflow-y: scroll;
         h4{
             color: black;
             font-size: 1.6rem;
