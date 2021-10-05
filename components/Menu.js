@@ -67,10 +67,10 @@ export default function Menu({onExit,style,className, show}) {
             <div className="icons-menu">
                 <LanguageFlag/>
                 <div className="icons-menu--links">
-                <a href="https://www.facebook.com/medieteknikdagen" target="_blank" rel="noopener" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faFacebook}/></a>
-                <a href="https://www.instagram.com/medieteknikdagen/" target="_blank" rel="noopener" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faInstagram}/></a>
-                <a href="https://www.linkedin.com/company/medieteknikdagarna-2014/" target="_blank" rel="noopener" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faLinkedin}/></a>
-                <a href="https://www.youtube.com/c/Medieteknikdagen" target="_blank" rel="noopener" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faYoutube}/></a>
+                <a href="https://www.facebook.com/medieteknikdagen" target="_blank" rel="noreferrer" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faFacebook}/></a>
+                <a href="https://www.instagram.com/medieteknikdagen/" target="_blank" rel="noreferrer" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faInstagram}/></a>
+                <a href="https://www.linkedin.com/company/medieteknikdagarna-2014/" target="_blank" rel="noreferrer" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faLinkedin}/></a>
+                <a href="https://www.youtube.com/c/Medieteknikdagen" target="_blank" rel="noreferrer" className="icon-link"><FontAwesomeIcon className="brand-icons" icon={faYoutube}/></a>
                 </div>
             </div>
         </animated.div>

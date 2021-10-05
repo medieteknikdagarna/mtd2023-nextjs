@@ -32,7 +32,8 @@ export default function LandingPage() {
                         <div className="intro">
                             <h1>MTD2022</h1>
                             <div className="welcome">
-                                <p>Expand your brand awereness, meet with students and companys. Secure your spot at the annual convention of Media Technology days</p>
+                                <p>Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag.
+                                <br/><br/>För 22:a året i rad slår vi upp dörrarna för årets roligaste mässa - det vill ni inte missa! </p>
                                 <div className="landing-section--buttons">
                                     <Button href="/register" type="primary" size="large">Intresseanmälan</Button> 
                                     <Button href="/fair" style={{borderColor: "var(--color-light)", color: "var(--color-light)"}} type="secondary" size="large">Om mässan</Button> 

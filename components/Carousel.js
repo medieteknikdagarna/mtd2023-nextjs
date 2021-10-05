@@ -41,8 +41,8 @@ export default function Carousel() {
 
     useEffect(() => {
         const data = require('../public/content/lecturers.json')
-        const lecs = data[lang].lecturers.map(lec =>{
-            return <Lecturer tag={lec.tag} name={lec.name} body={lec.body}/>
+        const lecs = data[lang].lecturers.map((lec,i) =>{
+            return <Lecturer key={i} tag={lec.tag} name={lec.name} body={lec.body}/>
         })
         setLecturers(lecs)
 
