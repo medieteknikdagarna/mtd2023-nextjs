@@ -30,7 +30,7 @@ export default function StickyContact() {
     const hide_show = useSpring({opacity: isActive ? 1 : 0, from: { opacity: 0 }, delay: isActive ? 1200 : 0});
 
     return (
-        <div className="sticky-contact">
+        <div style={ {overflow: isActive ? "scroll" : "hidden"}} className="sticky-contact">
             <animated.div style={props} className="sticky-contact--rect">
                 <div onClick={() => setActive(prev => !prev)} className="sticky-contact--circle">
                     {isActive && <FontAwesomeIcon icon={faTimes}/> || <FontAwesomeIcon icon={faPaperPlane}/>}

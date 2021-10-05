@@ -162,7 +162,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  a{
+    margin: 0 0.5rem;
+  }
+  
 }
 .menu a {
   text-decoration: none;
