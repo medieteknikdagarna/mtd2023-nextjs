@@ -82,7 +82,7 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      gap: 3rem;
+      
     }
     &--mtd svg {
       width: 15rem;
@@ -100,6 +100,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       margin: 0;
+      margin-right: 2rem;
     }
   }
 }
