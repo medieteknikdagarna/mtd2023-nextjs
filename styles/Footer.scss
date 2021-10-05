@@ -134,6 +134,7 @@
 .footer--images svg {
   max-height: 6rem;
   max-width: 6rem;
+  width: 100%
 }
 
 @media screen and (min-width: 500px) {
@@ -145,7 +146,7 @@
   .footer--images {
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    margin: 0 1em;
   }
   .footer--info {
     justify-content: center;

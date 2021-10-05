@@ -1,4 +1,8 @@
 .sticky-contact{
+
+    .registration-form{
+        overflow-y: scroll ;
+    }
     --animation-width: 15rem;
     z-index: 990;
     
@@ -62,7 +66,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 4rem;
+    padding: 0 2rem;
+    padding-top: 15vh;
     height: 100%;
     h4{
         margin-bottom: 2rem;

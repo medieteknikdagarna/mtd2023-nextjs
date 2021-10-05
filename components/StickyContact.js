@@ -10,7 +10,7 @@ export default function StickyContact() {
     const [isActive, setActive] = useState(false) // 0: Inactive, 1: Active-open , 2: Active-close
     const {isMobile} = useWindowDimensions()
     let anim_width = isMobile ? "18rem" : "25rem"
-    const props = useSpring({height: isActive ? isMobile ? "80vh" : "40rem" : "4rem", width: isActive ? anim_width : "4rem", borderRadius: isActive ? "40px" : "100px", from: { width: "4rem", height: "4rem", borderRadius: "100px" }, 
+    const props = useSpring({height: isActive ? isMobile ? "80vh" : "60vh" : "4rem", width: isActive ? anim_width : "4rem", borderRadius: isActive ? "40px" : "100px", from: { width: "4rem", height: "4rem", borderRadius: "100px" }, 
     delay: (key) => {
         if(isActive && (key === "height" || key === "borderRadius")){
             return 600;
@@ -30,7 +30,7 @@ export default function StickyContact() {
     const hide_show = useSpring({opacity: isActive ? 1 : 0, from: { opacity: 0 }, delay: isActive ? 1200 : 0});
 
     return (
-        <div style={ {overflow: isActive ? "scroll" : "hidden"}} className="sticky-contact">
+        <div className="sticky-contact">
             <animated.div style={props} className="sticky-contact--rect">
                 <div onClick={() => setActive(prev => !prev)} className="sticky-contact--circle">
                     {isActive && <FontAwesomeIcon icon={faTimes}/> || <FontAwesomeIcon icon={faPaperPlane}/>}
