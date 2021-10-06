@@ -2,7 +2,7 @@
     "sv": {
         "section1" : {
             "body": ["Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
-                ,"För 22:a året i rad slår vi upp dörrarna för årets roligaste mässa - det vill ni inte missa!"] 
+                ] 
         },
         "section2":{
             "body": "Medieteknikdagen är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoandra året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva."
@@ -25,8 +25,7 @@
   
     "en": {
         "section1" : {
-            "body": ["Secure your spot at the annual career fair “The Meda Technology Day”. Take the opportunity to meet, inspire and connect with hundreds of media technology students and expose your brand.",
-                "For the 22nd year in a row we invite you to The Media Technology Day 2022!"]
+            "body": ["Secure your spot at the annual career fair “The Meda Technology Day”. Take the opportunity to meet, inspire and connect with hundreds of media technology students and expose your brand."]
                  
         },
         "section2":{

@@ -15,7 +15,7 @@ export default function AboutInfo() {
                 </div>
                 <div>
                     <h3>{content[lang].about_info.title1}</h3>
-                    {content[lang].about_info.body1.map(t=> <p>{t}</p>)}
+                    {content[lang].about_info.body1.map((t,i)=> <p key={i}>{t}</p>)}
                 </div>
             </div>
             <div className="about-info--mt">
@@ -24,7 +24,7 @@ export default function AboutInfo() {
                 </div>
                 <div>
                     <h3>{content[lang].about_info.title2}</h3>
-                    {content[lang].about_info.body2.map(t=> <p>{t}</p>)}
+                    {content[lang].about_info.body2.map((t,i)=> <p key={i}>{t}</p>)}
                 </div>
             </div>
         </div>

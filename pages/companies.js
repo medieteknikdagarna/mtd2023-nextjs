@@ -48,7 +48,7 @@ export function shuffleArray(array) {
     )
   }
 
-export default function companies() {
+export default function Companies() {
 
     const [lang, setLang] = useContext(languageContext)
 

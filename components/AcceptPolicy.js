@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import ResponsiveContainer from './ResponsiveContainer'
 import Button from './Button'
 import Link from 'next/dist/client/link'
 import {useTransition, animated,config} from 'react-spring'
-
+import { languageContext } from '../pages/_app'
+const content = require("../public/content/cookies.json")
 export default function AcceptPolicy() {
+
+    const [lang, setLang] = useContext(languageContext)
 
     const [hasAccepted, setAccepted] = useState(true)
     const transitions = useTransition(!hasAccepted, {
@@ -31,9 +34,9 @@ export default function AcceptPolicy() {
     return (<>{transitions((styles, item) => item && 
     <animated.div className="accept-policy" style={styles}>
         <div className="accept-wrapper">
-            <span>Denna sida använder cookies för att göra din upplevelse bättre.  <Link href="/policy"><a>Läs mer om hur vi använder cookies</a></Link></span>
+            <span>{content[lang].text}  <Link href="/policy"><a>{content[lang].link}</a></Link></span>
         </div>
-        <Button onClick={setPreferences} type="primary" size="medium">Acceptera</Button>
+        <Button onClick={setPreferences} type="primary" size="medium">{lang == "sv" ? "Acceptera" : "Accept"}</Button>
     </animated.div>)
             }</>
     )
