@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Confetti from 'react-dom-confetti';
@@ -7,11 +7,13 @@ import Stairs from '../public/images/stairs.svg'
 import Expo from '../public/images/expo_small.svg'
 import Lottie from 'react-lottie';
 import * as animationData from '../public/animation_success.json'
+import {languageContext} from '../pages/_app'
+const content = require("../public/content/register_complete.json")
 
-export default function ReservationSuccess({seat, floor, name,company}) {
+export default function ReservationSuccess({name,company}) {
 
     const [shouldExlpode, setExplode] = useState(false)
-
+    const [lang, setLang] = useContext(languageContext)
     const defaultOptions = {
         loop: true,
         autoplay: true, 
@@ -49,10 +51,10 @@ export default function ReservationSuccess({seat, floor, name,company}) {
                 <Confetti config={config} active={shouldExlpode}/>
                 <div className="thank-you">
                     <div>
-                        <h2>Wohoo!</h2>
-                        <p>{`Tack ${name}, för din intresseanmälan!`}</p>
-                        <p>Vi kommer att höra av oss så fort vi kan, där vi berättar mer detaljerat om de olika partnerpaket, priser, förmåner vi erbjuder!</p>
-                        <p className="reservation-success--welcome">Vi önskar dig och resten av <b>{company}</b> varmt välkomna till Medieteknikdagen 2022!</p>
+                        <h2>{content[lang].title}</h2>
+                        <p>{content[lang].thanks[0]} <b>{name}</b> {content[lang].thanks[1]}</p>
+                        <p>{content[lang].body}</p>
+                        <p className="reservation-success--welcome">{content[lang].bye[0]} <b>{company}</b> {content[lang].bye[1]}</p>
                     </div>
                     <FontAwesomeIcon icon={faCheckCircle}/>
                 </div>

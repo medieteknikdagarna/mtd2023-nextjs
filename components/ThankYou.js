@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Lottie from 'react-lottie';
 import * as animationData from '../public/animation_success.json'
+import { languageContext } from '../pages/_app';
+const content = require("../public/content/thankyou.json")
 export default function ThankYou() {
+
+  const [lang, setLang] = useContext(languageContext)
 
     const defaultOptions = {
         loop: true,
@@ -16,8 +20,8 @@ export default function ThankYou() {
 
     return (
         <div className="thank-you-container">
-        <h3>Tack!</h3>
-        <p>Tack för ditt meddelande! Vi återkommer till er så fort som möjligt!</p>
+        <h3>{content[lang].title}</h3>
+        <p>{content[lang].body}</p>
         <Lottie options={defaultOptions}
                         />
         </div>

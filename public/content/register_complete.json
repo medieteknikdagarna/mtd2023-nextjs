@@ -1,0 +1,18 @@
+{
+    "sv": {
+        "title": "Tack!",
+        "thanks": ["Tack", ", för din intresseanmälan!"],
+        "body": "Vi kommer att höra av oss så fort vi kan, där vi berättar mer detaljerat om de olika partnerpaket, priser, förmåner vi erbjuder!",
+        "bye": ["Vi önskar dig och resten av", "varmt välkomna till Medieteknikdagen 2022!"]
+    
+    },
+  
+    "en": {
+        "title": "Thank you!",
+        "thanks": ["Thank you", ", for you registration of interest!"],
+        "body": "We will get back to you as soon as possible to give you more details about partnership, prices, benefits. etc.",
+        "bye": ["We wish you and the rest of", "welcome to The Media Technology Day!"]
+    
+    }
+  }
+  

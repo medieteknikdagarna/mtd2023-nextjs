@@ -14,6 +14,8 @@ export default function Registration() {
     const [error, setError] = useState(null)
     const [submitted, setSubmitted] = useState(false)
     const [success, setSuccess] = useState(false)
+    const [company, setCompany] = useState("")
+    const [name, setName] = useState("")
     const r_name = useRef();
     const r_company = useRef();
     const r_email = useRef();
@@ -54,7 +56,6 @@ export default function Registration() {
                 .then(res_data => {
                     if(res_data.success){
                         setSuccess(true)
-
                     }
                     else{
                         setError("Något gick fel tyvärr. Testa igen eller skicka direkt till vår email: info@medieteknikdagen.se")
@@ -69,7 +70,7 @@ export default function Registration() {
 
     return (
         <ResponsiveContainer className="registration-section">
-        {success &&  <ReservationSuccess company={r_company.current.value} name={r_name.current.value}/>}
+        {success &&  <ReservationSuccess company={company} name={name}/>}
         {!success &&
             <div className="registration-wrapper">
                 <div>
@@ -80,11 +81,11 @@ export default function Registration() {
                 <div className="registration-form">
                     <form className="register-form">
                         <div>
-                            <input className="register-form--input" ref={r_name} type="text" placeholder=" "></input>
+                            <input onChange={() => setName(r_name.current.value)} className="register-form--input" ref={r_name} type="text" placeholder=" "></input>
                             <label className="register-form--label">{formContent[lang].name}</label>
                         </div>
                         <div>
-                            <input className="register-form--input" ref={r_company} type="text" placeholder=" "></input>
+                            <input onChange={() => setCompany(r_company.current.value)} className="register-form--input" ref={r_company} type="text" placeholder=" "></input>
                             <label className="register-form--label">{formContent[lang].company}</label>
                         </div>
                         <div>
