@@ -89,6 +89,7 @@
   svg {
     object-fit: contain;
     max-width: 75%;
+    width: 100%;
   }
 }
 
@@ -114,6 +115,7 @@
   grid-column: 1/2;
   svg {
     max-width: 40%;
+    width: 100%;
     object-fit: contain;
   }
 }

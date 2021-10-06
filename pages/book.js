@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import Header from './Header';
+import Header from '../components/Header';
 
-import SeatBooker from './SeatBooker';
+import SeatBooker from '../components/SeatBooker';
 
 
 
@@ -11,7 +11,6 @@ export default function book() {
 
     return (
         <div>
-            <Header changeOnScroll/>
             <SeatBooker/>
             
         </div>
