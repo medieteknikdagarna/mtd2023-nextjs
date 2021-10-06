@@ -5,6 +5,7 @@ import { useTransition, animated } from '@react-spring/core'
 
 import { languageContext } from '../pages/_app'
 import Lecturer from './Lecturer'
+const content = require("../public/content/fair.json")
 
 export default function Carousel() {
     const [activeSlide, setActive] = useState(0)
@@ -41,7 +42,7 @@ export default function Carousel() {
 
     useEffect(() => {
         const data = require('../public/content/lecturers.json')
-        const lecs = data[lang].lecturers.map((lec,i) =>{
+        const lecs = content[lang].lecturers.map((lec,i) =>{
             return <Lecturer key={i} tag={lec.tag} name={lec.name} body={lec.body}/>
         })
         setLecturers(lecs)

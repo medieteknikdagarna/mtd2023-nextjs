@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import InfoSection from './InfoSection'
 import Tappan from "../public/images/platsbokaren_utan_platser.svg"
 import Button from './Button'
 import AfterMovie from './AfterMovie'
+import { languageContext } from '../pages/_app'
+const content = require("../public/content/fair.json")
 export default function TheFair() {
+    const [lang, setLang] = useContext(languageContext)
 
     const handleScroll = () =>{
         document.getElementById('scroll-gallery').scrollIntoView();
@@ -12,9 +15,9 @@ export default function TheFair() {
     return (
         <div className="the-fair">
         <div>
-            <InfoSection tag="MTD2022" title="Mässan" body={"Mässan håller till på våning 4 och 5 i Täppan, Campus Norrköping. Lokalen passar perfekt för MTD då den är utformad som en cirkel och äger rum i studenternas vardagliga studiemiljö. Med en trappa samt två hissar i varje ände, är det garanterat alltid mycket trafik! Medieteknikdagen är till för att föra studenter och företag samman. Det är en mycket uppskattad mässa från både studenter och företag. Nedan kan du se hur det har sett ut tidigare år under MTD"}>
-                <Button href="/register" type="primary" style={{ marginTop: "1rem"}}>Intresseanmälan</Button>
-                <Button onClick={handleScroll} type="secondary" style={{marginTop: "1rem"}}>Galleri</Button>
+            <InfoSection tag="MTD2022" title={content[lang].fair.title} body={content[lang].fair.body.map(t => <p>{t}</p>)}>
+                <Button href="/register" type="primary" style={{ marginTop: "1rem"}}>{lang === "sv" ? "Intresseanmälan" : "Register of interest"}</Button>
+                <Button onClick={handleScroll} type="secondary" style={{marginTop: "1rem"}}>{lang === "sv" ? "Galleri" : "Gallery"}</Button>
             </InfoSection>    
         </div>
         <Tappan/>

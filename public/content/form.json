@@ -1,0 +1,20 @@
+{
+    "sv": {
+        "hi": "Vad kan vi hjälpa dig med?",
+        "name": "Kontaktperson",
+        "company": "Företag",
+        "message": "Meddelande",
+        "accept": "Genom att klicka på Skicka så accepterar du vår",
+        "link": "integritetspolicy"
+    },
+  
+    "en": {
+        "hi": "What can we do for you?",
+        "name": "Name",
+        "company": "Company name",
+        "message": "Message",
+        "accept": "By submitting this form you automatically accept our ",
+        "link": "privacy policy"
+    }
+  }
+  

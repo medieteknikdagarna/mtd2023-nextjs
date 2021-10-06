@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useRef } from 'react'
 import { faHandshake, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from './Button'
@@ -6,9 +6,12 @@ import useWindowDimensions from './utilities/useWindowDimensions'
 import ResponsiveContainer from './ResponsiveContainer'
 import PodiumSVG from '../public/images/podium.svg'
 import ShakeSVG from '../public/images/shake_hand.svg'
+import { languageContext } from '../pages/_app'
+const content = require("../public/content/landing.json")
 export default function InfoWithStars() {
 
     const {width} = useWindowDimensions()
+    const [lang, setLang] = useContext(languageContext)
     return (
 
             <ResponsiveContainer className="info-with-icons">
@@ -18,8 +21,8 @@ export default function InfoWithStars() {
                                 <PodiumSVG/>
                             </div>
                             <div>
-                                <h4>Bli inspirerad</h4> 
-                                <p>Inspirerande och spännande föreläsningar har varit ett stående inslag på MTD de senaste åren.</p>
+                                <h4>{content[lang].section4.title1}</h4> 
+                                <p>{content[lang].section4.body1}</p>
                             </div>
                         </div>
                         <div className="icons-info--column">
@@ -27,8 +30,8 @@ export default function InfoWithStars() {
                                 <ShakeSVG/>
                             </div>
                             <div>
-                                <h4>Knyt kontakter</h4> 
-                                <p>Vi förenar studenter med företag och företag med studenter. En utmärkt chans för alla att knyta kontakter inför framtiden.</p>
+                                <h4>{content[lang].section4.title2}</h4> 
+                                <p>{content[lang].section4.body2}</p>
                             </div>
                         </div>
                     </div>

@@ -66,6 +66,10 @@ html {
 
 h1{
   font-weight: 800;
+  font-size: 3rem;
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+  }
 }
 
 

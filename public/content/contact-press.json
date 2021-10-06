@@ -1,0 +1,31 @@
+{
+    "sv": {
+        "short" : "Representerar du press eller övrig media och är lite nyfiken på MTD? Här hittar du en kort sammanfattning om vad Mediekteknikdagen är.",
+        "info_body":["Medietekniksektionen har sedan 2001 arrangerat Medieteknikdagen – MTD. MTD har under ett decennium utvecklats från en dag i en föreläsningssal till en mässa med föreläsningar och bankettsittning.","Gruppen som anordnar MTD består av tretton engagerade medieteknikstudenter från varierande årskurser. Under drygt ett halvår hålls möten och MTD (med mässa, föreläsare, bankett) växer fram. Under själva mässdagen är 40-50 studenter engagerade som värdar av olika slag.","MTD erbjuder studenter en möjlighet att knyta kontakter med företag, ställa frågor om karriärval och ordna examensarbeten eller praktikplatser. För utställarna är det en chans att marknadsföra sig själva mot potentiella framtida medarbetare.","Föreläsningarna som hålls av exjobbare och gästföreläsare är tänkta att vara inspirerande och ge lite extra energi till de duktigt hårt studerande medieteknikstudenterna."],
+        "title": "Pressinformation",
+        "card": {
+            "title1": "Presskontakt",
+            "title2": "Nedladdningar",
+            "webb": "För webb(.svg & png)",
+            "tryck": "För tryck(.ai)",
+            "button": "Ladda ned"
+
+        }
+    },
+  
+    "en": {
+        "short" : "Are you representing press or other media, and want to know more about MTD? This is where you will find a short summary about the Media Technology Days.",
+        "info_body": ["The Media Technology programme at Linköpings University in Norrköping, Sweden has since 2001 organized the Media Technology Days – MTD. During one day, a series of lectures will be given in parallel to a work fair. MTD has, in the span of a decade, evolved from a day in a lecture room to becoming a venue where students meet with world leading entrepreneurs and researchers as well as established and upcoming companies, to inspire and be inspired by what’s in store for the future of media technology.", "The group of thirteen who organize MTD are all passionate Media Technology students ranging from first-year students to near-graduates. Close to six months are spent together, having weekly meetings, doing the hard work needed to pull it all off, and watching the MTD grow into what it is. During the event forty to fifty students are active in making things work as smoothly as possible.", "It is a fantastic opportunity for students to be able to network with future employers, ask questions regarding career choice, find internships, and the ability to be inspired by things maybe previously unknown. For companies and organizations who come to meet our students it is an equally great opportunity to meet, and possibly shape, future employees, colleagues and friends.", "The lectures are held by graduated students and guest lecturers from all disciplines of media technology and continue, year after year, to inspire hard working students not to give up when their studies may seem a little too tough."],
+        "title": "Press information",
+        "card": {
+            "title1": "Press contact",
+            "title2": "Downloads",
+            "webb": "For web(.svg & png)",
+            "tryck": "For print(.ai)",
+            "button": "Download"
+
+        }
+
+    }
+  }
+  

@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import InfoSection from '../components/InfoSection';
 import LoadingSpinner from '../components/LoadingSpinner';
 import ResponsiveContainer from '../components/ResponsiveContainer';
 import { importAll } from './fair';
-
+import { languageContext } from './_app';
+const content = require("../public/content/companies.json")
 export function shuffleArray(array) {
     let currentIndex = array.length,  randomIndex;
   
@@ -25,6 +26,7 @@ export function shuffleArray(array) {
 
   function CompanyImages (){
     const [images, setImages] = useState([])
+    
 
     useEffect(() => {
      const images = importAll(require.context('../public/images/previous_companies', false, /\.(svg)$/));
@@ -48,13 +50,13 @@ export function shuffleArray(array) {
 
 export default function companies() {
 
-
+    const [lang, setLang] = useContext(languageContext)
 
     return (
         <div>
         <Header changeOnScroll/>
         <ResponsiveContainer className="rc-companies">
-            <InfoSection tag="Tidigare år" title="Företag från tidigare år" body="Nedan listas ett axplox av företag som har varit med tidigare år. Vi hoppas att kunna ha med erat företag 2023!"/>
+            <InfoSection tag="" title={content[lang].title} body={content[lang].body}/>
             <CompanyImages/>
         </ResponsiveContainer>
         <Footer/>    

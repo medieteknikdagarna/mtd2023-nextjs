@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { languageContext } from '../pages/_app'
 import MTDSvg from '../public/images/mtd.svg'
 import MTSvg from '../public/images/mt_logo.svg'
-
+const content = require("../public/content/fair.json")
 export default function AboutInfo() {
 
-
-    
-
+    const [lang, setLang] = useContext(languageContext)
 
     return (
         <div className="about-info">
@@ -15,12 +14,8 @@ export default function AboutInfo() {
                     <MTDSvg/>
                 </div>
                 <div>
-                    <h3>Medieteknikdagarna 2022</h3>
-                    <p>
-                    Medieteknikdagen är ett ideellt arrangemang drivet av och för studenter. Syftet är att knyta kontakter mellan studenter, medietekniker ute i arbetslivet och företagen inom branschen. 
-                    <br/><br/>
-                    MTD är ett tillfälle för företag och studenter att inspirera, informera och integrera med varandra. Såväl företag som studenter får här en chans att visa det allra senaste inom medieteknik.
-                    </p>
+                    <h3>{content[lang].about_info.title1}</h3>
+                    {content[lang].about_info.body1.map(t=> <p>{t}</p>)}
                 </div>
             </div>
             <div className="about-info--mt">
@@ -28,12 +23,8 @@ export default function AboutInfo() {
                     <MTSvg/>
                 </div>
                 <div>
-                    <h3>Civilingenjörsprogrammet i medietenik på Linköpings Universitet</h3>
-                    <p>Civilingenjörsprogrammet i Medieteknik är utbildningen där tekniken gifter sig med kreativiteten.
-                        Resultatet blir en unik spetskompetens inom områden som blir allt viktigare. Klassiska ingenjörsämnen blandas med programmering, visualisering, datorgrafik, interaktionsdesign, ljud och mycket mer. 
-                        <br/><br/>Utbildningen är belägen på universitets campus Norrköping, med närhet till Visualiseringscenter C, och på så vis till världsledande forskning. 
-                        <br/><br/>Läs mer om medieteknikprogrammet på sektionens hemsida, <a href="www.medieteknik.nu">www.medieteknik.nu</a> samt på <a href="www.liu.se/medieteknik">www.liu.se/medieteknik</a>
-                    </p>
+                    <h3>{content[lang].about_info.title2}</h3>
+                    {content[lang].about_info.body2.map(t=> <p>{t}</p>)}
                 </div>
             </div>
         </div>

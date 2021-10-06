@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import ContactSubmenu from '../../components/ContactSubmenu'
@@ -7,10 +7,13 @@ import PressAndMedia from '../../components/PressAndMedia'
 import { useRouter } from 'next/router'
 import TheGroup from '../../components/TheGroup'
 import ResponsiveContainer from '../../components/ResponsiveContainer'
+import { languageContext } from '../_app'
 
-
+const content = require("../../public/content/contact-us.json")
 
 export default function ContactPage() {
+
+    const [lang, setLang] = useContext(languageContext)
 
     const router = useRouter()
     const { slug } = router.query
@@ -29,13 +32,13 @@ export default function ContactPage() {
 
     const getTitleOfSlug = (s) =>{
         if (s.toLowerCase() === "the-group"){
-            return "Gruppen"
+            return content[lang].buttons[1]
         }
         else if (s.toLowerCase() === "press-and-media"){
-            return "Press & media"
+            return content[lang].buttons[2]
         }
         else{
-            return "Kontakta oss"
+            return content[lang].buttons[0]
         }
     }
     

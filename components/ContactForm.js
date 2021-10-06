@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useState,useRef } from 'react'
 import Link from 'next/link'
 import Button from './Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleNotch, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import ThankYou from '../components/ThankYou'
-
+import { languageContext } from '../pages/_app'
+const content = require("../public/content/form.json")
 export default function ContactForm() {
     const [error, setError] = useState(null)
     const [submitted, setSubmitted] = useState(false)
@@ -15,6 +16,7 @@ export default function ContactForm() {
     const r_email = useRef();
     const r_phone = useRef();
     const r_msg = useRef();
+    const [lang, setLang] = useContext(languageContext)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -65,15 +67,15 @@ export default function ContactForm() {
         <>
         {success && <ThankYou/> ||
         <div className="registration-form">
-            <h4>Hej! <br/><span>Vad kan vi hjälpa dig med?</span></h4>
+            <h4>{lang === "sv" ? "Hej!" : "Hi!"}<br/><span>{content[lang].hi}</span></h4>
         <form className="register-form">
             <div>
                 <input className="register-form--input" ref={r_name} type="text" placeholder=" "></input>
-                <label className="register-form--label">Kontaktperson</label>
+                <label className="register-form--label">{content[lang].name}</label>
             </div>
             <div>
                 <input className="register-form--input" ref={r_company} type="text" placeholder=" "></input>
-                <label className="register-form--label">Företag</label>
+                <label className="register-form--label">{content[lang].company}</label>
             </div>
             <div>
                 <input className="register-form--input" ref={r_email} type="email" placeholder=" "></input>
@@ -85,13 +87,13 @@ export default function ContactForm() {
             </div>
             <div>
                 <textarea className="register-form--input" ref={r_msg} type="text" placeholder=" "></textarea>
-                <label  className="register-form--label">Meddelande</label>
+                <label  className="register-form--label">{content[lang].message}</label>
             </div>
             {error && <div className="registration-error-message">
                 <div></div>
                 <span>{error}</span>
             </div>}
-            <Button onClick={handleSubmit}><FontAwesomeIcon spin={submitted} icon={submitted ? faCircleNotch : faPaperPlane}/>Skicka</Button>
+            <Button onClick={handleSubmit}><FontAwesomeIcon spin={submitted} icon={submitted ? faCircleNotch : faPaperPlane}/>{lang === "sv" ? "Skicka" : "Send"}</Button>
         </form>
     </div>}</>
             

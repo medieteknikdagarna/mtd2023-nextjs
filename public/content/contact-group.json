@@ -1,0 +1,28 @@
+{
+    "sv": {
+       "members":[
+           {
+               "name": "Jakob Karlstrand",
+               "post": "Webb",
+               "email": "jakob.karlstrand@medieteknikdagen.se",
+               "tel": "+46 723 52 56 17",
+               "linkedin": "https://www.linkedin.com/in/jakob-karlstrand-a435b144/"
+           }
+       ]
+
+     
+    },
+  
+    "en": {
+        "opensource":{
+            "body": "This is an open source project. You can clone or download the project via our Github repository."
+        },
+        "gdpr":{
+            "body": "Read more about GDPR and our privacy policy "
+        },
+        "tag": "Open source - Media Technology Day 2022"
+ 
+     
+    }
+  }
+  

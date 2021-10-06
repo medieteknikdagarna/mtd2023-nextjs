@@ -1,12 +1,14 @@
 import { faPaperPlane, faCircleNotch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useState,useRef } from 'react'
+import React, { useState,useRef, useContext } from 'react'
 import Button from './Button'
 import ResponsiveContainer from './ResponsiveContainer'
 import Link from 'next/link'
 import ReservationSuccess from './ReservationSuccess'
 import SignSVG from '../public/images/sign.svg'
-
+import { languageContext } from '../pages/_app'
+const content = require("../public/content/register.json")
+const formContent = require("../public/content/form.json")
 export default function Registration() {
 
     const [error, setError] = useState(null)
@@ -17,6 +19,7 @@ export default function Registration() {
     const r_email = useRef();
     const r_phone = useRef();
     const r_msg = useRef();
+    const [lang, setLang] = useContext(languageContext)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -70,19 +73,19 @@ export default function Registration() {
         {!success &&
             <div className="registration-wrapper">
                 <div>
-                    <h1>Intresseanmälan</h1>
-                    <p>Skicka in en anmälan tillsammans med era kontaktuppgifter så mailar eller ringer vi upp er och berättar mer om olika partnerpaket, priser, förmåner, tillgängliga platser och svarar på alla era frågor!</p>
+                    <h1>{content[lang].title}</h1>
+                    <p>{content[lang].body}</p>
                     <SignSVG/>
                 </div>
                 <div className="registration-form">
                     <form className="register-form">
                         <div>
                             <input className="register-form--input" ref={r_name} type="text" placeholder=" "></input>
-                            <label className="register-form--label">Kontaktperson</label>
+                            <label className="register-form--label">{formContent[lang].name}</label>
                         </div>
                         <div>
                             <input className="register-form--input" ref={r_company} type="text" placeholder=" "></input>
-                            <label className="register-form--label">Företag</label>
+                            <label className="register-form--label">{formContent[lang].company}</label>
                         </div>
                         <div>
                             <input className="register-form--input" ref={r_email} type="email" placeholder=" "></input>
@@ -94,14 +97,14 @@ export default function Registration() {
                         </div>
                         <div>
                             <textarea className="register-form--input" ref={r_msg} type="text" placeholder=" "></textarea>
-                            <label  className="register-form--label">Meddelande</label>
+                            <label  className="register-form--label">{formContent[lang].message}</label>
                         </div>
-                        <span>Genom att klicka på <b>Skicka</b> så accepterar du vår <Link href="/policy">integritetspolicy</Link></span>
+                        <span>{formContent[lang].accept} <Link href="/policy">{formContent[lang].link}</Link></span>
                         {error && <div className="registration-error-message">
                             <div></div>
                             <span>{error}</span>
                         </div>}
-                        <Button onClick={handleSubmit}><FontAwesomeIcon spin={submitted} icon={submitted ? faCircleNotch : faPaperPlane}/>Skicka</Button>
+                        <Button onClick={handleSubmit}><FontAwesomeIcon spin={submitted} icon={submitted ? faCircleNotch : faPaperPlane}/>{lang === "sv" ? "Skicka" : "Send"}</Button>
                     </form>
                 </div>
             </div>}

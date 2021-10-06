@@ -15,7 +15,7 @@ import Dan from '../public/images/dan.png'
 import Lecturer from '../components/Lecturer'
 import AfterMovie from '../components/AfterMovie'
 import Gallery from '../components/Gallery'
-
+const content = require("../public/content/fair.json")
 export function importAll(r) {
     let images = [];
     if(!r){
@@ -43,9 +43,8 @@ export default function About() {
                                     <div className="about-section--message">
                                         <h1>{data && data[lang].title}</h1>
                                         <p>{data && data[lang].ingress}</p>
-                                        <Button href="/contact/us" type="primary">Kontakta oss</Button>
+                                        <Button href="/contact/us" type="primary">{lang === "sv" ? "Kontakta oss" : "Contact us"}</Button>
                                     </div>
-                                    {/* <ExpoSmall/> */}
                                 </div>
                             </ResponsiveContainer>
 
@@ -61,10 +60,9 @@ export default function About() {
                                 <Gallery/>
                             </ResponsiveContainer>
                             
-                                
                             <ResponsiveContainer className="fair-container--lecturers">
                                 <div className="fair-container--lecturers--div">
-                                <InfoSection tag="TIDIGARE ÅR" title="Föreläsningar" body="Varje år håller flera företag spännande föreläsningar ny spännande teknik inom en rad olika ämnen. Håll utkik på hemsidan och våra sociala medier för att inte missa dessa! Nedan hittar du några exempel på föreläsningar som kan hållas under MTD." />
+                                <InfoSection tag={lang === "sv" ? "Tidigare år" : "Previous years"} title={content[lang].lecturer.title} body={content[lang].lecturer.body} />
                                 </div>
                                 <Carousel/>
 

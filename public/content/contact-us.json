@@ -1,0 +1,16 @@
+{
+    "sv": {
+      "buttons":["Kontakta oss", "Gruppen", "Press & media"],
+      "small_titles": ["Generella frågor", "Företagskontakt", "Webb", "Mässinformation"],
+      "bodys": ["Vid generella frågor, om vad som helst!", "Vill du snacka om samarbeten mellan MTD och ditt företag? Vill ditt företag sponsra MTD?", "Har du frågor över innehållet på sidan? Hittat något som ser knasigt ut?", "Har du någon fråga kring mässan?"],
+      "addresses" : ["Besöksadress", "Postadress", "Leveransadress"]
+    },
+  
+    "en": {
+        "buttons":["Contact us", "The group", "Press & media"],
+        "small_titles": ["Generel inquiries", "Business contact", "Web", "Fair information"],
+        "bodys": ["For general inquiries, about anything!", "Do you want to talk about collaborating with MTD? Do you want your company to be one of our partners?", "Do you have any questions about the content of this page? Have you found something that looks a bit weird?", "Do you have any questions about the fair?"],
+        "addresses" : ["Visiting address", "Mail address", "Goods"]
+    }
+  }
+  

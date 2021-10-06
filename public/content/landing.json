@@ -1,0 +1,50 @@
+{
+    "sv": {
+        "section1" : {
+            "body": ["Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
+                ,"För 22:a året i rad slår vi upp dörrarna för årets roligaste mässa - det vill ni inte missa!"] 
+        },
+        "section2":{
+            "body": "Medieteknikdagen är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoandra året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva."
+        },
+        "section3":{
+            "body": "Exponera ert företag med medieteknikdagarna och nå ut till en uppsjö av blivande civilingenjörer. Säkra en plats för ditt företag redan idag! Lämna en intresseanmälan och få mer info utav oss"
+        },
+        "section4":{
+            "title1": "Bli inspirerad",
+            "body1": "Inspirerande och spännande föreläsningar har varit ett stående inslag på MTD de senaste åren.",
+            "title2": "Knyt kontakter",
+            "body2": "Vi förenar studenter med företag och företag med studenter. En utmärkt chans för alla att knyta kontakter inför framtiden."
+        },
+        "section5":{
+            "body": "I fjol hölls mässan digitalt via Graduateland. I år kommer vi att hålla den på plats. Kolla in filmen nedan för att få en inblick i hur det kan se ut under Medieteknikdagen!"
+        }
+
+     
+    },
+  
+    "en": {
+        "section1" : {
+            "body": ["Secure your spot at the annual career fair “The Meda Technology Day”. Take the opportunity to meet, inspire and connect with hundreds of media technology students and expose your brand.",
+                "For the 22nd year in a row we invite you to The Media Technology Day 2022!"]
+                 
+        },
+        "section2":{
+            "body": "The media technology day is a career fair day for engineering students at Linköping University. For the 22nd year in a row we unite hundreds of students with companies in the industry. Here you will find all the fair- and contact information you will need."
+        },
+        "section3":{
+            "body": "Expose your brand at MTD and reach out to plenty of future engineers. Secure your spot today! Leave a registration of interest and we will contact you as soon as we can."
+        },
+        "section4":{
+            "title1": "Inpire and get inspired",
+            "body1": "Inspiring and exciting lecturers has been a recurrent element of MTD previous years",
+            "title2": "Connect",
+            "body2": "We unite students and companies. An excellent opportunity for everyone to create contacts."
+        },
+        "section5":{
+            "body": "Last year the fair was held digitally via Graduateland. This year we plan on hosting it on Campus Norrköping. Check out the After Movie below to get insight of what a typical MTD is like"
+        }
+     
+    }
+  }
+  

@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Masonry from 'react-masonry-css'
 import { importAll } from '../pages/fair'
 import ImageGallery from 'react-image-gallery';
 import InfoSection from './InfoSection';
 import LoadingSpinner from './LoadingSpinner';
+import { languageContext } from '../pages/_app';
+const content = require("../public/content/fair.json")
 
 export default function Gallery() {
 
     const [images, setImages] = useState([])
+    const [lang, setLang] = useContext(languageContext)
     
 
     useEffect(() => {
@@ -36,7 +39,7 @@ export default function Gallery() {
         <div id="scroll-gallery" className="gallery-section">
             
             
-            <InfoSection className="infosection-gallery" style={{color: "white"}} title="Galleri" tag="Tidigare år" body="Här kan ni se lite härliga bilder från MTD2020 som var på plats i Täppans lokaler!"/>
+            <InfoSection className="infosection-gallery" style={{color: "white"}} title={content[lang].gallery.title} tag={lang === "sv" ? "Tidigare år" : "Previous years"} body={content[lang].gallery.body}/>
             <ImageGallery items={images}/>
 
         </div>
