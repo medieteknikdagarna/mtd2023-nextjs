@@ -7,7 +7,7 @@ export default function PressAndMedia() {
     return (
         <div className="press-and-media-section">
             <div className="press-info">    
-                <p>Representerar du press eller övrig media och är lite nyfiken på MTD? Här hittar du en kort sammanfattning om vad Mediekteknikdagen är.</p>
+                <p>{content[lang].short}</p>
                 <h3>{content[lang].title}</h3>
                 {content[lang].info_body.map((t,i) => <p key={i}>{t}</p>)}
 
