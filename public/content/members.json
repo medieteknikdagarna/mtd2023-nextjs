@@ -26,7 +26,7 @@
         "sv": "Näringsliv",
         "en": "Business"
       },
-      "email": "Anton.andersson@medieteknikdagen.se",
+      "email": "anton.andersson@medieteknikdagen.se",
       "tel": "737 83 22 25",
       "linkedin": "https://www.linkedin.com/in/anton-andersson-b1a532b1"
     },
@@ -126,9 +126,19 @@
           "sv": "Företag",
           "en": "Business"
         },
-        "email": "gabriel.gabriel@medieteknikdagen.se",
+        "email": "gabriel.cederqvist@medieteknikdagen.se",
         "tel": "760 29 49 79",
         "linkedin": "https://www.linkedin.com/in/gabriel-cederqvist-288b16221/"
+      },
+      {
+        "namn": "Rebecca Sjödin",
+        "post": {
+          "sv": "Bankett",
+          "en": "Banquet"
+        },
+        "email": "rebeca.sjodin@medieteknikdagen.se",
+        "tel": "705 83 88 14",
+        "linkedin": " "
       }
 
     ]
