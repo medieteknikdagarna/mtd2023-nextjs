@@ -41,6 +41,7 @@ import '../styles/Registration.scss'
 import '../styles/companies.scss'
 import '../styles/ThankYou.scss'
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Head from 'next/head'
 
 
 import { useRouter } from "next/router";
@@ -57,6 +58,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
   <languageContext.Provider value={[language,setLanguage]}>
+    <Head>
+    <meta name="google-site-verification" content="RxmIo5rnOM-a2ckA5J2GeYpMcYoOOqurhNqn9pYd2hs" />
+    </Head>
     <AcceptPolicy/>
     <StickyContact/>
     <Component {...pageProps} />
