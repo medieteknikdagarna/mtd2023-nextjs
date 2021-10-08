@@ -22,9 +22,9 @@ export default function LandingPage() {
     const fbVideoUrl = "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmedieteknikdagen%2Fvideos%2F1399763803536580%2F&show_text=false&width=560&t=0";
     return (
         <>
-        <NextSeo title="MTD2022" 
+        <NextSeo title="Medieteknikdagen 2022" 
         description="Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
-        canonical="https://www.medieteknikdagen.se"
+        canonical="https://www.medieteknikdagen.se/"
         />
         <Header lightContrast changeOnScroll/>
              <div className="video-container">
