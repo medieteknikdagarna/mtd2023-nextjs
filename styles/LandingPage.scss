@@ -34,6 +34,12 @@
   align-items: flex-start;
   flex-direction: column;
 
+  @media screen and (max-width: 500px) {
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 1rem;
+  }
+
 }
 .landing-fair-info{
   grid-column: 1/-1;
