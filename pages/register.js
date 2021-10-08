@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Registration from '../components/Registration'
 import { languageContext } from './_app'
 import { NextSeo } from 'next-seo'
-export default function register() {
+export default function Register() {
     const [lang, setLang] = useContext(languageContext)
     return (
         <div>
