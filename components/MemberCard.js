@@ -6,11 +6,11 @@ import React from 'react'
 
 
 
-export default function MemberCard({src, post, name, email, phone, linkedin}) {
+export default function MemberCard({src, post, alt, name, email, phone, linkedin}) {
     return (
         <div className="member-card">
         <div className="member-card--top">
-            <img src={src}></img>
+            <img alt={alt} src={src}></img>
         </div>
         <div className="member-card--bottom">
             <div className="member-card--content">

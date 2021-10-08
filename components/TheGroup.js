@@ -24,7 +24,7 @@ export default function TheGroup() {
             <div className="member-card-container">
                 {
                     members.map((member,i) =>{
-                       return <MemberCard key={i} name={member.namn} post={member.post[lang]} email={member.email} phone={"+46 " + member.tel} src={placeholder.src} linkedin={member.linkedin} />
+                       return <MemberCard key={i} alt={member.namn} name={member.namn} post={member.post[lang]} email={member.email} phone={"+46 " + member.tel} src={placeholder.src} linkedin={member.linkedin} />
                     })
                 }
             </div>
