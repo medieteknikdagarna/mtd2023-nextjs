@@ -6,6 +6,7 @@ import Fallback from '../components/utilities/Fallback'
 import { useContext } from 'react'
 import { languageContext } from './_app'
 import ResponsiveContainer from '../components/ResponsiveContainer'
+import { NextSeo } from 'next-seo'
 export default function Policy() {
 
     const { data, loading, error } = useFetch('/api/content/privacy-policy')
@@ -15,6 +16,10 @@ export default function Policy() {
     return (
         
         <>
+        <NextSeo title={lang === "sv" ? "Integritetspolicy" : "Privacy policy"} 
+        description="På den här sidan hittar du vår policy som vi följer för att skydda dina personuppgifter och din integritet. De ska följa riktlinjerna i Dataskyddsförordningen GDPR"
+        canonical="https://www.medieteknikdagen.se/policy"
+        />
             <Header changeOnScroll/>
             <ResponsiveContainer>
             {data &&  <div className="section-policy">

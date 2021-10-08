@@ -10,6 +10,10 @@ import * as animationData from '../public/animation_success.json'
 import {languageContext} from '../pages/_app'
 const content = require("../public/content/register_complete.json")
 
+function formatName(name){
+    return name.split(" ")[0]
+}
+
 export default function ReservationSuccess({name,company}) {
 
     const [shouldExlpode, setExplode] = useState(false)
@@ -52,7 +56,7 @@ export default function ReservationSuccess({name,company}) {
                 <div className="thank-you">
                     <div>
                         <h2>{content[lang].title}</h2>
-                        <p>{content[lang].thanks[0]} <b>{name}</b> {content[lang].thanks[1]}</p>
+                        <p>{content[lang].thanks[0]} <b>{formatName(name)}</b> {content[lang].thanks[1]}</p>
                         <p>{content[lang].body}</p>
                         <p className="reservation-success--welcome">{content[lang].bye[0]} <b>{company}</b> {content[lang].bye[1]}</p>
                     </div>

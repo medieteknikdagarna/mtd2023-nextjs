@@ -40,6 +40,8 @@ import '../styles/Carousel.scss'
 import '../styles/Registration.scss'
 import '../styles/companies.scss'
 import '../styles/ThankYou.scss'
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
 
 import { useRouter } from "next/router";
 import StickyContact from "../components/StickyContact";

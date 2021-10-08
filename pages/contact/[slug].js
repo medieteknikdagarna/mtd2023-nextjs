@@ -8,6 +8,7 @@ import { useRouter } from 'next/router'
 import TheGroup from '../../components/TheGroup'
 import ResponsiveContainer from '../../components/ResponsiveContainer'
 import { languageContext } from '../_app'
+import { NextSeo } from 'next-seo'
 
 const content = require("../../public/content/contact-us.json")
 
@@ -44,6 +45,10 @@ export default function ContactPage() {
     
     return (
         <>
+        <NextSeo title={slug ? getTitleOfSlug(slug) : "Kontakt"} 
+        description="Vi älskar att snacka! Hör av dig till oss!"
+        canonical="https://www.medieteknikdagen.se/contact"
+        />
             <Header changeOnScroll/>
             <ResponsiveContainer className="contact-container">
                 <ContactSubmenu selected={slug} />

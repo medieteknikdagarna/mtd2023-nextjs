@@ -47,7 +47,7 @@ export default function Carousel() {
         })
         setLecturers(lecs)
 
-    }, [])
+    }, [lang])
 
 
     return (

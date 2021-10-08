@@ -4,14 +4,14 @@
   h3{
     font-size: 2rem;
     margin-bottom: 0.2rem;
-    font-weight: 400;
+    font-weight: 300;
   }
   span{
     font-size: 1.4rem;
     letter-spacing: 0.15rem;
     color: var(--color-primary);
     font-family: "Barlow";
-    font-weight: 300;
+    font-weight: 400;
   }
   
   a{
@@ -26,9 +26,7 @@
     background-color: #F6F6F6;
 
   }
-  &--content{
-
-  }
+ 
   &--spacer{
     width: 80%;
     height: 2px;
@@ -37,8 +35,6 @@
   }
   &--contactinfo{
     padding-top: 2.2rem;
-    display: flex;
-    flex-direction: column;
     gap: 0.5rem;
     svg{
       margin-right: 0.5rem;

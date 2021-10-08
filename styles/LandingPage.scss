@@ -20,7 +20,46 @@
   justify-content: flex;
   align-items: flex-start;
   z-index: 3;
+
+  @media screen and (max-width: 900px) and (min-width: 550px) {
+    padding-top: 3rem;
+  }
   
+}
+.landing-fair-info-row-container{
+  display: grid;
+  margin-bottom: 1rem;
+  grid-template-columns: 1fr 1fr 2fr;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+.landing-fair-info{
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  span{
+    color: black;
+    font-weight: 300;
+  }
+  path{
+    fill: black;
+  }
+  svg{
+    font-size: 1.5rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    margin-right: 1rem;
+  }
+  &--row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
 }
 
 .landing-section {
@@ -43,11 +82,6 @@
   p{
     color: var(--color-light);
     font-weight: 300;
-  }
-  svg {
-    min-width: 15rem;
-    justify-self: center;
-    align-self: flex-start;
   }
 }
 
@@ -72,6 +106,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3rem;
+
+
+  .infosection--buttons{
+    display: flex;
+    flex-direction: column;
+  }
 
   @media screen and (min-width: 950px){
     .welcome-info{

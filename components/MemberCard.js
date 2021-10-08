@@ -6,7 +6,7 @@ import React from 'react'
 
 
 
-export default function MemberCard({src, post, name, email, phone}) {
+export default function MemberCard({src, post, name, email, phone, linkedin}) {
     return (
         <div className="member-card">
         <div className="member-card--top">
@@ -18,12 +18,12 @@ export default function MemberCard({src, post, name, email, phone}) {
             <span>{post}</span>
 
             <div className="member-card--contactinfo">
-                <a href=""><FontAwesomeIcon icon={faEnvelope}/>{email}</a>
-                <a href=""><FontAwesomeIcon icon={faPhone}/>{phone}</a>
+                <a  href={"mailto:" + email}><FontAwesomeIcon icon={faEnvelope}/>{email}</a><br/>
+                <a  href={"tel:" + phone}><FontAwesomeIcon icon={faPhone}/>{phone}</a>
             </div>
             <div className="member-card--spacer"></div>
             <div className="member-card--linked-in">
-                <FontAwesomeIcon  icon={faLinkedin}/>
+                <a href={linkedin} target="_blank" rel="noreferrer" ><FontAwesomeIcon  icon={faLinkedin}/></a>
             </div>
             </div>
         </div>

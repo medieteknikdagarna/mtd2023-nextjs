@@ -7,6 +7,7 @@ import ResponsiveContainer from '../components/ResponsiveContainer';
 import { importAll } from './fair';
 import { languageContext } from './_app';
 const content = require("../public/content/companies.json")
+import { NextSeo } from 'next-seo'
 export function shuffleArray(array) {
     let currentIndex = array.length,  randomIndex;
   
@@ -54,6 +55,10 @@ export default function Companies() {
 
     return (
         <div>
+        <NextSeo title={lang === "sv" ? "Företag" : "Companies"} 
+        description="Här listar vi ett knippe av alla företag som har varit med oss genom åren. Vi hoppas att kunna ha med ert företag nästa år!"
+        canonical="https://www.medieteknikdagen.se/companies"
+        />
         <Header changeOnScroll/>
         <ResponsiveContainer className="rc-companies">
             <InfoSection tag="" title={content[lang].title} body={content[lang].body}/>

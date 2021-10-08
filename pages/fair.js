@@ -11,11 +11,9 @@ import TheFair from '../components/TheFair'
 import ResponsiveContainer from '../components/ResponsiveContainer'
 import LoadingSpinner from '../components/LoadingSpinner'
 import Carousel from '../components/Carousel'
-import Dan from '../public/images/dan.png'
-import Lecturer from '../components/Lecturer'
-import AfterMovie from '../components/AfterMovie'
 import Gallery from '../components/Gallery'
 const content = require("../public/content/fair.json")
+import { NextSeo } from 'next-seo'
 export function importAll(r) {
     let images = [];
     if(!r){
@@ -34,6 +32,10 @@ export default function About() {
     
     return (
         <div className="fair-background">
+        <NextSeo title={lang === "sv" ? "Mässa" : "Fair"} 
+        description="Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
+        canonical="https://www.medieteknikdagen.se/fair"
+        />
             <Header changeOnScroll lightContrast/>
             {!data && <LoadingSpinner/> ||
                 <>

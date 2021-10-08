@@ -8,11 +8,13 @@ import InfoSection from '../components/InfoSection'
 import AfterMovie from '../components/AfterMovie'
 import Footer from '../components/Footer'
 import InfoWithStars from '../components/InfoWithIcons'
-
 import { languageContext } from './_app'
 import ResponsiveContainer from '../components/ResponsiveContainer'
-const content = require("../public/content/landing.json")
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapPin, faCalendar, faClock } from '@fortawesome/free-solid-svg-icons'
+import { NextSeo } from 'next-seo'
 
+const content = require("../public/content/landing.json")
 
 export default function LandingPage() {
     const [lang, setLang] = useContext(languageContext);
@@ -20,6 +22,10 @@ export default function LandingPage() {
     const fbVideoUrl = "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmedieteknikdagen%2Fvideos%2F1399763803536580%2F&show_text=false&width=560&t=0";
     return (
         <>
+        <NextSeo title="MTD2022" 
+        description="Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
+        canonical="https://www.medieteknikdagen.se"
+        />
         <Header lightContrast changeOnScroll/>
              <div className="video-container">
                 <video id="background-video" autoPlay loop muted>
@@ -46,6 +52,13 @@ export default function LandingPage() {
                 <section className="welcome-section">
                     <InfoSection 
                     className="welcome-info" tag="MTD2022" title={lang === "sv" ? "Välkommen!" : "Welcome!"} body={content[lang].section2.body}>
+                        <div className="landing-fair-info">
+                            <div className="landing-fair-info-row-container">
+                                <div className="landing-fair-info--row"><FontAwesomeIcon size="2x" icon={faCalendar}/><span>TBA</span></div>
+                                <div className="landing-fair-info--row"><FontAwesomeIcon  icon={faClock}/><span>TBA</span></div>
+                                <div className="landing-fair-info--row"><FontAwesomeIcon size="xs" icon={faMapPin}/><span>Campus Norrköping, Täppan</span></div>
+                            </div>
+                        </div>
                         <Button href="/fair" type="primary" size="medium">{lang === "sv" ? "Läs mer" : "Read more"}</Button>
                     </InfoSection>
                     <div className="calendar">
