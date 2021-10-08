@@ -18,7 +18,7 @@ export default function MemberCard({src, post, alt, name, email, phone, linkedin
             <span>{post}</span>
 
             <div className="member-card--contactinfo">
-                <a  href={"mailto:" + email}><FontAwesomeIcon icon={faEnvelope}/>{email}</a><br/>
+                <a  href={"mailto:" + email}><FontAwesomeIcon icon={faEnvelope}/>{email}</a><br/><br/>
                 <a  href={"tel:" + phone}><FontAwesomeIcon icon={faPhone}/>{phone}</a>
             </div>
             <div className="member-card--spacer"></div>

@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 22rem));
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  row-gap: 2rem;
+  column-gap: 0.5rem;
+  justify-content: space-between;
   -webkit-animation: fade 0.5s; /* Safari 4+ */
   -moz-animation: fade 0.5s; /* Fx 5+ */
   -o-animation: fade 0.5s; /* Opera 12+ */
