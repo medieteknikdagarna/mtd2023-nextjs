@@ -1,0 +1,29 @@
+.error-404{
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &>div{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .mtd-button--primary{
+        margin-top: 2rem;
+    }
+    h1{
+        text-align: center;
+        font-size: 10rem;
+        font-weight: 600;
+        font-family: "Barlow";
+        @media screen and (max-width: 500px) {
+            font-size: 7rem;
+        }
+    }
+    p{
+        text-align: center;
+    }
+
+    
+}
