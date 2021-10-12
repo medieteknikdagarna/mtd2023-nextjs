@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -18,12 +19,14 @@
     "@reonomy/react-confetti-explosion": "^1.0.3",
     "@svgr/webpack": "^5.5.0",
     "axios": "^0.21.4",
+    "globby": "^12.0.2",
     "google-spreadsheet": "^3.1.15",
     "next": "11.1.2",
     "next-seo": "^4.28.1",
     "next-sitemap": "^1.6.179",
     "next-videos": "^1.4.0",
     "pigeon-maps": "^0.19.7",
+    "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "17.0.2",
     "react-dom-confetti": "^0.2.0",
