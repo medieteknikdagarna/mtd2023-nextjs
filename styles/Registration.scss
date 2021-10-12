@@ -48,7 +48,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    & > div{
+    .register-form--row-container{
         margin-bottom: 4rem;
         @media screen and (max-width: 500px) {
                 margin-bottom: 3rem;

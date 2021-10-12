@@ -69,23 +69,23 @@ export default function ContactForm() {
         <div className="registration-form">
             <h4>{lang === "sv" ? "Hej!" : "Hi!"}<br/><span>{content[lang].hi}</span></h4>
         <form className="register-form">
-            <div>
+            <div className="register-form--row-container">
                 <input className="register-form--input" ref={r_name} type="text" placeholder=" "></input>
                 <label className="register-form--label">{content[lang].name}</label>
             </div>
-            <div>
+            <div className="register-form--row-container">
                 <input className="register-form--input" ref={r_company} type="text" placeholder=" "></input>
                 <label className="register-form--label">{content[lang].company}</label>
             </div>
-            <div>
+            <div className="register-form--row-container">
                 <input className="register-form--input" ref={r_email} type="email" placeholder=" "></input>
                 <label className="register-form--label">Email</label>
             </div>
-            <div>
+            <div className="register-form--row-container">
                 <input className="register-form--input" ref={r_phone} type="tel" placeholder=" "></input>
                 <label className="register-form--label">Tel</label>
             </div>
-            <div>
+            <div className="register-form--row-container">
                 <textarea className="register-form--input" ref={r_msg} type="text" placeholder=" "></textarea>
                 <label  className="register-form--label">{content[lang].message}</label>
             </div>
@@ -93,7 +93,9 @@ export default function ContactForm() {
                 <div></div>
                 <span>{error}</span>
             </div>}
+            <div className="form-btn-margin">
             <Button onClick={handleSubmit}><FontAwesomeIcon spin={submitted} icon={submitted ? faCircleNotch : faPaperPlane}/>{lang === "sv" ? "Skicka" : "Send"}</Button>
+            </div>
         </form>
     </div>}</>
             
