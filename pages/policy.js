@@ -7,11 +7,10 @@ import { useContext } from 'react'
 import { languageContext } from './_app'
 import ResponsiveContainer from '../components/ResponsiveContainer'
 import { NextSeo } from 'next-seo'
+const data = require("../public/content/privacy-policy.json")
 export default function Policy() {
 
-    const { data, loading, error } = useFetch('/api/content/privacy-policy')
     const [lang] = useContext(languageContext)  
-    console.log(data)
 
     return (
         
@@ -22,7 +21,7 @@ export default function Policy() {
         />
             <Header changeOnScroll/>
             <ResponsiveContainer>
-            {data &&  <div className="section-policy">
+           <div className="section-policy">
                 <div>
                     <h1>{data[lang].title}</h1>
                     <p dangerouslySetInnerHTML={{ __html: data[lang].ingress }}></p>
@@ -45,7 +44,7 @@ export default function Policy() {
                     
                     
                 </div>
-            </div> }
+            </div>
             </ResponsiveContainer>
             <Footer/>
         </>
