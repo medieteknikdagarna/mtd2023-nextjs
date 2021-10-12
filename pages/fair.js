@@ -54,7 +54,7 @@ export default function About() {
                             <TheFair/>
                             </ResponsiveContainer>
 
-                            <ResponsiveContainer>
+                            <ResponsiveContainer className="fair-responsive">
                                 <AboutInfo/>
                             </ResponsiveContainer>
 

@@ -2,7 +2,8 @@
 
 .image-gallery-svg{
     polyline, polygon,path{
-        stroke: var(--color-light);
+        stroke: black;
+        box-shadow: none;
     }
 
 }
@@ -16,12 +17,10 @@
     @media screen and (max-width:500px) {
         grid-template-columns: 1fr;
     }
-    h2{
-        color: var(--color-light);
+    h2,p{
+        color: black;
     }
-    p{
-        color: var(--color-light);
-    }
+
 }
 .image-gallery{
     grid-column: 1/-1;

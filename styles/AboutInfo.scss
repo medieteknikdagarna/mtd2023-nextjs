@@ -7,20 +7,22 @@
     grid-column: 3/6;
   }
 }
+.fair-responsive{
+  background-color: black;
+  padding: 3rem 0;
+}
 
 .about-info {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  background: #00000012;
-  
-  box-shadow: 0px 0px 16px -8px black;
+  border: 1px solid black;
 
   a {
     color: var(--color-primary);
   }
 
   &--img-container {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +43,9 @@
   &--mt {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+  }
+  &--mtd{
+    margin-bottom: 5rem;
   }
 
   h3,
@@ -102,26 +106,4 @@
       margin-right: 2rem;
     }
   }
-}
-
-.my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
-  display: flex;
-  margin-left: -30px; /* gutter size offset */
-  width: auto;
-  img {
-    object-fit: cover;
-  }
-}
-.my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
-  background-clip: padding-box;
-}
-
-/* Style your items */
-.my-masonry-grid_column > div {
-  /* change div to reference your elements you put in <Masonry> */
-  background: grey;
-  margin-bottom: 30px;
 }

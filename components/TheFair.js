@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import InfoSection from './InfoSection'
-import Tappan from "../public/images/platsbokaren_utan_platser.svg"
+import Tappan from "../public/images/platsbokaren_no_seats.svg"
 import Button from './Button'
 import AfterMovie from './AfterMovie'
 import { languageContext } from '../pages/_app'

@@ -2,14 +2,14 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-
+    
 
 .carousel-circle{
 
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--color-light);
+    background-color: rgb(83, 83, 83);
 
 
     &--active{
@@ -48,7 +48,7 @@
             cursor: pointer;
         }
         path{
-            fill: var(--color-light);
+            fill: black;
             
         }
     }
@@ -61,7 +61,7 @@
         
 
         path{
-            fill: var(--color-light);
+            fill: black;
         }
         svg{
             cursor: pointer;

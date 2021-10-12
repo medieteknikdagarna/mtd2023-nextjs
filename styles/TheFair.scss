@@ -5,12 +5,10 @@
       flex-direction: column;
     }
   }
-  h2 {
-    color: var(--color-light);
+  h2,p {
+    color: black;
   }
-  p {
-    color: var(--color-light);
-  }
+  
   svg{
     margin: 5rem 0;
     width: 100%;
@@ -26,7 +24,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding-top: 10rem;
+    padding: 3rem 0;
     
     svg {
       grid-row: 1/2;

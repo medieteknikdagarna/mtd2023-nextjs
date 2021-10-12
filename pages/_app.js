@@ -4,7 +4,7 @@ import AcceptPolicy from '../components/AcceptPolicy'
 // ALL SCSS IMPORTS
 
 import '../styles/_variables.scss'
-import '../styles/About.scss'
+import '../styles/fair.scss'
 import '../styles/AboutInfo.scss'
 import '../styles/Button.scss'
 import '../styles/ContactCard.scss'

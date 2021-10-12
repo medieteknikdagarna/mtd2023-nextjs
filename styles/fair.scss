@@ -22,7 +22,7 @@
 .fair-container--lecturers{
 
   h2,p{
-    color: var(--color-light)
+    color: black;
   }
   &--div{
     display: grid;
@@ -35,7 +35,7 @@
 }
 
 .fair-background{
-  background: var(--gradient);
+ // background: var(--gradient);
 }
 .rest-of-the-page {
   z-index: 99;
@@ -102,7 +102,7 @@
 
 .gallery--infosection{
   h2{
-    color: var(--color-light)
+    color: black;
   }
 
 }
