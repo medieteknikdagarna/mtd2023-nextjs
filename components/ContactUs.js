@@ -11,7 +11,7 @@ export default function ContactUs({className}) {
     return (
         <div className="contact-us-section">
                 <div className="contact-cards-container">
-                    <ContactCard title={content[lang].small_titles[0]} body={content[lang].bodys[0]} textToCopy="afra.farkory@medieteknikdagen.se"/>
+                    <ContactCard title={content[lang].small_titles[0]} body={content[lang].bodys[0]} textToCopy="afra.farkhooy@medieteknikdagen.se"/>
                     <ContactCard title={content[lang].small_titles[1]} body={content[lang].bodys[1]} textToCopy="gabriel.cederqvist@medieteknikdagen.se"/>
                     <ContactCard title={content[lang].small_titles[2]} body={content[lang].bodys[2]} textToCopy="jakob.karlstrand@medieteknikdagen.se"/>
                     <ContactCard title={content[lang].small_titles[3]} body={content[lang].bodys[3]} textToCopy="victor.imark@medieteknikdagen.se"/>
