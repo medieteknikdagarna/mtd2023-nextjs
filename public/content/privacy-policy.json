@@ -1,10 +1,10 @@
 {
   "sv": {
     "title": "Integritetspolicy",
-    "ingress": "På den här sidan hittar du vår policy som vi följer för att skydda dina personuppgifter och din integritet. De ska följa riktlinjerna i Dataskyddsförordningen GDPR. Är det någonting du undrar över är du välkommen att kontakta <a href=\"mailto:info@medieteknikdagarna.se\">info@medieteknikdagarna.se</a> så svarar vi på dina frågor.",
+    "ingress": "På den här sidan hittar du vår policy som vi följer för att skydda dina personuppgifter och din integritet. De ska följa riktlinjerna i Dataskyddsförordningen GDPR. Är det någonting du undrar över är du välkommen att kontakta <a href=\"mailto:info@medieteknikdagen.se\">info@medieteknikdagen.se</a> så svarar vi på dina frågor.",
     "contactForm": {
       "title": "Kontaktformulär",
-      "body": "När du kontaktar oss på Medieteknikdagarna via formulär på webbplatsen, via e-post eller en e-tjänst och klickar på ”Skicka”, ger du automatiskt ditt godkännande (samtycke) till att vi lagrar dina uppgifter.",
+      "body": "När du kontaktar oss på Medieteknikdagen via formulär på webbplatsen, via e-post eller en e-tjänst och klickar på ”Skicka”, ger du automatiskt ditt godkännande (samtycke) till att vi lagrar dina uppgifter.",
       "storedData": {
         "title": "Vilka uppgifter lagrar vi?",
         "body": "De uppgifter som lagras är de fält som respektive kontaktformulär innehåller. Vi sparar uppgifterna så länge det är nödvändigt med hänsyn till ändamålen med behandlingen. Vi grundar insamlingen av personuppgifter på samtycke."
@@ -15,19 +15,19 @@
       },
       "editOrDeleteData": {
         "title": "Får jag ta del av, ändra eller radera min lagrade information?",
-        "body": "Du har rätt att begära information om vilka personuppgifter vi har lagrade om dig. För att göra detta kontaktar du oss via <a href=\"mailto:info@medieteknikdagarna.se\">info@medieteknikdagarna.se</a>. Du har även rätt att begära rättning eller radering av dina personuppgifter."
+        "body": "Du har rätt att begära information om vilka personuppgifter vi har lagrade om dig. För att göra detta kontaktar du oss via <a href=\"mailto:info@medieteknikdagen.se\">info@medieteknikdagen.se</a>. Du har även rätt att begära rättning eller radering av dina personuppgifter."
       }
     },
     "thirdParty": {
       "title": "Datahanterare från tredje part",
-      "body": "Vi använder ett antal tjänster i vår verksamhet som underlättar den dagliga driften av Medieteknikdagarna. Dessa tredje parter har valts ut noggrant och de har bekräftat att de följer GDPR reglerna.  <br/><br/><b>Google</b><br/> Tillhandahållande av epost, kalender och arbetsverktyg så som Google Docs, Google Drive, Google Sheets. <br/><br/><b>Facebook / Instagram / LinkedIn</b><br/> Leverantör av digital plattform Medieteknikdagarna använder sig av för att marknadsföra sig till företag samt marknadsföra mässan. <br/><br/><b>Github</b><br/> Leverantör av kommunikation på Medieteknikdagarnas hemsida. <br/><br/><b>Slack:</b><br/> Leverantör av intern kommunikation. För mer information om användingen av cookies på medieteknikdagarna.se, se \"Cookies\"."
+      "body": "Vi använder ett antal tjänster i vår verksamhet som underlättar den dagliga driften av Medieteknikdagen. Dessa tredje parter har valts ut noggrant och de har bekräftat att de följer GDPR reglerna.  <br/><br/><b>Google</b><br/> Tillhandahållande av epost, kalender och arbetsverktyg så som Google Docs, Google Drive, Google Sheets. <br/><br/><b>Facebook / Instagram / LinkedIn</b><br/> Leverantör av digital plattform Medieteknikdagen använder sig av för att marknadsföra sig till företag samt marknadsföra mässan. <br/><br/><b>Github</b><br/> Leverantör av kommunikation på Medieteknikdagens hemsida. <br/><br/><b>Slack:</b><br/> Leverantör av intern kommunikation. För mer information om användingen av cookies på medieteknikdagen.se, se \"Cookies\"."
     },
     "cookies": {
       "title": "Cookies",
       "body": "Vi använder cookies på vår webbplats. En cookie är en liten textfil som sparas i din webbläsare och hjälper webbplatsleverantörer att känna igen din enhet till nästa gång du besöker webbplatsen. Cookies kan innehålla personliga data.</p><br/><p>Webbläsare accepterar cookies automatiskt, men du kan själv ändra inställningarna. Om du inte vill att personliga data sparas i cookies kan du ändra inställningarna i din webbläsare till att du måste godkänna varje ny cookie som skapas. Om du inte accepterar vår användning av cookies, kan du ändra dina webbläsarinställningar till att automatiskt neka cookies. Notera att cookies är nödvändigt för vissa funktioner på vår webbplats.</p><br/><>Vår webbplats genererar, förutom egna cookies, följande cookies från tredje part.",
       "googleAnalytics": {
         "title": "Google Analytics",
-        "body": "Medieteknikdagarna använder Google Analytics för att föra statistik på webbaktivitet. Cookies skapas av Google Analyticts och data samlas in av dem för att vi bättre ska förstå våra besökare och hur de använder vår webbplats.",
+        "body": "Medieteknikdagen använder Google Analytics för att föra statistik på webbaktivitet. Cookies skapas av Google Analyticts och data samlas in av dem för att vi bättre ska förstå våra besökare och hur de använder vår webbplats.",
         "link": {
           "url": "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=en",
           "text": "Här kan du läsa mer om Googles cookies."
@@ -35,7 +35,7 @@
       },
       "youtube": {
         "title": "YouTube",
-        "body": "Medieteknikdagarna.se använder YouTube för att föra spela upp inbäddade videoklipp från Medieteknikdagarnas YouTube-kanal. De cookies som genereras av YouTube används när videoklippen spelas upp.",
+        "body": "Medieteknikdagen.se använder YouTube för att föra spela upp inbäddade videoklipp från Medieteknikdagens YouTube-kanal. De cookies som genereras av YouTube används när videoklippen spelas upp.",
         "link": {
           "url": "http://www.google.com/intl/en/policies/technologies/types/",
           "text": "Här kan du läsa mer om YouTubes cookies."
@@ -43,7 +43,7 @@
       },
       "facebook": {
         "title": "Facebook",
-        "body": "Medieteknikdagarna.se använder Facebook för att föra spela upp inbäddade videoklipp från Medieteknikdagarnas Facebook-sida.",
+        "body": "Medieteknikdagen.se använder Facebook för att föra spela upp inbäddade videoklipp från Medieteknikdagens Facebook-sida.",
         "link": {
           "url": "https://www.facebook.com/help/cookies",
           "text": "Här kan du läsa mer om Facebooks cookies."
@@ -52,23 +52,23 @@
     },
     "consent": {
       "title": "Samtycke",
-      "body": "<p>Du har rätt att återkalla samtycke till användning av dina personuppgifter när som helst genom att kontakta oss via <a href=\"mailto:info@medieteknikdagarna.se\">info@medieteknikdagarna.se</a>.</p>"
+      "body": "<p>Du har rätt att återkalla samtycke till användning av dina personuppgifter när som helst genom att kontakta oss via <a href=\"mailto:info@medieteknikdagen.se\">info@medieteknikdagen.se</a>.</p>"
     },
     "externalParty": {
       "title": "Utomstående part",
       "body": "Vi kommer inte att lämna ut personuppgifter till utomstående annat än i de fall då:",
-      "punkt1": "Det särskilt överenskommits mellan Medieteknikdagarna och dig.",
+      "punkt1": "Det särskilt överenskommits mellan Medieteknikdagen och dig.",
       "punkt2": "Det är nödvändigt för att vi skall fullgöra lagstadgad skyldighet eller efterkomma myndighetsbeslut eller beslut av domstol."
     },
     "dataManager": {
       "title": "Personuppgiftsansvarig",
-      "body": "<p>Ansvarig utgivare samt ansvarig hanterare av data på denna webbplats är: <b>Medieteknikdagarna, Medietekniksektionen, Organisationsnummer:</b> 825003-5279 <b>Postadress:</b> Kårhuset Trappan, Universitetet, 601 74 Norrköping <b>Kontakt:</b> <a href\"tel:+46725799874\">+46 725 799 874</a>, <a href=\"mailto:info@medieteknikdagarna.se\">info@medieteknikdagarna.se</a></p>"
+      "body": "<p>Ansvarig utgivare samt ansvarig hanterare av data på denna webbplats är: <b>Medieteknikdagen, Medietekniksektionen, Organisationsnummer:</b> 825003-5279 <b>Postadress:</b> Kårhuset Trappan, Universitetet, 601 74 Norrköping <b>Kontakt:</b> <a href\"tel:+46725799874\">+46 725 799 874</a>, <a href=\"mailto:info@medieteknikdagen.se\">info@medieteknikdagen.se</a></p>"
     }
   },
 
   "en": {
     "title": "Privacy policy",
-    "ingress": "<p>On this page you will find our policy that we follow to protect your personal information and privacy. They comply with the guidelines of the Data Protection Regulation GDPR. If you're wondering about anything, please contact <a href=\"mailto:info@medieteknikdagarna.se\">info@medieteknikdagarna.se</a> and we'll answer your questions.</p>",
+    "ingress": "<p>On this page you will find our policy that we follow to protect your personal information and privacy. They comply with the guidelines of the Data Protection Regulation GDPR. If you're wondering about anything, please contact <a href=\"mailto:info@medieteknikdagen.se\">info@medieteknikdagen.se</a> and we'll answer your questions.</p>",
     "contactForm": {
       "title": "Contact form",
       "body": "When you contact us on the Media Technology Days through forms on the site, via  email or an email service and click on ”Submit”, you automatically give your  consent for storing your information.",
@@ -82,16 +82,16 @@
       },
       "editOrDeleteData": {
         "title": "Can I access, change or delete my stored information?",
-        "body": "<p>You are entitled to request information about the personal information we have stored about you. To do this, please contact us via <a href=\"mailto:info@medieteknikdagarna.se\">info@medieteknikdagarna.se</a>. You also have the right to request rectification or deletion of your personal information.</p>"
+        "body": "<p>You are entitled to request information about the personal information we have stored about you. To do this, please contact us via <a href=\"mailto:info@medieteknikdagen.se\">info@medieteknikdagen.se</a>. You also have the right to request rectification or deletion of your personal information.</p>"
       }
     },
     "thirdParty": {
       "title": "Third party data manager",
-      "body": "<p>We use a number of services in our operations that facilitate the day-to-day operation of Media Technology Days. These third parties have been carefully chosen and they have confirmed that they comply with the GDPR rules. <b>Google:</b> Providing email, calendar and work tools such as Google Docs, Google Drive, Google Sheets. <b>Facebook/Instagram/LinkedIn:</b> Digital platform supplier that Media Technology Days use to market themselves to companies as well as to market the event. <b>Github:</b> Supplier of communication on the Media Technology Days website. <b>Slack:</b> Supplier of internal communications. For more information about the use of cookies on medieteknikdagarna.se, see \"Cookies\".</p>"
+      "body": "<p>We use a number of services in our operations that facilitate the day-to-day operation of Media Technology Days. These third parties have been carefully chosen and they have confirmed that they comply with the GDPR rules. <b>Google:</b> Providing email, calendar and work tools such as Google Docs, Google Drive, Google Sheets. <b>Facebook/Instagram/LinkedIn:</b> Digital platform supplier that Media Technology Days use to market themselves to companies as well as to market the event. <b>Github:</b> Supplier of communication on the Media Technology Days website. <b>Slack:</b> Supplier of internal communications. For more information about the use of cookies on medieteknikdagen.se, see \"Cookies\".</p>"
     },
     "cookies": {
       "title": "Cookies",
-      "body": "<p>We use cookies on our websites. Cookies are small text files stored in your browser, which help the website providers to recognise your device next time you visit their website. Cookies may include personal data.</p><br/><p>Web browsers accept cookies automatically, but you can manually change the setting in your browser. If you don't want personal data to be stored in a cookie, you can change your browser's settings so that you have to either accept or deny new cookies. If you don't accept our use of cookies, you can change your browser's settings to automatically deny cookies. However, please note that cookies are necessary for some of the features on medieteknikdagarna.se.</p><br/><p>Our websites generates, aside from our cookies, the following cookies from third parties.</p>",
+      "body": "<p>We use cookies on our websites. Cookies are small text files stored in your browser, which help the website providers to recognise your device next time you visit their website. Cookies may include personal data.</p><br/><p>Web browsers accept cookies automatically, but you can manually change the setting in your browser. If you don't want personal data to be stored in a cookie, you can change your browser's settings so that you have to either accept or deny new cookies. If you don't accept our use of cookies, you can change your browser's settings to automatically deny cookies. However, please note that cookies are necessary for some of the features on medieteknikdagen.se.</p><br/><p>Our websites generates, aside from our cookies, the following cookies from third parties.</p>",
       "googleAnalytics": {
         "title": "Google Analytics",
         "body": "The Media Technology Days uses Google Analytics as a web statistics tool. This feuture stores cookies to collect data for us to better understand our visitors and how they use our website.",
@@ -102,7 +102,7 @@
       },
       "youtube": {
         "title": "YouTube",
-        "body": "Medieteknikdagarna.se uses YouTube to play embedded videos from the Media Technology Days' YouTube channel. The cookies generated by YouTube are used when the videos are played.",
+        "body": "Medieteknikdagen.se uses YouTube to play embedded videos from the Media Technology Days' YouTube channel. The cookies generated by YouTube are used when the videos are played.",
         "link": {
           "url": "http://www.google.com/intl/en/policies/technologies/types/",
           "text": "You can read more about cookies from YouTube here."
@@ -110,7 +110,7 @@
       },
       "facebook": {
         "title": "Facebook",
-        "body": "Medieteknikdagarna.se uses Facebook to play embedded videos from the Media Technology Days' Facebook site.",
+        "body": "Medieteknikdagen.se uses Facebook to play embedded videos from the Media Technology Days' Facebook site.",
         "link": {
           "url": "https://www.facebook.com/help/cookies",
           "text": "You can read more about cookies from Facebook here."
@@ -119,7 +119,7 @@
     },
     "consent": {
       "title": "Consent",
-      "body": "<p>You are entitled to withdraw consent for the use of your personal information at any time by contacting us at <a href=\"mailto:info@medieteknikdagarna.se\">info@medieteknikdagarna.se</a>.</p>"
+      "body": "<p>You are entitled to withdraw consent for the use of your personal information at any time by contacting us at <a href=\"mailto:info@medieteknikdagen.se\">info@medieteknikdagen.se</a>.</p>"
     },
     "externalParty": {
       "title": "External party",
@@ -129,7 +129,7 @@
     },
     "dataManager": {
       "title": "Responsible publisher",
-      "body": "<p>Responsible publisher and responsible data manager for this site is: <b>Media Technology Days, Media Technology Association, Organization number:</b> 825003-5279 <b>Postal address:</b> Kårhuset Trappan, Universitetet, 601 74 Norrköping <b>Contact:</b> <a href\"tel:+46725799874\">+46 725 799 874</a>, <a href=\"mailto:info@medieteknikdagarna.se\">info@medieteknikdagarna.se</a></p>"
+      "body": "<p>Responsible publisher and responsible data manager for this site is: <b>Media Technology Days, Media Technology Association, Organization number:</b> 825003-5279 <b>Postal address:</b> Kårhuset Trappan, Universitetet, 601 74 Norrköping <b>Contact:</b> <a href\"tel:+46725799874\">+46 725 799 874</a>, <a href=\"mailto:info@medieteknikdagen.se\">info@medieteknikdagen.se</a></p>"
     }
   }
 }
