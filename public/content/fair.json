@@ -21,6 +21,16 @@
           "body": "Varje år håller flera företag spännande föreläsningar ny spännande teknik inom en rad olika ämnen. Håll utkik på hemsidan och våra sociala medier för att inte missa dessa! Nedan hittar du några exempel på föreläsningar som kan hållas under MTD."
         },
         "lecturers": [
+            {
+          "name": "Andreas Nilsson",
+          "tag": 2021,
+          "body": ["Medieteknikdagen 2021 var en digital mässa vilket gav möjligheten till att lyssna på intressanta föreläsare som ändå inte hade kunnat medverka på en fysisk mässa. Andreas Nilsson tog med oss på hans resa från lilla Karlskrona, till Medieteknikprogrammet i Norrköping för att slutligen hamna i Silicon Valley hos Facebook där han är idag. På resan får vi veta hur det är att jobba med funktionen Portal, vad som var bäst med MT och varför Facebook är världens bästa arbetsplats!"]
+        },
+        {
+          "name": "Simon Otter och Daniel Rådén",
+          "tag": 2020,
+          "body": ["Simon Otter (Programmer in RnD Departement) och Daniel Rådén (Technology Manager) från Important Looking Pirates har tillsammans genom flera år inom VFX-branchen samlat på sig tonvis med erfarenhet. De talade om hur effekterna skapas, samt teknikerna bakom välkända tv-serier och filmer som Westworld, Jurassic Park, Star Wars och Game of Thrones."]
+        },
           {
             "name": "Dan Englesson",
             "tag": 2019,
@@ -56,6 +66,16 @@
         "body": "Every year companies perform presentations in various subjects. Stay updated on our social media and website to not miss this year's lecturers. Below you will find some examples of lectures from previous years."
       },
       "lecturers": [
+        {
+          "name": "Andreas Nilsson",
+          "tag": 2021,
+          "body": ["The Media Technology Days 2021 was a digital fair, which gave the opportunity to listen to interesting lecturers who could not attend physically either way. Andreas Nilsson told his story starting in the Swedish town of Karlskrona, to the media technology program, and finally to Silicon Valley at Facebook, which is where he is today. He told us about how it is working with the service Portal, what is best about MT and why Facebook is the world’s greatest working environment!"]
+        },
+        {
+          "name": "Simon Otter och Daniel Rådén",
+          "tag": 2020,
+          "body": ["Simon Otter (Programmer in RnD Department) and Daniel Rådén (Technology Manager) from Important Looking Pirates have in their years working in the VFX industry gathered a ton of experience. They told us about the creation of visual effects and the techniques behind famous series and movies like Westworld, Jurassic Park, Star Wars and Game of Thrones"]
+        },
         {
           "name": "Dan Englesson",
           "tag": 2019,
