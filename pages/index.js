@@ -54,7 +54,7 @@ export default function LandingPage() {
                     className="welcome-info" tag="MTD2022" title={lang === "sv" ? "Välkommen!" : "Welcome!"} body={content[lang].section2.body}>
                         <div className="landing-fair-info">
                             <div className="landing-fair-info-row-container">
-                                <div className="landing-fair-info--row"><FontAwesomeIcon size="2x" icon={faCalendar}/><span>TBA</span></div>
+                                <div className="landing-fair-info--row"><FontAwesomeIcon size="2x" icon={faCalendar}/><span>March 2022</span></div>
                                 <div className="landing-fair-info--row"><FontAwesomeIcon  icon={faClock}/><span>TBA</span></div>
                                 <div className="landing-fair-info--row"><FontAwesomeIcon size="xs" icon={faMapPin}/><span>Campus Norrköping, Täppan</span></div>
                             </div>
