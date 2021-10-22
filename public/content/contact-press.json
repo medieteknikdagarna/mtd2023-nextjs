@@ -5,9 +5,8 @@
         "title": "Pressinformation",
         "card": {
             "title1": "Presskontakt",
-            "title2": "Nedladdningar",
-            "webb": "För webb(.svg & png)",
-            "tryck": "För tryck(.ai)",
+            "title2": "Ladda ned grafik",
+            "downloads": "Ladda ned olika variationer av våra logotyper här.",
             "button": "Ladda ned"
 
         }
@@ -20,9 +19,8 @@
         "card": {
             "title1": "Press contact",
             "title2": "Downloads",
-            "webb": "For web(.svg & png)",
-            "tryck": "For print(.ai)",
-            "button": "Download"
+            "downloads": "Download different formats of our logos here.",
+            "button": "Download graphics"
 
         }
 

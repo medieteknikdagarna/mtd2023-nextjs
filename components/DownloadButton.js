@@ -7,7 +7,8 @@ import { faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
 export default function DownloadButton({link, children}) {
     const [lang, setLang] = useContext(languageContext)
     return (
-        <div className="download-button">
+        <a style={{textDecoration: "none"}} href={"/content/mtd_graphics.rar"} download>
+        <div download className="download-button">
             <div className="download-button--left">
                 <FontAwesomeIcon icon={faCloudDownloadAlt}/>
             </div>
@@ -15,5 +16,6 @@ export default function DownloadButton({link, children}) {
                 <span>{lang === "en" ? "Download" : "Ladda ned"}</span>
             </div>
         </div>
+        </a>
     )
 }

@@ -6,6 +6,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import MemberCard from './MemberCard'
 import placeholder from '../public/images/placeholder_1.png'
 const content = require("../public/content/contact-press.json")
+
 export default function PressAndMedia() {
     const [lang, setLang] = useContext(languageContext)
     return (
@@ -18,12 +19,8 @@ export default function PressAndMedia() {
                 <div className="press--downloads">
                         
                         <div>
-                            <span className="download-tag">{content[lang].card.webb}</span>
-                            <DownloadButton link={""}/>
-                        </div>
-                        <div>
-                            <span className="download-tag">{content[lang].card.tryck}</span>
-                            <DownloadButton link={""}/>
+                            <span className="download-tag">{content[lang].card.downloads}</span>
+                            <DownloadButton/>
                         </div>
             </div>
             
