@@ -18,7 +18,7 @@ const content = require("../public/content/landing.json")
 
 export default function LandingPage() {
     const [lang, setLang] = useContext(languageContext);
-    
+    console.log(content)
     const fbVideoUrl = "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmedieteknikdagen%2Fvideos%2F1399763803536580%2F&show_text=false&width=560&t=0";
     return (
         <>
@@ -26,10 +26,12 @@ export default function LandingPage() {
         description="Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
         canonical="https://www.medieteknikdagen.se/"
         />
+        {
+        <>
         <Header lightContrast changeOnScroll/>
              <div className="video-container">
                 <video id="background-video" autoPlay loop muted>
-                 <source src={require("../public/images/cube_storm.mp4")} type="video/mp4"/>
+                 <source src="/images/cube_storm.mp4" type="video/mp4"/>
                 </video>
                 <ResponsiveContainer className="landing-container">
                 
@@ -89,7 +91,11 @@ export default function LandingPage() {
                 </section>
             </ResponsiveContainer>  
             <Footer/>
+        
+            </>
+        }
         </>
     )
+
 
 }
