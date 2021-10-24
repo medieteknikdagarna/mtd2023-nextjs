@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import ContactMap from '../components/ContactMap'
 import ContactCard from '../components/ContactCard'
-import ContactForm from './ContactForm'
 import { languageContext } from '../pages/_app'
 const content = require("../public/content/contact-us.json")
 

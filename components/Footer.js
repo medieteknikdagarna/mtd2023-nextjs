@@ -1,8 +1,7 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import MTDSvg from '../public/images/mtd_white.svg'
 import MTSvg from '../public/images/mt_logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLink, faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faLinkedin, faInstagram, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { ClipboardButton } from './ContactCard'
 import Link from 'next/dist/client/link'
@@ -11,14 +10,8 @@ const content = require("../public/content/footer.json")
 
 export default function Footer(props) {
 
-    const [copied, setCopied] = useState(false);
-
     const [lang ,setLang] = useContext(languageContext)
 
-    const handleCopy = () =>{
-        setCopied(true);
-        navigator.clipboard.writeText("projektledare@medieteknikdagen.se")
-    }
 
     return (
         <>
@@ -32,10 +25,10 @@ export default function Footer(props) {
                         <MTSvg/>
                     </div>
                     <div className="footer--icons">
-                            <a href="https://www.facebook.com/medieteknikdagen" target="_blank" rel="noreferrer" className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faFacebook}/></a>
-                            <a href="https://www.instagram.com/medieteknikdagen/" target="_blank" rel="noreferrer" className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faInstagram}/></a>
-                            <a href="https://www.linkedin.com/company/medieteknikdagarna-2014/" target="_blank" rel="noreferrer" className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faLinkedin}/></a>
-                            <a href="https://www.youtube.com/c/Medieteknikdagen" target="_blank" rel="noreferrer" className="footer--icon-link"><FontAwesomeIcon className="brand-icons" icon={faYoutube}/></a>
+                            <a href="https://www.facebook.com/medieteknikdagen" target="_blank" rel="noreferrer" className="footer--icon-link"><FontAwesomeIcon style={{fontSize: "1.5rem"}} className="brand-icons" icon={faFacebook}/></a>
+                            <a href="https://www.instagram.com/medieteknikdagen/" target="_blank" rel="noreferrer" className="footer--icon-link"><FontAwesomeIcon style={{fontSize: "1.5rem"}} className="brand-icons" icon={faInstagram}/></a>
+                            <a href="https://www.linkedin.com/company/medieteknikdagarna-2014/" target="_blank" rel="noreferrer" className="footer--icon-link"><FontAwesomeIcon style={{fontSize: "1.5rem"}} className="brand-icons" icon={faLinkedin}/></a>
+                            <a href="https://www.youtube.com/c/Medieteknikdagen" target="_blank" rel="noreferrer" className="footer--icon-link"><FontAwesomeIcon style={{fontSize: "1.5rem"}} className="brand-icons" icon={faYoutube}/></a>
                     </div>
                     </div>
                 </div>

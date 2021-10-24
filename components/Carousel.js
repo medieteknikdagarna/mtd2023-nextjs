@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
-import { useTransition, animated } from '@react-spring/core'
 
 import { languageContext } from '../pages/_app'
 import Lecturer from './Lecturer'
@@ -12,11 +11,7 @@ export default function Carousel() {
     const [lang, setLang] = useContext(languageContext)
     const [lecturers, setLecturers] = useState([])
     let lastSlide = lecturers.length -1
-    const transitions = useTransition(activeSlide, {
-        from: { opacity: 0 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0 },
-      })
+
 
     const generatePaginationCircles = (num, active) =>{
 

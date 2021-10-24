@@ -2,10 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Confetti from 'react-dom-confetti';
-import Table from '../public/images/table.svg'
-import Stairs from '../public/images/stairs.svg'
-import Expo from '../public/images/expo_small.svg'
-import Lottie from 'react-lottie';
 import * as animationData from '../public/animation_success.json'
 import {languageContext} from '../pages/_app'
 const content = require("../public/content/register_complete.json")

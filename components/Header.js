@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MTDSvg from '../public/images/mtd.svg'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook} from '@fortawesome/free-brands-svg-icons'
 import {faInstagram} from '@fortawesome/free-brands-svg-icons'
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons'

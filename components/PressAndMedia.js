@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
 import { languageContext } from '../pages/_app'
 import DownloadButton from './DownloadButton'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import MemberCard from './MemberCard'
 import placeholder from '../public/images/placeholder_1.png'
 const content = require("../public/content/contact-press.json")

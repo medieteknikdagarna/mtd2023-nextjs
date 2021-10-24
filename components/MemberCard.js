@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { ClipboardButton } from './ContactCard'
 import React from 'react'
 
 

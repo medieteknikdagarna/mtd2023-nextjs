@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { useState,useRef } from 'react'
-import Link from 'next/link'
 import Button from './Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleNotch, faPaperPlane } from '@fortawesome/free-solid-svg-icons'

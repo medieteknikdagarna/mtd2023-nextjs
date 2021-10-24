@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faCopy, faLink } from '@fortawesome/free-solid-svg-icons'
-import React, { useRef, useEffect, useState, useContext } from 'react'
-import ReactTooltip from 'react-tooltip'
-import {animated,useTransition} from 'react-spring'
+import { faCopy } from '@fortawesome/free-solid-svg-icons'
+import React, {useState, useContext } from 'react'
+
 import { languageContext } from '../pages/_app'
 
 export function ClipboardButton({textToCopy, style, fontColor = "var(--color-dark)"}, backgroundColors= ["#ffecdf", "transparent"]){

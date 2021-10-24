@@ -1,6 +1,4 @@
 import React, { useContext } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Lottie from 'react-lottie';
 import * as animationData from '../public/animation_success.json'
 import { languageContext } from '../pages/_app';

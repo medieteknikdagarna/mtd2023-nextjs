@@ -1,8 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import useFetch from '../components/utilities/useFetch'
-import Fallback from '../components/utilities/Fallback'
 import { useContext } from 'react'
 import { languageContext } from './_app'
 import ResponsiveContainer from '../components/ResponsiveContainer'

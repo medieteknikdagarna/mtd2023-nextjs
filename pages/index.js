@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import Header from '../components/Header'
 import Button from '../components/Button'
-
 import ExpoSvg from '../public/images/expo_cube.svg'
 import StandSvg from '../public/images/stand.svg'
 import InfoSection from '../components/InfoSection'

@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 import MemberCard from './MemberCard'
-import avatar_jakob from '../public/images/avatar_jakob.jpg'
 const memberInfo = require("../public/content/members.json")
 import placeholder from '../public/images/placeholder_1.png'
 import { shuffleArray } from '../pages/companies'

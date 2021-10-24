@@ -1,7 +1,4 @@
 import React, { useContext, useRef } from 'react'
-import { faHandshake, faLightbulb } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Button from './Button'
 import useWindowDimensions from './utilities/useWindowDimensions'
 import ResponsiveContainer from './ResponsiveContainer'
 import PodiumSVG from '../public/images/podium.svg'
@@ -10,7 +7,6 @@ import { languageContext } from '../pages/_app'
 const content = require("../public/content/landing.json")
 export default function InfoWithStars() {
 
-    const {width} = useWindowDimensions()
     const [lang, setLang] = useContext(languageContext)
     return (
 

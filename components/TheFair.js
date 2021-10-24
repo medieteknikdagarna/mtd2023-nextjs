@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import InfoSection from './InfoSection'
 import Tappan from "../public/images/platsbokaren_no_seats.svg"
 import Button from './Button'
-import AfterMovie from './AfterMovie'
 import { languageContext } from '../pages/_app'
 const content = require("../public/content/fair.json")
 export default function TheFair() {

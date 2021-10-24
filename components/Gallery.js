@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Masonry from 'react-masonry-css'
 import { importAll } from '../pages/fair'
 import ImageGallery from 'react-image-gallery';
 import InfoSection from './InfoSection';

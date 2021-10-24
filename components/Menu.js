@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
-import  MTDSvg from '../public/images/mtd_white.svg'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import CloseIcon from '../public/images/close_icon.svg'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { languageContext } from '../pages/_app'
@@ -12,7 +11,6 @@ import LanguageFlag from './LanguageFlag'
 import Link from 'next/link'
 import { useTransition,animated } from 'react-spring'
 import {useRouter} from 'next/router'
-import Button from './Button'
 const content = require("../public/content/menu.json")
 export default function Menu({onExit,style,className, show}) {
 
