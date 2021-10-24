@@ -45,7 +45,7 @@ export default function Footer(props) {
                 <h4>{lang === "sv" ? "Kontakt" : "Contact"}</h4>
                 <ClipboardButton fontColor="var(--color-light)" textToCopy={"info@medieteknikdagen.se"}/>
                 <h4>GDPR</h4>
-                <p>{content[lang].gdpr.body}<Link href="/policy"><a>{lang === "sv" ? "här" : "here"}</a></Link></p>
+                <p>{content[lang].gdpr.body}<Link href="/policy"><a>{lang === "sv" ? "integritetspolicy" : "privacy policy"}</a></Link></p>
             </div>
             </div>
         </div>
