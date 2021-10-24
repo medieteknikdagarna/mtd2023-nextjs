@@ -13,10 +13,21 @@
 
 }
 
+.video-container{
+  background-image: url("../public/images/cube1.png");
+  background-position: center top;
+
+  @media screen and (max-width: 500px) {
+    background-position: right bottom;
+  }
+  .landing-container{
+    margin-top: 0;
+  }
+}
+
 .landing-container {
   //background: linear-gradient(153deg,rgba(255, 225, 204, 1) 0%,rgba(255, 152, 74, 1) 100%);
-  padding-top: 7rem;
-  margin-top: 2rem;
+  padding-top: 13rem;
   height: 100vh;
   display: flex;
   justify-content: flex;
@@ -24,7 +35,7 @@
   z-index: 3;
 
   @media screen and (max-width: 900px) and (min-width: 550px) {
-    padding-top: 3rem;
+    padding-top: 0rem;
   }
   
 }

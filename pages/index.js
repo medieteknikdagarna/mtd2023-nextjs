@@ -29,9 +29,6 @@ export default function LandingPage() {
         <>
         <Header lightContrast changeOnScroll/>
              <div className="video-container">
-                <video id="background-video" autoPlay loop muted>
-                 <source src="/images/cube_storm.mp4" type="video/mp4"/>
-                </video>
                 <ResponsiveContainer className="landing-container">
                 
                     <section className="landing-section">
