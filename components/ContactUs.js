@@ -26,9 +26,10 @@ export default function ContactUs({className}) {
                         <h4>{content[lang].addresses[1]}</h4>
                         <p>Medieteknikdagen, MT-sektionen<br/> Kårhuset, Trappan <br/>Universitetet<br/>602 21 Norrköping <br/>SWEDEN</p>
                     </ContactMap>
-                    <ContactMap longLat={[58.590438, 16.176325]}>
+                    <ContactMap longLat={[58.591110, 16.178200]}>
                         <h4>{content[lang].addresses[2]}</h4>
-                        <p>Täppan, Campus Norrköping<br/> Bredgatan 34 <br/>602 21 Norrköping</p>
+                        <p className="side-note">{lang == "sv" ? "Kontakta Victor Imark innan leverans av gods, tack!" : "Contact Victor Imark before delivering any goods, thank you!"}</p>
+                        <p>Täppan, Campus Norrköping<br/> Sandgatan 31 <br/>602 47 Norrköping</p>
                     </ContactMap>
                 </div>
         </div>  
