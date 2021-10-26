@@ -21,7 +21,7 @@ export default function LandingPage() {
     return (
         <>
         <NextSeo title="Medieteknikdagen 2022" 
-        description="Medieteknikdagen är medieteknikstudenternas årliga arbetsmarknadsdag på Linköpings Universitet, Campus Norrköping. Säkra plats genom att lämna en intresseanmälan!"
+        description="Medieteknikdagen är medieteknikstudenternas årliga arbetsmarknadsdag på Linköpings Universitet, Campus Norrköping. Säkra er plats genom att lämna en intresseanmälan!"
         canonical="https://www.medieteknikdagen.se/"
         />
         {
