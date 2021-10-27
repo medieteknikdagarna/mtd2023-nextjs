@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react'
-import Header from '../components/Header';
-import { useRouter } from 'next/router';
+import React from 'react'
+
 import SeatBooker from '../components/SeatBooker';
 
 
 
 export default function BookingPage() {
     return (
+        <>
+        <NextSeo noindex={true} />
         <div>
             <SeatBooker/>
         </div>
+        </>
     )
 }
