@@ -24,7 +24,6 @@ const creds = {
   
       const rows = await sheet.getRows(); // return the rows from the 1st sheet
       const allSeats = rows.map((row) => {
-        // return the data for each video (or whatever each row is in your sheet)
         return {
           status: 200,
           seat: row.seat,

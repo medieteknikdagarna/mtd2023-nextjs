@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
@@ -10,6 +10,7 @@ import { isReserved } from './utilities/SeatMap';
 import ReservationSuccess from './ReservationSuccess';
 import Footer from '../components/Footer'
 import ResponsiveContainer from './ResponsiveContainer';
+import { languageContext } from '../pages/_app';
 
 export const selectedContext = React.createContext()
 
@@ -21,6 +22,8 @@ export default function SeatBooker() {
     const [selectedSeat, setSelected] = useState(null);
     const [reservationSuccess, setReservationSuccess] = useState(false);
     const [error, setError] = useState(null);
+
+    const [lang, setLang] = useContext(languageContext)
 
     const f_name = useRef()
     const f_company = useRef()
@@ -73,13 +76,9 @@ export default function SeatBooker() {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    name: f_name.current.value,
                     company: f_company.current.value,
-                    email: f_email.current.value,
-                    phone: f_phone.current.value,
                     seat: selectedSeat.seat,
                     level: activeLevel,
-                    message: f_message.current.value
                 })
             };
             setSubmitted(true)
@@ -122,18 +121,11 @@ export default function SeatBooker() {
                     <div style={{backgroundColor: isReserved(selectedSeat,data.reservedData) ? "#FF7C7C" : "#97FF86"}} className="indicator--icon"></div>
                     <h4>{isReserved(selectedSeat,data.reservedData) ? "Reserverad" : "Ledig"}</h4>
                 </div>
-                <div className="seat-info">
-                    <span>{ selectedSeat.type.charAt(0).toUpperCase() + selectedSeat.type.slice(1)}</span>
-                    <div className="small-spacer"></div>
-                    <span>{"Plan " + activeLevel}</span>
-                    <div className="small-spacer"></div>
-                    <span>fr. 14 999 SEK</span>
-                </div>
                 </div>
             <div className="booking-form">
                 <div className="flex-input">
-                    <div >
-                        <label>Plats</label><br/>
+                    <div>
+                        <label>Plats</label>
                         <input  type="number" onChange={handleOnChange} min={1} max={data.length} value={selectedSeat.seat} />
                     </div>
                     <div className="div-radio">
@@ -143,31 +135,10 @@ export default function SeatBooker() {
                         <input className="input-radio" type="radio" checked={activeLevel===5} onClick={() => setLevel(5)}/>
                     </div>
                 </div>
-                <div className="booking-form--grouped">
-                    <div>
-                        <label>Kontaktperson</label>
-                        <input ref={f_name} type="text"/>
-                    </div>
-                    <div>
-                        <label>Företag</label>
-                        <input ref={f_company} type="text"/>
-                    </div>
-                </div>
-                <div className="booking-form--grouped">
-                    <div>
-                        <label>Email</label>
-                        <input ref={f_email} type="email"/>
-                    </div>
-                    <div>
-                        <label>Telefonnummer</label>
-                        <input ref={f_phone} type="tel"/>
-                    </div>
-                </div>
-                <label>Eventuellt meddelande</label>
-                <textarea className="input-message" ref={f_message} type="text"/>
-                <span className="warning-booking"><FontAwesomeIcon className="info-circle" icon={faInfoCircle}/>Denna reservation är inte bindande. Vi kommer att kontakta er för att bekräfta bokningen så fort vi kan</span>
+                <input placeholder={lang === "sv" ? "Företag" : "Company name"} ref={f_company} type="text"/>
+
                 {error && <div className="error-message"><div></div><span>{error}</span></div>}
-                <Button onClick={handleSubmit} style={{width: "100%", fontSize: "1.5rem"}} type="primary" size="medium">{hasSubmitted ? "Laddar..." : "Reservera"}</Button>
+                <Button onClick={handleSubmit} style={{width: "100%", fontSize: "1.5rem", marginTop: "1rem"}} type="primary" size="medium">{hasSubmitted ? "Laddar..." : "Boka"}</Button>
             
             </div>
         </div>}
