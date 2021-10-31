@@ -55,7 +55,7 @@ export default function Companies() {
 
     return (
         <div>
-        <NextSeo title={lang === "sv" ? "Företag" : "Companies"} 
+        <NextSeo title={lang === "sv" ? "MTD2022 | Företag" : "MTD2022 | Companies"} 
         description="Här listar vi ett knippe av alla företag som har varit med oss genom åren. Vi hoppas att kunna ha med ert företag nästa år!"
         canonical="https://www.medieteknikdagen.se/companies"
         />

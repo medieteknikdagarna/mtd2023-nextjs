@@ -45,7 +45,7 @@ export default function ContactPage() {
     
     return (
         <>
-        <NextSeo title={slug ? getTitleOfSlug(slug) : "Kontakt"} 
+        <NextSeo title={slug ? "MTD2022 | " + getTitleOfSlug(slug) : "MTD2022 | Kontakt"} 
         description="Vi älskar att snacka! Hör av dig till oss!"
         canonical="https://www.medieteknikdagen.se/contact"
         />

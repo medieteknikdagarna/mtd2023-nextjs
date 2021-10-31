@@ -8,7 +8,7 @@ export default function Register() {
     const [lang, setLang] = useContext(languageContext)
     return (
         <div>
-        <NextSeo title={lang === "sv" ? "Intresseanmälan" : "Register of interest"} 
+        <NextSeo title={lang === "sv" ? "MTD2022 | Intresseanmälan" : "MTD2022 | Register of interest"} 
         description="Lämna en intresseanmälan så återkommer vi med detaljer så fort vi kan!"
         canonical="https://www.medieteknikdagen.se/register"
         />

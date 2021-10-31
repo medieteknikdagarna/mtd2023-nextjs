@@ -28,7 +28,7 @@ export default function About() {
     
     return (
         <div className="fair-background">
-        <NextSeo title={lang === "sv" ? "Mässan" : "The Fair"} 
+        <NextSeo title={lang === "sv" ? "MTD2022 | Mässan" : "MTD2022 | The Fair"} 
         description="Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
         canonical="https://www.medieteknikdagen.se/fair"
         />
