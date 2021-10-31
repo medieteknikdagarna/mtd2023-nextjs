@@ -1,14 +1,16 @@
-#platsbokaren_svg__platser {
-  path:hover {
+
+
+.seat-animation {
+  &:hover {
     -webkit-filter: drop-shadow(0px 5px 4px rgba(95, 95, 95, 0.7))
       brightness(110%);
     filter: drop-shadow(0px 5px 4px rgba(95, 95, 95, 0.7)) brightness(110%);
     transform: translateY(-8px);
     transition: 0.2s;
   }
-  path {
+
     transition: 0.2s;
-  }
+  
   cursor: pointer;
 }
 
@@ -249,4 +251,34 @@
     opacity: 1;
     transform: translateY(0%);
   }
+}
+
+.seat-information-p{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+
+
+.type-header{
+  text-transform: uppercase;
+  font-size: 5rem;
+  @media screen and (max-width: 500px) {
+    font-size: 3rem;
+  }
+}
+.seat-gold{
+  color: #FEE101;
+}
+.seat-silver{
+  color: #757575;
+}
+.seat-bronze{
+  color: #A77044;
+}
+.seat-standard{
+  color: rgb(11, 132, 212);
+}
+.seat-inactive{
+ all: inital;
 }

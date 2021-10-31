@@ -25,9 +25,8 @@ const creds = {
       const rows = await sheet.getRows(); // return the rows from the 1st sheet
       const allSeats = rows.map((row) => {
         return {
-          status: 200,
           seat: row.seat,
-          level: row.level
+          floor: row.floor
         };
       });
       // this returns the videos
@@ -47,18 +46,14 @@ const creds = {
       
       await sheet.addRow({
             seat: data.seat,
-            level: data.level,
-            name: data.name,
+            floor: data.floor,
             company: data.company,
-            email: data.email,
-            phone: data.phone,
-            message: data.message
         })
       // this returns the videos
-      return {status: 201, message: "test", success: true};
+      return {status: 201, message: `Added row with seat: ${data.seat} and floor: ${data.floor}`, success: true};
     } catch (error) {
       //   log any errors to the console
-      return {status: 500, message: "fail", success: false}
+      return {status: 500, message: JSON.parse(error), success: false}
     }
   }
 
@@ -96,7 +91,6 @@ const creds = {
     }
     else if(req.method === "GET"){
         res.status(data.status).json(data.data)
-        
         return
     }
     else{

@@ -13,10 +13,10 @@ export function isReserved(seat, listOfReserved){
     return isReserved
 }
 
-export default function SeatMap({seats, reservations, activeFloor}) {
+export default function SeatMap({seats, reservations, activeFloor,type}) {
 
     const travelDst = 500
-
+    console.log(seats)
     const floor5Transition = useTransition(activeFloor===5, {
         from: {  y: -travelDst, opacity: 0},
         enter: {  y: 0, opacity: 1},
@@ -39,7 +39,12 @@ export default function SeatMap({seats, reservations, activeFloor}) {
                 console.error("Cant get element from id: " + seat.id)
                 return
             }
-            if(seat.id === selectedSeat.id){
+            if(seat.type !== type){
+                element.classList.add("seat-inactive");
+                var color = "#b9b9b9"
+            }
+
+            else if(seat.id === selectedSeat.id){
                 element.classList.add("seat-active");
                 var color = "#FFF068"
             }
@@ -52,9 +57,17 @@ export default function SeatMap({seats, reservations, activeFloor}) {
                 element.classList.remove("seat-active");
                 
             }
+            
 
             element.style.fill = color;
-            element.addEventListener('click', handleClick)
+            if(seat.type === type){
+                element.addEventListener('click', handleClick)
+                element.classList.add("seat-animation")
+            }
+            else{
+                
+            }
+            
         })
     
     }
@@ -63,6 +76,7 @@ export default function SeatMap({seats, reservations, activeFloor}) {
         const newSeat = seats.filter(seat =>{
             return seat.id === e.path[0].id
         })
+        console.log(newSeat)
         setSelected(newSeat[0])
     }
 

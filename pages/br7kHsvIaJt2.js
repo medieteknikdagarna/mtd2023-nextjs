@@ -9,7 +9,7 @@ export default function BookingPage() {
         <>
         <NextSeo noindex={true} />
         <div>
-            <SeatBooker/>
+            <SeatBooker type="bronze"/>
         </div>
         </>
     )
