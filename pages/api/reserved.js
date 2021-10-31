@@ -68,7 +68,7 @@ const creds = {
 
         let foundDuplicate = false
         data.data.forEach(booking =>{
-            if(booking.seat == req.body.seat && booking.level == req.body.level){
+            if(booking.seat == req.body.seat && booking.floor == req.body.floor){
                 foundDuplicate = true
             }
         })

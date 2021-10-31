@@ -14,7 +14,7 @@ import { languageContext } from '../pages/_app';
 
 
 const floor4_all = require("../public/content/seat-info/floor4.json")
-const floor5_all = require("../public/content/seat-info/floor4.json")
+const floor5_all = require("../public/content/seat-info/floor5.json")
 
 export const selectedContext = React.createContext()
 
@@ -38,7 +38,7 @@ export default function SeatBooker({type}) {
     const newError = (error_text) => {
         setError(error_text)
     }
-
+    console.log(activeSeats)
     useEffect( async () => {
 
         fetch('/api/reserved')
@@ -83,8 +83,8 @@ export default function SeatBooker({type}) {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     company: f_company.current.value,
-                    seat: selectedSeat,
-                    level: activeLevel,
+                    seat: selectedSeat.seat,
+                    floor: activeLevel,
                 })
             };
             setSubmitted(true)
@@ -146,7 +146,7 @@ export default function SeatBooker({type}) {
                 <input placeholder={lang === "sv" ? "Företagsnamn" : "Company name"} ref={f_company} type="text"/>
 
                 {error && <div className="error-message"><div></div><span>{error}</span></div>}
-                <Button onClick={handleSubmit} style={{width: "100%", fontSize: "1.5rem", marginTop: "1rem"}} type="primary" size="medium">{hasSubmitted ? "Laddar..." : "Boka"}</Button>
+                <Button disabled={isReserved(selectedSeat,activeLevel === 5 ? floor5_res : floor4_res)} onClick={handleSubmit} style={{width: "100%", fontSize: "1.5rem", marginTop: "1rem"}} type="primary" size="medium">{hasSubmitted ? "Laddar..." : "Boka"}</Button>
             
             </div>
         </div>}
@@ -157,7 +157,7 @@ export default function SeatBooker({type}) {
 
         </div>
         </ResponsiveContainer>}
-        {reservationSuccess && <ReservationSuccess company={f_company.current.value} name={f_name.current.value} seat={selectedSeat.seat} floor={activeLevel}/>}
+        {reservationSuccess && "Tack för din bokning!"}
         <Footer/>
         </>
     )

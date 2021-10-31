@@ -1,5 +1,7 @@
 
 .mtd-button {
+
+ 
   &--primary {
     background-color: var(--clr-primary);
     color: var(--color-light);
@@ -58,5 +60,9 @@
   &--small {
     padding: 0.25rem 1.5rem;
     font-size: 1rem;
+  }
+  &--disabled{
+    background: linear-gradient(317deg, rgb(253, 193, 148) 0%, rgb(255, 186, 134) 100%);
+    cursor: auto;
   }
 }

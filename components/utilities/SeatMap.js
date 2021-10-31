@@ -28,13 +28,14 @@ export default function SeatMap({seats, reservations, activeFloor,type}) {
         leave: {  y: travelDst,opacity: 0 }
       })
 
-
+      console.log(seats,reservations)
 
     const [selectedSeat, setSelected] = useContext(selectedContext)
     const assignSeats = () => {
     
         seats.forEach(seat => {
             const element = document.getElementById(seat.id)
+            console.log(isReserved(seat, reservations))
             if(!element){
                 console.error("Cant get element from id: " + seat.id)
                 return
@@ -49,6 +50,7 @@ export default function SeatMap({seats, reservations, activeFloor,type}) {
                 var color = "#FFF068"
             }
             else if(isReserved(seat, reservations)){
+                
                 var color = "#E07979"
                 element.classList.remove("seat-active");
             }
@@ -76,7 +78,7 @@ export default function SeatMap({seats, reservations, activeFloor,type}) {
         const newSeat = seats.filter(seat =>{
             return seat.id === e.path[0].id
         })
-        console.log(newSeat)
+
         setSelected(newSeat[0])
     }
 
