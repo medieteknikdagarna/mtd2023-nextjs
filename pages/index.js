@@ -36,8 +36,8 @@ export default function LandingPage() {
                             <div className="welcome">
                                 <p>{content[lang].section1.body[0] }<br/>{ content[lang].section1.body[1]}</p>
                                 <div className="landing-section--buttons">
-                                    <Button href="/register" type="primary" size="large">{ lang === "sv" ? "Intresseanmälan" : "Registration"}</Button> 
-                                    <Button href="/fair" style={{borderColor: "var(--color-light)", color: "var(--color-light)"}} type="secondary" size="large">{lang === "sv" ? "Om mässan" : "About"}</Button> 
+                                    <Button href="/intresseanmalan" type="primary" size="large">{ lang === "sv" ? "Intresseanmälan" : "Registration"}</Button> 
+                                    <Button href="/massan" style={{borderColor: "var(--color-light)", color: "var(--color-light)"}} type="secondary" size="large">{lang === "sv" ? "Om mässan" : "About"}</Button> 
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ export default function LandingPage() {
                                 <div className="landing-fair-info--row"><FontAwesomeIcon size="xs" icon={faMapPin}/><span>Campus Norrköping, Täppan</span></div>
                             </div>
                         </div>
-                        <Button href="/fair" type="primary" size="medium">{lang === "sv" ? "Läs mer" : "Read more"}</Button>
+                        <Button href="/massan" type="primary" size="medium">{lang === "sv" ? "Läs mer" : "Read more"}</Button>
                     </InfoSection>
                     <div className="calendar">
                     <ExpoSvg/>
@@ -70,8 +70,8 @@ export default function LandingPage() {
                         <StandSvg/>
                     </div>
                     <InfoSection className="partner-info" tag={lang === "sv" ? "Säkra en plats" : "Secure your spot"} title={lang === "sv" ? "Bli partner" : "Join us"} body={content[lang].section3.body}>
-                        <Button href="/register" type="primary" size="medium">{lang === "sv" ? "Intresseanmälan" : "Registration"}</Button>
-                        <Button href="/fair" type="secondary" size="medium">{lang === "sv" ? "Om mässan" : "About fair"}</Button>
+                        <Button href="/intresseanmalan" type="primary" size="medium">{lang === "sv" ? "Intresseanmälan" : "Registration"}</Button>
+                        <Button href="/massan" type="secondary" size="medium">{lang === "sv" ? "Om mässan" : "About fair"}</Button>
                     </InfoSection> 
                 </section>
             </ResponsiveContainer>

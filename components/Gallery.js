@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { importAll } from '../pages/fair'
+import { importAll } from '../pages/massan'
 import ImageGallery from 'react-image-gallery';
 import InfoSection from './InfoSection';
 import LoadingSpinner from './LoadingSpinner';

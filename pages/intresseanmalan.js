@@ -10,7 +10,7 @@ export default function Register() {
         <div>
         <NextSeo title={lang === "sv" ? "MTD2022 | Intresseanmälan" : "MTD2022 | Register of interest"} 
         description="Lämna en intresseanmälan så återkommer vi med detaljer så fort vi kan!"
-        canonical="https://www.medieteknikdagen.se/register"
+        canonical="https://www.medieteknikdagen.se/intresseanmalan"
         />
             <Header style={{backgroundColor: "black"}} lightContrast changeOnScroll/>
             <Registration/>

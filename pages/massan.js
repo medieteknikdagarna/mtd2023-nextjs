@@ -28,9 +28,9 @@ export default function About() {
     
     return (
         <div className="fair-background">
-        <NextSeo title={lang === "sv" ? "MTD2022 | Mässan" : "MTD2022 | The Fair"} 
+        <NextSeo title="MTD2022 | Mässan"
         description="Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
-        canonical="https://www.medieteknikdagen.se/fair"
+        canonical="https://www.medieteknikdagen.se/massan"
         />
             <Header changeOnScroll lightContrast/>
             {!content && <LoadingSpinner/> ||
@@ -41,7 +41,7 @@ export default function About() {
                                     <div className="about-section--message">
                                         <h1>{content && content[lang].title}</h1>
                                         <p>{content && content[lang].ingress}</p>
-                                        <Button href="/contact/us" type="primary">{lang === "sv" ? "Kontakta oss" : "Contact us"}</Button>
+                                        <Button href="/kontakt" type="primary">{lang === "sv" ? "Kontakta oss" : "Contact us"}</Button>
                                     </div>
                                 </div>
                             </ResponsiveContainer>

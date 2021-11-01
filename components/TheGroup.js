@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import MemberCard from './MemberCard'
 const memberInfo = require("../public/content/members.json")
 import placeholder from '../public/images/placeholder_1.png'
-import { shuffleArray } from '../pages/companies'
+import { shuffleArray } from '../pages/foretag'
 import { languageContext } from '../pages/_app'
 
 

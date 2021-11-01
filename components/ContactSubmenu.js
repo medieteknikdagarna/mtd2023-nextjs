@@ -19,15 +19,13 @@ export function SubmenuLink({active=false, children, href}){
 
 }
 
-export default function ContactSubmenu() {
+export default function ContactSubmenu({selected}) {
     const [lang, setLang] = useContext(languageContext)
-    const router = useRouter()
-    const { slug } = router.query
 
     return (
         <div className="contact-submenu">
-                <SubmenuLink href="/contact/us" active={slug === "us"}>{content[lang].buttons[0]}</SubmenuLink>
-                <SubmenuLink href="/contact/the-group" active={slug === "the-group"}>{content[lang].buttons[1]}</SubmenuLink>
-                <SubmenuLink href="/contact/press-and-media" active={slug === "press-and-media"}>{content[lang].buttons[2]}</SubmenuLink>
+                <SubmenuLink href="/kontakt" active={selected === "kontakt"}>{content[lang].buttons[0]}</SubmenuLink>
+                <SubmenuLink href="/gruppen" active={selected === "gruppen"}>{content[lang].buttons[1]}</SubmenuLink>
+                <SubmenuLink href="/press-och-media" active={selected === "press-och-media"}>{content[lang].buttons[2]}</SubmenuLink>
         </div>)
 }

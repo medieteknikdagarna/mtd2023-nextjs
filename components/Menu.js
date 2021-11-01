@@ -53,14 +53,14 @@ export default function Menu({onExit,style,className, show}) {
                 <li>
                     <a style={{cursor: "pointer"}} className={subMenuActive ? "menu-chevron--active" : "menu-chevron--inactive"} onClick={() => setSubMenuActive(prev => !prev)}>{content[lang].contact}<FontAwesomeIcon style={{marginLeft: "0.5rem", marginRight: "-1.5rem", fontSize: "1.5rem"}} icon={faChevronDown}/></a>
                     <ul className={subMenuActive ? "sub-menu--active" : "sub-menu--inactive"}>
-                        <li onClick={onExit} className={router.asPath === "/contact/us" ? "selected-page sub-menu-link" : "sub-menu-link"}><Link  href="/contact/us">{content[lang].sub_contact[0]}</Link></li>
-                        <li onClick={onExit} className={router.asPath === "/contact/the-group" ? "sub-menu-link selected-page" : "sub-menu-link"}><Link  href="/contact/the-group">{content[lang].sub_contact[1]}</Link></li>
-                        <li onClick={onExit} className={router.asPath === "/contact/press-and-media" ? "selected-page sub-menu-link" : "sub-menu-link"}><Link onClick={onExit} href="/contact/press-and-media">{content[lang].sub_contact[2]}</Link></li>
+                        <li onClick={onExit} className={router.asPath === "/kontakt" ? "selected-page sub-menu-link" : "sub-menu-link"}><Link  href="/kontakt">{content[lang].sub_contact[0]}</Link></li>
+                        <li onClick={onExit} className={router.asPath === "/gruppen" ? "sub-menu-link selected-page" : "sub-menu-link"}><Link  href="/gruppen">{content[lang].sub_contact[1]}</Link></li>
+                        <li onClick={onExit} className={router.asPath === "/press-och-media" ? "selected-page sub-menu-link" : "sub-menu-link"}><Link onClick={onExit} href="/press-och-media">{content[lang].sub_contact[2]}</Link></li>
                     </ul>
                 </li>
-                <li className={router.asPath === "/fair" ? "selected-page" : ""}><Link onClick={onExit} href="/fair">{content[lang].fair}</Link></li>
-                <li className={router.asPath === "/companies" ? "selected-page" : ""}><Link onClick={onExit} href="/companies">{content[lang].companies}</Link></li>
-                <li className={router.asPath === "/register" ? "selected-page" : ""} ><Link onClick={onExit} href="/register">{content[lang].register}</Link></li>
+                <li className={router.asPath === "/massan" ? "selected-page" : ""}><Link onClick={onExit} href="/massan">{content[lang].fair}</Link></li>
+                <li className={router.asPath === "/foretag" ? "selected-page" : ""}><Link onClick={onExit} href="/foretag">{content[lang].companies}</Link></li>
+                <li className={router.asPath === "/intresseanmalan" ? "selected-page" : ""} ><Link onClick={onExit} href="/intresseanmalan">{content[lang].register}</Link></li>
             </ul>
             <div className="icons-menu">
                 <LanguageFlag/>

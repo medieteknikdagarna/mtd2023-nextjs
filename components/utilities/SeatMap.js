@@ -88,7 +88,9 @@ export default function SeatMap({seats, reservations, activeFloor,type}) {
 
 
     return (
-        <div>{
+        <div>
+        <h2>Plan {activeFloor}</h2>
+        {
         floor4Transition(
             (styles, item) => item && <animated.div style={styles}><BookerSVG key={activeFloor}/></animated.div>
           )}

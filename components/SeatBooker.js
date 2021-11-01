@@ -34,13 +34,8 @@ export default function SeatBooker({type}) {
 
     const [lang, setLang] = useContext(languageContext)
 
-    const f_company = useRef()
-    const newError = (error_text) => {
-        setError(error_text)
-    }
-    console.log(activeSeats)
-    useEffect( async () => {
-
+    const fetchData = async () =>{
+        console.log("fetching...")
         fetch('/api/reserved')
         .then(response => response.json())
         .then(data => {
@@ -52,6 +47,17 @@ export default function SeatBooker({type}) {
             }))
 
         });
+    }
+
+    const f_company = useRef()
+    const newError = (error_text) => {
+        setError(error_text)
+    }
+    console.log(activeSeats)
+    useEffect( async () => {
+
+        await fetchData();
+        
 
     }, [])
 
@@ -98,6 +104,7 @@ export default function SeatBooker({type}) {
                     else{
                         setError("This seat is already taken.")
                         setSubmitted(false)
+                        fetchData()
                     }
                     
                 });        
@@ -117,6 +124,7 @@ export default function SeatBooker({type}) {
         
         <>
         <selectedContext.Provider value={[selectedSeat, setSelected]}>
+            
             <SeatMap type={type} key={activeLevel} activeFloor={activeLevel} seats={activeSeats} reservations={activeLevel == 5 ? floor5_res : floor4_res} selected={selectedSeat}/>
         </selectedContext.Provider>
         {!reservationSuccess &&
@@ -132,10 +140,6 @@ export default function SeatBooker({type}) {
                 </div>
             <div className="booking-form">
                 <div className="flex-input">
-                    <div>
-                        <label>Plats</label>
-                        <input  type="number" onChange={handleOnChange} min={1} max={activeSeats.length} value={selectedSeat.seat} />
-                    </div>
                     <div className="div-radio">
                         <label>Plan 4</label>
                         <input  className="input-radio" type="radio" checked={activeLevel===4} onClick={() => changeFloor(4)}/>

@@ -13,7 +13,7 @@ export default function Policy() {
     return (
         
         <>
-        <NextSeo title={lang === "sv" ? "MTD2022 | Integritetspolicy" : "MTD2022 | Privacy policy"} 
+        <NextSeo title="MTD2022 | Integritetspolicy"
         description="På den här sidan hittar du vår policy som vi följer för att skydda dina personuppgifter och din integritet. De ska följa riktlinjerna i Dataskyddsförordningen GDPR"
         canonical="https://www.medieteknikdagen.se/policy"
         />
