@@ -73,6 +73,9 @@
   h2 {
     margin-bottom: 1rem;
   }
+  @media screen and (max-width: 500px) {
+    padding: 0;
+  }
 }
 
 @keyframes changedash {
@@ -135,7 +138,8 @@
     text-align: center;
     padding: 2rem 0;
     margin-bottom: 0.5rem;
-    font-weight: 900;
+    font-weight: 700;
+    width: 100%;
     margin-top: 0.2rem;
     &:focus, &:active{
       border: none !important;

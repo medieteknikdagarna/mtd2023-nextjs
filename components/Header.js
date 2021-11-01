@@ -12,9 +12,13 @@ import LanguageFlag from './LanguageFlag'
 
 export const menuActiveContext = React.createContext()
 
-export default function Header({changeOnScroll = false, lightContrast = false, style}) {
+export default function Header({shadow =false, changeOnScroll = false, lightContrast = false, style = {}}) {
 
     const className = lightContrast ? "header-light" : "header"
+    if(shadow){
+        style["boxShadow"]= "0px 0px 18px -8px"
+    }
+    console.log(style)
 
     const [menuActive, setMenuActive] = useState(false);
     
@@ -34,6 +38,7 @@ export default function Header({changeOnScroll = false, lightContrast = false, s
         setlastScrollPos(pos);
         
     }
+
     
 
     return (
