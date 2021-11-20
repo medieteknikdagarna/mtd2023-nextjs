@@ -11,7 +11,6 @@ export default function StickyContact() {
     const {isMobile, height, width} = useWindowDimensions()
 
     let anim_width = isMobile ? (width)/16-2.5 + "rem" : "25rem"
-    console.log()
     const props = useSpring({height: isActive ? isMobile ? 0.8*height/16 + "rem" : 0.8*height/16 + "rem" : "4rem", width: isActive ? anim_width : "4rem", borderRadius: isActive ? "40px" : "100px", from: { width: "4rem", height: "4rem", borderRadius: "100px" }, 
     delay: (key) => {
         if(isActive && (key === "height" || key === "borderRadius")){

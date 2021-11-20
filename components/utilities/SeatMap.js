@@ -16,7 +16,6 @@ export function isReserved(seat, listOfReserved){
 export default function SeatMap({seats, reservations, activeFloor,type}) {
 
     const travelDst = 500
-    console.log(seats)
     const floor5Transition = useTransition(activeFloor===5, {
         from: {  y: -travelDst, opacity: 0},
         enter: {  y: 0, opacity: 1},
@@ -28,14 +27,12 @@ export default function SeatMap({seats, reservations, activeFloor,type}) {
         leave: {  y: travelDst,opacity: 0 }
       })
 
-      console.log(seats,reservations)
 
     const [selectedSeat, setSelected] = useContext(selectedContext)
     const assignSeats = () => {
     
         seats.forEach(seat => {
             const element = document.getElementById(seat.id)
-            console.log(isReserved(seat, reservations))
             if(!element){
                 console.error("Cant get element from id: " + seat.id)
                 return

@@ -35,7 +35,6 @@ export default function SeatBooker({type}) {
     const [lang, setLang] = useContext(languageContext)
 
     const fetchData = async () =>{
-        console.log("fetching...")
         fetch('/api/reserved')
         .then(response => response.json())
         .then(data => {
@@ -53,7 +52,6 @@ export default function SeatBooker({type}) {
     const newError = (error_text) => {
         setError(error_text)
     }
-    console.log(activeSeats)
     useEffect( async () => {
 
         await fetchData();

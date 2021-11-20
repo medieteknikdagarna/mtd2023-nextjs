@@ -6,7 +6,7 @@ export default function handler(req, res) {
 
     try {
         let json = require('../../../public/content/' + page + '.json')
-        console.log(json)
+   
         res.status(200).json({json})
         
     } catch (error) {

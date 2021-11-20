@@ -31,7 +31,6 @@ export function shuffleArray(array) {
 
     useEffect(() => {
      const images = importAll(require.context('../public/images/previous_companies', false, /\.(svg)$/));
-     console.log(images)
      let imgs = []
      for(let key in images){
          if(key.includes("svg")){

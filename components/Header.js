@@ -18,7 +18,6 @@ export default function Header({shadow =false, changeOnScroll = false, lightCont
     if(shadow){
         style["boxShadow"]= "0px 0px 18px -8px"
     }
-    console.log(style)
 
     const [menuActive, setMenuActive] = useState(false);
     
