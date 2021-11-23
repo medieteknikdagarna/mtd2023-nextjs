@@ -15,27 +15,27 @@ const content = require("../public/content/menu.json")
 export default function Menu({onExit,style,className, show}) {
 
     const [lang, setLang] = useContext(languageContext)
-    const [subMenuActive, setSubMenuActive] = useState(true);
+    const [subMenuActive, setSubMenuActive] = useState(false);
 
     const transitions = useTransition(show, {
         from: { x: 800, opacity: 1 },
         enter: { x: 0,opacity: 1 },
         leave: { x: 800,opacity: 1 },
         delay: 200
-      })
+      }) 
 
     const router = useRouter()
 
 
     useEffect(() => {
         if(show){
-            document.body.style.overflow = "hidden";
+                document.body.style.overflow = "hidden"; 
         }else{
             document.body.style.overflow = "unset";
         }
      }, [show ]);
     
-    return (
+    return ( 
         <>
 
         <div style={style} className={show ? "menu-container menu-container--active" : "menu-container menu-container--inactive"}>
