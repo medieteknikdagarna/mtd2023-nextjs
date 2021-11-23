@@ -16,7 +16,7 @@ export default function ContactPage() {
     
     return (
         <>
-        <NextSeo title={"MTD2022 | Kontakta oss"} 
+        <NextSeo title={"Kontakta oss"} 
         description="Vi älskar att snacka! Skriv till oss du har frågor om mässan, partnerskap, allmäna frågor - eller bara vill säga hej!"
         canonical="https://www.medieteknikdagen.se/kontakt"
         />

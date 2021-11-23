@@ -28,7 +28,7 @@ export default function About() {
     
     return (
         <div className="fair-background">
-        <NextSeo title="MTD2022 | Mässan"
+        <NextSeo title="Mässan"
         description="Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
         canonical="https://www.medieteknikdagen.se/massan"
         />

@@ -16,7 +16,7 @@ export default function ContactPage() {
     
     return (
         <>
-        <NextSeo title={"MTD2022 | Kontakta oss"} 
+        <NextSeo title={"Press & Media"} 
         description="Här hittar ni information för press & media, samt nedladdningslänkar till våra grafiska element"
         canonical="https://www.medieteknikdagen.se/press-och-media"
         />

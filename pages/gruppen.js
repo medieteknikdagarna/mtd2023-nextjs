@@ -15,7 +15,7 @@ export default function ContactPage() {
     
     return (
         <>
-        <NextSeo title="MTD2022 | Gruppen"
+        <NextSeo title="Gruppen"
         description="Kontaktuppgifter till alla 14 gruppmedlemmar i MTD2022"
         canonical="https://www.medieteknikdagen.se/gruppen"
         />
