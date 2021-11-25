@@ -36,7 +36,7 @@
     background-position: left bottom;
   }
   @media screen and (max-width: 1000px) {
-    background-image: url("../public/images/mtd_hand_final_blur.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../public/images/mtd_hand_final_blur.png");
     background-position: 20% 0%;
   }
   @media screen and (max-width: 950px) {
