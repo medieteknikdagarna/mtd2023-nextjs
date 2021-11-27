@@ -25,7 +25,6 @@ export default function TheGroup() {
                     members.map((member,i) =>{
                         
                         let name = member.namn.split(" ")[0]
-                        console.log(name)
                        return <MemberCard key={i} alt={member.namn} name={member.namn} post={member.post[lang]} email={member.email} phone={"+46 " + member.tel} src={`images/members/${name}.png`} linkedin={member.linkedin} />
                     })
                 }

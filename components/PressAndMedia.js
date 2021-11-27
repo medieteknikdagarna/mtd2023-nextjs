@@ -7,6 +7,7 @@ const content = require("../public/content/contact-press.json")
 
 export default function PressAndMedia() {
     const [lang, setLang] = useContext(languageContext)
+    
     return (
         <div className="press-and-media-section">
             <div className="press-info">    
@@ -24,7 +25,7 @@ export default function PressAndMedia() {
             
             </div>
             
-            <MemberCard name="Daniel Wärulf" post="PR" email="daniel.warulf@medieteknikdagen.se" phone="+46 730 68 72 11" src={placeholder.src} linkedin={"https://www.linkedin.com/in/daniel-w%C3%A4rulf-591374189/"} />
+            <MemberCard name="Daniel Wärulf" post="PR" email="daniel.warulf@medieteknikdagen.se" phone="+46 730 68 72 11" src={`images/members/Daniel.png`} linkedin={"https://www.linkedin.com/in/daniel-w%C3%A4rulf-591374189/"} />
            
         </div>
     )
