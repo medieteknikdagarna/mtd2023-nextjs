@@ -32,11 +32,11 @@ export default function About() {
         description="Säkra din plats på mediteteknikstudenternas årliga arbetsmarknadsdag Medieteknikdagen! Få chansen att träffa hundratals civilingenjörsstudenter och exponera erat företag."
         canonical="https://www.medieteknikdagen.se/massan"
         />
-            <Header changeOnScroll lightContrast/>
+            <Header changeOnScroll/>
             {!content && <LoadingSpinner/> ||
                 <>
                         <div className="about-page" >
-                            <ResponsiveContainer className="about-page--first-section">
+                            {/* <ResponsiveContainer className="about-page--first-section">
                                 <div className="about-section">
                                     <div className="about-section--message">
                                         <h1>{content && content[lang].title}</h1>
@@ -44,7 +44,7 @@ export default function About() {
                                         <Button href="/kontakt" type="primary">{lang === "sv" ? "Kontakta oss" : "Contact us"}</Button>
                                     </div>
                                 </div>
-                            </ResponsiveContainer>
+                            </ResponsiveContainer> */}
 
                             <ResponsiveContainer>
                             <TheFair/>
