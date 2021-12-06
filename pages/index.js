@@ -54,7 +54,7 @@ export default function LandingPage() {
                             <div className="landing-fair-info-row-container">
                                 <div className="landing-fair-info--row"><FontAwesomeIcon size="2x" icon={faCalendar}/><span>{lang === "sv" ? "3:e Mars" : "March 3rd"} 2022</span></div>
                                 <div className="landing-fair-info--row"><FontAwesomeIcon  icon={faClock}/><span>09:00 - 15:00</span></div>
-                                <div className="landing-fair-info--row"><FontAwesomeIcon size="xs" icon={faMapPin}/><span>Campus Norrköping, Täppan</span></div>
+                                <div className="landing-fair-info--row"><FontAwesomeIcon size="xs" icon={faMapPin}/><span>Campus Norrköping</span></div>
                             </div>
                         </div>
                         <Button href="/massan" type="primary" size="medium">{lang === "sv" ? "Läs mer" : "Read more"}</Button>
