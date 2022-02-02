@@ -10,7 +10,7 @@
         },
         "fair":{
           "title": "Mässan",
-          "body": ["Mässan håller till på våning 4 och 5 i Täppan, Campus Norrköping. Lokalen passar perfekt för MTD då den är utformad som en cirkel och äger rum i studenternas vardagliga studiemiljö. Med en trappa samt två hissar i varje ände, är det garanterat alltid mycket trafik!", "Medieteknikdagen är till för att föra studenter och företag samman. Det är en mycket uppskattad mässa från både studenter och företag. Nedan kan du se hur det har sett ut tidigare år under MTD"]
+          "body": ["Mässan kommer att hållas på plattformen Graduateland. Här kan företag och studenter skapa en profil och lägga till relevant information som vilka jobb som erbjuds / efterfrågas, lägga upp CV, erfarenheter och mycket mer!", "Som student kan du gå in i rum tillsammans med företag och prata och diskutera. Känner du att bara vill lyssna? Inga problem! Graduateland erbjuder öppna rum, där du som student kan gå in och lyssna på andra diskusionner och samtal." ,"Medieteknikdagen är till för att föra studenter och företag samman. Det är en mycket uppskattad mässa från både studenter och företag. Nedan kan du se hur det har sett ut tidigare år under MTD"]
         },
         "gallery":{
           "title": "Galleri",
@@ -55,7 +55,7 @@
       },
       "fair":{
         "title": "The fair",
-        "body": ["The fair will be held at Campus Norrköping (Täppan) at floor 4 and 5. The premise is perfect for MTD as it's shaped as a circle and takes place in the student's everyday study corridor. With a staircase and elevator in each end there is always guaranteed traffic.", "The media technology day is formed to unite students with companies. It's a well acknowledged fair of both students as well as companies. Below you can get insight of the previous years.   "]
+        "body": ["The fair will be held via the platform Graduateland. Create a profile and fill it with useful information such as CV, interests, skills and more", "As a student you can enter a room to chat with companies via voice, video and text. If you are not in a chatty mood, you can also join to just listen!", "The media technology day is formed to unite students with companies. It's a well acknowledged fair of both students as well as companies. Below you can get insight of the previous years.   "]
       },
       "gallery":{
         "title": "Gallery",

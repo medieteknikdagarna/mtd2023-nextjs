@@ -13,6 +13,7 @@ import Carousel from '../components/Carousel'
 import Gallery from '../components/Gallery'
 const content = require("../public/content/fair.json")
 import { NextSeo } from 'next-seo'
+import EmbeddedVideo from '../components/AfterMovie'
 export function importAll(r) {
     let images = [];
     if(!r){
@@ -48,6 +49,10 @@ export default function About() {
 
                             <ResponsiveContainer>
                             <TheFair/>
+                            <div className="gl-video">
+                            <EmbeddedVideo  src={"https://www.youtube.com/embed/AYt-2L9gOpo"}/>
+                            </div>
+                            
                             </ResponsiveContainer>
 
                             <ResponsiveContainer className="fair-responsive">

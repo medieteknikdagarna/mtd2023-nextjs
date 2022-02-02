@@ -20,6 +20,32 @@
   }
 }
 
+.gl-video{
+  width: 50%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 5rem;
+    width: 70%;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 5rem;
+    width: 90%;
+  }
+}
+
+.gl-img{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+  img{
+    width: clamp(2rem,80vw,20rem);
+  }
+
+ 
+}
+
 @media screen and (min-width: 900px) {
   .the-fair {
     display: grid;

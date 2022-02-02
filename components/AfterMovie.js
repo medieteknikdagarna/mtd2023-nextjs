@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function EmbeddedVideo({src}) {
+export default function EmbeddedVideo({src,className}) {
 
     return(
     <div className="video-responsive">
-    <iframe
+    <iframe className={className}
       width="853"
       height="480"
       src={src}

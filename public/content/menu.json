@@ -5,7 +5,7 @@
         "sub_contact": ["Kontakta oss", "Gruppen", "Press & Media"],
         "fair": "Mässan",
         "companies": "Företag",
-        "register": "Intresseanmälan"
+        "jobportal": "Jobbportalen"
     },
   
     "en": {
@@ -14,7 +14,7 @@
         "sub_contact": ["Contact us", "The Group", "Press & Media"],
         "fair": "The Fair",
         "companies": "Companies",
-        "register": "Register of interest"
+        "jobportal": "Job portal"
     }
   }
   

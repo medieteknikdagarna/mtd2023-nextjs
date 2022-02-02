@@ -60,7 +60,7 @@ export default function Menu({onExit,style,className, show}) {
                 </li>
                 <li className={router.asPath === "/massan" ? "selected-page" : ""}><Link onClick={onExit} href="/massan">{content[lang].fair}</Link></li>
                 <li className={router.asPath === "/foretag" ? "selected-page" : ""}><Link onClick={onExit} href="/foretag">{content[lang].companies}</Link></li>
-                <li className={router.asPath === "/intresseanmalan" ? "selected-page" : ""} ><Link onClick={onExit} href="/intresseanmalan">{content[lang].register}</Link></li>
+                <li className={router.asPath === "/jobbportalen" ? "selected-page" : ""} ><Link onClick={onExit} href="/jobbportalen">{content[lang].jobportal}</Link></li>
             </ul>
             <div className="icons-menu">
                 <LanguageFlag/>

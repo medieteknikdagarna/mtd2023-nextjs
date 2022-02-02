@@ -37,8 +37,8 @@ export default function LandingPage() {
                             <div className="welcome">
                                 <p>{content[lang].section1.body[0] }<br/>{ content[lang].section1.body[1]}</p>
                                 <div className="landing-section--buttons">
-                                    <Button href="/intresseanmalan" type="primary" size="large">{ lang === "sv" ? "Intresseanmälan" : "Registration"}</Button> 
-                                    <Button href="/massan" style={{borderColor: "black", color: "var(--color-light)"}} type="secondary" size="large">{lang === "sv" ? "Om mässan" : "About"}</Button> 
+                                    <Button href="/massan" type="primary" size="large">{lang === "sv" ? "Om mässan" : "About"}</Button> 
+                                    <Button href="/kontact" style={{borderColor: "black", color: "var(--color-light)"}} type="secondary" size="large">{lang === "sv" ? "Kontakta oss" : "Contact us"}</Button> 
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ export default function LandingPage() {
                             <div className="landing-fair-info-row-container">
                                 <div className="landing-fair-info--row"><FontAwesomeIcon size="2x" icon={faCalendar}/><span>{lang === "sv" ? "3:e Mars" : "March 3rd"} 2022</span></div>
                                 <div className="landing-fair-info--row"><FontAwesomeIcon  icon={faClock}/><span>09:00 - 15:00</span></div>
-                                <div className="landing-fair-info--row"><FontAwesomeIcon size="xs" icon={faMapPin}/><span>Campus Norrköping</span></div>
+                                <div className="landing-fair-info--row"><FontAwesomeIcon size="xs" icon={faMapPin}/><span>Graduateland</span></div>
                             </div>
                         </div>
                         <Button href="/massan" type="primary" size="medium">{lang === "sv" ? "Läs mer" : "Read more"}</Button>
@@ -65,7 +65,7 @@ export default function LandingPage() {
                 </section>
             </ResponsiveContainer>
 
-            <ResponsiveContainer>
+            {/* <ResponsiveContainer>
                 <section className="booking-section">
                     <div className="stand">
                         <StandSvg/>
@@ -75,7 +75,8 @@ export default function LandingPage() {
                         <Button href="/massan" type="secondary" size="medium">{lang === "sv" ? "Om mässan" : "About fair"}</Button>
                     </InfoSection> 
                 </section>
-            </ResponsiveContainer>
+            </ResponsiveContainer> */}
+
 
             <InfoWithStars/>
             <ResponsiveContainer>

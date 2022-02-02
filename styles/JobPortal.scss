@@ -1,0 +1,12 @@
+.jobportal{
+    height: 35vh;
+    margin-top: 15rem;
+    &--container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        color: black;
+    }
+}
