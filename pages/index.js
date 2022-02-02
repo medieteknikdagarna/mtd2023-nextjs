@@ -38,7 +38,7 @@ export default function LandingPage() {
                                 <p>{content[lang].section1.body[0] }<br/>{ content[lang].section1.body[1]}</p>
                                 <div className="landing-section--buttons">
                                     <Button href="/massan" type="primary" size="large">{lang === "sv" ? "Om mässan" : "About"}</Button> 
-                                    <Button href="/kontact" style={{borderColor: "black", color: "var(--color-light)"}} type="secondary" size="large">{lang === "sv" ? "Kontakta oss" : "Contact us"}</Button> 
+                                    <Button href="/kontakt" style={{borderColor: "black", color: "var(--color-light)"}} type="secondary" size="large">{lang === "sv" ? "Kontakta oss" : "Contact us"}</Button> 
                                 </div>
                             </div>
                         </div>
