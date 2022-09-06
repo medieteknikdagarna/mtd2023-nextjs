@@ -1,4 +1,3 @@
-
 #background-video {
   width: 100vw;
   height: 100vh;
@@ -10,25 +9,24 @@
   bottom: 0;
   z-index: -1;
   background-color: black;
-
 }
-.date-landing{
+.date-landing {
   margin-top: -1.2rem;
-  svg{
+  svg {
     font-size: 2rem;
     margin-right: 1rem;
   }
-  path{
-    fill: var(--color-light)
+  path {
+    fill: var(--color-light);
   }
 
-  span{
+  span {
     font-size: 1.5rem;
-    color: var(--color-light)
+    color: var(--color-light);
   }
 }
-.video-container{
-  background-image: url("../public/images/mtd_final_hand.png");
+.video-container {
+  background-color: black;
   background-position: center;
   background-size: cover;
 
@@ -36,16 +34,16 @@
     background-position: left bottom;
   }
   @media screen and (max-width: 1000px) {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../public/images/mtd_hand_final_blur.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../public/images/mtd_hand_final_blur.png");
     background-position: 20% 0%;
   }
   @media screen and (max-width: 950px) {
-    .landing-container{
+    .landing-container {
       padding-top: 7rem;
     }
-    
   }
-  .landing-container{
+  .landing-container {
     margin-top: 0;
   }
 }
@@ -62,9 +60,8 @@
   @media screen and (max-width: 900px) and (min-width: 550px) {
     padding-top: 0rem;
   }
-  
 }
-.landing-fair-info-row-container{
+.landing-fair-info-row-container {
   display: flex;
   margin-bottom: 1rem;
   width: 100%;
@@ -76,15 +73,14 @@
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
-}
-
-  @media screen and (max-width: 500px) {
-      flex-direction: column;
   }
 
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 }
-.landing-fair-info{
-  &--row{
+.landing-fair-info {
+  &--row {
     margin-right: 1rem;
     width: 100%;
   }
@@ -93,26 +89,23 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  span{
+  span {
     color: black;
     font-weight: 300;
   }
-  path{
+  path {
     fill: black;
   }
-  svg{
+  svg {
     font-size: 1.5rem;
     min-width: 1rem;
     min-height: 1rem;
     margin-right: 1rem;
   }
- 
-
-  
 }
 
 .landing-section {
-  &--buttons{
+  &--buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);
     gap: 1rem;
@@ -126,9 +119,9 @@
     line-height: 4rem;
 
     margin-bottom: 1rem;
-    color: var(--color-light)
+    color: var(--color-light);
   }
-  p{
+  p {
     color: var(--color-light);
     font-weight: 300;
   }
@@ -158,17 +151,15 @@
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3rem;
 
-
-  .infosection--buttons{
+  .infosection--buttons {
     display: flex;
     flex-direction: column;
   }
 
-  @media screen and (min-width: 950px){
-    .welcome-info{
+  @media screen and (min-width: 950px) {
+    .welcome-info {
       grid-column: 1/2;
     }
-   
   }
 }
 
@@ -176,7 +167,7 @@
   display: none;
   justify-content: flex-end;
   align-items: flex-end;
-
+  width: 100%;
   svg {
     align-self: center;
     object-fit: contain;
@@ -196,9 +187,9 @@
   flex-direction: column;
   justify-content: center;
 
-  & .infosection--buttons{
+  & .infosection--buttons {
     display: grid;
-    grid-template-columns: repeat(auto-fit,220px);
+    grid-template-columns: repeat(auto-fit, 220px);
   }
 }
 
@@ -211,7 +202,7 @@
     object-fit: contain;
   }
 }
-video{
+video {
   overflow-x: hidden;
 }
 
@@ -223,25 +214,23 @@ video{
   .partner-info {
     grid-column: 1/3;
   }
- 
-  @media screen and (min-width: 950px){
+
+  @media screen and (min-width: 950px) {
     .partner-info {
       grid-column: 2/3;
     }
   }
 }
 
-
 /*---SECTION 3 ---*/
 .after-movie-section {
   display: grid;
   gap: 3rem;
   grid-template-columns: 1fr 1fr;
-  .after-movie{
+  .after-movie {
     margin-bottom: 0;
-    
   }
-  .video-responsive{
+  .video-responsive {
     grid-column: 1/3;
   }
 
@@ -265,7 +254,6 @@ video{
   width: 100%;
   position: absolute;
 }
-
 
 .after-movie {
   grid-column: 2/3;
@@ -311,18 +299,17 @@ video{
   .landing-section h1 {
     font-size: 6rem;
     line-height: 6rem;
-
   }
 }
 
 @media screen and (min-width: 950px) {
-  .landing-container{
+  .landing-container {
     margin-top: 5rem;
   }
   .infosection {
     margin-bottom: 4rem;
   }
-  .after-movie-title{
+  .after-movie-title {
     grid-column: 1/2;
   }
   .calendar {
@@ -336,7 +323,7 @@ video{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
     margin-bottom: 2rem;
-    
+
     h1 {
       //font-size: clamp(3rem, 3vw + 1rem, 6rem);
       //line-height: clamp(3rem, 3vw + 1rem, 6rem);
@@ -351,7 +338,6 @@ video{
     padding: 0;
   }
   .landing-section svg {
-
     align-self: flex-end;
     justify-self: flex-end;
   }

@@ -39,7 +39,9 @@ export default function LandingPage() {
                 <div className="intro">
                   <h1>MTD</h1>
                   <div className="date-landing">
-                    <span>{lang === "sv" ? "3:e Mars" : "March 3rd"} 2022</span>
+                    <span>
+                      {lang === "sv" ? "6:e December" : "December 6th"} 2022
+                    </span>
                   </div>
                   <div className="welcome">
                     <p>
@@ -72,7 +74,7 @@ export default function LandingPage() {
             <section className="welcome-section">
               <InfoSection
                 className="welcome-info"
-                tag="MTD2022"
+                tag="MTD"
                 title={lang === "sv" ? "Välkommen!" : "Welcome!"}
                 body={content[lang].section2.body}
               >
@@ -80,9 +82,7 @@ export default function LandingPage() {
                   <div className="landing-fair-info-row-container">
                     <div className="landing-fair-info--row">
                       <FontAwesomeIcon size="2x" icon={faCalendar} />
-                      <span>
-                        {lang === "sv" ? "3:e Mars" : "March 3rd"} 2022
-                      </span>
+                      <span>{lang === "sv" ? "6:e Dec" : "Dec 6th"} 2022</span>
                     </div>
                     <div className="landing-fair-info--row">
                       <FontAwesomeIcon icon={faClock} />
@@ -90,7 +90,7 @@ export default function LandingPage() {
                     </div>
                     <div className="landing-fair-info--row">
                       <FontAwesomeIcon size="xs" icon={faMapPin} />
-                      <span>Graduateland</span>
+                      <span>Täppan</span>
                     </div>
                   </div>
                 </div>
@@ -104,17 +104,28 @@ export default function LandingPage() {
             </section>
           </ResponsiveContainer>
 
-          {/* <ResponsiveContainer>
-                <section className="booking-section">
-                    <div className="stand">
-                        <StandSvg/>
-                    </div>
-                    <InfoSection className="partner-info" tag={lang === "sv" ? "Säkra en plats" : "Secure your spot"} title={lang === "sv" ? "Bli partner" : "Join us"} body={content[lang].section3.body}>
-                        <Button href="/intresseanmalan" type="primary" size="medium">{lang === "sv" ? "Intresseanmälan" : "Registration"}</Button>
-                        <Button href="/massan" type="secondary" size="medium">{lang === "sv" ? "Om mässan" : "About fair"}</Button>
-                    </InfoSection> 
-                </section>
-            </ResponsiveContainer> */}
+          {
+            <ResponsiveContainer>
+              <section className="booking-section">
+                <div className="stand">
+                  <StandSvg />
+                </div>
+                <InfoSection
+                  className="partner-info"
+                  tag={lang === "sv" ? "Säkra en plats" : "Secure your spot"}
+                  title={lang === "sv" ? "Bli partner" : "Join us"}
+                  body={content[lang].section3.body}
+                >
+                  <Button href="/intresseanmalan" type="primary" size="medium">
+                    {lang === "sv" ? "Intresseanmälan" : "Registration"}
+                  </Button>
+                  <Button href="/massan" type="secondary" size="medium">
+                    {lang === "sv" ? "Om mässan" : "About fair"}
+                  </Button>
+                </InfoSection>
+              </section>
+            </ResponsiveContainer>
+          }
 
           <InfoWithStars />
           <ResponsiveContainer>
