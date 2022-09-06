@@ -34,6 +34,12 @@ export default function LandingPage() {
         <>
           <Header lightContrast changeOnScroll />
           <div className="video-container">
+            <video id="background-video" autoPlay loop muted>
+              <source
+                src={require("../public/images/cube_storm.mp4")}
+                type="video/mp4"
+              />
+            </video>
             <ResponsiveContainer className="landing-container">
               <section className="landing-section">
                 <div className="intro">
@@ -50,19 +56,23 @@ export default function LandingPage() {
                       {content[lang].section1.body[1]}
                     </p>
                     <div className="landing-section--buttons">
-                      <Button href="/massan" type="primary" size="large">
-                        {lang === "sv" ? "Om mässan" : "About"}
+                      <Button
+                        href="/intresseanmalan"
+                        type="primary"
+                        size="large"
+                      >
+                        {lang === "sv" ? "Intresseanmälan" : "Registration"}
                       </Button>
                       <Button
-                        href="/kontakt"
+                        href="/massan"
                         style={{
-                          borderColor: "black",
+                          borderColor: "white",
                           color: "var(--color-light)",
                         }}
                         type="secondary"
                         size="large"
                       >
-                        {lang === "sv" ? "Kontakta oss" : "Contact us"}
+                        {lang === "sv" ? "Om Mässan" : "About Fair"}
                       </Button>
                     </div>
                   </div>
