@@ -1,92 +1,131 @@
 {
-    "sv": {
-      "title": "Vad är MTD2022?",
-      "ingress": "Medieteknikdagen är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. För tjugoandra året i rad förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva",
-      "about_info":{
-          "title1": "Medieteknikdagen 2022",
-          "body1": ["Medieteknikdagen är ett ideellt arrangemang drivet av och för studenter. Syftet är att knyta kontakter mellan studenter, medietekniker ute i arbetslivet och företagen inom branschen. I år har vi bytt namn från Medieteknikdagarna till Medieteknikdagen.","MTD är ett tillfälle för företag och studenter att inspirera, informera och integrera med varandra. Såväl företag som studenter får här en chans att visa det allra senaste inom medieteknik." ],
-          "title2": "Civilingenjörsprogrammet i medietenik på Linköpings Universitet",
-          "body2": ["Civilingenjörsprogrammet i Medieteknik är utbildningen där tekniken gifter sig med kreativiteten. Resultatet blir en unik spetskompetens inom områden som blir allt viktigare. Klassiska ingenjörsämnen blandas med programmering, visualisering, datorgrafik, interaktionsdesign, ljud och mycket mer.", "Utbildningen är belägen på universitets campus Norrköping, med närhet till Visualiseringscenter C, och på så vis till världsledande forskning.", "Läs mer om medieteknikprogrammet på sektionens hemsida, www.medieteknik.nu samt på www.liu.se/medieteknik"]
-        },
-        "fair":{
-          "title": "Mässan",
-          "body": ["Mässan kommer att hållas på plattformen Graduateland. Här kan företag och studenter skapa en profil och lägga till relevant information som vilka jobb som erbjuds / efterfrågas, lägga upp CV, erfarenheter och mycket mer!", "Som student kan du gå in i rum tillsammans med företag och prata och diskutera. Känner du att bara vill lyssna? Inga problem! Graduateland erbjuder öppna rum, där du som student kan gå in och lyssna på andra diskusionner och samtal." ,"Medieteknikdagen är till för att föra studenter och företag samman. Det är en mycket uppskattad mässa från både studenter och företag. Nedan kan du se hur det har sett ut tidigare år under MTD"]
-        },
-        "gallery":{
-          "title": "Galleri",
-          "body": "Bläddra bland härliga bilder tagna under Medieteknikdagen 2020, som hölls på campus!"
-        },
-        "lecturer":{
-          "title": "Föreläsningar",
-          "body": "Varje år håller flera företag spännande föreläsningar om allt från ny spännande teknik inom en rad olika ämnen till olika karriärresor som företagen har gjort. Håll utkik på hemsidan och våra sociala medier för att inte missa dessa! Nedan hittar du några exempel på föreläsningar som kan hållas under MTD."
-        },
-        "lecturers": [
-            {
-          "name": "Andreas Nilsson",
-          "tag": 2021,
-          "body": ["Medieteknikdagen 2021 var en digital mässa vilket gav möjligheten till att lyssna på intressanta föreläsare som ändå inte hade kunnat medverka på en fysisk mässa. Andreas Nilsson tog med oss på hans resa från lilla Karlskrona, till Medieteknikprogrammet i Norrköping för att slutligen hamna i Silicon Valley hos Facebook där han är idag. På resan får vi veta hur det är att jobba med funktionen Portal, vad som var bäst med MT och varför Facebook är världens bästa arbetsplats!"]
-        },
-        {
-          "name": "Simon Otter och Daniel Rådén",
-          "tag": 2020,
-          "body": ["Simon Otter (Programmer in RnD Departement) och Daniel Rådén (Technology Manager) från Important Looking Pirates har tillsammans genom flera år inom VFX-branchen samlat på sig tonvis med erfarenhet. De talade om hur effekterna skapas, samt teknikerna bakom välkända tv-serier och filmer som Westworld, Jurassic Park, Star Wars och Game of Thrones."]
-        },
-          {
-            "name": "Dan Englesson",
-            "tag": 2019,
-            "body": ["Dan besökte oss 2019 och pratade om hur hans karriär tog fart ut i världen direkt efter studietiden och hur det är att jobba på stora VFX och animation studios så som MPC i London, Pixar i San Francisco och Goodbye Kansas i Stockholm. Dan gav också en inblick i hur det var att jobba på Coco på Pixar som vann en Oscar för bästa animerade film och hur det är att jobba med VFX i Sverige."]
-          },
-          {
-            "name": "Nicholas Fernholm",
-            "tag": 2018,
-            "body": ["Nicholas är en fantastisk föreläsare och expert på att implementera innovativa produkter i befintliga processer. Hans föreläsningar är inspirerande och underhållande med fokus på de största faktorerna som påverkar framtidens arbetsmarknad och arbetssätt.", "Nicholas föreläste under MTD 2018 om hur automation och AI påverkar världen på kort och lång sikt. Nicholas föreläsning fokuserade på hur den digitala världen påverkas oss, och hur AI, nya generationen och automation är nycklarna för att förstå och förbereda sig för framtiden."]
-          }
-        ]
-    },
-  
-    "en": {
-      "title": "What is MTD2022?",
-      "ingress": "The Media Technology Day is a day full with inspiration, a fair and hundreds of students and companies from the industry. Here, you'll find everything you need to know about the day",
-      "about_info":{
-        "title1": "The Media Technology day 2022",
-        "body1": ["The The Media Technology Day is a non-profit event arranged by students, connecting students, working media technicians and companies in the industry. The purpose is to establish contacts between students, media technicians in working life and companies in the industry.", "MTD is an opportunity for companies and students to inspire, inform and interact with each other. Both students and companies are given the chance to show the latest within media technology."],
-        "title2": "M.Sc in Media Technology and Engineering at Linköping University",
-        "body2": ["The Media Technology master’s programme is where technology and creativity meets as one.", "The result is a unique cutting-edge expertise within fields constantly growing in importance. Media Technology combines traditional engineering courses with programming, visualization, computer graphics, interaction design, sound and a whole lot more.", "The programme resides on Norrköping campus, within close proximity of Visualiseringscenter C, and in that sense to world-leading research."]
-      },
-      "fair":{
-        "title": "The fair",
-        "body": ["The fair will be held via the platform Graduateland. Create a profile and fill it with useful information such as CV, interests, skills and more", "As a student you can enter a room to chat with companies via voice, video and text. If you are not in a chatty mood, you can also join to just listen!", "The media technology day is formed to unite students with companies. It's a well acknowledged fair of both students as well as companies. Below you can get insight of the previous years.   "]
-      },
-      "gallery":{
-        "title": "Gallery",
-        "body": "Browse among some pictures taken during MTD 2020, at Campus!"
-      },
-      "lecturer":{
-        "title": "Lectures",
-        "body": "Every year companies perform presentations in various subjects. Stay updated on our social media and website to not miss this year's lecturers. Below you will find some examples of lectures from previous years."
-      },
-      "lecturers": [
-        {
-          "name": "Andreas Nilsson",
-          "tag": 2021,
-          "body": ["The Media Technology Days 2021 was a digital fair, which gave the opportunity to listen to interesting lecturers who could not attend physically either way. Andreas Nilsson told his story starting in the Swedish town of Karlskrona, to the media technology program, and finally to Silicon Valley at Facebook, which is where he is today. He told us about how it is working with the service Portal, what is best about MT and why Facebook is the world’s greatest working environment!"]
-        },
-        {
-          "name": "Simon Otter och Daniel Rådén",
-          "tag": 2020,
-          "body": ["Simon Otter (Programmer in RnD Department) and Daniel Rådén (Technology Manager) from Important Looking Pirates have in their years working in the VFX industry gathered a ton of experience. They told us about the creation of visual effects and the techniques behind famous series and movies like Westworld, Jurassic Park, Star Wars and Game of Thrones"]
-        },
-        {
-          "name": "Dan Englesson",
-          "tag": 2019,
-          "body": ["Dan visited us in 2019 and talked about how his career took off in the world immediately after his studies and what it is like to work at large VFX and animation studios such as MPC in London, Pixar in San Francisco and Goodbye Kansas in Stockholm. Dan also gave an insight into what it was like to work at Coco at Pixar, which won an Oscar for best animated film, and what it is like to work with VFX in Sweden."]
-        },
-        {
-          "name": "Nicholas Fernholm",
-          "tag": 2018,
-          "body": ["Nicholas is a fantastic lecturer and expert in implementing innovative products in existing processes. His lectures are inspiring and entertaining with a focus on the biggest factors that affect the future labor market and working methods. ", "Nicholas lectured during MTD 2018 on how automation and AI affect the world in the short and long term. Nicholas' lecture focused on how the digital world affects us, and how AI, the new generation and automation are the keys to understanding and preparing for the future."]
-        }
+  "sv": {
+    "title": "Vad är MTD?",
+    "ingress": "Medieteknikdagen är en arbetsmarknadsdag för medieteknikprogrammet på Linköpings universitet. Ännu ett år förenar vi hundratals studenter och företag i industrin. Här hittar du all information och alla kontaktuppgifter du kan tänkas behöva",
+    "about_info": {
+      "title1": "Medieteknikdagen 2022",
+      "body1": [
+        "Medieteknikdagen är ett ideellt arrangemang drivet av och för studenter. Syftet är att knyta kontakter mellan studenter, medietekniker ute i arbetslivet och företagen inom branschen. I år har vi bytt namn från Medieteknikdagarna till Medieteknikdagen.",
+        "MTD är ett tillfälle för företag och studenter att inspirera, informera och integrera med varandra. Såväl företag som studenter får här en chans att visa det allra senaste inom medieteknik."
+      ],
+      "title2": "Civilingenjörsprogrammet i medieteknik på Linköpings Universitet",
+      "body2": [
+        "Civilingenjörsprogrammet i Medieteknik är utbildningen där tekniken gifter sig med kreativiteten. Resultatet blir en unik spetskompetens inom områden som blir allt viktigare. Klassiska ingenjörsämnen blandas med programmering, visualisering, datorgrafik, interaktionsdesign, ljud och mycket mer.",
+        "Utbildningen är belägen på universitets campus Norrköping, med närhet till Visualiseringscenter C, och på så vis till världsledande forskning.",
+        "Läs mer om medieteknikprogrammet på sektionens hemsida, www.medieteknik.nu samt på www.liu.se/medieteknik"
       ]
-    }
+    },
+    "fair": {
+      "title": "Mässan",
+      "body": [
+        "Mässan kommer att hållas på plattformen Graduateland. Här kan företag och studenter skapa en profil och lägga till relevant information som vilka jobb som erbjuds / efterfrågas, lägga upp CV, erfarenheter och mycket mer!",
+        "Som student kan du gå in i rum tillsammans med företag och prata och diskutera. Känner du att bara vill lyssna? Inga problem! Graduateland erbjuder öppna rum, där du som student kan gå in och lyssna på andra diskusionner och samtal.",
+        "Medieteknikdagen är till för att föra studenter och företag samman. Det är en mycket uppskattad mässa från både studenter och företag. Nedan kan du se hur det har sett ut tidigare år under MTD"
+      ]
+    },
+    "gallery": {
+      "title": "Galleri",
+      "body": "Bläddra bland härliga bilder tagna under Medieteknikdagen 2020, som hölls på campus!"
+    },
+    "lecturer": {
+      "title": "Föreläsningar",
+      "body": "Varje år håller flera företag spännande föreläsningar om allt från ny spännande teknik inom en rad olika ämnen till olika karriärresor som företagen har gjort. Håll utkik på hemsidan och våra sociala medier för att inte missa dessa! Nedan hittar du några exempel på föreläsningar som kan hållas under MTD."
+    },
+    "lecturers": [
+      {
+        "name": "Andreas Nilsson",
+        "tag": 2021,
+        "body": [
+          "Medieteknikdagen 2021 var en digital mässa vilket gav möjligheten till att lyssna på intressanta föreläsare som ändå inte hade kunnat medverka på en fysisk mässa. Andreas Nilsson tog med oss på hans resa från lilla Karlskrona, till Medieteknikprogrammet i Norrköping för att slutligen hamna i Silicon Valley hos Facebook där han är idag. På resan får vi veta hur det är att jobba med funktionen Portal, vad som var bäst med MT och varför Facebook är världens bästa arbetsplats!"
+        ]
+      },
+      {
+        "name": "Simon Otter och Daniel Rådén",
+        "tag": 2020,
+        "body": [
+          "Simon Otter (Programmer in RnD Departement) och Daniel Rådén (Technology Manager) från Important Looking Pirates har tillsammans genom flera år inom VFX-branchen samlat på sig tonvis med erfarenhet. De talade om hur effekterna skapas, samt teknikerna bakom välkända tv-serier och filmer som Westworld, Jurassic Park, Star Wars och Game of Thrones."
+        ]
+      },
+      {
+        "name": "Dan Englesson",
+        "tag": 2019,
+        "body": [
+          "Dan besökte oss 2019 och pratade om hur hans karriär tog fart ut i världen direkt efter studietiden och hur det är att jobba på stora VFX och animation studios så som MPC i London, Pixar i San Francisco och Goodbye Kansas i Stockholm. Dan gav också en inblick i hur det var att jobba på Coco på Pixar som vann en Oscar för bästa animerade film och hur det är att jobba med VFX i Sverige."
+        ]
+      },
+      {
+        "name": "Nicholas Fernholm",
+        "tag": 2018,
+        "body": [
+          "Nicholas är en fantastisk föreläsare och expert på att implementera innovativa produkter i befintliga processer. Hans föreläsningar är inspirerande och underhållande med fokus på de största faktorerna som påverkar framtidens arbetsmarknad och arbetssätt.",
+          "Nicholas föreläste under MTD 2018 om hur automation och AI påverkar världen på kort och lång sikt. Nicholas föreläsning fokuserade på hur den digitala världen påverkas oss, och hur AI, nya generationen och automation är nycklarna för att förstå och förbereda sig för framtiden."
+        ]
+      }
+    ]
+  },
+
+  "en": {
+    "title": "What is MTD2022?",
+    "ingress": "The Media Technology Day is a day full with inspiration, a fair and hundreds of students and companies from the industry. Here, you'll find everything you need to know about the day",
+    "about_info": {
+      "title1": "The Media Technology day 2022",
+      "body1": [
+        "The The Media Technology Day is a non-profit event arranged by students, connecting students, working media technicians and companies in the industry. The purpose is to establish contacts between students, media technicians in working life and companies in the industry.",
+        "MTD is an opportunity for companies and students to inspire, inform and interact with each other. Both students and companies are given the chance to show the latest within media technology."
+      ],
+      "title2": "M.Sc in Media Technology and Engineering at Linköping University",
+      "body2": [
+        "The Media Technology master’s programme is where technology and creativity meets as one.",
+        "The result is a unique cutting-edge expertise within fields constantly growing in importance. Media Technology combines traditional engineering courses with programming, visualization, computer graphics, interaction design, sound and a whole lot more.",
+        "The programme resides on Norrköping campus, within close proximity of Visualiseringscenter C, and in that sense to world-leading research."
+      ]
+    },
+    "fair": {
+      "title": "The fair",
+      "body": [
+        "The fair will be held via the platform Graduateland. Create a profile and fill it with useful information such as CV, interests, skills and more",
+        "As a student you can enter a room to chat with companies via voice, video and text. If you are not in a chatty mood, you can also join to just listen!",
+        "The media technology day is formed to unite students with companies. It's a well acknowledged fair of both students as well as companies. Below you can get insight of the previous years.   "
+      ]
+    },
+    "gallery": {
+      "title": "Gallery",
+      "body": "Browse among some pictures taken during MTD 2020, at Campus!"
+    },
+    "lecturer": {
+      "title": "Lectures",
+      "body": "Every year companies perform presentations in various subjects. Stay updated on our social media and website to not miss this year's lecturers. Below you will find some examples of lectures from previous years."
+    },
+    "lecturers": [
+      {
+        "name": "Andreas Nilsson",
+        "tag": 2021,
+        "body": [
+          "The Media Technology Days 2021 was a digital fair, which gave the opportunity to listen to interesting lecturers who could not attend physically either way. Andreas Nilsson told his story starting in the Swedish town of Karlskrona, to the media technology program, and finally to Silicon Valley at Facebook, which is where he is today. He told us about how it is working with the service Portal, what is best about MT and why Facebook is the world’s greatest working environment!"
+        ]
+      },
+      {
+        "name": "Simon Otter och Daniel Rådén",
+        "tag": 2020,
+        "body": [
+          "Simon Otter (Programmer in RnD Department) and Daniel Rådén (Technology Manager) from Important Looking Pirates have in their years working in the VFX industry gathered a ton of experience. They told us about the creation of visual effects and the techniques behind famous series and movies like Westworld, Jurassic Park, Star Wars and Game of Thrones"
+        ]
+      },
+      {
+        "name": "Dan Englesson",
+        "tag": 2019,
+        "body": [
+          "Dan visited us in 2019 and talked about how his career took off in the world immediately after his studies and what it is like to work at large VFX and animation studios such as MPC in London, Pixar in San Francisco and Goodbye Kansas in Stockholm. Dan also gave an insight into what it was like to work at Coco at Pixar, which won an Oscar for best animated film, and what it is like to work with VFX in Sweden."
+        ]
+      },
+      {
+        "name": "Nicholas Fernholm",
+        "tag": 2018,
+        "body": [
+          "Nicholas is a fantastic lecturer and expert in implementing innovative products in existing processes. His lectures are inspiring and entertaining with a focus on the biggest factors that affect the future labor market and working methods. ",
+          "Nicholas lectured during MTD 2018 on how automation and AI affect the world in the short and long term. Nicholas' lecture focused on how the digital world affects us, and how AI, the new generation and automation are the keys to understanding and preparing for the future."
+        ]
+      }
+    ]
   }
-  
+}
