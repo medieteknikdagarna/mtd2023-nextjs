@@ -21,8 +21,20 @@ export default function TheFair() {
             <p key={i}>{t}</p>
           ))}
         >
-          {/* <Button href="/intresseanmalan" type="primary" style={{ marginTop: "1rem"}}>{lang === "sv" ? "Intresseanmälan" : "Register of interest"}</Button>
-                <Button onClick={handleScroll} type="secondary" style={{marginTop: "1rem"}}>{lang === "sv" ? "Galleri" : "Gallery"}</Button> */}
+          <Button
+            href="/intresseanmalan"
+            type="primary"
+            style={{ marginTop: "1rem" }}
+          >
+            {lang === "sv" ? "Intresseanmälan" : "Register of interest"}
+          </Button>
+          <Button
+            onClick={handleScroll}
+            type="secondary"
+            style={{ marginTop: "1rem" }}
+          >
+            {lang === "sv" ? "Galleri" : "Gallery"}
+          </Button>
         </InfoSection>
       </div>
       <div className="gl-img">
