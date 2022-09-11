@@ -3,7 +3,9 @@ import InfoSection from "./InfoSection";
 import GL from "../public/images/graduateland.png";
 import Button from "./Button";
 import { languageContext } from "../pages/_app";
+import MTD from "../public/images/mtd.svg";
 const content = require("../public/content/fair.json");
+
 export default function TheFair() {
   const [lang, setLang] = useContext(languageContext);
 
@@ -37,8 +39,8 @@ export default function TheFair() {
           </Button>
         </InfoSection>
       </div>
-      <div className="gl-img">
-        <img src={GL.src}></img>
+      <div className="mtd-img">
+        <MTD />
       </div>
     </div>
   );

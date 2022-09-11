@@ -1,27 +1,28 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
-.image-gallery-svg{
-    polyline, polygon,path{
-        stroke: black;
-        box-shadow: none;
-    }
-
+.image-gallery-svg {
+  polyline,
+  polygon,
+  path {
+    stroke: white;
+    box-shadow: none;
+  }
 }
-.infosection-gallery{
-    grid-column: 1/2;
+.infosection-gallery {
+  grid-column: 1/2;
 }
 
-.gallery-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    @media screen and (max-width:500px) {
-        grid-template-columns: 1fr;
-    }
-    h2,p{
-        color: black;
-    }
-
+.gallery-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+  h2,
+  p {
+    color: black;
+  }
 }
-.image-gallery{
-    grid-column: 1/-1;
+.image-gallery {
+  grid-column: 1/-1;
 }

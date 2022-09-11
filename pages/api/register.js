@@ -15,7 +15,6 @@ const creds = {
 };
 
 export async function addRegistration(data) {
-  console.log(process.env.GOOGLE_PRIVATE_KEY);
   try {
     // google sheets
     await doc.useServiceAccountAuth(creds);

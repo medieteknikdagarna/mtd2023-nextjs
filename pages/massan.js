@@ -50,11 +50,11 @@ export default function About() {
 
             <ResponsiveContainer>
               <TheFair />
-              <div className="gl-video">
+              {/* <div className="gl-video">
                 <EmbeddedVideo
                   src={"https://www.youtube.com/embed/AYt-2L9gOpo"}
                 />
-              </div>
+              </div> */}
             </ResponsiveContainer>
 
             <ResponsiveContainer className="fair-responsive">

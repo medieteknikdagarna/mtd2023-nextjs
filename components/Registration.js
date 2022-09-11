@@ -112,6 +112,7 @@ export default function Registration() {
                   className="register-form--input"
                   ref={r_phone}
                   type="tel"
+                  //  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                   placeholder=" "
                 ></input>
                 <label className="register-form--label">Tel</label>

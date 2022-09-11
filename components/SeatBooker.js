@@ -11,6 +11,7 @@ import ReservationSuccess from "./ReservationSuccess";
 import Footer from "../components/Footer";
 import ResponsiveContainer from "./ResponsiveContainer";
 import { languageContext } from "../pages/_app";
+import Registration from "./Registration";
 
 const floor4_all = require("../public/content/seat-info/floor4.json");
 const floor5_all = require("../public/content/seat-info/floor5.json");
@@ -182,13 +183,13 @@ export default function SeatBooker({ type }) {
                         ref={f_company}
                         type="text"
                       />
-
                       {error && (
                         <div className="error-message">
                           <div></div>
                           <span>{error}</span>
                         </div>
                       )}
+
                       <Button
                         disabled={isReserved(
                           selectedSeat,
