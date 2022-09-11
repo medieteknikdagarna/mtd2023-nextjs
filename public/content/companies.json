@@ -1,14 +1,11 @@
 {
-    "sv": {
-      
-        "title": "Företag från tidigare år",
-        "body": "Nedan listas ett knippe av alla företag som varit med tidigare år. Vi hoppas på att kunna lista erat företag här nästa år!"
-     
-    },
-  
-    "en": {
-        "title": "Companies from previous years",
-        "body": "Below are some of the companies that has attended MTD previous years. We hope to be able to list your company next year!"
-    }
+  "sv": {
+    "title": "Företag från tidigare år",
+    "body": "Nedan listas ett knippe av alla företag som varit med tidigare år. Vi hoppas på att kunna lista erat företag här nästa år!"
+  },
+
+  "en": {
+    "title": "Companies from previous years",
+    "body": "Below are some of the companies that has attended MTD previous years. We hope to be able to list your company next year!"
   }
-  
+}
