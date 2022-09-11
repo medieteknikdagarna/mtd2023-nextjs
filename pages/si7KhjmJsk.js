@@ -1,16 +1,14 @@
-import React from 'react'
-import { NextSeo } from 'next-seo';
-import SeatBooker from '../components/SeatBooker';
-
-
+import React from "react";
+import { NextSeo } from "next-seo";
+import SeatBooker from "../components/SeatBooker";
 
 export default function BookingPage() {
-    return (
-        <>
-        <NextSeo noindex={true} />
-        <div>
-            <SeatBooker type="silver"/>
-        </div>
-        </>
-    )
+  return (
+    <>
+      <NextSeo noindex={true} />
+      <div>
+        <SeatBooker type="silver" />
+      </div>
+    </>
+  );
 }
