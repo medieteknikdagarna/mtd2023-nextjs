@@ -1,20 +1,21 @@
 {
-    "sv": {
-        "home": "Hem",
-        "contact": "Kontakt",
-        "sub_contact": ["Kontakta oss", "Gruppen", "Press & Media"],
-        "fair": "Mässan",
-        "companies": "Företag",
-        "jobportal": "Jobbportalen"
-    },
-  
-    "en": {
-        "home": "Home",
-        "contact": "Contact",
-        "sub_contact": ["Contact us", "The Group", "Press & Media"],
-        "fair": "The Fair",
-        "companies": "Companies",
-        "jobportal": "Job portal"
-    }
+  "sv": {
+    "home": "Hem",
+    "contact": "Kontakt",
+    "sub_contact": ["Kontakta oss", "Gruppen", "Press & Media"],
+    "fair": "Mässan",
+    "companies": "Företag",
+    "jobportal": "Jobbportalen",
+    "register": "intresseanmälan"
+  },
+
+  "en": {
+    "home": "Home",
+    "contact": "Contact",
+    "sub_contact": ["Contact us", "The Group", "Press & Media"],
+    "fair": "The Fair",
+    "companies": "Companies",
+    "jobportal": "Job portal",
+    "register": "Register"
   }
-  
+}

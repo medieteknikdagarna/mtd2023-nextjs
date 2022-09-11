@@ -33,6 +33,11 @@ export default function ContactUs({ className }) {
         <ContactCard
           title={content[lang].small_titles[3]}
           body={content[lang].bodys[3]}
+          textToCopy="richard.gotthard@medieteknikdagen.se"
+        />
+        <ContactCard
+          title={content[lang].small_titles[4]}
+          body={content[lang].bodys[4]}
           textToCopy="vilma.lundholm@medieteknikdagen.se"
         />
       </div>

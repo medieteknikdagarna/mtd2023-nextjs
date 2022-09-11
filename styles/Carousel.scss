@@ -1,70 +1,63 @@
-.carousel-circle-container{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    
+.carousel-circle-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 
-.carousel-circle{
-
+  .carousel-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: rgb(83, 83, 83);
 
-
-    &--active{
-        background-color: var(--color-primary);
+    &--active {
+      background-color: var(--color-primary);
     }
-
-}
+  }
 }
 
-.carousel-container{
-    display: grid;
-    grid-template-columns: 2rem 1fr 2rem;
-    @media screen and (max-width: 500px) {
-        grid-template-columns: 0rem 1fr 0rem;
-    }
+.carousel-container {
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 0rem 1fr 0rem;
+  }
 }
 
+.carousel {
+  &-content {
+    display: flex;
+    justify-content: center;
+  }
+  &-pagination {
+    grid-column: -1 / 1;
+    transform: translateY(-200%);
+  }
 
-.carousel{
-    &-content{
-        display: flex;
-        justify-content: center;
+  &-slide-left {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(50%);
+    svg {
+      cursor: pointer;
     }
-    &-pagination{
-        grid-column: -1 / 1;
-        transform: translateY(-200%);
+    path {
+      fill: black;
     }
+  }
+  &-slide-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: -1/-2;
+    transform: translateX(-50%);
 
-    &-slide-left{
-        grid-column: 1/2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translateX(50%);
-        svg{
-            cursor: pointer;
-        }
-        path{
-            fill: black;
-            
-        }
+    path {
+      fill: black;
     }
-    &-slide-right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column: -1/-2;
-        transform: translateX(-50%);
-        
-
-        path{
-            fill: black;
-        }
-        svg{
-            cursor: pointer;
-        }
+    svg {
+      cursor: pointer;
     }
+  }
 }

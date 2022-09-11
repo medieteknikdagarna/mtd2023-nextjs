@@ -96,11 +96,11 @@ export default function LandingPage() {
                     </div>
                     <div className="landing-fair-info--row">
                       <FontAwesomeIcon icon={faClock} />
-                      <span>TBA</span>
+                      <span>09:00 - 15:00</span>
                     </div>
                     <div className="landing-fair-info--row">
                       <FontAwesomeIcon size="xs" icon={faMapPin} />
-                      <span>Täppan</span>
+                      <span>Täppan Campus Norrköping</span>
                     </div>
                   </div>
                 </div>
