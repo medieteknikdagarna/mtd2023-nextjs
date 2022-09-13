@@ -12,7 +12,7 @@ const creds = {
   auth_provider_x509_cert_url:
     "https://www.googleapis.com/oauth2/v1/certs"?.replace(/\\n/gm, "\n"),
   client_x509_cert_url:
-    "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet%40medieteknikdagen.iam.gserviceaccount.com"?.replace(
+    "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet@medieteknikdagen.iam.gserviceaccount.com"?.replace(
       /\\n/gm,
       "\n"
     ),
