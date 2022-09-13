@@ -36,6 +36,8 @@ export async function addRegistration(data) {
     };
   } catch (error) {
     console.log(error);
+    console.log(process.env.GOOGLE_PRIVATE_KEY);
+    console.log(process.env.GOOGLE_SHEET_ID);
     return { status: 500, message: JSON.stringify(error), success: false };
   }
 }
