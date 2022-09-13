@@ -4,15 +4,15 @@ const creds = {
   type: "service_account",
   project_id: process.env.GOOGLE_PROJECT_ID,
   private_key_id: process.env.GOOGLE_PRIVATE_KEY_ID,
-  private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/gm, "\n"),
+  private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/gm, "\n"),
   client_email: process.env.GOOGLE_CLIENT_EMAIL,
   client_id: process.env.GOOGLE_CLIENT_ID,
-  auth_uri: "https://accounts.google.com/o/oauth2/auth"?.replace(/\\n/gm, "\n"),
-  token_uri: "https://oauth2.googleapis.com/token"?.replace(/\\n/gm, "\n"),
+  auth_uri: "https://accounts.google.com/o/oauth2/auth".replace(/\\n/gm, "\n"),
+  token_uri: "https://oauth2.googleapis.com/token".replace(/\\n/gm, "\n"),
   auth_provider_x509_cert_url:
-    "https://www.googleapis.com/oauth2/v1/certs"?.replace(/\\n/gm, "\n"),
+    "https://www.googleapis.com/oauth2/v1/certs".replace(/\\n/gm, "\n"),
   client_x509_cert_url:
-    "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet@medieteknikdagen.iam.gserviceaccount.com"?.replace(
+    "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet@medieteknikdagen.iam.gserviceaccount.com".replace(
       /\\n/gm,
       "\n"
     ),
@@ -21,8 +21,7 @@ const creds = {
 export async function addRegistration(data) {
   try {
     // google sheets
-    console.log(process.env.GOOGLE_PRIVATE_KEY);
-    console.log(process.env.GOOGLE_SHEET_ID);
+
     await doc.useServiceAccountAuth(creds);
     await doc.loadInfo(); // loads document properties and worksheets
     const sheet = doc.sheetsByIndex[0]; // or use doc.sheetsById[id] -- get first sheet in the document
