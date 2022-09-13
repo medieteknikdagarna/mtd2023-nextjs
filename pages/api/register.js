@@ -17,6 +17,8 @@ const creds = {
 export async function addRegistration(data) {
   try {
     // google sheets
+    console.log(process.env.GOOGLE_PRIVATE_KEY);
+    console.log(process.env.GOOGLE_SHEET_ID);
     await doc.useServiceAccountAuth(creds);
     await doc.loadInfo(); // loads document properties and worksheets
     const sheet = doc.sheetsByIndex[0]; // or use doc.sheetsById[id] -- get first sheet in the document
@@ -45,6 +47,8 @@ export async function addRegistration(data) {
 export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
+      console.log(process.env.GOOGLE_PRIVATE_KEY);
+      console.log(process.env.GOOGLE_SHEET_ID);
       const insert_data = req.body;
       const response = await addRegistration(insert_data);
       res
