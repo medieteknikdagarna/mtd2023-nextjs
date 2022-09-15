@@ -46,6 +46,23 @@ export async function addReservation(data) {
       seat: data.seat,
       floor: data.floor,
       company: data.company,
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      desc: data.desc,
+      spons: data.spons,
+      orgnr: data.orgnr,
+      logotyp: data.logotyp,
+      monter: data.monter,
+      bankett: data.bankett,
+      bord: data.bord,
+      stol: data.stol,
+      tv: `${data.tv.opt1} / ${data.tv.opt2} / ${data.tv.opt3} / ${data.tv.opt4}`,
+      wifi: data.wifi,
+      highPower: data.highPower,
+      services: `${data.services.opt1} / ${data.services.opt2} / ${data.services.opt3} / ${data.services.opt4} / ${data.services.opt5} `,
+      faktura: data.faktura,
+      firmaTecknare: data.firmaTecknare,
     });
     // this returns the videos
     return {

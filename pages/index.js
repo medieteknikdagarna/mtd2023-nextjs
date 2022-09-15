@@ -64,7 +64,7 @@ export default function LandingPage() {
                         {lang === "sv" ? "Intresseanmälan" : "Registration"}
                       </Button>
                       <Button
-                        href="/massan"
+                        href="/booking"
                         style={{
                           borderColor: "white",
                           color: "var(--color-light)",
@@ -72,7 +72,7 @@ export default function LandingPage() {
                         type="secondary"
                         size="large"
                       >
-                        {lang === "sv" ? "Om Mässan" : "About Fair"}
+                        {lang === "sv" ? "Boka" : "Booking"}
                       </Button>
                     </div>
                   </div>

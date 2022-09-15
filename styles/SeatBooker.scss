@@ -284,3 +284,69 @@
 .seat-inactive {
   all: inital;
 }
+
+.spons-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.spons-box label {
+  display: inline-block;
+  width: 20rem;
+  padding: 10px;
+  border: solid 2px #ccc;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.spons-box input[type="radio"] {
+  display: none;
+  margin: 2rem;
+}
+
+.spons-box input[type="radio"]:checked + label {
+  border: solid 2px rgb(245, 119, 1);
+}
+
+input.tv-checkbox {
+  display: none;
+  margin: 2rem;
+}
+
+input.tv-checkbox + label:active,
+input.tv-checkbox:checked + label {
+  border: solid 2px rgb(245, 119, 1);
+}
+
+input.services-checkbox {
+  display: none;
+  margin: 2rem;
+}
+
+input.services-checkbox + label:active,
+input.services-checkbox:checked + label {
+  border: solid 2px rgb(245, 119, 1);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 3rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+.div-radio-monter {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
