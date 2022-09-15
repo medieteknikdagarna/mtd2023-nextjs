@@ -212,19 +212,22 @@ export default function SeatBooker({ type, setType }) {
                     <div className="booking-form">
                       <div className="flex-input">
                         <div className="div-radio">
-                          <label>Plan 4</label>
+                          <label htmlFor="floor-4">Plan 4</label>
                           <input
+                            id="floor-4"
+                            name="floor"
                             className="input-radio"
                             type="radio"
-                            checked={activeLevel === 4}
                             onClick={() => changeFloor(4)}
                           />
-                          <label>Plan 5</label>
+                          <label htmlFor="floor-5">Plan 5</label>
                           <input
+                            name="floor"
+                            id="floor-5"
                             className="input-radio"
                             type="radio"
-                            checked={activeLevel === 5}
-                            onClick={() => changeFloor(5)}
+                            onChange={() => changeFloor(5)}
+                            defaultChecked
                           />
                         </div>
                       </div>
@@ -234,9 +237,8 @@ export default function SeatBooker({ type, setType }) {
                           type="radio"
                           name="spons"
                           value="Mässplats"
-                          defaultChecked
                           id="mässplats"
-                          onClick={() => setType("Mässplats")}
+                          onChange={() => setType("Mässplats")}
                         />
                         <label htmlFor="mässplats">Mässplats</label>
                         <input
