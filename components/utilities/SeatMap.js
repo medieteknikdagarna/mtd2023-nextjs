@@ -1,5 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import BookerSVG from "../../public/images/platsbokaren.svg";
+import Floor4 from "../../public/images/platsbokning.svg";
+import Floor5 from "../../public/images/platsbokning_p5.svg";
 import { selectedContext } from "../SeatBooker";
 import { useTransition, animated } from "react-spring";
 
@@ -25,6 +27,10 @@ export default function SeatMap({ seats, reservations, activeFloor, type }) {
     enter: { y: 0, opacity: 1 },
     leave: { y: travelDst, opacity: 0 },
   });
+
+  useEffect(() => {
+    assignSeats();
+  }, [type]);
 
   const [selectedSeat, setSelected] = useContext(selectedContext);
   const assignSeats = () => {
@@ -76,7 +82,7 @@ export default function SeatMap({ seats, reservations, activeFloor, type }) {
         (styles, item) =>
           item && (
             <animated.div style={styles}>
-              <BookerSVG key={activeFloor} />
+              <Floor4 />
             </animated.div>
           )
       )}
@@ -84,7 +90,7 @@ export default function SeatMap({ seats, reservations, activeFloor, type }) {
         (styles, item) =>
           item && (
             <animated.div style={styles}>
-              <BookerSVG key={activeFloor} />
+              <Floor5 />
             </animated.div>
           )
       )}
