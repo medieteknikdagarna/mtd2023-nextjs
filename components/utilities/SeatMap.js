@@ -35,7 +35,7 @@ export default function SeatMap({ seats, reservations, activeFloor, type }) {
   const [selectedSeat, setSelected] = useContext(selectedContext);
   const assignSeats = () => {
     seats.forEach((seat) => {
-      const element = document.getElementById(seat.id);
+      const element = document.querySelector(`#${seat.id}`);
       if (!element) {
         console.error("Cant get element from id: " + seat.id);
         return;
@@ -65,7 +65,7 @@ export default function SeatMap({ seats, reservations, activeFloor, type }) {
 
   const handleClick = (e) => {
     const newSeat = seats.filter((seat) => {
-      return seat.id === e.path[0].id;
+      return seat.id === e.composedPath()[0].id;
     });
 
     setSelected(newSeat[0]);

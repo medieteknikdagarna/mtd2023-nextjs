@@ -11,9 +11,11 @@ import ReservationSuccess from "./ReservationSuccess";
 import Footer from "../components/Footer";
 import ResponsiveContainer from "./ResponsiveContainer";
 import { languageContext } from "../pages/_app";
-import Registration from "./Registration";
+import ReservSuccess from "./ReservSuccess";
 const formContent = require("../public/content/form.json");
 import Link from "next/link";
+import { Router } from "next/router";
+import BookingSuccess from "../pages/BookingSuccess";
 
 const floor4_all = require("../public/content/seat-info/floor4.json");
 const floor5_all = require("../public/content/seat-info/floor5.json");
@@ -238,6 +240,7 @@ export default function SeatBooker({ type, setType }) {
                           name="spons"
                           value="Mässplats"
                           id="mässplats"
+                          defaultChecked
                           onChange={() => setType("Mässplats")}
                         />
                         <label htmlFor="mässplats">Mässplats</label>
@@ -667,7 +670,12 @@ export default function SeatBooker({ type, setType }) {
             </Button>
           </ResponsiveContainer>
         ))}
-      {reservationSuccess && "Tack för din bokning!"}
+      {reservationSuccess && (
+        <ReservSuccess
+          name={f_name.current.value}
+          company={f_company.current.value}
+        />
+      )}
       <Footer />
     </>
   );
