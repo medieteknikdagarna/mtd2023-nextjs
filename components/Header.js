@@ -41,6 +41,13 @@ export default function Header({
     setlastScrollPos(pos);
   };
 
+  const CustomComponent = React.forwardRef(function CustomComponent(
+    props,
+    ref
+  ) {
+    return <MTDSvg className="header-logo" />;
+  });
+
   return (
     <header
       style={style}
@@ -57,7 +64,8 @@ export default function Header({
       ></Menu>
       <div className="logo-container">
         <Link href="/">
-          <MTDSvg className="header-logo" />
+          {/* <MTDSvg className="header-logo" /> */}
+          <CustomComponent />
         </Link>
         <div className="nav-items">
           <Link href="/">
