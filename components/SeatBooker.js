@@ -473,7 +473,9 @@ export default function SeatBooker({ type, setType }) {
                 }
               />
               <h3>Extra barstol</h3>
-              <span>100kr/st - En barstol ingår</span>
+              <span>
+                100kr/st - 2st barstolar ingår för Sponsor och Huvudsponsor
+              </span>
               <input
                 type="number"
                 defaultValue={0}
