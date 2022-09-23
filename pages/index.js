@@ -56,15 +56,11 @@ export default function LandingPage() {
                       {content[lang].section1.body[1]}
                     </p>
                     <div className="landing-section--buttons">
-                      <Button
-                        href="/intresseanmalan"
-                        type="primary"
-                        size="large"
-                      >
-                        {lang === "sv" ? "Intresseanmälan" : "Registration"}
+                      <Button href="/booking" type="primary" size="large">
+                        {lang === "sv" ? "Boka" : "Booking"}
                       </Button>
                       <Button
-                        href="/booking"
+                        href="/massan"
                         style={{
                           borderColor: "white",
                           color: "var(--color-light)",
@@ -72,7 +68,7 @@ export default function LandingPage() {
                         type="secondary"
                         size="large"
                       >
-                        {lang === "sv" ? "Boka" : "Booking"}
+                        {lang === "sv" ? "Om Mässan" : "The fair"}
                       </Button>
                     </div>
                   </div>

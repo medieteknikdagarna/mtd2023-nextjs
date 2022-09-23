@@ -157,6 +157,15 @@ export default function Menu({ onExit, style, className, show }) {
                     </li> */}
                     <li
                       className={
+                        router.asPath === "/Bokning" ? "selected-page" : ""
+                      }
+                    >
+                      <Link onClick={onExit} href="/booking">
+                        {lang === "sv" ? "Boka" : "Booking"}
+                      </Link>
+                    </li>
+                    <li
+                      className={
                         router.asPath === "/Intresseanmälan"
                           ? "selected-page"
                           : ""
