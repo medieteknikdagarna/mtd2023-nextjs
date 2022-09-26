@@ -59,6 +59,7 @@ export default function SeatMap({ seats, reservations, activeFloor, type }) {
         element.addEventListener("click", handleClick);
         element.classList.add("seat-animation");
       } else {
+        element.classList.remove("seat-active");
       }
     });
   };
