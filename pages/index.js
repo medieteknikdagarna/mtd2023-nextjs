@@ -92,7 +92,7 @@ export default function LandingPage() {
                     </div>
                     <div className="landing-fair-info--row">
                       <FontAwesomeIcon icon={faClock} />
-                      <span>09:00 - 15:00</span>
+                      <span>09:00 - 16:00</span>
                     </div>
                     <div className="landing-fair-info--row">
                       <FontAwesomeIcon size="xs" icon={faMapPin} />

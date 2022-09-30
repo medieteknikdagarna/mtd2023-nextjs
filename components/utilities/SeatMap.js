@@ -30,7 +30,10 @@ export default function SeatMap({ seats, reservations, activeFloor, type }) {
 
   useEffect(() => {
     assignSeats();
+    selectedSeat.type !== type ? setSelected([]) : null;
   }, [type]);
+
+  // useEffect(() => {}, [type]);
 
   const [selectedSeat, setSelected] = useContext(selectedContext);
   const assignSeats = () => {

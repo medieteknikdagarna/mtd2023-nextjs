@@ -183,7 +183,7 @@ export default function SeatBooker({ type, setType }) {
                   <div className="form-info">
                     <div className="form-top">
                       <h1 className={`type-header seat-${type}`}>{type}</h1>
-                      <h2>{"Plats #" + selectedSeat.seat}</h2>
+                      {/* <h2>{"Plats #" + selectedSeat.seat}</h2> */}
                       <div className="indicator">
                         <div
                           style={{
@@ -204,6 +204,14 @@ export default function SeatBooker({ type, setType }) {
                             ? "Reserverad"
                             : "Ledig"}
                         </h4>
+                        <div
+                          style={{
+                            marginLeft: "20px",
+                            backgroundColor: "#FFFF74",
+                          }}
+                          className="indicator--icon"
+                        ></div>
+                        <h4>{lang === "sv" ? "Vald" : "Chosen"}</h4>
                       </div>
                       <p className="seat-information-p">
                         {lang === "sv"
@@ -281,6 +289,7 @@ export default function SeatBooker({ type, setType }) {
                     ref={f_name}
                     type="text"
                     placeholder=" "
+                    required
                   ></input>
                   <label className="register-form--label">
                     {formContent[lang].name}
@@ -292,6 +301,7 @@ export default function SeatBooker({ type, setType }) {
                     ref={f_company}
                     type="text"
                     placeholder=" "
+                    required
                   ></input>
                   <label className="register-form--label">
                     {formContent[lang].company}
@@ -303,6 +313,7 @@ export default function SeatBooker({ type, setType }) {
                     ref={f_adress}
                     type="text"
                     placeholder=" "
+                    required
                   ></input>
                   <label className="register-form--label">
                     {lang === "sv" ? "Företags adress" : "Company adress"}
@@ -314,6 +325,7 @@ export default function SeatBooker({ type, setType }) {
                     ref={f_orgnr}
                     type="text"
                     placeholder=" "
+                    required
                   ></input>
                   <label className="register-form--label">
                     {lang === "sv"
@@ -327,6 +339,7 @@ export default function SeatBooker({ type, setType }) {
                     ref={f_email}
                     type="email"
                     placeholder=" "
+                    required
                   ></input>
                   <label className="register-form--label">Email</label>
                 </div>
@@ -335,8 +348,9 @@ export default function SeatBooker({ type, setType }) {
                     className="register-form--input"
                     ref={f_phone}
                     type="tel"
-                    //  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     placeholder=" "
+                    required
                   ></input>
                   <label className="register-form--label">Tel</label>
                 </div>
@@ -346,6 +360,7 @@ export default function SeatBooker({ type, setType }) {
                     ref={f_desc}
                     type="text"
                     placeholder=" "
+                    required
                   ></textarea>
                   <label className="register-form--label">
                     {lang === "sv"
@@ -357,12 +372,6 @@ export default function SeatBooker({ type, setType }) {
                   {formContent[lang].accept}{" "}
                   <Link href="/policy">{formContent[lang].link}</Link>
                 </span>
-                {error && (
-                  <div className="registration-error-message">
-                    <div></div>
-                    <span>{error}</span>
-                  </div>
-                )}
               </form>
             </div>
             <h2>Tillägg</h2>
@@ -653,8 +662,15 @@ export default function SeatBooker({ type, setType }) {
                 type="text"
                 placeholder=" "
                 ref={f_firmaTecknare}
+                required
               />
             </div>
+            {error && (
+              <div className="registration-error-message">
+                <div></div>
+                <span>{error}</span>
+              </div>
+            )}
             <Button
               disabled={isReserved(
                 selectedSeat,
