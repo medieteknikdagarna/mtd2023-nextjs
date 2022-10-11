@@ -113,8 +113,7 @@ export default function SeatBooker({ type, setType }) {
   };
 
   const handleSubmit = () => {
-    console.log(addons);
-    if (f_company.current.value) {
+    if (f_company.current.value && Object.keys(selectedSeat).length > 0) {
       const requestOptions = {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -155,7 +154,7 @@ export default function SeatBooker({ type, setType }) {
           }
         });
     } else {
-      newError("Please fill in all the fields correctly");
+      newError("Please fill in all the fields correctly and choose a seat");
     }
   };
 
@@ -222,7 +221,9 @@ export default function SeatBooker({ type, setType }) {
                     <div className="booking-form">
                       <div className="flex-input">
                         <div className="div-radio">
-                          <label htmlFor="floor-4">Plan 4</label>
+                          <label htmlFor="floor-4">
+                            {lang === "sv" ? "Plan 4" : "Floor 4"}
+                          </label>
                           <input
                             id="floor-4"
                             name="floor"
@@ -230,7 +231,9 @@ export default function SeatBooker({ type, setType }) {
                             type="radio"
                             onClick={() => changeFloor(4)}
                           />
-                          <label htmlFor="floor-5">Plan 5</label>
+                          <label htmlFor="floor-5">
+                            {lang === "sv" ? "Plan 5" : "Floor 5"}
+                          </label>
                           <input
                             name="floor"
                             id="floor-5"
@@ -251,7 +254,9 @@ export default function SeatBooker({ type, setType }) {
                           defaultChecked
                           onChange={() => setType("Mässplats")}
                         />
-                        <label htmlFor="mässplats">Mässplats</label>
+                        <label htmlFor="mässplats">
+                          {lang === "sv" ? "Mässplats" : "Venue Seat"}
+                        </label>
                         <input
                           type="radio"
                           name="spons"
@@ -267,15 +272,17 @@ export default function SeatBooker({ type, setType }) {
                           id="huvudsponsor"
                           onClick={() => setType("Huvudsponsor")}
                         />
-                        <label htmlFor="huvudsponsor">Huvudsponsor</label>
+                        <label htmlFor="huvudsponsor">
+                          {lang === "sv" ? "Huvudsponsor" : "Main Sponsor"}
+                        </label>
                       </div>
 
-                      {error && (
+                      {/* {error && (
                         <div className="error-message">
                           <div></div>
                           <span>{error}</span>
                         </div>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 )}
@@ -348,7 +355,7 @@ export default function SeatBooker({ type, setType }) {
                     className="register-form--input"
                     ref={f_phone}
                     type="tel"
-                    // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     placeholder=" "
                     required
                   ></input>
@@ -374,12 +381,13 @@ export default function SeatBooker({ type, setType }) {
                 </span>
               </form>
             </div>
-            <h2>Tillägg</h2>
+            <h2>{lang === "sv" ? "Tillägg" : "Additions"}</h2>
             <div className="spons-box">
-              <h3>Logotyp</h3>
+              <h3>{lang === "sv" ? "Logotyp" : "Logo"}</h3>
               <span>
-                Logotypen vi vill ska användas har skickats till
-                webb@medieteknikdagen.se
+                {lang === "sv"
+                  ? "Logotypen vi vill ska användas har skickats till webb@medieteknikdagen.se"
+                  : "The logo we want to use has been sent to webb@medieteknikdagen.se"}
               </span>
               <input
                 type="radio"
@@ -390,7 +398,9 @@ export default function SeatBooker({ type, setType }) {
                   setAddons((prev) => ({ ...prev, logotyp: "Ja" }))
                 }
               />
-              <label htmlFor="logotyp-op1">Ja</label>
+              <label htmlFor="logotyp-op1">
+                {lang === "sv" ? "Ja" : "Yes"}
+              </label>
               <input
                 type="radio"
                 name="logotyp"
@@ -403,11 +413,16 @@ export default function SeatBooker({ type, setType }) {
                   }))
                 }
               />
-              <label htmlFor="logotyp-op2">Nej, skickar alldeles strax!</label>
-              <h3>Bankettbiljetter</h3>
+              <label htmlFor="logotyp-op2">
+                {lang === "sv"
+                  ? "Nej, skickar alldeles strax!"
+                  : "No but will send as soon as possible!"}
+              </label>
+              <h3>{lang === "sv" ? "Bankettbiljetter" : "Banquet Tickets"}</h3>
               <span>
-                Hur många bankettbiljetter vill ni ha inför banketten som hålls
-                efter MTD (600kr/st)
+                {lang === "sv"
+                  ? "Hur många bankettbiljetter vill ni ha inför banketten som hålls efter MTD (600kr/st)"
+                  : "How many banquet tickets would you like for the banquet which will be held after MTD (600SEK/each)"}
               </span>
               <input
                 type="number"
@@ -417,7 +432,11 @@ export default function SeatBooker({ type, setType }) {
                   setAddons((prev) => ({ ...prev, bankett: e.target.value }));
                 }}
               />
-              <h3>Montertransport</h3>
+              <h3>
+                {lang === "sv"
+                  ? "Montertransport"
+                  : "Transportation of fair booth"}
+              </h3>
               <input
                 type="radio"
                 name="monter"
@@ -431,7 +450,9 @@ export default function SeatBooker({ type, setType }) {
                 }
               />
               <label htmlFor="monter-opt1">
-                Skicka i förväg via godsmottagningen
+                {lang === "sv"
+                  ? "Skicka i förväg via godsmottagningen"
+                  : "Will be sent in advance through goods reception"}
               </label>
               <input
                 type="radio"
@@ -446,30 +467,39 @@ export default function SeatBooker({ type, setType }) {
                 }
               />
               <label htmlFor="monter-opt2">
-                Ta med själv till mässan på mässdagen{" "}
+                {lang === "sv"
+                  ? "Ta med själv till mässan på mässdagen"
+                  : "Will be brought with us on the day of the fair"}
               </label>
-              <h3>Persontransport</h3>
+              <h3>{lang === "sv" ? "Persontransport" : "Transportation"}</h3>
               <p>
-                Behöver ni transport inom Norrköping t.ex. från Resecentrum till
-                Campus på mässdagen?
+                {lang === "sv"
+                  ? "Behöver ni transport inom Norrköping t.ex. från Resecentrum till Campus på mässdagen?"
+                  : "Are you in need of transportation in Norrköping, for example from the central station to campus on the day of the fair?"}
               </p>
               <input
                 type="radio"
                 name="person-transport"
                 id="person-transport-opt1"
               />
-              <label htmlFor="person-transport-opt1">Ja</label>
+              <label htmlFor="person-transport-opt1">
+                {lang === "sv" ? "Ja" : "Yes"}
+              </label>
               <input
                 type="radio"
                 name="person-transport"
                 id="person-transport-opt2"
               />
-              <label htmlFor="person-transport-opt2">Nej</label>
-              <h3>Extra ståbord</h3>
+              <label htmlFor="person-transport-opt2">
+                {lang === "sv" ? "Nej" : "No"}
+              </label>
+              <h3>
+                {lang === "sv" ? "Extra ståbord" : "Extra Standing Desks"}
+              </h3>
               <span>
-                Alla företag erbjuds ett ståbord. Utöver det kan fler ståbord
-                beställas för 300kr/st. Fyll i antalet bord ni vill ha utöver
-                det som ingår. (Vill ni inte ha något extra fyller ni i 0)
+                {lang === "sv"
+                  ? "Alla företag erbjuds ett ståbord. Utöver det kan fler ståbord beställas för 300kr/st. Fyll i antalet bord ni vill ha utöver det som ingår. (Vill ni inte ha något extra fyller ni i 0)"
+                  : "All companies are provided with one standing desk. Additional desks can be ordered for 300SEK/each. Enter the number of additional desks wanted. (If no additional desks are wanted, enter 0)"}
               </span>
               <input
                 type="number"
@@ -481,9 +511,11 @@ export default function SeatBooker({ type, setType }) {
                   setAddons((prev) => ({ ...prev, bord: e.target.value }))
                 }
               />
-              <h3>Extra barstol</h3>
+              <h3>{lang === "sv" ? "Extra barstol" : "Extra barstool"}</h3>
               <span>
-                100kr/st - 2st barstolar ingår för Sponsor och Huvudsponsor
+                {lang === "sv"
+                  ? "100kr/st - 2st barstolar ingår för Sponsor och Huvudsponsor"
+                  : "100SEK/each - 2 barstools are included for Sponsor and Main Sponsor packages"}
               </span>
               <input
                 type="number"
@@ -495,7 +527,7 @@ export default function SeatBooker({ type, setType }) {
                   setAddons((prev) => ({ ...prev, stol: e.target.value }))
                 }
               />
-              <h3>Extra TV-skärm</h3>
+              <h3>{lang === "sv" ? "Extra TV-skärm" : "Extra TV-screens"}</h3>
               <input
                 type="checkbox"
                 name="tv"
@@ -509,7 +541,11 @@ export default function SeatBooker({ type, setType }) {
                   }))
                 }
               />
-              <label htmlFor="tv-opt1">32" TV-skärm med stativ 2500kr/st</label>
+              <label htmlFor="tv-opt1">
+                {lang === "sv"
+                  ? '32" TV-skärm med stativ 2500kr/st'
+                  : '32" TV-screen with stand 2500SEK/each'}
+              </label>
               <input
                 type="checkbox"
                 name="tv"
@@ -523,7 +559,11 @@ export default function SeatBooker({ type, setType }) {
                   }))
                 }
               />
-              <label htmlFor="tv-opt2">40" TV-skärm med stativ 3200kr/st</label>
+              <label htmlFor="tv-opt2">
+                {lang === "sv"
+                  ? '40" TV-skärm med stativ 3200kr/st'
+                  : '40" TV-screen with stand 3200SEK/each'}
+              </label>
               <input
                 type="checkbox"
                 name="tv"
@@ -537,7 +577,11 @@ export default function SeatBooker({ type, setType }) {
                   }))
                 }
               />
-              <label htmlFor="tv-opt3">47" TV-skärm med stativ 3900kr/st</label>
+              <label htmlFor="tv-opt3">
+                {lang === "sv"
+                  ? '47" TV-skärm med stativ 3900kr/st'
+                  : '47" TV-screen with stand 3900SEK/each'}
+              </label>
               <input
                 type="checkbox"
                 name="tv"
@@ -551,8 +595,16 @@ export default function SeatBooker({ type, setType }) {
                   }))
                 }
               />
-              <label htmlFor="tv-opt4">55" TV-skärm med stativ 4300kr/st</label>
-              <h3>Uppskattat antal enheter som behöver trådlöst nätverk?</h3>
+              <label htmlFor="tv-opt4">
+                {lang === "sv"
+                  ? '55" TV-skärm med stativ 4300kr/st'
+                  : '55" TV-screen with stand 4300SEK/each'}
+              </label>
+              <h3>
+                {lang === "sv"
+                  ? "Uppskattat antal enheter som behöver trådlöst nätverk?"
+                  : "Estimated number of devices in need of wireless network"}
+              </h3>
               <input
                 type="number"
                 name="wifi"
@@ -564,8 +616,9 @@ export default function SeatBooker({ type, setType }) {
                 }
               />
               <h3>
-                Har ni någon elutrustning som drar särskilt mycket ström, i så
-                fall vad?
+                {lang === "sv"
+                  ? "Har ni någon elutrustning som drar särskilt mycket ström, i så fall vad?"
+                  : "Do you have any electrical equipment with high electrical consumption?"}
               </h3>
               <input
                 className="register-form--input"
@@ -573,7 +626,11 @@ export default function SeatBooker({ type, setType }) {
                 placeholder=" "
                 ref={f_highPower}
               ></input>
-              <h3>Erbjuder ni tjänster för besökarna?</h3>
+              <h3>
+                {lang === "sv"
+                  ? "Erbjuder ni tjänster för besökarna?"
+                  : "Are you offerring any services for visitors?"}
+              </h3>
               <input
                 type="checkbox"
                 name="services"
@@ -587,7 +644,9 @@ export default function SeatBooker({ type, setType }) {
                   }))
                 }
               />
-              <label htmlFor="service-opt1">Exjobb</label>
+              <label htmlFor="service-opt1">
+                {lang === "sv" ? "Exjobb" : "Exjob"}
+              </label>
               <input
                 type="checkbox"
                 name="services"
@@ -601,7 +660,9 @@ export default function SeatBooker({ type, setType }) {
                   }))
                 }
               />
-              <label htmlFor="service-opt2">Praktik</label>
+              <label htmlFor="service-opt2">
+                {lang === "sv" ? "Praktik" : "Internship"}
+              </label>
               <input
                 type="checkbox"
                 name="services"
@@ -629,7 +690,9 @@ export default function SeatBooker({ type, setType }) {
                   }))
                 }
               />
-              <label htmlFor="service-opt4">Sommarjobb</label>
+              <label htmlFor="service-opt4">
+                {lang === "sv" ? "Sommarjobb" : "Summerjob"}
+              </label>
               <input
                 type="checkbox"
                 name="services"
@@ -643,19 +706,35 @@ export default function SeatBooker({ type, setType }) {
                   }))
                 }
               />
-              <label htmlFor="service-opt5">Anställning</label>
-              <h3>Faktureringsuppgifter</h3>
-              <span>Vilken e-postadress ska fakturan skickas till?</span>
+              <label htmlFor="service-opt5">
+                {lang === "sv" ? "Anställning" : "Employment"}
+              </label>
+              <h3>
+                {lang === "sv"
+                  ? "Faktureringsuppgifter"
+                  : "Billing information"}
+              </h3>
+              <span>
+                {lang === "sv"
+                  ? "Vilken e-postadress ska fakturan skickas till?"
+                  : "What email adress should the invoice be sent to"}
+              </span>
               <input
                 className="register-form--input"
                 type="text"
                 placeholder=" "
                 ref={f_fakturaMail}
+                required
               />
-              <h3>Eventuell firmatecknare</h3>
+              <h3>
+                {lang === "sv"
+                  ? "Eventuell Firmatecknare"
+                  : "Eventual Company Signatory"}
+              </h3>
               <span>
-                Fyll i nedan namn och position på eventuell firmatecknare eller
-                annan ansvarig som kommer att skriva på kommande avtal.
+                {lang === "sv"
+                  ? "Fyll i nedan namn och position på eventuell firmatecknare eller annan ansvarig som kommer att skriva på kommande avtal."
+                  : "Enter the name and role of eventual company signatory or another responsible who will sign upcoming contract"}
               </span>
               <input
                 className="register-form--input"
