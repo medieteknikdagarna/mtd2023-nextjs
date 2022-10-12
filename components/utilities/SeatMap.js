@@ -4,6 +4,7 @@ import Floor4 from "../../public/images/platsbokning.svg";
 import Floor5 from "../../public/images/platsbokning_p5.svg";
 import { selectedContext } from "../SeatBooker";
 import { useTransition, animated } from "react-spring";
+import { languageContext } from "../../pages/_app";
 
 export function isReserved(seat, listOfReserved) {
   let isReserved = false;
@@ -16,6 +17,8 @@ export function isReserved(seat, listOfReserved) {
 }
 
 export default function SeatMap({ seats, reservations, activeFloor, type }) {
+  const [lang, setLang] = useContext(languageContext);
+
   const travelDst = 500;
   const floor5Transition = useTransition(activeFloor === 5, {
     from: { y: -travelDst, opacity: 0 },
@@ -81,7 +84,9 @@ export default function SeatMap({ seats, reservations, activeFloor, type }) {
 
   return (
     <div>
-      <h2>Plan {activeFloor}</h2>
+      <h2>
+        {lang === "sv" ? "Plan" : "Floor"} {activeFloor}
+      </h2>
       {floor4Transition(
         (styles, item) =>
           item && (
