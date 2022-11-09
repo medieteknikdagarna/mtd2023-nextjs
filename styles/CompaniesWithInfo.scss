@@ -130,6 +130,28 @@
   }
 }
 
+.company-information-card:hover::before {
+  opacity: 1;
+}
+
+.company-information-card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(236, 102, 18, 0.4),
+    transparent 40%
+  );
+  border-radius: inherit;
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  width: 100%;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 500ms;
+  z-index: 2;
+}
+
 .landing-companies-gold {
   display: grid;
   justify-content: center;
