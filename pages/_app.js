@@ -43,6 +43,8 @@ import "../styles/ThankYou.scss";
 import "../styles/Error404.scss";
 import "../styles/JobPortal.scss";
 import "../styles/BookingSuccess.scss";
+import "../styles/CompaniesWithInfo.scss";
+import "../styles/Backdrop.scss";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";

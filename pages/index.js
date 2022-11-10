@@ -34,9 +34,9 @@ export default function LandingPage() {
         <>
           <Header lightContrast changeOnScroll />
           <div className="video-container">
-            <video id="background-video" autoPlay loop muted>
+            <video id="background-video" autoPlay loop muted playsInline>
               <source
-                src={require("../public/images/cube_storm.mp4")}
+                src={require("../public/images/LogoAni.mp4")}
                 type="video/mp4"
               />
             </video>

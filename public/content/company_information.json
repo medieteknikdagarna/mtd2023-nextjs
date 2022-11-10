@@ -1,0 +1,337 @@
+{
+  "sv": {
+    "companies": [
+      {
+        "company": "Violet AI",
+        "partner": "huvudsponsor",
+        "information": [
+          "Violet kombinerar djupa insikter och maskininlärning med ett kreativt mindset och hjälper företag att nå sin fulla potential med hjälp av AI."
+        ],
+        "logo": "violetai.svg"
+      },
+      {
+        "company": "Sectra",
+        "partner": "sponsor",
+        "information": [
+          "Sectra erbjuder lösningar för medicinsk IT och cybersäkerhet. Vi hjälper sjukhus och de som utbildar framtidens vårdpersonal att öka sin effektivitet så att patienter kan få bättre vård. Vi stöttar även försvar, andra myndigheter och olika kritiska samhällsfunktioner. Vi hjälper dem att säkra sin kommunikation mot avlyssning och skydda sina system mot intrång. Det är på så sätt vi skapar förutsättningar för friskare och tryggare samhällen."
+        ],
+        "logo": "sectra.svg"
+      },
+      {
+        "company": "Exsitec",
+        "partner": "mässplats",
+        "information": [
+          "Vill du arbeta i en framtidsbransch, i ett företag där glädje och framåtanda utgör kärnan i företagskulturen? Exsitec är specialister på verksamhetssystem och digitalisering som driver företag framåt. Vi hjälper våra kunder få bästa möjliga digitala stöd för sin verksamhet för att nå en effektivare arbetsvardag, överlägsna kundupplevelser och smartare dataanalyser. Exsitec har över 500 medarbetare i Sverige, Norge och Danmark med kombinerad kompetens inom IT, verksamhetsstyrning och affärsutveckling.",
+          "Hos oss blir du en viktig del i teamet och en drivkraft i vår fortsatta utveckling och expansion. Vi tror på att växa tillsammans och drivs av nytänkande och att hela tiden göra saker bättre.",
+          "Vi har flertalet gånger blivit utmärkta till en av Sveriges bästa arbetsgivare för unga talanger. Sen tio år tillbaka bedriver ett av Sveriges största och roligaste traineeprogram som ger dig verktygen att bli vår nästa stjärnkonsult."
+        ],
+        "logo": "Exsitec.png"
+      },
+      {
+        "company": "Axis Communication",
+        "partner": "sponsor",
+        "information": [
+          "Innovating for a smarter, safer world",
+          "By combining intelligent technology and human imagination, we offer solutions based on sight, sound and analytics to improve security and optimize business performance."
+        ],
+        "logo": "axis_com.svg"
+      },
+      {
+        "company": "Gaia",
+        "partner": "huvudsponsor",
+        "information": [
+          "På Gaia är vi ett gäng kollegor som tillsammans skapar riktigt schyssta lösningar som verkligen förändrar. Vi plockar hem våra kunduppdrag och arbetar med dem inhouse – i team med våra egna arbetskamrater och på våra egna kontor i Norrköping och Linköping. Vi är extra stolta över den prestigelösa stämningen som gör att alla, såväl nyutexaminerad som veteran, kan bidra med både ny kunskap och erfarenhet.",
+          "Gaia är mjukvaruföretaget som gör kollektivt resande hållbart, tillgängligt och attraktivt. Vi bygger Gaia Public Transport för hela världens trafikföretag med hjälp av cutting-edge moln- och IoT-plattformar."
+        ],
+        "logo": "gaia.svg"
+      },
+      {
+        "company": "Voyado",
+        "partner": "huvudsponsor",
+        "information": [
+          "We've been challenging the dragons in the customer loyalty, CRM and marketing automation area since 2005. One thing we know for sure, Voyado wouldn’t be the powerful platform it is without the people behind it! We focus on building the best customer loyalty platform for retailers and ecom who want to give their customers an outstanding experience. We have succeeded but won’t stop now…we are definitely going places!"
+        ],
+        "logo": "voyado.png"
+      },
+
+      {
+        "company": "Saab",
+        "partner": "sponsor",
+        "information": [
+          "Saab är ett ledande försvars- och säkerhetsföretag med uppdrag att hjälpa nationer att skydda sin befolkning och bidrar till trygghet för människor och samhällen. Med 18 000 talangfulla medarbetare utvecklar Saab teknik och lösningar för en säkrare, mer hållbar och mer rättvis värld.",
+
+          "Affärsområdet Aeronautics är en innovativ leverantör av flygplanssystem i världsklass och har ett brett utbud av supportlösningar inom civil och militär luftfart. Inom affärsområdet bedrivs forskning, utveckling och produktion av militära flygplanssystem samt framtidsstudier som förberedelse för framtida bemannade och obemannade flygsystem och vidareutveckling av befintliga produkter.",
+
+          "Vi på Simulatorer, Träning och Stödsystem utvecklar, producerar, levererar, driftar och förvaltar skalbara och kostnadseffektiva produkter i form av träningssystem, stödsystem, simulatorer och riggar.",
+
+          "Produkterna används inom Aeronautics (och Saab) för att stödja affärsutveckling, träning (train the trainer Gripen, pilot och tekniker), konceptutveckling och evaluering, systemutveckling Gripen samt (Gripen)-produktion och Gripen-flygprov."
+        ],
+        "logo": "Saab.svg"
+      },
+      {
+        "company": "XMReality",
+        "partner": "sponsor",
+        "information": [
+          "XMReality utvecklar och säljer lösningar som revolutionerar kunskapsöverföring via Augmented Reality (AR). Vi är marknadsledande inom vägledning på distans (remote guidance) där man via AR kan guida en person på plats för att effektivt och klimatsmart lösa problem eller förhindra att de uppstår.",
+          "Vi gillar att ta stort eget ansvar och bidra med personlighet och kompetens i allt vi gör. Vi månar om varandra i teamet och tycker det är viktigt att ha kul tillsammans!",
+          "Vår historia började 2007 när vi grundades av forskare från Totalförsvarets forskningsinstitut. Det första projektet var att hjälpa bombröjningsexperter att desarmera landminor på fältet. Under sex år utförde XMReality avancerad kontraktsforskning inom AR för Försvarets Materielverk (FMV) och BAE Systems.",
+          "Idag används vår lösning brett och globalt av några av världens största företag, som Nestle, ABB och Heineken. Som börsnoterat företag är vi fast beslutna att förbättra och förenkla sätten att överföra kunskap globalt, effektivt och klimatsmart.",
+          "Vårt huvudkontor är baserat i centrala Linköping och vi har även ett USA-kontor i Dallas, TX. Vårt team består av ett 40-tal kollegor som utvecklar, säljer och distribuerar plattformsoberoende mjukvara för Remote Guidance.",
+          "AR-marknaden växer snabbt, och det gör vi också. Vi är alltid på jakt efter talanger som vill vara med och skapa framtidens Remote Guidance."
+        ],
+        "logo": "xmreality.svg"
+      },
+      {
+        "company": "Bontouch",
+        "partner": "mässplats",
+        "information": [
+          "At Bontouch, we work based on one simple, but ambitious principle: Making the world’s greatest apps for the best brands on the planet.",
+          "In order to have the greatest impact on users all over the world, we partner up with our favorite companies to create highly useful, beautiful-looking, visionary mobile and web apps that make life easier for millions of users in the real world. We work with partners such as Swish, PostNord, SJ, SEB, among many others.",
+          "We offer our partners a unique long-term engagement model where we provide all the skills required for modern digital product development including strategy, design, development, testing, and maintenance."
+        ],
+        "logo": "bontouch.svg"
+      },
+      {
+        "company": "Compileit",
+        "partner": "mässplats",
+        "information": [
+          "We are experts in building digital surfaces for apps, web and other devices"
+        ],
+        "logo": "compileit.png"
+      },
+      {
+        "company": "HiQ",
+        "partner": "sponsor",
+        "information": [
+          "I livets alla aspekter är begreppet enkelhet oslagbart. Att förenkla människors liv i mån om att frigöra tid till att njuta av det som är viktigt. Säg den som inte önskar saker lätta att förstå och använda. Att förbättra världen genom att göra den enkel, hållbar och rolig att leva i – Det är precis vad vi på HiQ gör, varje dag.",
+          " Med design, strategi, kreativitet, innovation och djupt tekniskt kunnande bygger vi fantastiska digitala lösningar.",
+          "- Flyga jetplan utan att lämna marken? Ja!",
+          "- Köra en artonhjuling förarlöst? Ja!",
+          "- Betala utan kontanter? Ja!",
+          "- Beställa mat med Lego? Ja!",
+          "Eller helt enkelt nyttja snabbare integrationer som 5G, AL, ML, AM och många andra akronymer.",
+
+          "Vill du vara med? Ja! 🌟🦄"
+        ],
+        "logo": "hiq.svg"
+      },
+      {
+        "company": "Afry",
+        "partner": "mässplats",
+        "information": [
+          "Unreal Engine är världens ledande spelmotor som har många användningsområden inom visualisering. AFRY använder spelmotorn för att skapa storskaliga visualiseringar av utomhusmiljöer, infrastruktur, energi och industri. "
+        ],
+        "logo": "afry.png"
+      },
+      {
+        "company": "Xamera",
+        "partner": "mässplats",
+        "information": [
+          "Xamera är bryggan mellan det sociala studentlivet och leveranskraven inom jobbvärlden. Vi ser till att studenter inom it/teknik och ekonomi/management inte bara får ett jobb. Vi ger dem rätt jobb från början. För att lyckas med det har vi behövt vända upp och ner på hur det här med karriärsamtal, jobbsökande och rekryteringar fungerar. Vi tror på att skapa någonting mer än bara ännu ett fyrkantigt företag. Vi älskar beer pong-turneringar, pajkastartävlingar och kräftskivor. Mario kart-omgångar och korvgrillning. För oss betyder det mycket att göra saker annorlunda och att överraska omgivningen. Att vara en blandning av karriärmäklare och kompisar. Några som på samma gång ger dig ett jobb, en egen mentor och en trivas på jobbet-garanti för att du ska få en smidigare start på yrkeslivet."
+        ],
+        "logo": "xamera.png"
+      },
+      {
+        "company": "Cygni",
+        "partner": "mässplats",
+        "information": [
+          "Redan från starten hade vi en tydlig vision, vi ville vara den bästa arbetsgivaren för skickliga och ambitiösa IT-konsulter.",
+
+          "Våra konsulter är fullstacksutvecklare, frontendare, mobilutvecklare, UX-designers, embedded-utvecklare, digitala designers, och projektledare. Alla kompetenser som krävs för att kunna hjälpa våra kunder med att bygga de bästa digitala lösningarna.",
+
+          " Ett konsultbolag kan antingen nischa sig inom en viss bransch eller inom ett visst teknikområde. Vi har valt det senare; oavsett bransch kan vi delta i utvecklingen av våra kunders digitala system. Många av våra kunder upplever också en fördel i att konsulterna har erfarenhet från andra branscher än den kunden själv verkar i.",
+
+          " På vår kundlista återfinns företag och organisationer inom ett flertal branscher såsom media, finans, telekom, spel och retail. De flesta är ledande i sin bransch men vi jobbar även med mindre företag och organisationer.",
+
+          "Idag finns vi i Stockholm, Göteborg, Linköping, Luleå, Malmö, Östersund och Umeå. Dessutom har vi etablerat ett kontor i Köpenhamn. Många av våra uppdrag utför vi på plats hos våra kunder men vi har också projekt på våra kontor och som helhetsåtaganden ute hos våra kunder. Våra kontor fungerar som naturliga samlingsplatser för konsultmöten, afterworks och andra aktiviteter.",
+
+          " Vid sju tillfällen har vi vunnit den fantastiskt fina utmärkelsen Sveriges Bästa Arbetsplats som delas ut av stiftelsen Great Place To Work. Utmärkelsen baseras på världens största medarbetarundersökning som omfattar 10 miljoner personer i 50 länder."
+        ],
+        "logo": "cygni.svg"
+      },
+      {
+        "company": "Weknowit",
+        "partner": "mässplats",
+        "information": [
+          "Sveriges bästa arbetsplats för att kickstarta karriären inom programmering, design och projektledning vid sidan av studierna. "
+        ],
+        "logo": "weknowit.svg"
+      },
+      {
+        "company": "Important Looking Pirates",
+        "partner": "mässplats",
+        "information": [
+          "Important Looking Pirates är en prisbelönad studio som skapar visuella effekter och animation. De senaste åren har vi jobbat med produktioner som Star Wars, Stranger Things, The Mandalorian, The Sandman, Jurassic World och Lost In Space. "
+        ],
+        "logo": "ilp.jpg"
+      },
+      {
+        "company": "Voysys",
+        "partner": "mässplats",
+        "information": [
+          "Voysys älskar utveckling och drivs av innovation. Med vår egenbyggda 3D-motor för video-överföring hjälper vi företag att möjliggöra fjärrstyrning av både fordon och maskiner över 4G nätet. För att göra detta säkert krävs noggrann hänsyn till latency, prestanda och visuell presentation vilket passar Medieteknik-studenter perfekt. "
+        ],
+        "logo": "voysys.svg"
+      },
+      {
+        "company": "IT-bolaget Per & Per",
+        "partner": "mässplats",
+        "information": [
+          "IT-Bolaget Per & Per utvecklar skogsverktyg i världsklass. Mobila IT-lösningar som bidrar till att göra det kul att jobba i skogsbranschen. Att arbetet går snabbt och att det blir lättare att göra rätt, är minst lika viktigt.",
+          "Under de senaste 10 åren har vi jobbat i frontlinjen med att introducera nya sätt att arbeta med smarta mobiler, läsplattor och drönare i det dagliga arbetet. Bland våra kunder finns flera av de största skogsorganisationerna i Sverige och Norge.",
+          "De största utmaningarna ligger fortfarande framför oss med att ta fram nya funktioner för effektivare team work, smart användning av fjärranalysdata, automatiska analyser och beslutsstöd.",
+          "Vi är idag 25 anställda, de flesta med en bakgrund från Linköpings Universitet. "
+        ],
+        "logo": "2xper.logo.svg"
+      },
+      {
+        "company": "Mindroad",
+        "partner": "mässplats",
+        "information": [
+          "MindRoad är ett företag som satsar på spetskompetens. Vi sätter en ära i att ha de mest kompetenta, engagerade och affärsmässiga medarbetarna. Hos oss är kunden, de anställda, kompetens, trivsel, tillväxt och strukturkapital ledorden.",
+          "Vi arbetar med mjukvaruutveckling i inbyggda och komplexa system, med applikationsutveckling och med undervisning i Sverige och med nära samarbete med Kina. På så sätt kan vi erbjuda ett komplett utbud till våra kunder från utbildning, expertkonsulttjänster, systemutveckling och hjälp med produktion i Asien och/eller inköp. Vi kan också hjälpa till med utlägg av arbete där målet är att 30% av uppdraget utförs i Sverige och 70% i Asien av våra kompetenta partners. På så sätt kan vi hålla utvecklingskostnaderna nere och fortfarande leverera med den högsta kvaliteten.",
+          "Våra anställa har en akademisk bakgrund. Alla är åtminstone civilingenjör, eller motsvarande. Vi samarbetar med ett flertal partners, där den gemensamma nämnaren är samma höga nivå på kompetens, engagemang och affärsmässighet. Vi samarbetar också med seniorkonsulter med expertkompetens inom sitt område, som vi kallar emeritus, och med universitetsvärlden för att hitta de bästa blivande anställda."
+        ],
+        "logo": "MindRoad.svg"
+      },
+      {
+        "company": "Consid",
+        "partner": "mässplats",
+        "information": [
+          "Ett av Sveriges snabbast växande IT-konsultbolag. 75+ medarbetare i Norrköping, lokalt specialiserade på .NET, Azure, BI och UX."
+        ],
+        "logo": "Consid.png"
+      },
+      {
+        "company": "Sick",
+        "partner": "mässplats",
+        "information": [
+          "SICK is a world-leading supplier of sensors and sensor solutions for industrial applications founded in 1946 by Dr. E.h. Erwin Sick. We are more than 10 000 employees in 50 countries and our headquarter is located in Freiburg, Germany.",
+          "SICK in Linköping is an innovation center for Machine Vision, and we are 85 committed employees with a big interest in image processing and visualization. For more than 35 years, our team at SICK Linköping has successfully developed and delivered software for technically leading products within the field of 2D and 3D vision, as well as system solutions, e.g. robot guidance and quality control."
+        ],
+        "logo": "sick.svg"
+      },
+      {
+        "company": "Digitalcap",
+        "partner": "mässplats",
+        "information": [
+          "Digitalcap är ett techbolag inom system/mjukvaruutveckling. "
+        ],
+        "logo": "Digitalcap.png"
+      },
+      {
+        "company": "Softube",
+        "partner": "mässplats",
+        "information": [
+          "Softube was founded by Oscar Öberg in 2003 and consists today of over fifty people, headquartered in Linköping, Sweden.",
+          "Softube develops both hardware and software for musicians, producers, and engineers, often in partnership with big-brand partners such as Marshall, Universal Audio, and Solid State Logic, with an intense focus on sound quality."
+        ],
+        "logo": "softube.svg"
+      },
+      {
+        "company": "Migrationsverket",
+        "partner": "sponsor",
+        "information": [
+          "På Migrationsverket arbetar vi med en av vår tids stora samhällsfrågor, och med uppgifter som rör människors liv och framtid. Varje dag söker sig människor till Sverige för att arbeta, studera, bo eller söka skydd här. Migrationsverkets uppdrag är att pröva ansökningar för dem som vill stanna i Sverige.",
+
+          "Vi är drygt 400 personer som arbetar med IT inom myndigheten och vårt jobb är att underlätta för dem som söker sig hit i att använda våra tjänster – oavsett vilka de är eller var i världen de befinner sig. Arbetet sker i takt med omvärlden och är varierat och utvecklande.",
+
+          "Vi arbetar i tvärfunktionella team och med agil utvecklingsmetodik för att ta fram de bästa lösningarna. Ambitionen är att vara en myndighet i framkant när det gäller digitalisering, e-förvaltning och teknikval. I det större perspektivet bidrar vi till att migrationen till Sverige fungerar och därmed fyller vi en viktig roll i samhället."
+        ],
+        "logo": "migrationsverket.svg"
+      },
+      {
+        "company": "Sweco",
+        "partner": "mässplats",
+        "information": [
+          "Swecos IT konsulter arbetar i huvudsak med it-tjänster för samhällsutveckling. Swecos uppdrag varierar stort från ruttplanering åt PostNord, 3D- visualisering på web åt fastighetsägare till mindre koncept studier på ny och oanvänd tekning åt ex. industrin."
+        ],
+        "logo": "sweco.jpeg"
+      },
+      {
+        "company": "Digitaldomain",
+        "partner": "mässplats",
+        "information": [
+          "Digital Domain’s DNA is comprised of equal parts innovation, technology and storytelling. That philosophy has driven the creation of stunning visuals for hundreds of features, commercials, episodic and streaming programs, music videos and mixed reality projects.",
+
+          "The company has been at the forefront of research, development and innovation for more than two decades. These initiatives are infused into the fabric of the studio’s diverse services and operations.",
+
+          "Digital Domain’s network of studios in the US, Canada, China and India, including a state-of-the-art performance capture studio, houses the talent and tools to take on any project. Digital Domain continues the tradition of pushing the boundaries of art, science, technology and storytelling to create the world’s most stunning creative work."
+        ],
+        "logo": "digitaldomain.svg"
+      },
+      {
+        "company": "Devant",
+        "partner": "sponsor",
+        "information": [],
+        "logo": "devant.svg"
+      },
+      {
+        "company": "Qualcomm",
+        "partner": "mässplats",
+        "information": [
+          "Qualcomm is a company of inventors with diverse skills and backgrounds, who are driven to improve communication around the globe. Today, Qualcomm has 170 offices in more than 30 countries."
+        ],
+        "logo": "qualcomm.png"
+      },
+      {
+        "company": "Evolante",
+        "partner": "mässplats",
+        "information": [
+          "Evolante är vad vi tillsammans kan uppnå. Vi är ett team som strävar mot ett mål: Hjälpa coola människor och företag att skapa coola lösningar.",
+
+          "Vi består av drivna team som går in och blir den tekniska pelaren i våra kunders projekt.",
+
+          "Vi utvecklar helhetslösningar för stora och små företag inom olika branscher som behöver en teknisk lösning som fungerar idag och för framtiden.",
+
+          "Bli en del av Evolante, möt ditt nästa team!"
+        ],
+        "logo": "evolante.png"
+      },
+      {
+        "company": "Upsales",
+        "partner": "huvudsponsor",
+        "information": [
+          "Snabbväxande bolag har inte tid att spendera månader på att implementera nya system. Därför byggde vi Upsales, en produkt som skapar resultat - snabbt.",
+
+          "Vi är stolta över att vara en kritisk komponent i tusentals snabbväxande säljorganisationer.",
+
+          "Vi bygger världens bästa säljverktyg för de snabbast växande bolagen. "
+        ],
+        "logo": "upsales-logo-black.svg"
+      },
+      {
+        "company": "NOSP",
+        "partner": "mässplats",
+        "information": [
+          "Norrköping Science Park är Norrköpings kommuns egna innovationskontor och arbetar inom tre olika profilområden; visualisering, tryckt och organisk elektronik och effektiv logistik. Tack vare vårt breda nätverk kan vi koppla samman företag, offentlig sektor och akademi i syfte att skapa samhällsnytta och en hållbar framtid."
+        ],
+        "logo": "nosp.svg"
+      },
+      {
+        "company": "Visual Sweden",
+        "partner": "mässplats",
+        "information": [
+          "Europe’s most attractive innovation environment for visualization and image analysis"
+        ],
+        "logo": "visualsweden.png"
+      },
+      {
+        "company": "ingenious",
+        "partner": "mässplats",
+        "information": [
+          "Linköping University arrange the inGenious course [799G52] with Almi East Sweden AB, a subsidiary to Almi Företagspartner i Östergötland AB. The course connects students with companies and public sector in the region - everything in an international environment signified by creativity and entrepreneurship.",
+
+          "This cross disciplinary course is unique for the Swedish educational system. We want to promote students' entrepreneurial ability and make it possible to acquire professional skills, such as the ability to collaborate with other professions and to become confident and effective in pitching in front of an audience. We do that by using challenge- based learning. The course also provides the opportunity to make important contacts and build networks.",
+
+          "In this course students are given the opportunity to collaborate with other students from all faculties in interdisciplinary project groups and together tackle challenges from trade and industry and the public sector in the region. In the end of the course the students pitch their solutions for challenge providers and other stakeholders.",
+
+          "The project groups own their solutions. This gives opportunities to sell the solution to a challenge provider, to a stakeholder or to develop it further, with support from Student Innovation by LiU or Lead. That’s why it’s inGenious!"
+        ],
+        "logo": "ingenious.svg"
+      }
+    ]
+  },
+
+  "en": {}
+}

@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import MemberCard from "./MemberCard";
 const memberInfo = require("../public/content/members.json");
-import placeholder from "../public/images/placeholder_1.png";
-import { shuffleArray } from "../pages/foretag";
+import { shuffleArray } from "../pages/foretagPrev";
 import { languageContext } from "../pages/_app";
 
 export default function TheGroup() {
@@ -29,7 +28,7 @@ export default function TheGroup() {
                   post={member.post[lang]}
                   email={member.email}
                   phone={"+46 " + member.tel}
-                  src={`images/members/${name}.png`}
+                  src={member.img}
                   linkedin={member.linkedin}
                 />
               );

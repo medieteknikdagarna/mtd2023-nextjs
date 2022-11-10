@@ -1,24 +1,94 @@
-.companies-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
-    padding-top: 3rem;
-    gap: 4rem;
-    justify-content: center;
+.companies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  padding-top: 3rem;
+  gap: 4rem;
+  justify-content: center;
 
-    svg{
-        width: 100%;
-        justify-self: center;
-        align-self: center;
-    }
+  svg {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
 
-    @media screen and (min-width: 500px){
-        justify-content: space-between;
-    }
-    @media screen and (max-width: 500px){
-        grid-template-columns: repeat(2, minmax(5rem,1fr));
-    }
+  @media screen and (min-width: 500px) {
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(2, minmax(5rem, 1fr));
+  }
 }
 
-.rc-companies{
-    padding-top: 10rem;
+.rc-companies {
+  padding-top: 10rem;
+}
+
+.foretag--companies {
+  margin-top: 15rem;
+}
+
+.header-company {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Barlow";
+  text-align: center;
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+
+  span {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Barlow";
+  }
+
+  .gold {
+    color: #fccc84;
+  }
+
+  .silver {
+    color: #999999;
+  }
+
+  .bronze {
+    color: #c8692c;
+  }
+}
+
+.companies-container {
+  &--gold {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    svg {
+      max-width: 30rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      svg {
+        max-width: 22rem;
+      }
+    }
+  }
+
+  &--silver {
+    justify-content: center;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    svg {
+      max-width: 15rem;
+    }
+  }
+
+  &--bronze {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    svg {
+      max-width: 10rem;
+    }
+  }
 }

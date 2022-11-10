@@ -8,21 +8,9 @@ import { importAll } from "./massan";
 import { languageContext } from "./_app";
 const content = require("../public/content/companies.json");
 import { NextSeo } from "next-seo";
-import CompaniesWithInfoHeadSponsor, {
-  CompaniesWithInfoSponsor,
-  CompaniesWithInfoStandard,
-} from "../components/CompaniesWithInfo";
 export function shuffleArray(array) {
   let currentIndex = array.length,
     randomIndex;
-  if (array.length == 2) {
-    let temp = Math.round(Math.random());
-    if (temp == 0) {
-      return [array[1], array[0]];
-    } else {
-      return array;
-    }
-  }
 
   // While there remain elements to shuffle...
   while (currentIndex != 0) {
@@ -39,47 +27,24 @@ export function shuffleArray(array) {
   return array;
 }
 
-export function CompanyImagesGold() {
+function CompanyImages() {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    const images_import = importAll(
-      require.context("../public/images/companies/gold", false, /\.(svg)$/)
+    const images = importAll(
+      require.context("../public/images/previous_companies", false, /\.(svg)$/)
     );
     let imgs = [];
-    for (let key in images_import) {
+    for (let key in images) {
       if (key.includes("svg")) {
-        imgs.push(images_import[key].default);
+        imgs.push(images[key].default);
       }
     }
     setImages(shuffleArray(imgs));
   }, []);
 
   return (
-    <div className="companies-container--gold">
-      {(!images && <LoadingSpinner />) || images.map((i) => i())}
-    </div>
-  );
-}
-
-export function CompanyImagesSilver() {
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    const images_import = importAll(
-      require.context("../public/images/companies/silver", false, /\.(svg)$/)
-    );
-    let imgs = [];
-    for (let key in images_import) {
-      if (key.includes("svg")) {
-        imgs.push(images_import[key].default);
-      }
-    }
-    setImages(shuffleArray(imgs));
-  }, []);
-
-  return (
-    <div className="companies-container--silver">
+    <div className="companies-container">
       {(!images && <LoadingSpinner />) || images.map((i) => i())}
     </div>
   );
@@ -95,20 +60,14 @@ export default function Companies() {
         description="Här listar vi ett knippe av alla företag som har varit med oss genom åren. Vi hoppas att kunna ha med ert företag nästa år!"
         canonical="https://www.medieteknikdagen.se/foretag"
       />
-      <Header
-        style={{ backgroundColor: "black" }}
-        lightContrast
-        changeOnScroll
-      />
-      <ResponsiveContainer className="foretag--companies">
+      <Header changeOnScroll />
+      <ResponsiveContainer className="rc-companies">
         <InfoSection
           tag=""
           title={content[lang].title}
           body={content[lang].body}
         />
-        <CompaniesWithInfoHeadSponsor />
-        <CompaniesWithInfoSponsor />
-        <CompaniesWithInfoStandard />
+        <CompanyImages />
       </ResponsiveContainer>
       <Footer />
     </div>
