@@ -34,13 +34,7 @@ export default function LandingPage() {
         <>
           <Header lightContrast changeOnScroll />
           <div className="video-container">
-            <video
-              id="background-video"
-              autoPlay
-              loop
-              muted
-              disablePictureInPicture
-            >
+            <video id="background-video" autoPlay loop muted playsInline>
               <source
                 src={require("../public/images/LogoAni.mp4")}
                 type="video/mp4"
