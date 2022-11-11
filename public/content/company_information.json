@@ -301,7 +301,7 @@
         "logo": "upsales-logo-black.svg"
       },
       {
-        "company": "NOSP",
+        "company": "Norrköping Science Park",
         "partner": "mässplats",
         "information": [
           "Norrköping Science Park är Norrköpings kommuns egna innovationskontor och arbetar inom tre olika profilområden; visualisering, tryckt och organisk elektronik och effektiv logistik. Tack vare vårt breda nätverk kan vi koppla samman företag, offentlig sektor och akademi i syfte att skapa samhällsnytta och en hållbar framtid."
@@ -314,21 +314,7 @@
         "information": [
           "Europe’s most attractive innovation environment for visualization and image analysis"
         ],
-        "logo": "visualsweden.png"
-      },
-      {
-        "company": "ingenious",
-        "partner": "mässplats",
-        "information": [
-          "Linköping University arrange the inGenious course [799G52] with Almi East Sweden AB, a subsidiary to Almi Företagspartner i Östergötland AB. The course connects students with companies and public sector in the region - everything in an international environment signified by creativity and entrepreneurship.",
-
-          "This cross disciplinary course is unique for the Swedish educational system. We want to promote students' entrepreneurial ability and make it possible to acquire professional skills, such as the ability to collaborate with other professions and to become confident and effective in pitching in front of an audience. We do that by using challenge- based learning. The course also provides the opportunity to make important contacts and build networks.",
-
-          "In this course students are given the opportunity to collaborate with other students from all faculties in interdisciplinary project groups and together tackle challenges from trade and industry and the public sector in the region. In the end of the course the students pitch their solutions for challenge providers and other stakeholders.",
-
-          "The project groups own their solutions. This gives opportunities to sell the solution to a challenge provider, to a stakeholder or to develop it further, with support from Student Innovation by LiU or Lead. That’s why it’s inGenious!"
-        ],
-        "logo": "ingenious.svg"
+        "logo": "visualsweden.svg"
       }
     ]
   },
