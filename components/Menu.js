@@ -155,7 +155,7 @@ export default function Menu({ onExit, style, className, show }) {
                         {content[lang].jobportal}
                       </Link>
                     </li> */}
-                    <li
+                    {/* <li
                       className={
                         router.asPath === "/Bokning" ? "selected-page" : ""
                       }
@@ -174,7 +174,7 @@ export default function Menu({ onExit, style, className, show }) {
                       <Link onClick={onExit} href="/intresseanmalan">
                         {content[lang].register}
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                   <div className="icons-menu">
                     <LanguageFlag />
