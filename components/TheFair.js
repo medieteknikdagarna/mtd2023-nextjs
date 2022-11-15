@@ -23,12 +23,15 @@ export default function TheFair() {
             <p key={i}>{t}</p>
           ))}
         >
-          <Button
+          {/* <Button
             href="/intresseanmalan"
             type="primary"
             style={{ marginTop: "1rem" }}
           >
             {lang === "sv" ? "Intresseanmälan" : "Register of interest"}
+          </Button> */}
+          <Button href="/foretag" type="primary" style={{ marginTop: "1rem" }}>
+            {lang === "sv" ? "Företag" : "Companies"}
           </Button>
           <Button
             onClick={handleScroll}
