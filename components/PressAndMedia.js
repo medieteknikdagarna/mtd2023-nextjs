@@ -30,7 +30,7 @@ export default function PressAndMedia() {
         post="PR"
         email="anna.granberg@medieteknikdagen.se"
         phone="+46 707 66 68 52"
-        //src={`images/members/Daniel.png`}
+        src={`images/members/Anna.jpeg`}
         linkedin={"https://www.linkedin.com/in/annagranberg00/"}
       />
     </div>
