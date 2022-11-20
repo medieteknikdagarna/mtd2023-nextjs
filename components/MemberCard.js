@@ -14,9 +14,7 @@ export default function MemberCard({
 }) {
   return (
     <div className="member-card">
-      <div className="member-card--top">
-        {/* <img alt={alt} src={src}></img> */}
-      </div>
+      <div className="member-card--top">{<img alt={alt} src={src}></img>}</div>
       <div className="member-card--bottom">
         <div className="member-card--content">
           <h3>{name}</h3>
