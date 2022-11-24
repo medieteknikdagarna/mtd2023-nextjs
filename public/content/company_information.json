@@ -304,7 +304,7 @@
         "company": "Norrköping Science Park",
         "partner": "mässplats",
         "information": [
-          "Norrköping Science Park är Norrköpings kommuns egna innovationskontor och arbetar inom tre olika profilområden; visualisering, tryckt och organisk elektronik och effektiv logistik. Tack vare vårt breda nätverk kan vi koppla samman företag, offentlig sektor och akademi i syfte att skapa samhällsnytta och en hållbar framtid."
+          "Norrköping Science Park är Norrköpings kommuns egna innovationskontor och arbetar inom olika profilområden, bl.a. visualisering, simulering, spelutveckling och digitala upplevelser. Tack vare vårt breda nätverk kan vi koppla samman företag, offentlig sektor och akademi i syfte att skapa samhällsnytta och en hållbar framtid."
         ],
         "logo": "nosp.svg"
       },
@@ -312,9 +312,63 @@
         "company": "Visual Sweden",
         "partner": "mässplats",
         "information": [
-          "Europe’s most attractive innovation environment for visualization and image analysis"
+          "Visual Sweden är ett initiativ med bas i Östergötland, inriktat på att främja innovation och regional tillväxt inom området visualisering och bildanalys. Ingen annan region i Sverige har den samling av aktörer inom visualisering och bildanalys som finns här. Merparten är företag som utvecklar nya lösningar på området. Centrala aktörer är Region Östergötland, Linköpings kommun, Norrköpings kommun, Linköpings universitet, ett flertal statliga institutioner och verk som SMHI, NFC och FOI samt ett 100-tal mindre, medelstora och stora företag."
         ],
         "logo": "visualsweden.svg"
+      },
+      {
+        "company": "TaxiCaller",
+        "partner": "mässplats",
+        "information": [
+          "I över 10 år har TaxiCaller levererat ett trafikledningssystem till nöjda kunder över hela världen. Vi levererar avancerad teknik som möter användarvänlig design som ska tilltala många olika mottagare; trafikledare, administratörer, förare, passagerare, och bolagsledning. Tillsammans skapar vi  framtidens lösningar för Mobility as a Service.",
+          "Vill du vara med och förändra transportvärlden? Då vill vi gärna träffa dig."
+        ],
+        "logo": "TaxiCaller.svg"
+      },
+      {
+        "company": "ImageSystems",
+        "partner": "mässplats",
+        "information": [
+          "Image Systems Motion Analysis  - \"When motion counts\"",
+
+          "About us",
+          "Image Systems Motion Analysis is a Swedish company that offers fast, accurate and valuable measuring results from any images when motion counts. We offer solutions where the movement, orientation or shape of an object shall be measured and analyzed.",
+
+          "Image Systems is present in the US, France, Sweden (HQ), Israel and China.",
+
+          "What do we offer",
+          "We transform deformation and motion into numbers and conclusions. Our state-of-the-art software suite is designed, developed and qualified in our development center at Linköping HQ. Our software suites TEMA and TrackEye are used in hundreds of applications together with off the shelf optical systems.",
+
+          "We provide state-of-the-art measurement solutions for:",
+          "• Defence & Aerospace",
+          "• Automotive",
+          "• Industry",
+
+          "Are you one of us?",
+          "A place where mathematics, image analysis and software engineering meets. We define the standards for measurement solutions for industry applications.",
+
+          "Always searching for top candidates for our HQ in Linköping",
+
+          "Contact us",
+
+          "Info@imagesystems.se",
+          "Website: www.imagesystems.se",
+          "Career opportunities:",
+          "Elin.Wastesson@imagesystems.se"
+        ],
+        "logo": "ISAB.svg"
+      },
+      {
+        "company": "Student Innovation by LiU",
+        "partner": "mässplats",
+        "information": [
+          "Ever thought about an idea you want to become a reality?",
+          "Do you have an idea from a course or a project you have done? Maybe you have an idea that you want to explore the possibility of realizing but don’t know where to start. Student Innova-tion by LiU is an initiative to support you as a LiU student on your journey of ideas. Contact us — we are here to help and support you.",
+          "About Student Innovation by LiU",
+          "Student Innovation by LiU is an innovation hub where students can acquire support to develop their own ideas for a project or company. This is one of the operations runed by Almi East Sweden AB, focusing on sustainable growth of businesses within the county of Östergötland.",
+          "Almi East Sweden AB strive to increase interaction between the region's companies and students at Linköping University. We make students grow - as individuals and professionally."
+        ],
+        "logo": "studentinnovation.svg"
       }
     ]
   },
