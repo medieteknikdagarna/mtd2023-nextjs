@@ -263,7 +263,9 @@
       {
         "company": "Devant",
         "partner": "sponsor",
-        "information": [],
+        "information": [
+          "Devant is pushing the boundaries in human centric synthetic data to enable machines to understand and interpret any human appearance, motion or behavior. By combining VFX, Computer Graphics and Machine Learning, our state-of-the-art synthetic data is key in developing better safety features in cars to reduce traffic accidents and save lives. Come visit Mattias Arrelid, former MT student and Head of Content Platform at Spotify and the Devant team at MT-dagen 6th of December."
+        ],
         "logo": "devant.svg"
       },
       {
