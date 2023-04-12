@@ -1,0 +1,497 @@
+{
+  "sv": {
+    "jobs": [
+      {
+        "company": "RecordedFuture",
+        "type": "master",
+        "information": [
+          "At Recorded Future, we want you to write suggestions on what project you want to work with as a Thesis student. Because we believe that the best projects will be when you get to work with tasks you are passionate about.",
+          "Former students have, for example, worked on the following projects.",
+          "- Threat-oriented Multi-modal Alignment",
+          "- Fake news detection on social media",
+          "-Ontology-augmented Information Extraction",
+          "Write in your application what you want as a Thesis topic, tell more about yourself, and attach your CV."
+        ],
+        "website": [],
+        "email": "recruitment_emea@recordedfuture.com",
+        "tags": [
+          "react",
+          "security",
+          "front-end",
+          "back-end",
+          "platform",
+          "applications",
+          "analytics",
+          "UX",
+          "QA"
+        ],
+        "logo_url": "recordedfuture.svg"
+      },
+      {
+        "company": "RecordedFuture",
+        "type": "internship",
+        "information": [
+          "We offer internships to all our departments. Platform, UX, Application, QA, Integration, Analytics and Security. If you are interested in an Internship, please write in which subject and attach your CV to our recruitment email and we will contact you."
+        ],
+        "website": [],
+        "email": "recruitment_emea@recordedfuture.com",
+        "tags": [
+          "platform",
+          "UX",
+          "Application",
+          "QA",
+          "Integration",
+          "Analytics",
+          "Security",
+          "front-end",
+          "back-end",
+          "DevOps",
+          "Agile"
+        ],
+        "logo_url": "recordedfuture.svg"
+      },
+      {
+        "company": "RecordedFuture",
+        "type": "job",
+        "information": [
+          "Software Engineer, Analytics",
+          "Full Stack Engineer",
+          "React Native Developer",
+          "Integrations Developer"
+        ],
+        "website": ["https://www.recordedfuture.com/careers/#job-post"],
+        "email": "",
+        "tags": [
+          "software engineer",
+          "analytics",
+          "fullstack",
+          "react native",
+          "integrations"
+        ],
+        "logo_url": "recordedfuture.svg"
+      },
+      {
+        "company": "Combitech",
+        "type": "job",
+        "information": [
+          "Vi erbjuder flertal olika möjligheter inom IT och Teknik, vi rekryterar kontinuerligt till roller inom exempelvis mjukvaruutveckling, systemutveckling, cyber security, produktutveckling, mekanik och testutveckling."
+        ],
+        "website": ["https://www.combitech.se/lediga-jobb/"],
+        "email": "",
+        "tags": [
+          "software",
+          "hardware",
+          "engineer",
+          "consult",
+          "developer",
+          "konstruktör",
+          "cyber security"
+        ],
+        "logo_url": "combitech.svg"
+      },
+      {
+        "company": "Combitech",
+        "type": "internship",
+        "information": [
+          "Combitech Talent Program riktar sig till dig som är ny i yrkeslivet. Programmet är utformat för att snabba på din resa från talang till erfaren konsult - det anpassas dessutom till ditt uppdrag och din kompetensprofil, och innehåller flera delar från vårt koncept för kompetensutveckling Combitech Grow. Steg för steg breddar och fördjupar du ditt kunnande och din erfarenhet, samtidigt som du lär dig att lära av såväl egna som andras erfarenheter."
+        ],
+        "website": [
+          "https://www.combitech.se/din-karriar/combitech-talent-program/"
+        ],
+        "email": "",
+        "tags": [],
+        "logo_url": "combitech.svg"
+      },
+      {
+        "company": "King",
+        "type": "internship",
+        "information": [
+          "We look at it this way. If you’ve managed to combine hard work with fun at University, why can’t you do the same after you’ve graduated. Here, at King, you will.",
+          "We create unforgettable games that are loved around the world. We work with all kinds of students, and our opportunities are designed to challenge, inspire and develop you. We are offering paid internships for 6 months throughout Sweden. We work with all kinds of students & recent grads, with opportunities at entry level from undergrad to MBA. All opportunities are designed to challenge, inspire and develop you, no matter when in your studies you join us."
+        ],
+        "website": [],
+        "email": "",
+        "tags": ["software developer", "product manager", "Java", "C++"],
+        "logo_url": "king.svg"
+      },
+
+      {
+        "company": "XMReality",
+        "type": "master",
+        "information": ["Exjobb hösten 2022"],
+        "website": ["https://jobs.cruitive.com/job/ckzcjl6nf391210es64s3rn600"],
+        "email": "",
+        "tags": [
+          "software development",
+          "image recognition",
+          "algorithms",
+          "UX",
+          "UI",
+          "design",
+          "prototype development",
+          "test automation",
+          "end-to-end testing",
+          "test-driven development",
+          "augmented reality",
+          "ARKit/ARCore",
+          "WebAR",
+          "Microsoft Mixed Reality",
+          "Frontend software development",
+          "mobile app development"
+        ],
+        "logo_url": "xmreality.svg"
+      },
+      {
+        "company": "XMReality",
+        "type": "job",
+        "information": ["Frontend Developer"],
+        "website": ["https://jobs.cruitive.com/job/ckt8bdzl0qc8h078368fm5mq7"],
+        "email": "",
+        "tags": [
+          "front end",
+          "electron",
+          "react",
+          "redux",
+          "MaterialUI",
+          "WebRTC",
+          "C#",
+          ".NET"
+        ],
+        "logo_url": "xmreality.svg"
+      },
+      {
+        "company": "XMReality",
+        "type": "job",
+        "information": ["Backend Developer"],
+        "website": ["https://jobs.cruitive.com/job/ckt8bd20dqc0b0783q0hh7e8k"],
+        "email": "",
+        "tags": [
+          "back end",
+          ".Net 5.0 (.Net Core)",
+          "Entity Framework Core",
+          "Redis",
+          "Docker",
+          "Kubernetes"
+        ],
+        "logo_url": "xmreality.svg"
+      },
+      {
+        "company": "Sveriges Radio",
+        "type": "master",
+        "information": [
+          "Aldrig tidigare har ljudet som medieform varit så het. Antalet poddar på ljudmarknaden blir allt fler och Sveriges Radio, som ett starkt public service-bolag med ljudet i fokus, befinner sig mitt i detta. Vi har länge legat långt fram inom teknisk utveckling av ljud och digitalt tillgängliggörande av vårt innehåll. Nu satsar vi på att bli ännu bättre genom att expandera inom egenutveckling med publiken, användaren och den senaste tekniken i fokus.",
+          "Tidigare exjobbare har kollat in på exempelvis tekniska lösningar för att förbättra hörbarheten på SRs ljud när man har hörselnedsättning eller befinner sig i miljöer med störljud. En annan har gjort tester på tal-till-text på svenska innan Google m.fl. släppte stöd för detta. En tredje nyttjade maskininlärning/AI för att analysera och kategorisera innehållet i våra ljud.",
+          "Hos oss finns massa olika möjligheter, skriv vad du är intresserad av så kollar vi in på möjligheterna för att skriva hos oss!"
+        ],
+        "website": ["https://karriar.sverigesradio.se/"],
+        "email": "",
+        "tags": [
+          "fullstack",
+          "android",
+          "ljusteknik",
+          "utveckling",
+          "hårdvara",
+          "mjukvara"
+        ],
+        "logo_url": "sveriges_radio.svg"
+      },
+      {
+        "company": "Sveriges Radio",
+        "type": "internship",
+        "information": [
+          "Aldrig tidigare har ljudet som medieform varit så het. Antalet poddar på ljudmarknaden blir allt fler och Sveriges Radio, som ett starkt public service-bolag med ljudet i fokus, befinner sig mitt i detta. Vi har länge legat långt fram inom teknisk utveckling av ljud och digitalt tillgängliggörande av vårt innehåll. Nu satsar vi på att bli ännu bättre genom att expandera inom egenutveckling med publiken, användaren och den senaste tekniken i fokus.",
+          "Tidigare exjobbare har kollat in på exempelvis tekniska lösningar för att förbättra hörbarheten på SRs ljud när man har hörselnedsättning eller befinner sig i miljöer med störljud. En annan har gjort tester på tal-till-text på svenska innan Google m.fl. släppte stöd för detta. En tredje nyttjade maskininlärning/AI för att analysera och kategorisera innehållet i våra ljud.",
+          "Hos oss finns massa olika möjligheter, skriv vad du är intresserad av så kollar vi in på möjligheterna för att skriva hos oss!"
+        ],
+        "website": ["https://karriar.sverigesradio.se/"],
+        "email": "",
+        "tags": [
+          "fullstack",
+          "android",
+          "ljsuteknik",
+          "utveckling",
+          "hårdvara",
+          "mjukvara"
+        ],
+        "logo_url": "sveriges_radio.svg"
+      },
+      {
+        "company": "Sveriges Radio",
+        "type": "job",
+        "information": [
+          "Aldrig tidigare har ljudet som medieform varit så het. Antalet poddar på ljudmarknaden blir allt fler och Sveriges Radio, som ett starkt public service-bolag med ljudet i fokus, befinner sig mitt i detta. Vi har länge legat långt fram inom teknisk utveckling av ljud och digitalt tillgängliggörande av vårt innehåll. Nu satsar vi på att bli ännu bättre genom att expandera inom egenutveckling med publiken, användaren och den senaste tekniken i fokus.",
+          "Tidigare exjobbare har kollat in på exempelvis tekniska lösningar för att förbättra hörbarheten på SRs ljud när man har hörselnedsättning eller befinner sig i miljöer med störljud. En annan har gjort tester på tal-till-text på svenska innan Google m.fl. släppte stöd för detta. En tredje nyttjade maskininlärning/AI för att analysera och kategorisera innehållet i våra ljud.",
+          "Hos oss finns massa olika möjligheter, skriv vad du är intresserad av så kollar vi in på möjligheterna för att skriva hos oss!"
+        ],
+        "website": ["https://karriar.sverigesradio.se/"],
+        "email": "",
+        "tags": [
+          "fullstack",
+          "android",
+          "ljsuteknik",
+          "utveckling",
+          "hårdvara",
+          "mjukvara"
+        ],
+        "logo_url": "sveriges_radio.svg"
+      },
+      {
+        "company": "Xamera",
+        "type": "job",
+        "information": [
+          "A lot of different positions from embedded systems to the most front end oriented ones regarding UI/UX, web and applications. Book a Carrertalk with us and we will be in touch regarding all of the option we offer!"
+        ],
+        "website": [
+          "https://xamera.teamtailor.com/jobs/216322-kom-in-pa-ett-karriarsamtal-sa-diskuterar-vi-dina-mojligheter"
+        ],
+        "email": "",
+        "tags": [
+          "C",
+          "C++",
+          "C#",
+          "Java",
+          "Python",
+          "Javascript",
+          "React",
+          "Embedded",
+          "Frontend",
+          "Backend",
+          "Fullstack",
+          "Webb"
+        ],
+        "logo_url": "xamera.svg"
+      },
+      {
+        "company": "Voyado",
+        "type": "job",
+        "information": ["Software Developer"],
+        "website": [
+          "https://careers.voyado.com/jobs/1589258-systemutvecklare/14ef4f77-c421-40bf-90c7-fc3da887a729"
+        ],
+        "email": "",
+        "tags": [
+          ".NET",
+          "C#",
+          "JavaScript",
+          "TypeScript",
+          "Aurelia",
+          "SQL",
+          "Fullstack"
+        ],
+        "logo_url": "voyado.png"
+      },
+      {
+        "company": "Voyado",
+        "type": "job",
+        "information": ["Implementation Specialist"],
+        "website": [
+          "https://careers.voyado.com/jobs/1201619-implementation-specialist"
+        ],
+        "email": "",
+        "tags": [
+          "implementation",
+          "integrations",
+          "setup",
+          "configuration",
+          "training"
+        ],
+        "logo_url": "voyado.png"
+      },
+      {
+        "company": "Arriver",
+        "type": "master",
+        "information": [
+          "We offer master thesis positions during both spring and fall. We gladly would listen to your ideas for a thesis project that are aligned with our work at Arriver! At the moment we don´t have any available thesis projects published for this fall, but if you want to get noted when we publish our applications for thesis projects you can connect with us on our webpage Follow this link:",
+          "https://arriversweden.teamtailor.com/departments/student",
+          "If you have an idea for a thesis project you are welcome to contact Julia Widman, julia.widman.external@arriver.com or Stefan Furenbäck stefan.furenback@arriver.com"
+        ],
+        "website": ["https://arriversweden.teamtailor.com/departments/student"],
+        "email": "stefan.furenback@arriver.com",
+        "tags": [
+          "Computer Vision",
+          "Machine Learning",
+          "Image Processing",
+          "Deep Learning",
+          "Object Detection"
+        ],
+        "logo_url": "arriver.svg"
+      },
+      {
+        "company": "Arriver",
+        "type": "summerjob",
+        "information": [
+          "For 2022 we will offer multible summer internships! The summer interships will of course be connected to our work at Arriver, which is within the areas of computer vision, machine learning, deep learning and object detection. Do you have an idea of a project you would what to do that matches well with our work? We would gladly listen to your idea!",
+          "Application form will come up soon on our website:",
+          "https://arriversweden.teamtailor.com/"
+        ],
+        "website": ["https://arriversweden.teamtailor.com/"],
+        "email": "",
+        "tags": [
+          "Computer Vision",
+          "Machine Learning",
+          "Deep Learning",
+          "Object Detection"
+        ],
+        "logo_url": "arriver.svg"
+      },
+      {
+        "company": "Arriver",
+        "type": "trainee",
+        "information": [
+          "We are open to taking in trainees, if you are interested in a trainee position please contact Julia Widman, julia.widman.external@arriver.com"
+        ],
+        "website": [],
+        "email": "julia.widman.external@arriver.com",
+        "tags": [
+          "Computer Vision",
+          "Machine Learning",
+          "Deep Learning",
+          "Object Detection"
+        ],
+        "logo_url": "arriver.svg"
+      },
+      {
+        "company": "Arriver",
+        "type": "internship",
+        "information": [
+          "If you are interested in an internship at Arriver please contact Julia Widman, julia.widman.external@arriver.com"
+        ],
+        "website": [],
+        "email": "julia.widman.external@arriver.com",
+        "tags": [
+          "Computer Vision",
+          "Machine Learning",
+          "Deep Learning",
+          "Object Detection"
+        ],
+        "logo_url": "arriver.svg"
+      },
+      {
+        "company": "Arriver",
+        "type": "job",
+        "information": [
+          "We are looking for new co-workers that are about to graduate with a Master of Science. Since you will be working with computer vision and machine learning we think that you have probably studied within that area.",
+          "We think that you have at least heard about the terms tracking and deep learning, but we also don’t expect that you as a newly graduate have 15 years of experience within those fields - yet. Instead, we plan to make you grow within those areas according to your interests.",
+          "Who we are?",
+          "Arriver is a new software company fully focused on developing vision perception and drive policy software for the next generation Advanced Driver Assist Systems and Autonomous Driving systems in vehicles. Although we as a company are new, we have a mix of experience from juniors to co-workers that have worked with vision perception for over a decade.",
+          "Arriver has 800 people in five countries – China, Germany, Romania, USA and Sweden. In Sweden we are situated in Linkoping, Stockholm and Gothenburg with around 400 colleagues. Since we are a global company, we consist of a diverse workforce with basically all communication being done in English. That also means that we in our music quizzes try to not be too narrow in our references.",
+          "We have started working on our next generation vision perception and driving policy stacks. We are also very proud of our recent deal where a big German multinational corporate manufacturer of luxury vehicles decided on implementing our software in their cars. Therefore, we are looking for more co-workers that wants to join us in our vision to create a world where everyone arrives safe and sound at their destination. I know - it may sound as a cliché, but it is still something that we really believe in and work for.",
+          "We work in cross functional agile teams consisting of 5-8 members. While each team member contributes with their own skills and experience, the team cooperates to perform the different steps in development. The teams are responsible for all steps in development - including system work, implementation, and verification. Our teams innovate at the frontiers of engineering using technologies such as machine learning, tracking and 3D reconstruction.",
+          "Who you are!",
+          "We are not looking for a ninja, evangelist or some other buzz word term. Neither are we looking for someone that needs to tick all boxes in a list of programming languages. We are looking for people that want to learn and that feel inspired and motivated to work with combining human and artificial intelligence in our vision perception.",
+          "Hopefully you like to do that together with your co-workers and with a smile on your face. We think that you will have a good foundation if you have experienced C and Python during your Master of Science in machine learning, image- or signal processing, computer science or equivalent area. But you are free to try and prove us wrong.",
+          "We offer",
+          "A workplace where you contribute to the development of cutting-edge technology that aims to enhance road safety. We have the possibility to work when we are at our best with flexible hours and take care of our well-being with generous health and fitness reimbursements, access to an office gym and social activities including ‘fika’ and After Work.",
+          "You also have the possibility to work from home part time. With us you get inspiring and sharp colleagues who like what we do and have fun at work. You get the chance to work with something meaningful and at the same time develop yourself.",
+          "Apply!",
+          "We very much look forward to your application! Even if you plan to graduate later in the spring/summer you are welcome to send in your application.",
+          "And since we will have continuous selection, and places can be filled before the last application date, please don’t wait with handing in your application."
+        ],
+        "website": [
+          "https://arriversweden.teamtailor.com/jobs/1499062-graduates-within-computer-vision-machine-learning"
+        ],
+        "email": "",
+        "tags": ["Computer Vision", "Machine Learning"],
+        "logo_url": "arriver.svg"
+      },
+      {
+        "company": "HiQ",
+        "type": "job",
+        "information": [
+          "På HiQ letar vi alltid efter duktiga och kompetenta kollegor som, precis som vi, vill utveckla för att göra världen bättre – och lite roligare. Med hjälp av teknik och en stor dos nyfikenhet spenderar vi dagarna med att försöka besvara de stora och små frågorna."
+        ],
+        "website": [
+          "https://career.hiq.se/jobs?location=Link%C3%B6ping&query=",
+          "https://career.hiq.se/jobs?location=Norrk%C3%B6ping&query="
+        ],
+        "email": "",
+        "tags": [],
+        "logo_url": "hiq.svg"
+      },
+      {
+        "company": "Sectra AB",
+        "type": "job",
+        "information": [
+          "Tar du examen 2022 och vill testa att leva och jobba utomlands? Kanske blev det inte som du tänkt dig med utlandsterminen? Kanske är internationella karriärmöjligheter högt upp på din lista när du väljer arbetsgivare. Vi är väldigt stolta över möjligheten att kunna erbjuda våra medarbetare den unika förmånen att bo och jobba utomlands. Vi ger dig nu chansen att efter inledande utbildning i Sverige och Europa, påbörja din karriär med en tjänst på vår USA-kontor i Shelton, Connecticut!"
+        ],
+        "website": [
+          "https://career.sectra.com/job-opportunities/folj-med-sectra-till-usa/"
+        ],
+        "email": "",
+        "tags": ["engineering", "medical imaging", "USA"],
+        "logo_url": "sectra.svg"
+      },
+      {
+        "company": "Bontouch",
+        "type": "master",
+        "information": [
+          "We don't have any master thesis positions available at the moment. We take in thesis students during the spring and open up our processes during September. If the students are interested in applying for master thesis they can email us at jobs@bontouch.com",
+          "We have master thesis positions within app and web development."
+        ],
+        "website": [],
+        "email": "jobs@bontouch.com",
+        "tags": [
+          "React",
+          "Vue",
+          "Java",
+          "Objective-C",
+          "Swift",
+          "Kotlin",
+          "Android development",
+          "iOS development",
+          "Web development",
+          "frontend development"
+        ],
+        "logo_url": "bontouch.svg"
+      },
+      {
+        "company": "Bontouch",
+        "type": "trainee",
+        "information": [
+          "We don't have any Trainee positions. Students can contact us at jobs@bontouch.com if they are interested and we can see if we can find an interesting opening. "
+        ],
+        "website": [],
+        "email": "jobs@bontouch.com",
+        "tags": [
+          "react",
+          "vue",
+          "javascript",
+          "android",
+          "iOS",
+          "swift",
+          "kotlin",
+          "java",
+          "objective-C",
+          "frontend"
+        ],
+        "logo_url": "bontouch.svg"
+      },
+      {
+        "company": "Bontouch",
+        "type": "job",
+        "information": [
+          "We have a lot of positions within web development, android development, iOS development, design, QA, project management and analytics.",
+          "Current positions available on Graduateland is: Junior Web Developer, Android Developer and iOS Developer."
+        ],
+        "website": ["https://careers.bontouch.com/"],
+        "email": "jobs@bontouch.com",
+        "tags": [
+          "iOS",
+          "Android",
+          "Web",
+          "React",
+          "Vue",
+          "Javascript",
+          "Kotlin",
+          "Java",
+          "Swift",
+          " Objective-C",
+          "frontend"
+        ],
+        "logo_url": "bontouch.svg"
+      }
+    ]
+  },
+
+  "en": {}
+}

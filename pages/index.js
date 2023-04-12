@@ -21,8 +21,7 @@ const content = require("../public/content/landing.json");
 
 export default function LandingPage() {
   const [lang, setLang] = useContext(languageContext);
-  const fbVideoUrl =
-    "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmedieteknikdagen%2Fvideos%2F1399763803536580%2F&show_text=false&width=560&t=0";
+  const fbVideoUrl = "https://www.youtube.com/embed/d7mrIdFgpLg";
   return (
     <>
       <NextSeo
