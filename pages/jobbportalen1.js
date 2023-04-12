@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { languageContext } from "./_app";
 import { NextSeo } from "next-seo";
-import JobPortal from "../components/JobPortalOld";
+// import JobPortal from "../components/JobPortalOld";
 export default function Register() {
   const [lang, setLang] = useContext(languageContext);
   return (
